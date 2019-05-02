@@ -117,7 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <data name="BTN_Filter1.Text" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="BTN_FilterLimpar.Text" xml:space="preserve">
+    <value>Limpio</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Nombre Fantasía</value>
+  </data>
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 26</value>
+  </data>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Proveedores</value>
+  </data>
+  <data name="razaoSocialDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Razón social</value>
+  </data>
+  <data name="nomeFantasiaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Nombre Fantasía</value>
+  </data>
+  <data name="phoneDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>teléfono</value>
+  </data>
+  <data name="BTN_NewProvider.Text" xml:space="preserve">
+    <value>Nuevo Proveedor</value>
   </data>
 </root>

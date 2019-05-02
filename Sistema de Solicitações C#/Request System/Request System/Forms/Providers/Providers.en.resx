@@ -117,7 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <data name="BTN_Filter1.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="BTN_FilterLimpar.Text" xml:space="preserve">
+    <value>Clean</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>National Registration</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Fantasy Name</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 26</value>
+  </data>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Providers</value>
+  </data>
+  <data name="idDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="razaoSocialDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="nomeFantasiaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Fantasy Name</value>
+  </data>
+  <data name="phoneDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="BTN_Edit1.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="BTN_NewProvider.Text" xml:space="preserve">
+    <value>New Provider</value>
   </data>
 </root>

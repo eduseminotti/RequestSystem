@@ -117,7 +117,53 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <data name="BTN_Add_product.Text" xml:space="preserve">
+    <value>Añadir producto</value>
+  </data>
+  <data name="productIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>código</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>producto</value>
+  </data>
+  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cantidad solicitada</value>
+  </data>
+  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cantidad aprobada</value>
+  </data>
+  <data name="BTN_Seleciona_produto.Text" xml:space="preserve">
+    <value>seleccionar</value>
+  </data>
+  <data name="BTN_Remove_Item.Text" xml:space="preserve">
+    <value>Quitar elemento</value>
+  </data>
+  <data name="BTN_Fechar.Text" xml:space="preserve">
+    <value>Cierra</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Nombre del producto</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="BTN_Salvar.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>razón</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Solicitudes</value>
   </data>
 </root>

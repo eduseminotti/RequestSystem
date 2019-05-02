@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Request_System.Forms
+namespace Request_System
 {
-    public partial class Admin_Main : Form
+    public partial class Form_Em_Branco : Form
     {
-        public Admin_Main()
+        public Form_Em_Branco()
         {
             InitializeComponent();
         }
 
-        private void BTN_admin_main_OK_Click(object sender, EventArgs e)
+        private void Form_Em_Branco_Load(object sender, EventArgs e)
         {
 
         }

@@ -117,7 +117,47 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 26</value>
+  </data>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Solicitudes</value>
+  </data>
+  <data name="BTN_Ver_Solicitacao.Text" xml:space="preserve">
+    <value>Ver la solicitud</value>
+  </data>
+  <data name="UserRequesterName.HeaderText" xml:space="preserve">
+    <value>Usuario Solicitante</value>
+  </data>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fecha de la solicitud</value>
+  </data>
+  <data name="UserApproverName.HeaderText" xml:space="preserve">
+    <value>Usuario Aprobación</value>
+  </data>
+  <data name="dataAprovacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fecha Aprobación / Rechazo</value>
+  </data>
+  <data name="dataRetiradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fecha Retirada</value>
+  </data>
+  <data name="solicitationStatusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="BTN_Filtrar.Text" xml:space="preserve">
+    <value>Filtro</value>
+  </data>
+  <data name="BTN_LIMPAR_FILTRO.Text" xml:space="preserve">
+    <value>limpio</value>
+  </data>
+  <data name="Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="Status.Text" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
+    <value>Generate PDF</value>
   </data>
 </root>

@@ -1,68 +1,51 @@
-﻿using Request_System.Forms;
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace Request_System
 {
     public partial class LoginValidate : Form
     {
+        public static LoginValidate loginValidate;
+
         public LoginValidate()
         {
             InitializeComponent();
+            this.AcceptButton = BTN_Entrar;
         }
         String loginUserName;
         String loginPass;
+
         User user;
         ValidateUsers validate = new ValidateUsers();
 
-        private void BTN_Login_Click(object sender, EventArgs e)
+        private void BTN_Entrar_Click(object sender, EventArgs e)
         {
             loginUserName = TXT_UserName_login.Text;
             loginPass = TXT_Pass_login.Text;
 
-            user = validate.GetUser(loginUserName, loginPass);
+            user = validate.ValidaUsuario(loginUserName, loginPass);
 
             if (user != null && user.IsValid(loginPass))
             {
-                if (user.Idioma == 1)
+                if (user.IsActive == UserIsactive.Inativo)
+                    return;
+                if (user.Idioma == UserIdioma.Portugues)
                     Idioma.AjustaCultura(this, "pt-BR");
 
-                if (user.Idioma == 2)
+                if (user.Idioma == UserIdioma.Ingles)
                     Idioma.AjustaCultura(this, "en-US");
 
-                if (user.Type == 1)
-                {
-                    
-                    Admin_Main admMain = new Admin_Main();
-                    this.Hide();
-                    admMain.ShowDialog();
-                    
-                    
-                   
-                    
-                       // MessageBox.Show("Login Efetuado! Usuario admim");
-                }
-                if (user.Type == 2)
-                {
-                    MessageBox.Show("Login Efetuado! Usuario stock");
-                }
-                if (user.Type == 3)
-                {
-                    MessageBox.Show("Login Efetuado! Usuario Comun");
-                }
+                if (user.Idioma == UserIdioma.Espanhol)
+                    Idioma.AjustaCultura(this, "es-ES");
+
+                Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, user.Idioma);
+                this.Hide();
+                admMain.Show();
+
             }
             else
                 MessageBox.Show("Usuario ou senha incorretos!");
         }
-
-
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-
     }
 }
 

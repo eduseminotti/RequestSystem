@@ -117,7 +117,56 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <data name="BTN_Add_product.Text" xml:space="preserve">
+    <value>Add Product</value>
+  </data>
+  <data name="productIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantity Requested</value>
+  </data>
+  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantity Approved</value>
+  </data>
+  <data name="BTN_Seleciona_produto.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="BTN_Remove_Item.Text" xml:space="preserve">
+    <value>Remove Item</value>
+  </data>
+  <data name="BTN_busca_produto.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="BTN_Fechar.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Product's name</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="BTN_Salvar.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Requests</value>
   </data>
 </root>

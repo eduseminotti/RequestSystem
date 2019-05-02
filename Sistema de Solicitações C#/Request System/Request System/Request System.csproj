@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -47,11 +65,86 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Admin_Main.cs">
+    <Compile Include="Classes\GeraPDF.cs" />
+    <Compile Include="Classes\ManipulaSolicitacoes.cs" />
+    <Compile Include="Classes\ManipulaFornecedores.cs" />
+    <Compile Include="Classes\ManipulaNFes.cs" />
+    <Compile Include="Classes\ManipulaProdutos.cs" />
+    <Compile Include="Classes\ManipulaStock.cs" />
+    <Compile Include="Classes\ManipulaUsuarios.cs" />
+    <Compile Include="Classes\Enuns.cs" />
+    <Compile Include="Classes\Configuration.cs" />
+    <Compile Include="Forms\Menus_Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Admin_Main.Designer.cs">
-      <DependentUpon>Admin_Main.cs</DependentUpon>
+    <Compile Include="Forms\Menus_Main.Designer.cs">
+      <DependentUpon>Menus_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Form_Em_Branco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Form_Em_Branco.Designer.cs">
+      <DependentUpon>Form_Em_Branco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Notas Fiscais\Notas_Fiscais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notas Fiscais\Notas_Fiscais.Designer.cs">
+      <DependentUpon>Notas_Fiscais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Notas Fiscais\Page_NFes_Add_And_Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notas Fiscais\Page_NFes_Add_And_Edit.Designer.cs">
+      <DependentUpon>Page_NFes_Add_And_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeusPedidos\PagePedidosAddAndEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeusPedidos\PagePedidosAddAndEdit.Designer.cs">
+      <DependentUpon>PagePedidosAddAndEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\SeusPedidos\SeusPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SeusPedidos\SeusPedidos.Designer.cs">
+      <DependentUpon>SeusPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Produtos\Page_Products_Edit_And_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\Page_Products_Edit_And_Add.Designer.cs">
+      <DependentUpon>Page_Products_Edit_And_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Providers\Page_Providers_Edit_And_Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Providers\Page_Providers_Edit_And_Add.Designer.cs">
+      <DependentUpon>Page_Providers_Edit_And_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Providers\Providers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Providers\Providers.Designer.cs">
+      <DependentUpon>Providers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Solicitacoes\PageEditSolicitacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Solicitacoes\PageEditSolicitacoes.Designer.cs">
+      <DependentUpon>PageEditSolicitacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Solicitacoes\Solicitacoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Solicitacoes\Solicitacoes.Designer.cs">
+      <DependentUpon>Solicitacoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Usuarios\Page_User_EditAndAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuarios\Page_User_EditAndAdd.Designer.cs">
+      <DependentUpon>Page_User_EditAndAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Principal_Login.cs">
       <SubType>Form</SubType>
@@ -59,18 +152,141 @@
     <Compile Include="Forms\Principal_Login.Designer.cs">
       <DependentUpon>Principal_Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Idioma.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Forms\Produtos\Produtos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Produtos\Produtos.Designer.cs">
+      <DependentUpon>Produtos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Idioma.cs" />
+    <Compile Include="Classes\Program.cs" />
+    <Compile Include="Forms\Usuarios\Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Usuarios\Usuarios.Designer.cs">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ValidateUsers.cs" />
-    <EmbeddedResource Include="Forms\Admin_Main.resx">
-      <DependentUpon>Admin_Main.cs</DependentUpon>
+    <Compile Include="Classes\ValidateUsers.cs" />
+    <EmbeddedResource Include="Forms\Menus_Main.en.resx">
+      <DependentUpon>Menus_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menus_Main.es.resx">
+      <DependentUpon>Menus_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Menus_Main.resx">
+      <DependentUpon>Menus_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Form_Em_Branco.resx">
+      <DependentUpon>Form_Em_Branco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notas Fiscais\Notas_Fiscais.en.resx">
+      <DependentUpon>Notas_Fiscais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notas Fiscais\Notas_Fiscais.es.resx">
+      <DependentUpon>Notas_Fiscais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notas Fiscais\Notas_Fiscais.resx">
+      <DependentUpon>Notas_Fiscais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notas Fiscais\Page_NFes_Add_And_Edit.en.resx">
+      <DependentUpon>Page_NFes_Add_And_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notas Fiscais\Page_NFes_Add_And_Edit.es.resx">
+      <DependentUpon>Page_NFes_Add_And_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notas Fiscais\Page_NFes_Add_And_Edit.resx">
+      <DependentUpon>Page_NFes_Add_And_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\Page_Products_Edit_And_Add.en.resx">
+      <DependentUpon>Page_Products_Edit_And_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\Page_Products_Edit_And_Add.es.resx">
+      <DependentUpon>Page_Products_Edit_And_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\Produtos.en.resx">
+      <DependentUpon>Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\Produtos.es.resx">
+      <DependentUpon>Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Providers\Page_Providers_Edit_And_Add.en.resx">
+      <DependentUpon>Page_Providers_Edit_And_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Providers\Page_Providers_Edit_And_Add.es.resx">
+      <DependentUpon>Page_Providers_Edit_And_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Providers\Providers.en.resx">
+      <DependentUpon>Providers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Providers\Providers.es.resx">
+      <DependentUpon>Providers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeusPedidos\PagePedidosAddAndEdit.en.resx">
+      <DependentUpon>PagePedidosAddAndEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeusPedidos\PagePedidosAddAndEdit.es.resx">
+      <DependentUpon>PagePedidosAddAndEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeusPedidos\PagePedidosAddAndEdit.resx">
+      <DependentUpon>PagePedidosAddAndEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeusPedidos\SeusPedidos.en.resx">
+      <DependentUpon>SeusPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeusPedidos\SeusPedidos.es.resx">
+      <DependentUpon>SeusPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SeusPedidos\SeusPedidos.resx">
+      <DependentUpon>SeusPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\Page_Products_Edit_And_Add.resx">
+      <DependentUpon>Page_Products_Edit_And_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Providers\Page_Providers_Edit_And_Add.resx">
+      <DependentUpon>Page_Providers_Edit_And_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Providers\Providers.resx">
+      <DependentUpon>Providers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Solicitacoes\PageEditSolicitacoes.en.resx">
+      <DependentUpon>PageEditSolicitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Solicitacoes\PageEditSolicitacoes.es.resx">
+      <DependentUpon>PageEditSolicitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Solicitacoes\PageEditSolicitacoes.resx">
+      <DependentUpon>PageEditSolicitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Solicitacoes\Solicitacoes.en.resx">
+      <DependentUpon>Solicitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Solicitacoes\Solicitacoes.es.resx">
+      <DependentUpon>Solicitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Solicitacoes\Solicitacoes.resx">
+      <DependentUpon>Solicitacoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Page_User_EditAndAdd.resx">
+      <DependentUpon>Page_User_EditAndAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal_Login.en.resx">
       <DependentUpon>Principal_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Principal_Login.resx">
       <DependentUpon>Principal_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Produtos\Produtos.resx">
+      <DependentUpon>Produtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Usuarios.en.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Usuarios.es.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Usuarios.resx">
+      <DependentUpon>Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,7 +296,36 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\Admin_Main.datasource" />
+    <None Include="Properties\DataSources\Dados_Produtos.datasource" />
+    <None Include="Properties\DataSources\Form_Em_Branco.datasource" />
+    <None Include="Properties\DataSources\Idioma.datasource" />
+    <None Include="Properties\DataSources\InsertSolicitacoes.datasource" />
+    <None Include="Properties\DataSources\ItensSolicitacoes.datasource" />
+    <None Include="Properties\DataSources\LoginValidate.datasource" />
+    <None Include="Properties\DataSources\Obtem_Usuarios.datasource" />
+    <None Include="Properties\DataSources\Program.datasource" />
+    <None Include="Properties\DataSources\Request_System.Forms.Seus_Pedidos.datasource" />
+    <None Include="Properties\DataSources\Request_System.Forms.Stock_Main.datasource" />
+    <None Include="Properties\DataSources\Request_System.Forms.User_Main.datasource" />
+    <None Include="Properties\DataSources\Request_System.Properties.Resources.datasource" />
+    <None Include="Properties\DataSources\Request_System.Properties.Settings.datasource" />
+    <None Include="Properties\DataSources\returnItensSolicitacoes.datasource" />
+    <None Include="Properties\DataSources\returnItensSolicitacoesUsuario.datasource" />
+    <None Include="Properties\DataSources\ReturnProdutos.datasource" />
+    <None Include="Properties\DataSources\ReturnProviders.datasource" />
+    <None Include="Properties\DataSources\ReturnSolicitacoes.datasource" />
+    <None Include="Properties\DataSources\Return_NFes.datasource" />
+    <None Include="Properties\DataSources\Return_NFe_itens.datasource" />
+    <None Include="Properties\DataSources\Return_Produtos.datasource" />
+    <None Include="Properties\DataSources\Return_Providers.datasource" />
+    <None Include="Properties\DataSources\Return_Usuarios.datasource" />
+    <None Include="Properties\DataSources\User.datasource" />
+    <None Include="Properties\DataSources\Usuarios_view.datasource" />
+    <None Include="Properties\DataSources\ValidateUsers.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -94,8 +339,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

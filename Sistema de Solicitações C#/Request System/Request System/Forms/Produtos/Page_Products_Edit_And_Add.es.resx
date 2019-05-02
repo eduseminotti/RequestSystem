@@ -117,176 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LBL_User.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="LBL_User.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 17</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
   </data>
-  <data name="LBL_User.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Nombre del producto</value>
   </data>
-  <data name="LBL_User.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
   </data>
-  <data name="LBL_User.Text" xml:space="preserve">
-    <value>Usuario</value>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Tipo Unidad</value>
   </data>
-  <data name="&gt;&gt;LBL_User.Name" xml:space="preserve">
-    <value>LBL_User</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Código</value>
   </data>
-  <data name="&gt;&gt;LBL_User.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
   </data>
-  <data name="&gt;&gt;LBL_User.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Estatus</value>
   </data>
-  <data name="&gt;&gt;LBL_User.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="LBL_Pass.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LBL_Pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 70</value>
-  </data>
-  <data name="LBL_Pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 15</value>
-  </data>
-  <data name="LBL_Pass.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="LBL_Pass.Text" xml:space="preserve">
-    <value>Senha</value>
-  </data>
-  <data name="&gt;&gt;LBL_Pass.Name" xml:space="preserve">
-    <value>LBL_Pass</value>
-  </data>
-  <data name="&gt;&gt;LBL_Pass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LBL_Pass.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LBL_Pass.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="BTN_Entrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>135, 140</value>
-  </data>
-  <data name="BTN_Entrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 30</value>
-  </data>
-  <data name="BTN_Entrar.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="BTN_Entrar.Text" xml:space="preserve">
-    <value>Entrar</value>
-  </data>
-  <data name="&gt;&gt;BTN_Entrar.Name" xml:space="preserve">
-    <value>BTN_Entrar</value>
-  </data>
-  <data name="&gt;&gt;BTN_Entrar.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_Entrar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_Entrar.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>218, 2</value>
-  </data>
-  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="resource.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TXT_UserName_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 33</value>
-  </data>
-  <data name="TXT_UserName_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 30</value>
-  </data>
-  <data name="TXT_UserName_login.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="TXT_UserName_login.Text" xml:space="preserve">
-    <value>user1</value>
-  </data>
-  <data name="&gt;&gt;TXT_UserName_login.Name" xml:space="preserve">
-    <value>TXT_UserName_login</value>
-  </data>
-  <data name="&gt;&gt;TXT_UserName_login.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TXT_UserName_login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TXT_UserName_login.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
-    <value>218, 2</value>
-  </data>
-  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Visible1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TXT_Pass_login.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 85</value>
-  </data>
-  <data name="TXT_Pass_login.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 30</value>
-  </data>
-  <data name="TXT_Pass_login.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="TXT_Pass_login.Text" xml:space="preserve">
-    <value>123</value>
-  </data>
-  <data name="&gt;&gt;TXT_Pass_login.Name" xml:space="preserve">
-    <value>TXT_Pass_login</value>
-  </data>
-  <data name="&gt;&gt;TXT_Pass_login.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TXT_Pass_login.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TXT_Pass_login.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>279, 195</value>
+  <data name="BTN_Product_Salvar.Text" xml:space="preserve">
+    <value>Guardar</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3288,12 +3142,6 @@
 </value>
   </data>
   <data name="$this.Text" xml:space="preserve">
-    <value>Login</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>LoginValidate</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Adición y edición de productos</value>
   </data>
 </root>

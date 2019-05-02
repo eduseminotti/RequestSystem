@@ -1,0 +1,1302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ProductId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ProductId.HeaderText" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="productNameDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantidade Solicitada</value>
+  </data>
+  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantidade Aprovada</value>
+  </data>
+  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="quantidadeEstoqueDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantidade Estoque</value>
+  </data>
+  <data name="quantidadeEstoqueDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>145</value>
+  </data>
+  <data name="solicitationIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>SolicitationId</value>
+  </data>
+  <data name="solicitationIdDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="solicitationItemIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>SolicitationItemId</value>
+  </data>
+  <data name="solicitationItemIdDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="returnItensSolicitacoesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>270, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Grid_view_itens_solicitação.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11px</value>
+  </data>
+  <data name="Grid_view_itens_solicitação.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 186</value>
+  </data>
+  <data name="Grid_view_itens_solicitação.Size" type="System.Drawing.Size, System.Drawing">
+    <value>753, 241</value>
+  </data>
+  <data name="Grid_view_itens_solicitação.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Grid_view_itens_solicitação.Name" xml:space="preserve">
+    <value>Grid_view_itens_solicitação</value>
+  </data>
+  <data name="&gt;&gt;Grid_view_itens_solicitação.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroGrid, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;Grid_view_itens_solicitação.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Grid_view_itens_solicitação.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="CBX_Status_Solicitacao.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="CBX_Status_Solicitacao.ItemHeight" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="CBX_Status_Solicitacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>267, 25</value>
+  </data>
+  <data name="CBX_Status_Solicitacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 29</value>
+  </data>
+  <data name="CBX_Status_Solicitacao.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status_Solicitacao.Name" xml:space="preserve">
+    <value>CBX_Status_Solicitacao</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status_Solicitacao.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status_Solicitacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status_Solicitacao.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>268, 8</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Status da Solicitação</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="DT_Data_solicitacao.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DT_Data_solicitacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 24</value>
+  </data>
+  <data name="DT_Data_solicitacao.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 29</value>
+  </data>
+  <data name="DT_Data_solicitacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 29</value>
+  </data>
+  <data name="DT_Data_solicitacao.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_solicitacao.Name" xml:space="preserve">
+    <value>DT_Data_solicitacao</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_solicitacao.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_solicitacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_solicitacao.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>512, 8</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Data da Solicitação</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="DT_Data_Aprovacao.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DT_Data_Aprovacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="DT_Data_Aprovacao.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 29</value>
+  </data>
+  <data name="DT_Data_Aprovacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 29</value>
+  </data>
+  <data name="DT_Data_Aprovacao.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Aprovacao.Name" xml:space="preserve">
+    <value>DT_Data_Aprovacao</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Aprovacao.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Aprovacao.Parent" xml:space="preserve">
+    <value>GB_DataAprovacao</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Aprovacao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 9</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Data da Aprovação / Rejeição</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>GB_DataAprovacao</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DT_Data_Entrega.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="DT_Data_Entrega.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="DT_Data_Entrega.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 29</value>
+  </data>
+  <data name="DT_Data_Entrega.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 29</value>
+  </data>
+  <data name="DT_Data_Entrega.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Entrega.Name" xml:space="preserve">
+    <value>DT_Data_Entrega</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Entrega.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Entrega.Parent" xml:space="preserve">
+    <value>GB_DataEntrega</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Entrega.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 9</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Data da Entrega</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>GB_DataEntrega</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_Aprovar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 137</value>
+  </data>
+  <data name="BTN_Aprovar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Aprovar.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BTN_Aprovar.Text" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Aprovar.Name" xml:space="preserve">
+    <value>BTN_Aprovar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Aprovar.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Aprovar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Aprovar.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="BTN_Rejeitar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 137</value>
+  </data>
+  <data name="BTN_Rejeitar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Rejeitar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BTN_Rejeitar.Text" xml:space="preserve">
+    <value>Rejeitar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Rejeitar.Name" xml:space="preserve">
+    <value>BTN_Rejeitar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Rejeitar.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Rejeitar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Rejeitar.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="BTN_Entregar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 137</value>
+  </data>
+  <data name="BTN_Entregar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Entregar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="BTN_Entregar.Text" xml:space="preserve">
+    <value>Entregar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Entregar.Name" xml:space="preserve">
+    <value>BTN_Entregar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Entregar.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Entregar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Entregar.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="BTN_Editar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 146</value>
+  </data>
+  <data name="BTN_Editar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Editar.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="BTN_Editar.Text" xml:space="preserve">
+    <value>Editar Item</value>
+  </data>
+  <data name="&gt;&gt;BTN_Editar.Name" xml:space="preserve">
+    <value>BTN_Editar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Editar.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Editar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Editar.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="GB_DataAprovacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 125</value>
+  </data>
+  <data name="GB_DataAprovacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 58</value>
+  </data>
+  <data name="GB_DataAprovacao.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="GB_DataAprovacao.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_DataAprovacao.Name" xml:space="preserve">
+    <value>GB_DataAprovacao</value>
+  </data>
+  <data name="&gt;&gt;GB_DataAprovacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_DataAprovacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_DataAprovacao.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="GB_DataEntrega.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 125</value>
+  </data>
+  <data name="GB_DataEntrega.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 58</value>
+  </data>
+  <data name="GB_DataEntrega.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="GB_DataEntrega.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_DataEntrega.Name" xml:space="preserve">
+    <value>GB_DataEntrega</value>
+  </data>
+  <data name="&gt;&gt;GB_DataEntrega.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_DataEntrega.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_DataEntrega.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 2</value>
+  </data>
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_UsuarioSolicitante.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_UsuarioSolicitante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 24</value>
+  </data>
+  <data name="TXT_UsuarioSolicitante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 30</value>
+  </data>
+  <data name="TXT_UsuarioSolicitante.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TXT_UsuarioSolicitante.Name" xml:space="preserve">
+    <value>TXT_UsuarioSolicitante</value>
+  </data>
+  <data name="&gt;&gt;TXT_UsuarioSolicitante.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_UsuarioSolicitante.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TXT_UsuarioSolicitante.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 6</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Usuário Solicitante</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 71</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Motivo</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode1" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
+    <value>725, 2</value>
+  </data>
+  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible1" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_Motivo.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_Motivo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 89</value>
+  </data>
+  <data name="TXT_Motivo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>753, 30</value>
+  </data>
+  <data name="TXT_Motivo.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TXT_Motivo.Name" xml:space="preserve">
+    <value>TXT_Motivo</value>
+  </data>
+  <data name="&gt;&gt;TXT_Motivo.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_Motivo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TXT_Motivo.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="BTN_Fechar_tela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 434</value>
+  </data>
+  <data name="BTN_Fechar_tela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Fechar_tela.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="BTN_Fechar_tela.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.Name" xml:space="preserve">
+    <value>BTN_Fechar_tela</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BTN_Assinar_Entrega.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 140</value>
+  </data>
+  <data name="BTN_Assinar_Entrega.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 30</value>
+  </data>
+  <data name="BTN_Assinar_Entrega.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="BTN_Assinar_Entrega.Text" xml:space="preserve">
+    <value>Assinar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Assinar_Entrega.Name" xml:space="preserve">
+    <value>BTN_Assinar_Entrega</value>
+  </data>
+  <data name="&gt;&gt;BTN_Assinar_Entrega.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Assinar_Entrega.Parent" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;BTN_Assinar_Entrega.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_Cancelar_Login.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 140</value>
+  </data>
+  <data name="BTN_Cancelar_Login.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 30</value>
+  </data>
+  <data name="BTN_Cancelar_Login.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="BTN_Cancelar_Login.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancelar_Login.Name" xml:space="preserve">
+    <value>BTN_Cancelar_Login</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancelar_Login.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancelar_Login.Parent" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancelar_Login.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 75</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 21</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Usuário</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="resource.Image2" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode2" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location2" type="System.Drawing.Point, System.Drawing">
+    <value>208, 2</value>
+  </data>
+  <data name="resource.Size2" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="resource.TabIndex2" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible2" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_user_name.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_user_name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 37</value>
+  </data>
+  <data name="TXT_user_name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 30</value>
+  </data>
+  <data name="TXT_user_name.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;TXT_user_name.Name" xml:space="preserve">
+    <value>TXT_user_name</value>
+  </data>
+  <data name="&gt;&gt;TXT_user_name.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_user_name.Parent" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;TXT_user_name.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="resource.Image3" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode3" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location3" type="System.Drawing.Point, System.Drawing">
+    <value>208, 2</value>
+  </data>
+  <data name="resource.Size3" type="System.Drawing.Size, System.Drawing">
+    <value>25, 25</value>
+  </data>
+  <data name="resource.TabIndex3" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible3" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_Pass.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 91</value>
+  </data>
+  <data name="TXT_Pass.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 30</value>
+  </data>
+  <data name="TXT_Pass.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;TXT_Pass.Name" xml:space="preserve">
+    <value>TXT_Pass</value>
+  </data>
+  <data name="&gt;&gt;TXT_Pass.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_Pass.Parent" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;TXT_Pass.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="GB_valida_usuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 98</value>
+  </data>
+  <data name="GB_valida_usuario.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 191</value>
+  </data>
+  <data name="GB_valida_usuario.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="GB_valida_usuario.Text" xml:space="preserve">
+    <value>Validação Usuário</value>
+  </data>
+  <data name="GB_valida_usuario.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_valida_usuario.Name" xml:space="preserve">
+    <value>GB_valida_usuario</value>
+  </data>
+  <data name="&gt;&gt;GB_valida_usuario.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_valida_usuario.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_valida_usuario.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BTN_Cancel_QTD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 163</value>
+  </data>
+  <data name="BTN_Cancel_QTD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 30</value>
+  </data>
+  <data name="BTN_Cancel_QTD.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="BTN_Cancel_QTD.Text" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.Name" xml:space="preserve">
+    <value>BTN_Cancel_QTD</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="TXT_QTD_Aprovada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 135</value>
+  </data>
+  <data name="TXT_QTD_Aprovada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 20</value>
+  </data>
+  <data name="TXT_QTD_Aprovada.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.Name" xml:space="preserve">
+    <value>TXT_QTD_Aprovada</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 118</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Quantidade Aprovada</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 74</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Quantidade Solicitada</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 27</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="resource.Image4" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode4" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location4" type="System.Drawing.Point, System.Drawing">
+    <value>218, 1</value>
+  </data>
+  <data name="resource.Size4" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex4" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible4" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_qtd_solicitada.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_qtd_solicitada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>29, 90</value>
+  </data>
+  <data name="TXT_qtd_solicitada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 23</value>
+  </data>
+  <data name="TXT_qtd_solicitada.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.Name" xml:space="preserve">
+    <value>TXT_qtd_solicitada</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="resource.Image5" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode5" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location5" type="System.Drawing.Point, System.Drawing">
+    <value>219, 1</value>
+  </data>
+  <data name="resource.Size5" type="System.Drawing.Size, System.Drawing">
+    <value>21, 21</value>
+  </data>
+  <data name="resource.TabIndex5" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="resource.Visible5" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_Produto.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="TXT_Produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 43</value>
+  </data>
+  <data name="TXT_Produto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>241, 23</value>
+  </data>
+  <data name="TXT_Produto.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.Name" xml:space="preserve">
+    <value>TXT_Produto</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="BTN_Salvar_QTD.Location" type="System.Drawing.Point, System.Drawing">
+    <value>154, 163</value>
+  </data>
+  <data name="BTN_Salvar_QTD.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Salvar_QTD.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="BTN_Salvar_QTD.Text" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.Name" xml:space="preserve">
+    <value>BTN_Salvar_QTD</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Location" type="System.Drawing.Point, System.Drawing">
+    <value>218, 89</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 220</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Text" xml:space="preserve">
+    <value>Editar Quantidade</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.Name" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="solicitationIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SolicitationId</value>
+  </data>
+  <data name="solicitationIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="solicitationItemIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SolicitationItemId</value>
+  </data>
+  <data name="solicitationItemIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <metadata name="returnItensSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>778, 476</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edita Solicitações</value>
+  </data>
+  <data name="&gt;&gt;returnItensSolicitacoesBindingSource1.Name" xml:space="preserve">
+    <value>returnItensSolicitacoesBindingSource1</value>
+  </data>
+  <data name="&gt;&gt;returnItensSolicitacoesBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitationIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitationItemIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnItensSolicitacoesBindingSource.Name" xml:space="preserve">
+    <value>returnItensSolicitacoesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnItensSolicitacoesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductId.Name" xml:space="preserve">
+    <value>ProductId</value>
+  </data>
+  <data name="&gt;&gt;ProductId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>productNameDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeSolicitadaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>quantidadeSolicitadaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;quantidadeSolicitadaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeAprovadaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>quantidadeAprovadaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;quantidadeAprovadaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeEstoqueDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>quantidadeEstoqueDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;quantidadeEstoqueDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>solicitationIdDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>solicitationItemIdDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PageEditSolicitacoes</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

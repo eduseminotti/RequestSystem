@@ -117,7 +117,102 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Estado de la solicitud</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Fecha de la solicitud</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Fecha de aprobación / rechazo</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Fecha de la entrega</value>
+  </data>
+  <data name="BTN_Editar.Text" xml:space="preserve">
+    <value>Editar elemento</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>razón</value>
+  </data>
+  <data name="resource.ImeMode1" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BTN_Fechar_tela.Text" xml:space="preserve">
+    <value>Cierra</value>
+  </data>
+  <data name="GB_valida_usuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 116</value>
+  </data>
+  <data name="GB_valida_usuario.Text" xml:space="preserve">
+    <value>Validación del usuario</value>
+  </data>
+  <data name="BTN_Assinar_Entrega.Text" xml:space="preserve">
+    <value>Confirmar</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>contraseña</value>
+  </data>
+  <data name="resource.ImeMode2" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.ImeMode3" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Location" type="System.Drawing.Point, System.Drawing">
+    <value>227, 100</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Text" xml:space="preserve">
+    <value>Editar Cantidad </value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Cantidad aprobada</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Cantidad solicitada</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>producto</value>
+  </data>
+  <data name="resource.ImeMode4" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.ImeMode5" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BTN_Salvar_QTD.Text" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edita solicitudes</value>
   </data>
 </root>

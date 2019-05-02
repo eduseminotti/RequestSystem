@@ -117,7 +117,98 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BTN_Filter_limpar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 29</value>
+  </data>
+  <data name="BTN_Filter_limpar.Text" xml:space="preserve">
+    <value>Clean Filter</value>
+  </data>
+  <data name="BTN_Filter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>396, 29</value>
+  </data>
+  <data name="BTN_Filter.Text" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="TXT_Filter_CNPJ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 29</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 13</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>National Registration</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 13</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>36, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 12</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="TXT_Filter_Numero_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 29</value>
+  </data>
+  <data name="TXT_Filter_Serie_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 29</value>
+  </data>
+  <data name="groupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 37</value>
+  </data>
+  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>637, 67</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Filters</value>
+  </data>
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 26</value>
+  </data>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Invoices</value>
+  </data>
+  <data name="BTN_Gerar_PDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 74</value>
+  </data>
+  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
+    <value>Genarate PDF</value>
+  </data>
+  <data name="numberDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="seriesDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Series</value>
+  </data>
+  <data name="emissionDateDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Date Emission</value>
+  </data>
+  <data name="valueNFeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Value</value>
+  </data>
+  <data name="fantasyNameDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Fantasy Name</value>
+  </data>
+  <data name="cNPJDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>National Registration</value>
+  </data>
+  <data name="BTN_New_NFe.Text" xml:space="preserve">
+    <value>New Invoice</value>
+  </data>
+  <data name="BTN_Edit.Text" xml:space="preserve">
+    <value>Edit</value>
   </data>
 </root>

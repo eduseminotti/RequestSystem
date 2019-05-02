@@ -117,7 +117,135 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="MessageBox" xml:space="preserve">
-    <value>1</value>
+  <data name="ProductId.HeaderText" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantity Requested</value>
+  </data>
+  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantity Approved</value>
+  </data>
+  <data name="quantidadeEstoqueDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantity Stock</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Status Request</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Request date</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 13</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Date of Approval / Rejection</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Delivery date</value>
+  </data>
+  <data name="BTN_Editar.Text" xml:space="preserve">
+    <value>Edit Item</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Requester user</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="resource.ImeMode1" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BTN_Fechar_tela.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="GB_valida_usuario.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 89</value>
+  </data>
+  <data name="GB_valida_usuario.Text" xml:space="preserve">
+    <value>User Validation</value>
+  </data>
+  <data name="BTN_Assinar_Entrega.Text" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="BTN_Cancelar_Login.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Pass</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="resource.ImeMode2" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.ImeMode3" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 89</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Text" xml:space="preserve">
+    <value>Edit Item</value>
+  </data>
+  <data name="BTN_Cancel_QTD.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Quantity Approved</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Quantity Requested</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="resource.ImeMode4" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.ImeMode5" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BTN_Salvar_QTD.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Requests</value>
   </data>
 </root>

@@ -156,7 +156,7 @@ namespace Request_System
         {
             _objForm.Close();
 
-            _objForm = new Request_System.Usuarios_view
+            _objForm = new Request_System.Usuarios_view(idioma)
             {
                 TopLevel = false,
                 Dock = DockStyle.Fill

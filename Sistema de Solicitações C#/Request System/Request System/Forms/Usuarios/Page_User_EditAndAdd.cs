@@ -16,15 +16,13 @@ namespace Request_System
         String password;
         UserType type;
         UserIsactive isActive;
-        UserIdioma idioma;
+        UserIdioma idioma, userLoginIdioma;
         bool saveUserOk, isNew;
 
         ManipulaUsuarios Manipula_Usuarios = new ManipulaUsuarios();
-        // Usuarios_view Usuarios_view = new Usuarios_view();
-
         List<Return_Usuarios> usuarios;
 
-        public PageUserEditandAdd(bool IsNew, String SelectUserName)
+        public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma)
         {
             InitializeComponent();
             isNew = IsNew;
@@ -32,6 +30,8 @@ namespace Request_System
             CBX_IDIOMA.DataSource = Enum.GetValues(typeof(UserIdioma));
             CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
             CBX_TYPE.DataSource = Enum.GetValues(typeof(UserType));
+
+            userLoginIdioma = UserLoginIdioma;
 
             if (!isNew)//Editar usuario
             {
@@ -51,14 +51,7 @@ namespace Request_System
                 }
             }
         }
-        private void BTN_User_Salvar_Click(object sender, EventArgs e)
-        {
-        
-        }
-        private void BTN_User_Cancel_Click(object sender, EventArgs e)
-        {
- 
-        }
+
         private void CBX_IDIOMA_SelectedIndexChanged(object sender, EventArgs e)
         {
             CBX_IDIOMA.BackColor = Color.White;
@@ -98,7 +91,7 @@ namespace Request_System
 
         private void BTN_UserSalvar_Click(object sender, EventArgs e)
         {
-           // //captura textos dos campos
+            // //captura textos dos campos
             name = TXT_Nome.Text.ToString();
             email = TXT_Email.Text.ToString();
             cPF = TXT_CPF.Text.ToString();
@@ -111,7 +104,7 @@ namespace Request_System
 
 
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || cPF == "" || setor == "" || userName == "" ||
+            if (name == "" || cPF == "" || setor == "" || userName == "" || email == "" ||
                 password == "" || isActive == 0 || type == 0 || idioma == 0)
             {
                 if (name == "")
@@ -120,18 +113,25 @@ namespace Request_System
                     TXT_CPF.BackColor = Color.OrangeRed;
                 if (setor == "")
                     TXT_Setor.BackColor = Color.OrangeRed;
+                if (email == "")
+                    TXT_Email.BackColor = Color.OrangeRed;
                 if (userName == "")
                     TXT_Usuario.BackColor = Color.OrangeRed;
                 if (password == "")
                     TXT_Password.BackColor = Color.OrangeRed;
-                if (isActive == 0)
+                if (isActive == UserIsactive._)
                     CBX_Status.BackColor = Color.OrangeRed;
-                if (idioma == 0)
+                if (idioma == UserIdioma._)
                     CBX_IDIOMA.BackColor = Color.OrangeRed;
-                if (type == 0)
+                if (type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
 
-                MessageBox.Show("Informe uma opção valida!");
+                if (userLoginIdioma == UserIdioma.Portugues)
+                    MessageBox.Show("Informe uma opção valida!");
+                if (userLoginIdioma == UserIdioma.Ingles)
+                    MessageBox.Show("Please enter a valid option!");
+                if (userLoginIdioma == UserIdioma.Espanhol)
+                    MessageBox.Show("Introduzca una opción válida!");
                 return;
             }
 
@@ -144,7 +144,13 @@ namespace Request_System
                 {
                     TXT_Usuario.BackColor = Color.OrangeRed;
                     TXT_Usuario.Focus();
-                    MessageBox.Show("Usuario ja Existe, Informe um nome de usuario diferente!");
+
+                    if (userLoginIdioma == UserIdioma.Portugues)
+                        MessageBox.Show("Usuario ja Existe, Informe um nome de usuario diferente!");
+                    if (userLoginIdioma == UserIdioma.Ingles)
+                        MessageBox.Show("User already exists, Please enter a different username!");
+                    if (userLoginIdioma == UserIdioma.Espanhol)
+                        MessageBox.Show("El usuario ya existe, introduzca un nombre de usuario diferente!");
                 }
                 else// se nao existe cadastra
                 {
@@ -152,7 +158,14 @@ namespace Request_System
 
                     this.Close();
                     if (saveUserOk)
-                        MessageBox.Show("Usuario Adicionado com Sucesso!");
+                    {
+                        if (userLoginIdioma == UserIdioma.Portugues)
+                            MessageBox.Show("Usuario Adicionado com Sucesso!");
+                        if (userLoginIdioma == UserIdioma.Ingles)
+                            MessageBox.Show("Successfully Added User!");
+                        if (userLoginIdioma == UserIdioma.Espanhol)
+                            MessageBox.Show("Usuario agregado con éxito!");
+                    }
                 }
             }
             //edição de usuario
@@ -160,7 +173,13 @@ namespace Request_System
             {
                 saveUserOk = Manipula_Usuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive, idioma);
                 this.Close();
-                MessageBox.Show("Usuario Editado com Sucesso!");
+
+                if (userLoginIdioma == UserIdioma.Portugues)
+                    MessageBox.Show("Usuario Editado com Sucesso!");
+                if (userLoginIdioma == UserIdioma.Ingles)
+                    MessageBox.Show("User Edited Successfully!");
+                if (userLoginIdioma == UserIdioma.Espanhol)
+                    MessageBox.Show("Usuario Editado con Éxito!");
             }
         }
 
@@ -168,9 +187,6 @@ namespace Request_System
         {
             this.Close();
         }
-
-
-
         private void Usuarios_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

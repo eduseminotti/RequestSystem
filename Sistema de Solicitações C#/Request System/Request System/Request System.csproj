@@ -267,6 +267,12 @@
     <EmbeddedResource Include="Forms\Solicitacoes\Solicitacoes.resx">
       <DependentUpon>Solicitacoes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Page_User_EditAndAdd.en.resx">
+      <DependentUpon>Page_User_EditAndAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Usuarios\Page_User_EditAndAdd.es.resx">
+      <DependentUpon>Page_User_EditAndAdd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Usuarios\Page_User_EditAndAdd.resx">
       <DependentUpon>Page_User_EditAndAdd.cs</DependentUpon>
     </EmbeddedResource>

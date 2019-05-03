@@ -6,15 +6,19 @@ namespace Request_System
 {
     public partial class Usuarios_view : Form
     {
+        UserIdioma idioma;
+
         List<Return_Usuarios> usuarios;
         ManipulaUsuarios ObterUsers = new ManipulaUsuarios();
         String selectedUserName;
         PageUserEditandAdd PageUserAdd;
 
-        public Usuarios_view()
+        public Usuarios_view(UserIdioma Idioma)
         {
             InitializeComponent();
             CBX_Filter_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
+
+            idioma = Idioma;
         }
 
         private void Usuarios_Load(object sender, EventArgs e)

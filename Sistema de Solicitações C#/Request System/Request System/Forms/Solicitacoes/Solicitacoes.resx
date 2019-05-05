@@ -117,398 +117,193 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="BTN_Gerar_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 80</value>
-  </data>
-  <data name="&gt;&gt;LBL_Usuarios.Name" xml:space="preserve">
-    <value>LBL_Usuarios</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtrar.Parent" xml:space="preserve">
-    <value>GB_filtros</value>
-  </data>
-  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filtro_Status.Name" xml:space="preserve">
-    <value>CBX_Filtro_Status</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BTN_Ver_Solicitacao.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>solicitationStatusDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="GB_filtros.Location" type="System.Drawing.Point, System.Drawing">
-    <value>407, 50</value>
-  </data>
-  <data name="BTN_Ver_Solicitacao.Text" xml:space="preserve">
-    <value>Ver Solicitação</value>
-  </data>
-  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dataSolicitacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>130</value>
-  </data>
-  <data name="resource.ImageIndex" type="System.Int32, mscorlib">
-    <value>-1</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 26</value>
-  </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;UserApproverName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="dataRetiradaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="&gt;&gt;UserRequesterId.Name" xml:space="preserve">
-    <value>UserRequesterId</value>
-  </data>
-  <data name="&gt;&gt;LBL_Usuarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="TXT_Filtro_Nome.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
-    <value>Gerar PDF</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filtro_Status.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="BTN_Filtrar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>340, 30</value>
-  </data>
-  <data name="resource.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;GB_filtros.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataAprovacaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtrar.Name" xml:space="preserve">
-    <value>BTN_Filtrar</value>
-  </data>
-  <data name="dataSolicitacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data da Solicitação</value>
-  </data>
-  <data name="UserRequesterId.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="dataRetiradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data Retirada</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;returnSolicitacoesBindingSource.Name" xml:space="preserve">
-    <value>returnSolicitacoesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;SolicitatonId.Name" xml:space="preserve">
-    <value>SolicitatonId</value>
-  </data>
   <data name="LBL_Usuarios.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="LBL_Usuarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.25pt</value>
   </data>
   <data name="LBL_Usuarios.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 7</value>
   </data>
-  <data name="CBX_Filtro_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 29</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filtro_Nome.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="resource.ImageKey" xml:space="preserve">
-    <value />
-  </data>
-  <data name="BTN_LIMPAR_FILTRO.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="resource.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left</value>
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 26</value>
   </data>
   <data name="LBL_Usuarios.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="&gt;&gt;BTN_Ver_Solicitacao.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Pedidos</value>
   </data>
-  <data name="&gt;&gt;returnSolicitacoesBindingSource1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;LBL_Usuarios.Name" xml:space="preserve">
+    <value>LBL_Usuarios</value>
   </data>
-  <data name="&gt;&gt;Status.Parent" xml:space="preserve">
-    <value>GB_filtros</value>
-  </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>GB_filtros</value>
-  </data>
-  <data name="&gt;&gt;GB_filtros.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="resource.AccessibleDescription" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="&gt;&gt;SolicitatonId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GRID_View_Solicitacoes.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroGrid, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_Ver_Solicitacao.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtrar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;GB_filtros.Name" xml:space="preserve">
-    <value>GB_filtros</value>
-  </data>
-  <data name="&gt;&gt;Status.Name" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="UserApproverName.HeaderText" xml:space="preserve">
-    <value>Usuário Aprovação</value>
-  </data>
-  <data name="CBX_Filtro_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>174, 30</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 14</value>
-  </data>
-  <data name="UserRequesterName.HeaderText" xml:space="preserve">
-    <value>Usuário Solicitante</value>
-  </data>
-  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 1</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Solicitacoes</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filtro_Nome.Name" xml:space="preserve">
-    <value>TXT_Filtro_Nome</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Name" xml:space="preserve">
-    <value>BTN_Gerar_PDF</value>
-  </data>
-  <data name="BTN_LIMPAR_FILTRO.Location" type="System.Drawing.Point, System.Drawing">
-    <value>461, 30</value>
-  </data>
-  <data name="BTN_Filtrar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 29</value>
-  </data>
-  <data name="TXT_Filtro_Nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 30</value>
-  </data>
-  <data name="dataAprovacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Data Aprovação/Rejeição</value>
-  </data>
-  <data name="resource.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="Status.Text" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataRetiradaDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="resource.AccessibleName" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="SolicitatonId.HeaderText" xml:space="preserve">
-    <value>Código</value>
-  </data>
-  <data name="CBX_Filtro_Status.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="resource.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowOnly</value>
-  </data>
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;UserRequesterId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtrar.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="GB_filtros.Size" type="System.Drawing.Size, System.Drawing">
-    <value>584, 63</value>
-  </data>
-  <data name="resource.MaximumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="&gt;&gt;GRID_View_Solicitacoes.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;returnSolicitacoesBindingSource1.Name" xml:space="preserve">
-    <value>returnSolicitacoesBindingSource1</value>
-  </data>
-  <data name="GB_filtros.Text" xml:space="preserve">
-    <value>Filtros</value>
-  </data>
-  <data name="CBX_Filtro_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="resource.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="resource.Font" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Solicitacoes</value>
-  </data>
-  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="resource.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>dataSolicitacaoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.Name" xml:space="preserve">
-    <value>BTN_LIMPAR_FILTRO</value>
-  </data>
-  <data name="Status.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;GRID_View_Solicitacoes.Name" xml:space="preserve">
-    <value>GRID_View_Solicitacoes</value>
-  </data>
-  <data name="&gt;&gt;UserRequesterName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filtro_Nome.Parent" xml:space="preserve">
-    <value>GB_filtros</value>
-  </data>
-  <data name="&gt;&gt;GRID_View_Solicitacoes.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filtro_Status.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;Status.Type" xml:space="preserve">
+  <data name="&gt;&gt;LBL_Usuarios.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;LBL_Usuarios.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;GB_filtros.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TXT_Filtro_Nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 29</value>
-  </data>
-  <data name="&gt;&gt;UserRequesterName.Name" xml:space="preserve">
-    <value>UserRequesterName</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filtro_Nome.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;returnSolicitacoesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="GRID_View_Solicitacoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 119</value>
-  </data>
-  <data name="LBL_Usuarios.Text" xml:space="preserve">
-    <value>Pedidos</value>
-  </data>
-  <data name="BTN_Filtrar.Text" xml:space="preserve">
-    <value>Filtrar</value>
-  </data>
-  <data name="&gt;&gt;BTN_Ver_Solicitacao.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="LBL_Usuarios.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16.25pt</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 13</value>
-  </data>
-  <data name="BTN_Ver_Solicitacao.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
   <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="UserApproverName.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="resource.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>Overlay</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Usuario Solicitante</value>
   </data>
   <data name="BTN_Ver_Solicitacao.Location" type="System.Drawing.Point, System.Drawing">
     <value>876, 7</value>
   </data>
+  <data name="BTN_Ver_Solicitacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Ver_Solicitacao.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="BTN_Ver_Solicitacao.Text" xml:space="preserve">
+    <value>Ver Solicitação</value>
+  </data>
+  <data name="&gt;&gt;BTN_Ver_Solicitacao.Name" xml:space="preserve">
+    <value>BTN_Ver_Solicitacao</value>
+  </data>
+  <data name="&gt;&gt;BTN_Ver_Solicitacao.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Ver_Solicitacao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Ver_Solicitacao.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="SolicitatonId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="SolicitatonId.HeaderText" xml:space="preserve">
+    <value>Código</value>
+  </data>
+  <metadata name="UserRequesterName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="UserRequesterName.HeaderText" xml:space="preserve">
+    <value>Usuário Solicitante</value>
+  </data>
   <data name="UserRequesterName.Width" type="System.Int32, mscorlib">
     <value>145</value>
   </data>
-  <data name="BTN_LIMPAR_FILTRO.Text" xml:space="preserve">
-    <value>Limpar</value>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data da Solicitação</value>
   </data>
-  <data name="GRID_View_Solicitacoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>987, 369</value>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <metadata name="UserApproverName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="UserApproverName.HeaderText" xml:space="preserve">
+    <value>Usuário Aprovação</value>
+  </data>
+  <data name="UserApproverName.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="dataAprovacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data Aprovação/Rejeição</value>
   </data>
   <data name="dataAprovacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>150</value>
   </data>
+  <data name="dataRetiradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data Retirada</value>
+  </data>
+  <data name="dataRetiradaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="solicitationStatusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <metadata name="UserRequesterId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="UserRequesterId.HeaderText" xml:space="preserve">
+    <value>UserRequesterId</value>
+  </data>
+  <data name="UserRequesterId.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="returnSolicitacoesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>244, 17</value>
+  </metadata>
+  <data name="GRID_View_Solicitacoes.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11px</value>
+  </data>
+  <data name="GRID_View_Solicitacoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 119</value>
+  </data>
+  <data name="GRID_View_Solicitacoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>987, 291</value>
+  </data>
+  <data name="GRID_View_Solicitacoes.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;GRID_View_Solicitacoes.Name" xml:space="preserve">
+    <value>GRID_View_Solicitacoes</value>
+  </data>
+  <data name="&gt;&gt;GRID_View_Solicitacoes.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroGrid, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;GRID_View_Solicitacoes.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GRID_View_Solicitacoes.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BTN_Filtrar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 30</value>
+  </data>
+  <data name="BTN_Filtrar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 29</value>
+  </data>
   <data name="BTN_Filtrar.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1003, 500</value>
+  <data name="BTN_Filtrar.Text" xml:space="preserve">
+    <value>Filtrar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Filtrar.Name" xml:space="preserve">
+    <value>BTN_Filtrar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Filtrar.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Filtrar.Parent" xml:space="preserve">
+    <value>GB_filtros</value>
+  </data>
+  <data name="&gt;&gt;BTN_Filtrar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_LIMPAR_FILTRO.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 30</value>
+  </data>
+  <data name="BTN_LIMPAR_FILTRO.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 29</value>
+  </data>
+  <data name="BTN_LIMPAR_FILTRO.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="BTN_LIMPAR_FILTRO.Text" xml:space="preserve">
+    <value>Limpar</value>
+  </data>
+  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.Name" xml:space="preserve">
+    <value>BTN_LIMPAR_FILTRO</value>
+  </data>
+  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.Parent" xml:space="preserve">
+    <value>GB_filtros</value>
+  </data>
+  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>171, 14</value>
@@ -516,91 +311,245 @@
   <data name="Status.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
   </data>
-  <data name="&gt;&gt;BTN_Ver_Solicitacao.Name" xml:space="preserve">
-    <value>BTN_Ver_Solicitacao</value>
+  <data name="Status.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;UserApproverName.Name" xml:space="preserve">
-    <value>UserApproverName</value>
+  <data name="Status.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;Status.Name" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="&gt;&gt;Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Status.Parent" xml:space="preserve">
+    <value>GB_filtros</value>
   </data>
   <data name="&gt;&gt;Status.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="resource.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
-    <value>Inherit</value>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 14</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Usuario Solicitante</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>GB_filtros</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 1</value>
   </data>
   <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 27</value>
   </data>
-  <data name="GRID_View_Solicitacoes.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.Parent" xml:space="preserve">
-    <value>GB_filtros</value>
-  </data>
-  <data name="resource.AutoSize" type="System.Boolean, mscorlib">
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="solicitationStatusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Status</value>
+  <data name="TXT_Filtro_Nome.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 30</value>
   </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="TXT_Filtro_Nome.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 29</value>
   </data>
-  <data name="UserRequesterId.HeaderText" xml:space="preserve">
-    <value>UserRequesterId</value>
+  <data name="TXT_Filtro_Nome.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
-  <data name="GB_filtros.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;TXT_Filtro_Nome.Name" xml:space="preserve">
+    <value>TXT_Filtro_Nome</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filtro_Nome.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filtro_Nome.Parent" xml:space="preserve">
+    <value>GB_filtros</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filtro_Nome.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CBX_Filtro_Status.ItemHeight" type="System.Int32, mscorlib">
     <value>23</value>
   </data>
-  <data name="BTN_LIMPAR_FILTRO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 29</value>
+  <data name="CBX_Filtro_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>174, 30</value>
+  </data>
+  <data name="CBX_Filtro_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 29</value>
+  </data>
+  <data name="CBX_Filtro_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;CBX_Filtro_Status.Name" xml:space="preserve">
+    <value>CBX_Filtro_Status</value>
+  </data>
+  <data name="&gt;&gt;CBX_Filtro_Status.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;CBX_Filtro_Status.Parent" xml:space="preserve">
     <value>GB_filtros</value>
   </data>
-  <data name="resource.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Standard</value>
+  <data name="&gt;&gt;CBX_Filtro_Status.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
-  <data name="Status.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="GB_filtros.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 50</value>
   </data>
-  <data name="resource.BackgroundImage" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
+  <data name="GB_filtros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>584, 63</value>
   </data>
-  <data name="resource.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Tile</value>
+  <data name="GB_filtros.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="GB_filtros.Text" xml:space="preserve">
+    <value>Filtros</value>
+  </data>
+  <data name="&gt;&gt;GB_filtros.Name" xml:space="preserve">
+    <value>GB_filtros</value>
+  </data>
+  <data name="&gt;&gt;GB_filtros.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_filtros.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_filtros.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="returnSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="BTN_Gerar_PDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 80</value>
+  </data>
+  <data name="BTN_Gerar_PDF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
   </data>
   <data name="BTN_Gerar_PDF.TabIndex" type="System.Int32, mscorlib">
     <value>24</value>
   </data>
-  <data name="GRID_View_Solicitacoes.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11px</value>
+  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
+    <value>Gerar PDF</value>
   </data>
-  <data name="&gt;&gt;BTN_LIMPAR_FILTRO.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;BTN_Gerar_PDF.Name" xml:space="preserve">
+    <value>BTN_Gerar_PDF</value>
   </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
-  </metadata>
-  <metadata name="returnSolicitacoesBindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>244, 17</value>
-  </metadata>
+  <data name="&gt;&gt;BTN_Gerar_PDF.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Gerar_PDF.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Gerar_PDF.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="UserRequesterId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
   </metadata>
-  <metadata name="returnSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="UserRequesterName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="SolicitatonId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="UserApproverName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1003, 500</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Solicitacoes</value>
+  </data>
+  <data name="&gt;&gt;SolicitatonId.Name" xml:space="preserve">
+    <value>SolicitatonId</value>
+  </data>
+  <data name="&gt;&gt;SolicitatonId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserRequesterName.Name" xml:space="preserve">
+    <value>UserRequesterName</value>
+  </data>
+  <data name="&gt;&gt;UserRequesterName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataSolicitacaoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserApproverName.Name" xml:space="preserve">
+    <value>UserApproverName</value>
+  </data>
+  <data name="&gt;&gt;UserApproverName.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataAprovacaoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataRetiradaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitationStatusDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserRequesterId.Name" xml:space="preserve">
+    <value>UserRequesterId</value>
+  </data>
+  <data name="&gt;&gt;UserRequesterId.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesBindingSource1.Name" xml:space="preserve">
+    <value>returnSolicitacoesBindingSource1</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesBindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesBindingSource.Name" xml:space="preserve">
+    <value>returnSolicitacoesBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Solicitacoes</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

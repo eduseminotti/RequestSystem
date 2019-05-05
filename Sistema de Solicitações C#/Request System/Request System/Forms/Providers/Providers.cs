@@ -12,6 +12,8 @@ namespace Request_System
     {
         List<ReturnProviders> Providers;
         ManipulaFornecedores obterProviders = new ManipulaFornecedores();
+        GeradorDePDFGrid GeradorDePDF = new GeradorDePDFGrid();
+
         int selectProviderID;
 
         public Providers_View()
@@ -34,7 +36,7 @@ namespace Request_System
             else
             {
                 TXT_Filter_Codigo.BackColor = Color.OrangeRed;                                        
-                MessageBox.Show("Apenas numeros");
+                MessageBox.Show("0,1,2,3...");
             }
         }
 
@@ -91,6 +93,11 @@ namespace Request_System
 
             Providers = obterProviders.GetProviders(0, null, null);
             GRID_View_Providers.DataSource = Providers;
+        }
+
+        private void BTN_Gerar_PDF_Click(object sender, EventArgs e)
+        {
+            GeradorDePDF.gerarPDF(GRID_View_Providers, "Fornecedores");
         }
     }
 }

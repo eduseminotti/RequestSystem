@@ -74,7 +74,6 @@
             // 
             // GRID_View_Solicitacoes
             // 
-            resources.ApplyResources(this.GRID_View_Solicitacoes, "GRID_View_Solicitacoes");
             this.GRID_View_Solicitacoes.AllowUserToResizeRows = false;
             this.GRID_View_Solicitacoes.AutoGenerateColumns = false;
             this.GRID_View_Solicitacoes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -109,6 +108,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GRID_View_Solicitacoes.DefaultCellStyle = dataGridViewCellStyle2;
             this.GRID_View_Solicitacoes.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.GRID_View_Solicitacoes, "GRID_View_Solicitacoes");
             this.GRID_View_Solicitacoes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_View_Solicitacoes.Name = "GRID_View_Solicitacoes";
             this.GRID_View_Solicitacoes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -184,13 +184,13 @@
             // 
             // GB_filtros
             // 
-            resources.ApplyResources(this.GB_filtros, "GB_filtros");
             this.GB_filtros.Controls.Add(this.BTN_Filtrar);
             this.GB_filtros.Controls.Add(this.BTN_LIMPAR_FILTRO);
             this.GB_filtros.Controls.Add(this.Status);
             this.GB_filtros.Controls.Add(this.label1);
             this.GB_filtros.Controls.Add(this.TXT_Filtro_Nome);
             this.GB_filtros.Controls.Add(this.CBX_Filtro_Status);
+            resources.ApplyResources(this.GB_filtros, "GB_filtros");
             this.GB_filtros.Name = "GB_filtros";
             this.GB_filtros.TabStop = false;
             // 
@@ -220,38 +220,21 @@
             // 
             // TXT_Filtro_Nome
             // 
-            resources.ApplyResources(this.TXT_Filtro_Nome, "TXT_Filtro_Nome");
             // 
             // 
             // 
-            this.TXT_Filtro_Nome.CustomButton.AccessibleDescription = resources.GetString("resource.AccessibleDescription");
-            this.TXT_Filtro_Nome.CustomButton.AccessibleName = resources.GetString("resource.AccessibleName");
-            this.TXT_Filtro_Nome.CustomButton.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("resource.Anchor")));
-            this.TXT_Filtro_Nome.CustomButton.AutoSize = ((bool)(resources.GetObject("resource.AutoSize")));
-            this.TXT_Filtro_Nome.CustomButton.AutoSizeMode = ((System.Windows.Forms.AutoSizeMode)(resources.GetObject("resource.AutoSizeMode")));
-            this.TXT_Filtro_Nome.CustomButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource.BackgroundImage")));
-            this.TXT_Filtro_Nome.CustomButton.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("resource.BackgroundImageLayout")));
-            this.TXT_Filtro_Nome.CustomButton.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("resource.Dock")));
-            this.TXT_Filtro_Nome.CustomButton.FlatStyle = ((System.Windows.Forms.FlatStyle)(resources.GetObject("resource.FlatStyle")));
-            this.TXT_Filtro_Nome.CustomButton.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font")));
             this.TXT_Filtro_Nome.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.TXT_Filtro_Nome.CustomButton.ImageAlign = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.ImageAlign")));
-            this.TXT_Filtro_Nome.CustomButton.ImageIndex = ((int)(resources.GetObject("resource.ImageIndex")));
-            this.TXT_Filtro_Nome.CustomButton.ImageKey = resources.GetString("resource.ImageKey");
             this.TXT_Filtro_Nome.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
             this.TXT_Filtro_Nome.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.TXT_Filtro_Nome.CustomButton.MaximumSize = ((System.Drawing.Size)(resources.GetObject("resource.MaximumSize")));
             this.TXT_Filtro_Nome.CustomButton.Name = "";
-            this.TXT_Filtro_Nome.CustomButton.RightToLeft = ((System.Windows.Forms.RightToLeft)(resources.GetObject("resource.RightToLeft")));
             this.TXT_Filtro_Nome.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
             this.TXT_Filtro_Nome.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TXT_Filtro_Nome.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.TXT_Filtro_Nome.CustomButton.TextAlign = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.TextAlign")));
-            this.TXT_Filtro_Nome.CustomButton.TextImageRelation = ((System.Windows.Forms.TextImageRelation)(resources.GetObject("resource.TextImageRelation")));
             this.TXT_Filtro_Nome.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TXT_Filtro_Nome.CustomButton.UseSelectable = true;
             this.TXT_Filtro_Nome.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
             this.TXT_Filtro_Nome.Lines = new string[0];
+            resources.ApplyResources(this.TXT_Filtro_Nome, "TXT_Filtro_Nome");
             this.TXT_Filtro_Nome.MaxLength = 32767;
             this.TXT_Filtro_Nome.Name = "TXT_Filtro_Nome";
             this.TXT_Filtro_Nome.PasswordChar = '\0';
@@ -267,8 +250,8 @@
             // 
             // CBX_Filtro_Status
             // 
-            resources.ApplyResources(this.CBX_Filtro_Status, "CBX_Filtro_Status");
             this.CBX_Filtro_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Filtro_Status, "CBX_Filtro_Status");
             this.CBX_Filtro_Status.Name = "CBX_Filtro_Status";
             this.CBX_Filtro_Status.UseSelectable = true;
             this.CBX_Filtro_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filtro_Status_SelectedIndexChanged);

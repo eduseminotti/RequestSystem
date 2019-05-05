@@ -169,4 +169,7 @@
   <data name="BTN_NewProvider.Text" xml:space="preserve">
     <value>New Provider</value>
   </data>
+  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
+    <value>Generate PDF</value>
+  </data>
 </root>

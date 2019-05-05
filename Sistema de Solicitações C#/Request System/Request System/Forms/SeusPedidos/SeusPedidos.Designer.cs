@@ -57,12 +57,12 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.CBX_Status_Pedido);
             this.groupBox1.Controls.Add(this.BTN_Limpar);
             this.groupBox1.Controls.Add(this.BTN_Filtrar);
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -73,8 +73,8 @@
             // 
             // CBX_Status_Pedido
             // 
-            this.CBX_Status_Pedido.FormattingEnabled = true;
             resources.ApplyResources(this.CBX_Status_Pedido, "CBX_Status_Pedido");
+            this.CBX_Status_Pedido.FormattingEnabled = true;
             this.CBX_Status_Pedido.Name = "CBX_Status_Pedido";
             this.CBX_Status_Pedido.UseSelectable = true;
             this.CBX_Status_Pedido.SelectedIndexChanged += new System.EventHandler(this.CBX_Status_Produto_SelectedIndexChanged);
@@ -107,6 +107,7 @@
             // 
             // Grid_Solicitacoes
             // 
+            resources.ApplyResources(this.Grid_Solicitacoes, "Grid_Solicitacoes");
             this.Grid_Solicitacoes.AllowUserToResizeRows = false;
             this.Grid_Solicitacoes.AutoGenerateColumns = false;
             this.Grid_Solicitacoes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -138,7 +139,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Grid_Solicitacoes.DefaultCellStyle = dataGridViewCellStyle2;
             this.Grid_Solicitacoes.EnableHeadersVisualStyles = false;
-            resources.ApplyResources(this.Grid_Solicitacoes, "Grid_Solicitacoes");
             this.Grid_Solicitacoes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Grid_Solicitacoes.Name = "Grid_Solicitacoes";
             this.Grid_Solicitacoes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

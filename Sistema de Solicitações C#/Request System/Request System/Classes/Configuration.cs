@@ -8,6 +8,6 @@ namespace Request_System
 {
     class Configuration
     {
-        public String connectionString = "ndd";
+        public String connectionString = "casa";
     }
 }

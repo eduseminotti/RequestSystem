@@ -117,14 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="TXT_Email.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+  <data name="&gt;&gt;CBX_TYPE.Name" xml:space="preserve">
+    <value>CBX_TYPE</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="CBX_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
-  </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
   </data>
@@ -140,6 +136,7 @@
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TXT_Email.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -148,6 +145,9 @@
   </data>
   <data name="&gt;&gt;TXT_CPF.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
   </data>
   <data name="&gt;&gt;CBX_IDIOMA.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -176,6 +176,9 @@
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 13</value>
   </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;label3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
@@ -197,8 +200,8 @@
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;BTN_UserSalvar.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="&gt;&gt;label10.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -208,9 +211,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Edição de Usuario</value>
-  </data>
-  <data name="TXT_Setor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>16</value>
@@ -245,9 +245,6 @@
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
   </data>
-  <data name="&gt;&gt;TXT_Password.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="TXT_Email.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 29</value>
   </data>
@@ -266,8 +263,14 @@
   <data name="label5.Text" xml:space="preserve">
     <value>Setor</value>
   </data>
+  <data name="&gt;&gt;BTN_UserCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="&gt;&gt;TXT_Email.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -290,6 +293,9 @@
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
+  <data name="&gt;&gt;TXT_Nome.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
   <data name="TXT_Setor.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 118</value>
   </data>
@@ -302,14 +308,11 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Idioma</value>
   </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+  <data name="CBX_IDIOMA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 29</value>
   </data>
   <data name="&gt;&gt;TXT_CPF.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
   </data>
   <data name="TXT_Setor.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -338,17 +341,11 @@
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>PageUserEditandAdd</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>524, 329</value>
-  </data>
   <data name="&gt;&gt;label4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BTN_UserSalvar.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CBX_TYPE.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
     <value>13</value>
@@ -362,14 +359,11 @@
   <data name="&gt;&gt;CBX_IDIOMA.Name" xml:space="preserve">
     <value>CBX_IDIOMA</value>
   </data>
-  <data name="&gt;&gt;CBX_TYPE.Name" xml:space="preserve">
-    <value>CBX_TYPE</value>
-  </data>
-  <data name="CBX_Status.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
   <data name="BTN_UserSalvar.TabIndex" type="System.Int32, mscorlib">
     <value>23</value>
+  </data>
+  <data name="TXT_Email.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
   <data name="TXT_CPF.Mask" xml:space="preserve">
     <value>000,000,000-00</value>
@@ -411,9 +405,6 @@
   <data name="&gt;&gt;label9.Name" xml:space="preserve">
     <value>label9</value>
   </data>
-  <data name="TXT_CPF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 20</value>
-  </data>
   <data name="&gt;&gt;CBX_Status.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
@@ -429,6 +420,9 @@
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="&gt;&gt;BTN_UserSalvar.Name" xml:space="preserve">
+    <value>BTN_UserSalvar</value>
+  </data>
   <data name="&gt;&gt;TXT_Setor.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
@@ -440,9 +434,6 @@
   </data>
   <data name="BTN_UserCancel.Text" xml:space="preserve">
     <value>Cancelar</value>
-  </data>
-  <data name="&gt;&gt;BTN_UserSalvar.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="label10.Text" xml:space="preserve">
     <value>Status</value>
@@ -456,17 +447,17 @@
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
-  <data name="&gt;&gt;BTN_UserSalvar.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_Usuario.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>Senha</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Tipo</value>
-  </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -498,6 +489,18 @@
   <data name="CBX_TYPE.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="CBX_TYPE.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 29</value>
   </data>
@@ -507,11 +510,11 @@
   <data name="TXT_Setor.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
+  <data name="&gt;&gt;TXT_Nome.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -519,8 +522,8 @@
   <data name="&gt;&gt;CBX_TYPE.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;TXT_Password.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Nome</value>
@@ -558,17 +561,20 @@
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>222, 26</value>
   </data>
+  <data name="TXT_CPF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 65</value>
+  </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Cadastro de Usuarios</value>
   </data>
-  <data name="TXT_CPF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 65</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
-  <data name="CBX_IDIOMA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="&gt;&gt;TXT_CPF.Type" xml:space="preserve">
     <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -582,8 +588,8 @@
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;CBX_TYPE.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="TXT_Password.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -591,17 +597,11 @@
   <data name="&gt;&gt;label2.Name" xml:space="preserve">
     <value>label2</value>
   </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>32, 13</value>
-  </data>
   <data name="label10.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
   </data>
-  <data name="&gt;&gt;TXT_Usuario.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16.25pt</value>
+  <data name="TXT_Setor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 29</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 46</value>
@@ -609,17 +609,20 @@
   <data name="CBX_Status.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="&gt;&gt;BTN_UserSalvar.Name" xml:space="preserve">
-    <value>BTN_UserSalvar</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>524, 329</value>
   </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="TXT_Usuario.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;TXT_Nome.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TXT_CPF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 20</value>
   </data>
   <data name="&gt;&gt;TXT_Usuario.Name" xml:space="preserve">
     <value>TXT_Usuario</value>
@@ -627,8 +630,8 @@
   <data name="CBX_TYPE.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 216</value>
   </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.25pt</value>
   </data>
   <data name="BTN_UserSalvar.Text" xml:space="preserve">
     <value>Salvar</value>
@@ -636,14 +639,11 @@
   <data name="&gt;&gt;TXT_Usuario.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BTN_UserCancel.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="CBX_Status.ItemHeight" type="System.Int32, mscorlib">
+    <value>23</value>
   </data>
   <data name="&gt;&gt;returnUsuariosBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="CBX_TYPE.ItemHeight" type="System.Int32, mscorlib">
     <value>23</value>
@@ -654,8 +654,8 @@
   <data name="&gt;&gt;TXT_Password.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;TXT_Email.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -669,14 +669,14 @@
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 153</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Email</value>
+  <data name="&gt;&gt;BTN_UserSalvar.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;TXT_Nome.ZOrder" xml:space="preserve">
-    <value>20</value>
+  <data name="CBX_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 29</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

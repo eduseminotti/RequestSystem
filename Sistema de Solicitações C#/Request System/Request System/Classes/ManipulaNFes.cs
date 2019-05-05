@@ -42,12 +42,12 @@ namespace Request_System
                 if (Series != 0)
                 {
                     cmd.CommandText += " and SeriesNFe like @SeriesNFe ";
-                    cmd.Parameters.Add("@SeriesNFe", SqlDbType.VarChar).Value = "%"+ Series + "%";
+                    cmd.Parameters.Add("@SeriesNFe", SqlDbType.VarChar).Value = "%" + Series + "%";
                 }
-                if(Number !=0)
+                if (Number != 0)
                 {
                     cmd.CommandText += " and NumberNFe like @NumberNFe ";
-                    cmd.Parameters.Add("@NumberNFe", SqlDbType.VarChar).Value = "%" + Number +"%";
+                    cmd.Parameters.Add("@NumberNFe", SqlDbType.VarChar).Value = "%" + Number + "%";
                 }
                 if (CNPJ != null)
                 {
@@ -71,7 +71,7 @@ namespace Request_System
                     nFes.ValueNFe = query["Value"].ToString();
                     nFes.EmissionDate = query["EmissionDate"].ToString();
                     nFes.CNPJ = query["CNPJ"].ToString();
-                    nFes.Fantasy_Name = query["Nome_Fantasia"].ToString(); 
+                    nFes.Fantasy_Name = query["Nome_Fantasia"].ToString();
                     nFes.InStock = Convert.ToBoolean(query["InStock"].ToString());
 
                     return_NFes.Add(nFes);
@@ -87,7 +87,7 @@ namespace Request_System
             }
             return return_NFes;
         }
-        public bool Insere_NFe(int SerieNFe, long NumberNFe, DateTime EmissionDate , decimal ValueNFe, long ProviderID )
+        public bool Insere_NFe(int SerieNFe, long NumberNFe, DateTime EmissionDate, decimal ValueNFe, long ProviderID)
         {
 
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
@@ -120,7 +120,7 @@ namespace Request_System
             }
             return sucess;
         }
-        public bool EditaNFe(int SerieNFe , long NumberNFe , DateTime EmissionDate , decimal ValueNFe ,  long NFeId, long ProviderId)
+        public bool EditaNFe(int SerieNFe, long NumberNFe, DateTime EmissionDate, decimal ValueNFe, long NFeId, long ProviderId)
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
             bool sucess = false;
@@ -157,7 +157,7 @@ namespace Request_System
         public void SetIncludedInStock(long nFeId)
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
-            
+
             string queryString = " update dbo.Notas_Fiscais set InStock = 1 where id = @nfeID ";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);
@@ -209,7 +209,6 @@ namespace Request_System
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
-                // cmd.CommandText += " and SeriesNFe like @SeriesNFe ";
                 cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = NFeID;
 
                 sqlConn.Open();
@@ -289,5 +288,71 @@ namespace Request_System
             }
         }
 
+    }
+
+    public class ReturnRelatorioNFe
+    {
+        public int NFeId { get; set; }
+        public int NumberNFe { get; set; }
+        public int SerierNFe { get; set; }
+        public decimal ValueNFe { get; set; }
+        public String CNPJEmitente { get; set; }
+        public String RazaoSocial { get; set; }
+        public DateTime EmissionDate { get; set; }
+        public String ProdutoQuantidade { get; set; }
+    }
+    public class RelatorioNFe
+    {
+        Configuration configuration = new Configuration();
+
+        public List<ReturnRelatorioNFe> ReturnRelatorioNFe(DateTime Inicial, DateTime Final)
+        {
+            List<ReturnRelatorioNFe> returnRelatorioNFes = new List<ReturnRelatorioNFe>();
+
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            try
+            {
+                string queryString = "  SELECT distinct nfe.id, nfe.SeriesNFe, nfe.NumberNFe, nfe.value , prov.CNPJ ,prov.Razao_Social ,nfe.EmissionDate,  " +
+                    " SUBSTRING (    ( SELECT   product.Nome_produto + ' - ' + cast(subSelectItens.Quantidade  as varchar(max)  ) + '\n'  AS [text()]   " +
+                    "FROM nfe_itens subSelectItens INNER JOIN products product ON product.id = subSelectItens.produtcid " +
+                    " WHERE subSelectItens.NFEID = nfe.id ORDER BY subSelectItens.id FOR XML PATH ('') ), 1, 1000) as Produtos_Quantidade " +
+                    "FROM   notas_fiscais nfe  inner JOIN nfe_itens itens ON itens.nfeid = nfe.id   INNER JOIN products prod " +
+                    " ON prod.id = itens.produtcid  INNER JOIN providers prov  ON prov.id = nfe.providerid  " +
+                    "	 where  nfe.EmissionDate >= @inicial  and nfe.EmissionDate <= @final";
+
+                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
+
+                cmd.Parameters.Add("@inicial", SqlDbType.VarChar).Value = Inicial;
+                cmd.Parameters.Add("@final", SqlDbType.VarChar).Value = Final;
+                
+                sqlConn.Open();
+                SqlDataReader query = cmd.ExecuteReader();
+
+                while (query.Read())
+                {
+                    ReturnRelatorioNFe returnRelatorio = new ReturnRelatorioNFe();
+
+                    returnRelatorio.NFeId = Convert.ToInt32(query["id"].ToString());
+                    returnRelatorio.SerierNFe = Convert.ToInt32(query["SeriesNFe"]);
+                    returnRelatorio.NumberNFe = Convert.ToInt32(query["NumberNFe"]);
+                    returnRelatorio.ValueNFe = Convert.ToInt64(query["value"]);
+                    returnRelatorio.CNPJEmitente = query["CNPJ"].ToString();
+                    returnRelatorio.RazaoSocial = query["Razao_Social"].ToString();
+                    returnRelatorio.EmissionDate = Convert.ToDateTime(query["EmissionDate"]);
+                    returnRelatorio.ProdutoQuantidade = query["Produtos_Quantidade"].ToString();
+
+                    returnRelatorioNFes.Add(returnRelatorio);
+                }
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            finally
+            {
+                sqlConn.Close();
+            }
+            return returnRelatorioNFes;
+        }
     }
 }

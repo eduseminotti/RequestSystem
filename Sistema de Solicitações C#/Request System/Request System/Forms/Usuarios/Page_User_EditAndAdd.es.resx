@@ -163,6 +163,9 @@
   <data name="BTN_UserSalvar.Text" xml:space="preserve">
     <value>Guardar</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>518, 329</value>
+  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Registro de Usuarios</value>
   </data>

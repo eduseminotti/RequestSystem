@@ -10,7 +10,6 @@ namespace Request_System
     {
         public void gerarPDF(DataGridView dataGrid, string tpRelatorio)
         {
-
             PdfPTable pdfTable = new PdfPTable(dataGrid.ColumnCount);
             pdfTable.DefaultCell.Padding = 3;
             pdfTable.WidthPercentage = 100;

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Globalization;
 using System.Windows.Forms;
 
 namespace Request_System
@@ -15,22 +16,27 @@ namespace Request_System
         DateTime emissionDateNFe;
         UserIdioma idioma;
 
-
         ManipulaNFes obter_NFes = new ManipulaNFes();
         Page_NFes_Add_And_Edit pageNFesAddAndEdit;
         List<ReturnNFes> Return_NFes;
+        RelatorioNFe RelatorioNFe = new RelatorioNFe();
+        List<ReturnRelatorioNFe> returnRelatorioNFe;
         GeradorDePDFGrid geradorDePDF = new GeradorDePDFGrid();
 
         public Notas_Fiscais_View(UserIdioma Idioma)
         {
             InitializeComponent();
             idioma = Idioma;
+
+            DT_DataDeEmissaoInicial.Value = DateTime.Now;
+            DT_DataDeEmissaoFinal.Value = DateTime.Now;
         }
 
         private void Notas_Fiscais_Load(object sender, EventArgs e)
         {
             Return_NFes = obter_NFes.GetNFes(0, 0, null);
             GRID_NFes_View.DataSource = Return_NFes;
+
         }
 
         private void TXT_Filter_Numero_TextChanged(object sender, EventArgs e)
@@ -47,13 +53,13 @@ namespace Request_System
                 TXT_Filter_Numero_NFe.BackColor = Color.OrangeRed;
                 MessageBox.Show("0,1,2,3...");
                 TXT_Filter_Numero_NFe.Text = "";
-            }  
+            }
         }
         private void TXT_Filter_Serie_NFe_TextChanged(object sender, EventArgs e)
         {
             TXT_Filter_Serie_NFe.BackColor = Color.White;
             int valor;
-            if (Int32.TryParse(TXT_Filter_Serie_NFe.Text, out valor)|| TXT_Filter_Serie_NFe.Text == "")
+            if (Int32.TryParse(TXT_Filter_Serie_NFe.Text, out valor) || TXT_Filter_Serie_NFe.Text == "")
             {
                 BTN_Filter.PerformClick();
             }
@@ -68,7 +74,7 @@ namespace Request_System
         {
             TXT_Filter_Serie_NFe.BackColor = Color.White;
             int valor;
-            if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor)|| TXT_Filter_CNPJ.Text == "")
+            if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor) || TXT_Filter_CNPJ.Text == "")
             {
                 BTN_Filter.PerformClick();
             }
@@ -82,7 +88,9 @@ namespace Request_System
 
         private void BTN_Gerar_PDF_Click(object sender, EventArgs e)
         {
-            geradorDePDF.gerarPDF(GRID_NFes_View, "Notas Fiscais");
+            GB_datasPDF.Visible = true;
+            BTN_Filter.PerformClick();
+            GB_filters.Visible = false;
         }
 
         private void BTN_Edit_Click_1(object sender, EventArgs e)
@@ -118,7 +126,39 @@ namespace Request_System
             GRID_NFes_View.DataSource = Return_NFes;
         }
 
- 
+        private void BTN_Gerar_PDF_Click_1(object sender, EventArgs e)
+        {
+            DateTime dataInicial, dataFinal;
+
+            dataInicial = DT_DataDeEmissaoInicial.Value.Date;
+            dataFinal = DT_DataDeEmissaoFinal.Value.Date;
+
+            returnRelatorioNFe = RelatorioNFe.ReturnRelatorioNFe(dataInicial, dataFinal);
+            Grid_RelatorioNFe.DataSource = returnRelatorioNFe;
+
+            if (Grid_RelatorioNFe.Rows.Count > 0)
+            {
+                geradorDePDF.gerarPDF(Grid_RelatorioNFe, "Relatorio de NFes");
+            }
+            else
+            {
+                if (idioma == UserIdioma.Portugues)
+                    MessageBox.Show("Nenhum Resultado encontrado!");
+                if (idioma == UserIdioma.Ingles)
+                    MessageBox.Show("No results found!");
+                if (idioma == UserIdioma.Espanhol)
+                    MessageBox.Show("Ningún resultado encontrado!");
+            }
+
+            GB_datasPDF.Visible = false;
+            GB_filters.Visible = true;
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            GB_datasPDF.Visible = false;
+            GB_filters.Visible = true;
+        }
 
         private void BTN_Filter_Click_1(object sender, EventArgs e)
         {

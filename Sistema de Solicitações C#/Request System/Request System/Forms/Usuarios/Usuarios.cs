@@ -77,7 +77,7 @@ namespace Request_System
 
         private void BTN_NewUser_Click(object sender, EventArgs e)
         {
-            PageUserAdd = new PageUserEditandAdd(true, null);
+            PageUserAdd = new PageUserEditandAdd(true, null, idioma);
 
             PageUserAdd.ShowDialog();
 
@@ -89,7 +89,7 @@ namespace Request_System
         {
             selectedUserName = GRID_USERS_VIEW.CurrentRow.Cells[3].Value.ToString();
 
-            PageUserAdd = new PageUserEditandAdd(false, selectedUserName);
+            PageUserAdd = new PageUserEditandAdd(false, selectedUserName, idioma);
 
             PageUserAdd.ShowDialog();
             usuarios = ObterUsers.GetUsuarios(null, null, null, 0);

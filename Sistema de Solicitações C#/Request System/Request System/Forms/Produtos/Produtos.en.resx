@@ -124,21 +124,11 @@
   <data name="LBL_Usuarios.Text" xml:space="preserve">
     <value>Products</value>
   </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Filters</value>
-  </data>
   <data name="BTN_Filter_limpar.Text" xml:space="preserve">
     <value>Clean Filter</value>
   </data>
   <data name="BTN_Filter.Text" xml:space="preserve">
     <value>Filter</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resource.ImeMode1" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="label2.Text" xml:space="preserve">
     <value>Name</value>
@@ -148,6 +138,9 @@
   </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Code</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>Filters</value>
   </data>
   <data name="productIdDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Code</value>
@@ -172,5 +165,20 @@
   </data>
   <data name="BTN_New_Product.Text" xml:space="preserve">
     <value>New Product</value>
+  </data>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="productNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Product</value>
+  </data>
+  <data name="productUnidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Type Unity</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Quantity in Stock</value>
+  </data>
+  <data name="productIsActiveDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Product Status</value>
   </data>
 </root>

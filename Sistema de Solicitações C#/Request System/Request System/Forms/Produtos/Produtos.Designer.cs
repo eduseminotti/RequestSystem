@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(produtos_view));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BTN_Filter_limpar = new MetroFramework.Controls.MetroButton();
@@ -44,20 +44,27 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Grid_View_produtos = new MetroFramework.Controls.MetroGrid();
-            this.returnProdutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
-            this.BTN_Edit = new MetroFramework.Controls.MetroButton();
-            this.BTN_New_Product = new MetroFramework.Controls.MetroButton();
-            this.returnProdutosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.productIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productUnidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIsActiveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnProdutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
+            this.BTN_Edit = new MetroFramework.Controls.MetroButton();
+            this.BTN_New_Product = new MetroFramework.Controls.MetroButton();
+            this.returnProdutosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.Grid_Produtos_PDF = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productUnidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIsActiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_View_produtos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Produtos_PDF)).BeginInit();
             this.SuspendLayout();
             // 
             // LBL_Usuarios
@@ -219,14 +226,14 @@
             this.Grid_View_produtos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Grid_View_produtos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.Grid_View_produtos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Grid_View_produtos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Grid_View_produtos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Grid_View_produtos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_View_produtos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productIdDataGridViewTextBoxColumn1,
@@ -235,57 +242,28 @@
             this.quantidadeDataGridViewTextBoxColumn,
             this.productIsActiveDataGridViewTextBoxColumn1});
             this.Grid_View_produtos.DataSource = this.returnProdutosBindingSource;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Grid_View_produtos.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Grid_View_produtos.DefaultCellStyle = dataGridViewCellStyle2;
             this.Grid_View_produtos.EnableHeadersVisualStyles = false;
             this.Grid_View_produtos.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Grid_View_produtos.Name = "Grid_View_produtos";
             this.Grid_View_produtos.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Grid_View_produtos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Grid_View_produtos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Grid_View_produtos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_View_produtos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // returnProdutosBindingSource
-            // 
-            this.returnProdutosBindingSource.DataSource = typeof(Request_System.ReturnProdutos);
-            // 
-            // BTN_Gerar_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
-            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
-            this.BTN_Gerar_PDF.UseSelectable = true;
-            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
-            // 
-            // BTN_Edit
-            // 
-            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
-            this.BTN_Edit.Name = "BTN_Edit";
-            this.BTN_Edit.UseSelectable = true;
-            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
-            // 
-            // BTN_New_Product
-            // 
-            resources.ApplyResources(this.BTN_New_Product, "BTN_New_Product");
-            this.BTN_New_Product.Name = "BTN_New_Product";
-            this.BTN_New_Product.UseSelectable = true;
-            this.BTN_New_Product.Click += new System.EventHandler(this.BTN_New_Product_Click_1);
-            // 
-            // returnProdutosBindingSource1
-            // 
-            this.returnProdutosBindingSource1.DataSource = typeof(Request_System.ReturnProdutos);
             // 
             // productIdDataGridViewTextBoxColumn1
             // 
@@ -317,10 +295,84 @@
             resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn1, "productIsActiveDataGridViewTextBoxColumn1");
             this.productIsActiveDataGridViewTextBoxColumn1.Name = "productIsActiveDataGridViewTextBoxColumn1";
             // 
+            // returnProdutosBindingSource
+            // 
+            this.returnProdutosBindingSource.DataSource = typeof(Request_System.ReturnProdutos);
+            // 
+            // BTN_Gerar_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
+            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
+            this.BTN_Gerar_PDF.UseSelectable = true;
+            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
+            // 
+            // BTN_Edit
+            // 
+            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
+            this.BTN_Edit.Name = "BTN_Edit";
+            this.BTN_Edit.UseSelectable = true;
+            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
+            // 
+            // BTN_New_Product
+            // 
+            resources.ApplyResources(this.BTN_New_Product, "BTN_New_Product");
+            this.BTN_New_Product.Name = "BTN_New_Product";
+            this.BTN_New_Product.UseSelectable = true;
+            this.BTN_New_Product.Click += new System.EventHandler(this.BTN_New_Product_Click_1);
+            // 
+            // returnProdutosBindingSource1
+            // 
+            this.returnProdutosBindingSource1.DataSource = typeof(Request_System.ReturnProdutos);
+            // 
+            // Grid_Produtos_PDF
+            // 
+            resources.ApplyResources(this.Grid_Produtos_PDF, "Grid_Produtos_PDF");
+            this.Grid_Produtos_PDF.AutoGenerateColumns = false;
+            this.Grid_Produtos_PDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Produtos_PDF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.productNameDataGridViewTextBoxColumn,
+            this.productUnidadeDataGridViewTextBoxColumn,
+            this.quantidadeDataGridViewTextBoxColumn1,
+            this.productIsActiveDataGridViewTextBoxColumn});
+            this.Grid_Produtos_PDF.DataSource = this.returnProdutosBindingSource;
+            this.Grid_Produtos_PDF.Name = "Grid_Produtos_PDF";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Product_Id";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product_Name";
+            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn, "productNameDataGridViewTextBoxColumn");
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            // 
+            // productUnidadeDataGridViewTextBoxColumn
+            // 
+            this.productUnidadeDataGridViewTextBoxColumn.DataPropertyName = "Product_Unidade";
+            resources.ApplyResources(this.productUnidadeDataGridViewTextBoxColumn, "productUnidadeDataGridViewTextBoxColumn");
+            this.productUnidadeDataGridViewTextBoxColumn.Name = "productUnidadeDataGridViewTextBoxColumn";
+            // 
+            // quantidadeDataGridViewTextBoxColumn1
+            // 
+            this.quantidadeDataGridViewTextBoxColumn1.DataPropertyName = "Quantidade";
+            resources.ApplyResources(this.quantidadeDataGridViewTextBoxColumn1, "quantidadeDataGridViewTextBoxColumn1");
+            this.quantidadeDataGridViewTextBoxColumn1.Name = "quantidadeDataGridViewTextBoxColumn1";
+            // 
+            // productIsActiveDataGridViewTextBoxColumn
+            // 
+            this.productIsActiveDataGridViewTextBoxColumn.DataPropertyName = "product_IsActive";
+            resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn, "productIsActiveDataGridViewTextBoxColumn");
+            this.productIsActiveDataGridViewTextBoxColumn.Name = "productIsActiveDataGridViewTextBoxColumn";
+            // 
             // produtos_view
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.Grid_Produtos_PDF);
             this.Controls.Add(this.BTN_New_Product);
             this.Controls.Add(this.BTN_Edit);
             this.Controls.Add(this.BTN_Gerar_PDF);
@@ -335,6 +387,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Grid_View_produtos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Produtos_PDF)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,5 +416,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productUnidadeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIsActiveDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridView Grid_Produtos_PDF;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productUnidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productIsActiveDataGridViewTextBoxColumn;
     }
 }

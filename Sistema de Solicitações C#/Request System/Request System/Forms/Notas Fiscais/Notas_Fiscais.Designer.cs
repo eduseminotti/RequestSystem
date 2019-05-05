@@ -88,6 +88,7 @@
             // 
             // GB_filters
             // 
+            resources.ApplyResources(this.GB_filters, "GB_filters");
             this.GB_filters.Controls.Add(this.BTN_Filter_limpar);
             this.GB_filters.Controls.Add(this.BTN_Filter);
             this.GB_filters.Controls.Add(this.TXT_Filter_CNPJ);
@@ -96,7 +97,6 @@
             this.GB_filters.Controls.Add(this.label1);
             this.GB_filters.Controls.Add(this.TXT_Filter_Numero_NFe);
             this.GB_filters.Controls.Add(this.TXT_Filter_Serie_NFe);
-            resources.ApplyResources(this.GB_filters, "GB_filters");
             this.GB_filters.Name = "GB_filters";
             this.GB_filters.TabStop = false;
             // 
@@ -192,6 +192,7 @@
             // 
             // GRID_NFes_View
             // 
+            resources.ApplyResources(this.GRID_NFes_View, "GRID_NFes_View");
             this.GRID_NFes_View.AllowUserToResizeRows = false;
             this.GRID_NFes_View.AutoGenerateColumns = false;
             this.GRID_NFes_View.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -227,7 +228,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.GRID_NFes_View.DefaultCellStyle = dataGridViewCellStyle2;
             this.GRID_NFes_View.EnableHeadersVisualStyles = false;
-            resources.ApplyResources(this.GRID_NFes_View, "GRID_NFes_View");
             this.GRID_NFes_View.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_NFes_View.Name = "GRID_NFes_View";
             this.GRID_NFes_View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -322,6 +322,7 @@
             // 
             // Grid_RelatorioNFe
             // 
+            resources.ApplyResources(this.Grid_RelatorioNFe, "Grid_RelatorioNFe");
             this.Grid_RelatorioNFe.AutoGenerateColumns = false;
             this.Grid_RelatorioNFe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_RelatorioNFe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -333,7 +334,6 @@
             this.emissionDateDataGridViewTextBoxColumn1,
             this.produtoQuantidadeDataGridViewTextBoxColumn});
             this.Grid_RelatorioNFe.DataSource = this.returnRelatorioNFeBindingSource;
-            resources.ApplyResources(this.Grid_RelatorioNFe, "Grid_RelatorioNFe");
             this.Grid_RelatorioNFe.Name = "Grid_RelatorioNFe";
             // 
             // returnRelatorioNFeBindingSource
@@ -363,13 +363,13 @@
             // 
             // GB_datasPDF
             // 
+            resources.ApplyResources(this.GB_datasPDF, "GB_datasPDF");
             this.GB_datasPDF.Controls.Add(this.metroButton2);
             this.GB_datasPDF.Controls.Add(this.BTN_Gerar_PDF);
             this.GB_datasPDF.Controls.Add(this.DT_DataDeEmissaoFinal);
             this.GB_datasPDF.Controls.Add(this.label5);
             this.GB_datasPDF.Controls.Add(this.DT_DataDeEmissaoInicial);
             this.GB_datasPDF.Controls.Add(this.label4);
-            resources.ApplyResources(this.GB_datasPDF, "GB_datasPDF");
             this.GB_datasPDF.Name = "GB_datasPDF";
             this.GB_datasPDF.TabStop = false;
             // 

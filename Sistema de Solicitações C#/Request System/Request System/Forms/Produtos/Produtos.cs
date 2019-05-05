@@ -37,6 +37,7 @@ namespace Request_System
         {
             produtos = obterProdutos.GetProducts(0, null, 0);
             Grid_View_produtos.DataSource = produtos;
+            Grid_Produtos_PDF.DataSource = produtos;
         }
         private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
         {
@@ -62,7 +63,7 @@ namespace Request_System
         }
         private void BTN_Gerar_PDF_Click(object sender, EventArgs e)
         {
-            GeraPDF.gerarPDF(Grid_View_produtos, "produtos");
+            GeraPDF.gerarPDF(Grid_Produtos_PDF, "produtos");
         }
         private void CBX_Filter_Status_SelectedIndexChanged_1(object sender, EventArgs e)
         {
@@ -83,6 +84,7 @@ namespace Request_System
 
             produtos = obterProdutos.GetProducts(filterID, filterName, productStatus);
             Grid_View_produtos.DataSource = produtos;
+            Grid_Produtos_PDF.DataSource = produtos;
         }
         private void BTN_New_Product_Click_1(object sender, EventArgs e)
         {
@@ -91,6 +93,7 @@ namespace Request_System
 
             produtos = obterProdutos.GetProducts(0, null, 0);
             Grid_View_produtos.DataSource = produtos;
+            Grid_Produtos_PDF.DataSource = produtos;
         }
         private void BTN_Edit_Click_1(object sender, EventArgs e)
         {
@@ -100,6 +103,7 @@ namespace Request_System
 
             produtos = obterProdutos.GetProducts(0, null, 0);
             Grid_View_produtos.DataSource = produtos;
+            Grid_Produtos_PDF.DataSource = produtos;
         }
         private void BTN_Filter_limpar_Click_1(object sender, EventArgs e)
         {
@@ -109,6 +113,7 @@ namespace Request_System
 
             produtos = obterProdutos.GetProducts(0, null, 0);
             Grid_View_produtos.DataSource = produtos;
+            Grid_Produtos_PDF.DataSource = produtos;
         }
     }
 }

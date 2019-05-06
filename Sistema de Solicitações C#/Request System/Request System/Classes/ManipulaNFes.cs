@@ -316,8 +316,7 @@ namespace Request_System
                     " SUBSTRING (    ( SELECT   product.Nome_produto + ' - ' + cast(subSelectItens.Quantidade  as varchar(max)  ) + '\n'  AS [text()]   " +
                     "FROM nfe_itens subSelectItens INNER JOIN products product ON product.id = subSelectItens.produtcid " +
                     " WHERE subSelectItens.NFEID = nfe.id ORDER BY subSelectItens.id FOR XML PATH ('') ), 1, 1000) as Produtos_Quantidade " +
-                    "FROM   notas_fiscais nfe  inner JOIN nfe_itens itens ON itens.nfeid = nfe.id   INNER JOIN products prod " +
-                    " ON prod.id = itens.produtcid  INNER JOIN providers prov  ON prov.id = nfe.providerid  " +
+                    "FROM   notas_fiscais nfe   INNER JOIN providers prov  ON prov.id = nfe.providerid  " +
                     "	 where  nfe.EmissionDate >= @inicial  and nfe.EmissionDate <= @final";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);

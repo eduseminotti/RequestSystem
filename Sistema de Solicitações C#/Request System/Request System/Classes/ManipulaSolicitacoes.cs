@@ -458,3 +458,28 @@ namespace Request_System
         }
     }
 }
+
+
+/*
+ 
+ 
+SELECT     s.id,  s.user_requester,   ur.NAME AS requestername,  s.user_approver,   ua.NAME AS approvername,   s.datasolicitacao,   s.dataaprovacaorejeicao, 
+           s.motivo,   s.status,  s.dataretirada ,   
+           Substring ( ( 
+                      SELECT     product.nome_produto + ' - ' 
+					  + Cast(subselectitens.quantidadesolicitada AS VARCHAR( max) ) + ' - '
+					  + Cast(subselectitens.quantidadeaprovada AS VARCHAR( max) ) + '\n' AS [text()] 
+                      FROM       solicitation_itens subselectitens 
+                      inner JOIN products product 
+                      ON         product.id = subselectitens.productid 
+                      WHERE      subselectitens.solicitationid = s.id 
+                      ORDER BY   subselectitens.id FOR xml path ('')), 1, 1000) AS produtos_quantidades
+FROM       solicitation  AS s 
+INNER JOIN users ur 
+ON         ur.id = s.user_requester 
+LEFT JOIN  users ua 
+ON         ua.id = s.user_approver 
+INNER JOIN solicitation_itens AS itens 
+ON         itens.solicitationid = s.id 
+
+*/

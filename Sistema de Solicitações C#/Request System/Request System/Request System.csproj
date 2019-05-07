@@ -324,6 +324,7 @@
     <None Include="Properties\DataSources\ReturnProdutos.datasource" />
     <None Include="Properties\DataSources\ReturnProviders.datasource" />
     <None Include="Properties\DataSources\ReturnRelatorioNFe.datasource" />
+    <None Include="Properties\DataSources\ReturnRelatorioSolicitacoes.datasource" />
     <None Include="Properties\DataSources\ReturnSolicitacoes.datasource" />
     <None Include="Properties\DataSources\Return_NFes.datasource" />
     <None Include="Properties\DataSources\Return_NFe_itens.datasource" />

@@ -50,7 +50,7 @@ namespace Request_System
                     cmd.CommandText += " and Setor like @Setor";
                     cmd.Parameters.Add("@Setor", SqlDbType.VarChar).Value = "%" + Setor + "%";
                 }
-                if(Status != UserIsactive._)
+                if(Status != UserIsactive.Empty)
                 {
                     cmd.CommandText += " and isactive = @Status";
                     cmd.Parameters.Add("@Status", SqlDbType.Int).Value = Status;

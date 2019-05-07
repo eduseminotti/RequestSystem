@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Solicitacoes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.BTN_Ver_Solicitacao = new MetroFramework.Controls.MetroButton();
             this.GRID_View_Solicitacoes = new MetroFramework.Controls.MetroGrid();
@@ -52,11 +52,31 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TXT_Filtro_Nome = new MetroFramework.Controls.MetroTextBox();
             this.CBX_Filtro_Status = new MetroFramework.Controls.MetroComboBox();
-            this.returnSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
+            this.GB_Gera_PDF = new System.Windows.Forms.GroupBox();
+            this.BTN_Cancel_PDF = new MetroFramework.Controls.MetroButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BTN_Gera_PDF = new MetroFramework.Controls.MetroButton();
+            this.DT_Data_Final = new MetroFramework.Controls.MetroDateTime();
+            this.DT_Data_inicial = new MetroFramework.Controls.MetroDateTime();
+            this.GRID_Relatorio_Solicitacoes = new System.Windows.Forms.DataGridView();
+            this.userRequesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataSolicitacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userApproverDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataAprovacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataRetiradaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtosQuantidadesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnRelatorioSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.returnSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GRID_View_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource1)).BeginInit();
             this.GB_filtros.SuspendLayout();
+            this.GB_Gera_PDF.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRID_Relatorio_Solicitacoes)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnRelatorioSolicitacoesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,14 +100,14 @@
             this.GRID_View_Solicitacoes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRID_View_Solicitacoes.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRID_View_Solicitacoes.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_View_Solicitacoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_View_Solicitacoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.GRID_View_Solicitacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GRID_View_Solicitacoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.SolicitatonId,
@@ -99,27 +119,27 @@
             this.solicitationStatusDataGridViewTextBoxColumn,
             this.UserRequesterId});
             this.GRID_View_Solicitacoes.DataSource = this.returnSolicitacoesBindingSource1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRID_View_Solicitacoes.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRID_View_Solicitacoes.DefaultCellStyle = dataGridViewCellStyle8;
             this.GRID_View_Solicitacoes.EnableHeadersVisualStyles = false;
             resources.ApplyResources(this.GRID_View_Solicitacoes, "GRID_View_Solicitacoes");
             this.GRID_View_Solicitacoes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_View_Solicitacoes.Name = "GRID_View_Solicitacoes";
             this.GRID_View_Solicitacoes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_View_Solicitacoes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_View_Solicitacoes.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.GRID_View_Solicitacoes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_View_Solicitacoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
@@ -256,10 +276,6 @@
             this.CBX_Filtro_Status.UseSelectable = true;
             this.CBX_Filtro_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filtro_Status_SelectedIndexChanged);
             // 
-            // returnSolicitacoesBindingSource
-            // 
-            this.returnSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesStockMan);
-            // 
             // BTN_Gerar_PDF
             // 
             resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
@@ -267,10 +283,131 @@
             this.BTN_Gerar_PDF.UseSelectable = true;
             this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
             // 
+            // GB_Gera_PDF
+            // 
+            this.GB_Gera_PDF.Controls.Add(this.BTN_Cancel_PDF);
+            this.GB_Gera_PDF.Controls.Add(this.label3);
+            this.GB_Gera_PDF.Controls.Add(this.label2);
+            this.GB_Gera_PDF.Controls.Add(this.BTN_Gera_PDF);
+            this.GB_Gera_PDF.Controls.Add(this.DT_Data_Final);
+            this.GB_Gera_PDF.Controls.Add(this.DT_Data_inicial);
+            resources.ApplyResources(this.GB_Gera_PDF, "GB_Gera_PDF");
+            this.GB_Gera_PDF.Name = "GB_Gera_PDF";
+            this.GB_Gera_PDF.TabStop = false;
+            // 
+            // BTN_Cancel_PDF
+            // 
+            resources.ApplyResources(this.BTN_Cancel_PDF, "BTN_Cancel_PDF");
+            this.BTN_Cancel_PDF.Name = "BTN_Cancel_PDF";
+            this.BTN_Cancel_PDF.UseSelectable = true;
+            this.BTN_Cancel_PDF.Click += new System.EventHandler(this.BTN_Cancel_PDF_Click);
+            // 
+            // label3
+            // 
+            resources.ApplyResources(this.label3, "label3");
+            this.label3.Name = "label3";
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
+            // BTN_Gera_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gera_PDF, "BTN_Gera_PDF");
+            this.BTN_Gera_PDF.Name = "BTN_Gera_PDF";
+            this.BTN_Gera_PDF.UseSelectable = true;
+            this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
+            // 
+            // DT_Data_Final
+            // 
+            resources.ApplyResources(this.DT_Data_Final, "DT_Data_Final");
+            this.DT_Data_Final.Name = "DT_Data_Final";
+            // 
+            // DT_Data_inicial
+            // 
+            resources.ApplyResources(this.DT_Data_inicial, "DT_Data_inicial");
+            this.DT_Data_inicial.Name = "DT_Data_inicial";
+            // 
+            // GRID_Relatorio_Solicitacoes
+            // 
+            this.GRID_Relatorio_Solicitacoes.AutoGenerateColumns = false;
+            this.GRID_Relatorio_Solicitacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.GRID_Relatorio_Solicitacoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.userRequesterDataGridViewTextBoxColumn,
+            this.dataSolicitacaoDataGridViewTextBoxColumn1,
+            this.userApproverDataGridViewTextBoxColumn,
+            this.dataAprovacaoDataGridViewTextBoxColumn1,
+            this.dataRetiradaDataGridViewTextBoxColumn1,
+            this.motivoDataGridViewTextBoxColumn,
+            this.solicitationStatusDataGridViewTextBoxColumn1,
+            this.produtosQuantidadesDataGridViewTextBoxColumn});
+            this.GRID_Relatorio_Solicitacoes.DataSource = this.returnRelatorioSolicitacoesBindingSource;
+            resources.ApplyResources(this.GRID_Relatorio_Solicitacoes, "GRID_Relatorio_Solicitacoes");
+            this.GRID_Relatorio_Solicitacoes.Name = "GRID_Relatorio_Solicitacoes";
+            // 
+            // userRequesterDataGridViewTextBoxColumn
+            // 
+            this.userRequesterDataGridViewTextBoxColumn.DataPropertyName = "UserRequester";
+            resources.ApplyResources(this.userRequesterDataGridViewTextBoxColumn, "userRequesterDataGridViewTextBoxColumn");
+            this.userRequesterDataGridViewTextBoxColumn.Name = "userRequesterDataGridViewTextBoxColumn";
+            // 
+            // dataSolicitacaoDataGridViewTextBoxColumn1
+            // 
+            this.dataSolicitacaoDataGridViewTextBoxColumn1.DataPropertyName = "DataSolicitacao";
+            resources.ApplyResources(this.dataSolicitacaoDataGridViewTextBoxColumn1, "dataSolicitacaoDataGridViewTextBoxColumn1");
+            this.dataSolicitacaoDataGridViewTextBoxColumn1.Name = "dataSolicitacaoDataGridViewTextBoxColumn1";
+            // 
+            // userApproverDataGridViewTextBoxColumn
+            // 
+            this.userApproverDataGridViewTextBoxColumn.DataPropertyName = "UserApprover";
+            resources.ApplyResources(this.userApproverDataGridViewTextBoxColumn, "userApproverDataGridViewTextBoxColumn");
+            this.userApproverDataGridViewTextBoxColumn.Name = "userApproverDataGridViewTextBoxColumn";
+            // 
+            // dataAprovacaoDataGridViewTextBoxColumn1
+            // 
+            this.dataAprovacaoDataGridViewTextBoxColumn1.DataPropertyName = "DataAprovacao";
+            resources.ApplyResources(this.dataAprovacaoDataGridViewTextBoxColumn1, "dataAprovacaoDataGridViewTextBoxColumn1");
+            this.dataAprovacaoDataGridViewTextBoxColumn1.Name = "dataAprovacaoDataGridViewTextBoxColumn1";
+            // 
+            // dataRetiradaDataGridViewTextBoxColumn1
+            // 
+            this.dataRetiradaDataGridViewTextBoxColumn1.DataPropertyName = "DataRetirada";
+            resources.ApplyResources(this.dataRetiradaDataGridViewTextBoxColumn1, "dataRetiradaDataGridViewTextBoxColumn1");
+            this.dataRetiradaDataGridViewTextBoxColumn1.Name = "dataRetiradaDataGridViewTextBoxColumn1";
+            // 
+            // motivoDataGridViewTextBoxColumn
+            // 
+            this.motivoDataGridViewTextBoxColumn.DataPropertyName = "Motivo";
+            resources.ApplyResources(this.motivoDataGridViewTextBoxColumn, "motivoDataGridViewTextBoxColumn");
+            this.motivoDataGridViewTextBoxColumn.Name = "motivoDataGridViewTextBoxColumn";
+            // 
+            // solicitationStatusDataGridViewTextBoxColumn1
+            // 
+            this.solicitationStatusDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationStatus";
+            resources.ApplyResources(this.solicitationStatusDataGridViewTextBoxColumn1, "solicitationStatusDataGridViewTextBoxColumn1");
+            this.solicitationStatusDataGridViewTextBoxColumn1.Name = "solicitationStatusDataGridViewTextBoxColumn1";
+            // 
+            // produtosQuantidadesDataGridViewTextBoxColumn
+            // 
+            this.produtosQuantidadesDataGridViewTextBoxColumn.DataPropertyName = "ProdutosQuantidades";
+            resources.ApplyResources(this.produtosQuantidadesDataGridViewTextBoxColumn, "produtosQuantidadesDataGridViewTextBoxColumn");
+            this.produtosQuantidadesDataGridViewTextBoxColumn.Name = "produtosQuantidadesDataGridViewTextBoxColumn";
+            // 
+            // returnRelatorioSolicitacoesBindingSource
+            // 
+            this.returnRelatorioSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnRelatorioSolicitacoes);
+            // 
+            // returnSolicitacoesBindingSource
+            // 
+            this.returnSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesStockMan);
+            // 
             // Solicitacoes
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.GB_Gera_PDF);
+            this.Controls.Add(this.GRID_Relatorio_Solicitacoes);
             this.Controls.Add(this.BTN_Gerar_PDF);
             this.Controls.Add(this.GB_filtros);
             this.Controls.Add(this.GRID_View_Solicitacoes);
@@ -282,6 +419,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource1)).EndInit();
             this.GB_filtros.ResumeLayout(false);
             this.GB_filtros.PerformLayout();
+            this.GB_Gera_PDF.ResumeLayout(false);
+            this.GB_Gera_PDF.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.GRID_Relatorio_Solicitacoes)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnRelatorioSolicitacoesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -312,5 +453,22 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRequesterId;
         private MetroFramework.Controls.MetroButton BTN_Gerar_PDF;
+        private System.Windows.Forms.GroupBox GB_Gera_PDF;
+        private MetroFramework.Controls.MetroButton BTN_Cancel_PDF;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private MetroFramework.Controls.MetroButton BTN_Gera_PDF;
+        private MetroFramework.Controls.MetroDateTime DT_Data_Final;
+        private MetroFramework.Controls.MetroDateTime DT_Data_inicial;
+        private System.Windows.Forms.DataGridView GRID_Relatorio_Solicitacoes;
+        private System.Windows.Forms.BindingSource returnRelatorioSolicitacoesBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userRequesterDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataSolicitacaoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn userApproverDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataAprovacaoDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataRetiradaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn motivoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn produtosQuantidadesDataGridViewTextBoxColumn;
     }
 }

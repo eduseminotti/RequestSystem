@@ -119,11 +119,11 @@ namespace Request_System
                     TXT_Usuario.BackColor = Color.OrangeRed;
                 if (password == "")
                     TXT_Password.BackColor = Color.OrangeRed;
-                if (isActive == UserIsactive._)
+                if (isActive == UserIsactive.Empty)
                     CBX_Status.BackColor = Color.OrangeRed;
-                if (idioma == UserIdioma._)
+                if (idioma == UserIdioma.Empty)
                     CBX_IDIOMA.BackColor = Color.OrangeRed;
-                if (type == UserType._)
+                if (type == UserType.Empty)
                     CBX_TYPE.BackColor = Color.OrangeRed;
 
                 if (userLoginIdioma == UserIdioma.Portugues)

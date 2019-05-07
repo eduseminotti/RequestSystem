@@ -2,7 +2,7 @@
 
 namespace Request_System
 {
-    class Idioma
+    public class Idioma
     {
         private static void AlteraThreadIdioma(string culture)
         {

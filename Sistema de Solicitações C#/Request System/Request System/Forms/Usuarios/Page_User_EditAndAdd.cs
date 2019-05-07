@@ -22,12 +22,14 @@ namespace Request_System
         ManipulaUsuarios Manipula_Usuarios = new ManipulaUsuarios();
         List<Return_Usuarios> usuarios;
 
+
+
         public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma)
         {
             InitializeComponent();
             isNew = IsNew;
 
-            CBX_IDIOMA.DataSource = Enum.GetValues(typeof(UserIdioma));
+            //CBX_IDIOMA.DataSource = Enum.GetValues(typeof(UserIdioma));
             CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
             CBX_TYPE.DataSource = Enum.GetValues(typeof(UserType));
 
@@ -119,11 +121,11 @@ namespace Request_System
                     TXT_Usuario.BackColor = Color.OrangeRed;
                 if (password == "")
                     TXT_Password.BackColor = Color.OrangeRed;
-                if (isActive == UserIsactive.Empty)
+                if (isActive == UserIsactive._)
                     CBX_Status.BackColor = Color.OrangeRed;
-                if (idioma == UserIdioma.Empty)
+                if (idioma == UserIdioma._)
                     CBX_IDIOMA.BackColor = Color.OrangeRed;
-                if (type == UserType.Empty)
+                if (type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
 
                 if (userLoginIdioma == UserIdioma.Portugues)

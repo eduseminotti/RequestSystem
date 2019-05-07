@@ -1,25 +1,29 @@
-﻿using System.ComponentModel;
+﻿using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Request_System
 {
     public class Enuns
     {
 
+        
+
     }
     public enum UserIsactive
     {
         [Description("")]
-        Empty = 0,
+        _ = 0,
         [Description("Inativo")]
         Inativo = 1,
         [Description("Ativo")]
         Ativo = 2
     };
 
+
     public enum UserType
     {
         [Description("")]
-        Empty = 0,
+        _ = 0,
         [Description("Administrador")]
         Administrador = 1,
         [Description("Estoquista")]
@@ -29,8 +33,8 @@ namespace Request_System
     };
     public enum UserIdioma
     {
-        [Description("")]
-        Empty = 0,
+        [Description("TESTE")]
+        _ = 0,
         [Description("Portugues")]
         Portugues = 1,
         [Description("Ingles")]
@@ -41,7 +45,7 @@ namespace Request_System
     public enum ProductIsActive
     {
         [Description("")]
-        Empty = 0,
+        _ = 0,
         [Description("Inativo")]
         Inativo = 1,
         [Description("Ativo")]

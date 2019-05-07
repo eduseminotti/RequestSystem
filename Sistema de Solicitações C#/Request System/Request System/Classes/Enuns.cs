@@ -5,12 +5,9 @@ namespace Request_System
     public class Enuns
     {
 
-
     }
-
     public enum UserIsactive
     {
-
         [Description("")]
         Empty = 0,
         [Description("Inativo")]
@@ -18,6 +15,7 @@ namespace Request_System
         [Description("Ativo")]
         Ativo = 2
     };
+
     public enum UserType
     {
         [Description("")]

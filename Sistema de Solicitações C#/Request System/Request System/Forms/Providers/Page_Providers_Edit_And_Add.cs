@@ -88,7 +88,7 @@ namespace Request_System
                 TXT_Phone.BackColor = Color.OrangeRed;
                 return;
             }
-            cnpj = TXT_CNPJ.Text.ToString();
+
             phone = TXT_Phone.Text.ToString();
             razaoSocial = TXT_Razao_social.Text.ToString();
             nomeFantasia = TXT_Nome_Fantasia.Text.ToString();

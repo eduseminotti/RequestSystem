@@ -16,6 +16,8 @@ namespace Request_System
             InitializeComponent();
             idioma = UserIdioma;
 
+            this.MaximizeBox = false;
+
             if (userType == UserType.Usuario)
             {
                 BTN_Fornecedores.Visible = false;
@@ -172,5 +174,21 @@ namespace Request_System
             login.Show();
         }
 
+
+        private void Menus_Main_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+                BTN_Seus_Pedidos.PerformClick();
+            if (e.KeyCode == Keys.F2)
+                BTN_Pedidos.PerformClick();
+            if (e.KeyCode == Keys.F3)
+                BTN_Produtos.PerformClick();
+            if (e.KeyCode == Keys.F4)
+                BTN_Notas_Fiscais.PerformClick();
+            if (e.KeyCode == Keys.F5)
+                BTN_Fornecedores.PerformClick();
+            if (e.KeyCode == Keys.F6)
+                BTN_Usuarios.PerformClick();
+        }
     }
 }

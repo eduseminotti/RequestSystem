@@ -125,22 +125,22 @@
     <value>Logout</value>
   </data>
   <data name="BTN_Usuarios.Text" xml:space="preserve">
-    <value>Users</value>
+    <value>Users - F6</value>
   </data>
   <data name="BTN_Fornecedores.Text" xml:space="preserve">
-    <value>Providers</value>
+    <value>Providers - F5</value>
   </data>
   <data name="BTN_Notas_Fiscais.Text" xml:space="preserve">
-    <value>Invoices</value>
+    <value>Invoices - F4</value>
   </data>
   <data name="BTN_Produtos.Text" xml:space="preserve">
-    <value>Products</value>
+    <value>Products - F3</value>
   </data>
   <data name="BTN_Pedidos.Text" xml:space="preserve">
-    <value>Requests</value>
+    <value>Requests - F2</value>
   </data>
   <data name="BTN_Seus_Pedidos.Text" xml:space="preserve">
-    <value>Your Requests</value>
+    <value>Your Requests - F1</value>
   </data>
   <data name="notifyIcon1.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

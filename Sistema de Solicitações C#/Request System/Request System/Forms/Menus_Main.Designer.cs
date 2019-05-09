@@ -130,10 +130,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.PNL_Content_Main_Adm);
             this.Controls.Add(this.Gb_Butons_adm);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.KeyPreview = true;
+            this.MaximizeBox = false;
             this.Name = "Menus_Main";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menus_Main_FormClosing);
             this.Load += new System.EventHandler(this.Menus_Main_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menus_Main_KeyDown);
             this.Gb_Butons_adm.ResumeLayout(false);
             this.ResumeLayout(false);
 

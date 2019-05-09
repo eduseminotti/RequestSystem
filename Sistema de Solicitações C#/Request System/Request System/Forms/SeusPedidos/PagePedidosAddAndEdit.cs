@@ -62,6 +62,24 @@ namespace Request_System
         {
             if (productName != null || productID != 0)
             {
+
+                foreach (var row in this.Grid_Itens_solicitacoes.Rows)
+                {
+                    var dataGridViewRow = row as DataGridViewRow;
+                    var celula = dataGridViewRow.Cells[0];
+                    //var valor = celula.Value;
+
+                    int insertProductId = Convert.ToInt32(Grid_Itens_solicitacoes.CurrentRow.Cells[0].Value.ToString());
+                    if (insertProductId == productID)
+                    {
+                        MessageBox.Show("Este produto Já esta inserido neste pedido!");
+                        TXT_Find_product.Text = "";
+                        TXT_qtd_Itens.Value = 0;
+                        return;
+                    }
+
+                }
+
                 quantidade = Convert.ToInt32(TXT_qtd_Itens.Value);
                 motivo = txt_motivo.Text.ToString();
 
@@ -160,6 +178,12 @@ namespace Request_System
                 manipulaSolicitacoes.DeletaSolicitacao(solicitationId);
             }
             this.Close();
+        }
+
+        private void TXT_Find_product_TextChanged(object sender, EventArgs e)
+        {
+            if (TXT_Find_product.Text != "")
+                BTN_busca_produto.PerformClick();
         }
 
         public int ContLinhasGrid()

@@ -117,10 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="BTN_Produtos.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1012, 567</value>
@@ -3127,6 +3123,9 @@
   <data name="PNL_Content_Main_Adm.Size" type="System.Drawing.Size, System.Drawing">
     <value>1003, 500</value>
   </data>
+  <data name="&gt;&gt;BTN_Produtos.Name" xml:space="preserve">
+    <value>BTN_Produtos</value>
+  </data>
   <data name="BTN_Produtos.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
   </data>
@@ -3161,7 +3160,7 @@
     <value>0</value>
   </data>
   <data name="BTN_Pedidos.Text" xml:space="preserve">
-    <value>Pedidos</value>
+    <value>Pedidos - F2</value>
   </data>
   <data name="LBL_Current_User.Text" xml:space="preserve">
     <value>User</value>
@@ -3178,6 +3177,7 @@
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BTN_Sair.TabIndex" type="System.Int32, mscorlib">
     <value>25</value>
   </data>
@@ -3239,8 +3239,11 @@
   <data name="&gt;&gt;BTN_Produtos.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <data name="BTN_Seus_Pedidos.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
   <data name="BTN_Produtos.Text" xml:space="preserve">
-    <value>Produtos</value>
+    <value>Produtos - F3</value>
   </data>
   <data name="LBL_Current_User.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12.25pt</value>
@@ -3267,7 +3270,7 @@
     <value>BTN_Seus_Pedidos</value>
   </data>
   <data name="BTN_Seus_Pedidos.Text" xml:space="preserve">
-    <value>Seus Pedidos</value>
+    <value>Seus Pedidos - F1</value>
   </data>
   <data name="BTN_Notas_Fiscais.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -6286,9 +6289,6 @@
   <data name="&gt;&gt;PNL_Content_Main_Adm.Name" xml:space="preserve">
     <value>PNL_Content_Main_Adm</value>
   </data>
-  <data name="BTN_Fornecedores.Text" xml:space="preserve">
-    <value>Fornecedores</value>
-  </data>
   <data name="Gb_Butons_adm.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
@@ -6301,8 +6301,8 @@
   <data name="&gt;&gt;BTN_Pedidos.Parent" xml:space="preserve">
     <value>Gb_Butons_adm</value>
   </data>
-  <data name="BTN_Seus_Pedidos.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+  <data name="&gt;&gt;PNL_Content_Main_Adm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;BTN_Usuarios.Parent" xml:space="preserve">
     <value>Gb_Butons_adm</value>
@@ -6310,14 +6310,14 @@
   <data name="&gt;&gt;BTN_Pedidos.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;BTN_Produtos.Name" xml:space="preserve">
-    <value>BTN_Produtos</value>
+  <data name="BTN_Produtos.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
   </data>
   <data name="LBL_Current_User.Location" type="System.Drawing.Point, System.Drawing">
     <value>798, 11</value>
   </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Principal </value>
+  <data name="BTN_Fornecedores.Text" xml:space="preserve">
+    <value>Fornecedores -F5</value>
   </data>
   <data name="&gt;&gt;Gb_Butons_adm.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -6341,7 +6341,7 @@
     <value>142, 30</value>
   </data>
   <data name="BTN_Notas_Fiscais.Text" xml:space="preserve">
-    <value>Notas Fiscais</value>
+    <value>Notas Fiscais - F4</value>
   </data>
   <data name="Gb_Butons_adm.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 3</value>
@@ -6355,8 +6355,8 @@
   <data name="&gt;&gt;LBL_Current_User.Parent" xml:space="preserve">
     <value>Gb_Butons_adm</value>
   </data>
-  <data name="&gt;&gt;PNL_Content_Main_Adm.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Principal </value>
   </data>
   <data name="&gt;&gt;PNL_Content_Main_Adm.Parent" xml:space="preserve">
     <value>$this</value>
@@ -6386,7 +6386,7 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="BTN_Usuarios.Text" xml:space="preserve">
-    <value>Usuários</value>
+    <value>Usuários - F6</value>
   </data>
   <data name="Gb_Butons_adm.Size" type="System.Drawing.Size, System.Drawing">
     <value>995, 48</value>

@@ -41,7 +41,7 @@ namespace Request_System
 
         private void TXT_Filter_Numero_TextChanged(object sender, EventArgs e)
         {
-            TXT_Filter_Serie_NFe.BackColor = Color.White;
+            TXT_Filter_Numero_NFe.BackColor = Color.White;
 
             int valor;
             if (Int32.TryParse(TXT_Filter_Numero_NFe.Text, out valor) || TXT_Filter_Numero_NFe.Text == "")
@@ -72,7 +72,7 @@ namespace Request_System
         }
         private void TXT_Filter_CNPJ_TextChanged(object sender, EventArgs e)
         {
-            TXT_Filter_Serie_NFe.BackColor = Color.White;
+            TXT_Filter_CNPJ.BackColor = Color.White;
             int valor;
             if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor) || TXT_Filter_CNPJ.Text == "")
             {

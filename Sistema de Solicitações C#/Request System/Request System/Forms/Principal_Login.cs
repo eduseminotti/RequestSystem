@@ -11,12 +11,24 @@ namespace Request_System
         {
             InitializeComponent();
             this.AcceptButton = BTN_Entrar;
+
+            this.MaximizeBox = false;
         }
         String loginUserName;
         String loginPass;
 
         User user;
         ValidateUsers validate = new ValidateUsers();
+
+
+        private void LoginValidate_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Diagnostics.Process.GetCurrentProcess().Close();
+            Environment.Exit(0);
+            Application.Exit();
+            this.Close();
+        }
+
 
         private void BTN_Entrar_Click(object sender, EventArgs e)
         {

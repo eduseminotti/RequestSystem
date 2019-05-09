@@ -82,8 +82,8 @@
             // 
             // BTN_Cancelar1
             // 
-            resources.ApplyResources(this.BTN_Cancelar1, "BTN_Cancelar1");
             this.BTN_Cancelar1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.BTN_Cancelar1, "BTN_Cancelar1");
             this.BTN_Cancelar1.Name = "BTN_Cancelar1";
             this.BTN_Cancelar1.UseSelectable = true;
             this.BTN_Cancelar1.Click += new System.EventHandler(this.BTN_Cancelar1_Click);

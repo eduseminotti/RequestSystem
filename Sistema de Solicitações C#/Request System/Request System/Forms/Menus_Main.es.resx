@@ -128,22 +128,22 @@
     <value>Cerrar</value>
   </data>
   <data name="BTN_Usuarios.Text" xml:space="preserve">
-    <value>Usuarios</value>
+    <value>Usuarios - F6</value>
   </data>
   <data name="BTN_Fornecedores.Text" xml:space="preserve">
-    <value>Proveedores</value>
+    <value>Proveedores - F5</value>
   </data>
   <data name="BTN_Notas_Fiscais.Text" xml:space="preserve">
-    <value>Notas Fiscales</value>
+    <value>Notas Fiscales - F4</value>
   </data>
   <data name="BTN_Produtos.Text" xml:space="preserve">
-    <value>Productos</value>
+    <value>Productos - F3</value>
   </data>
   <data name="BTN_Pedidos.Text" xml:space="preserve">
-    <value>Solicitudes</value>
+    <value>Solicitudes - F2</value>
   </data>
   <data name="BTN_Seus_Pedidos.Text" xml:space="preserve">
-    <value>Sus peticiones</value>
+    <value>Sus peticiones - F1</value>
   </data>
   <data name="LBL_Current_User.Location" type="System.Drawing.Point, System.Drawing">
     <value>762, 11</value>

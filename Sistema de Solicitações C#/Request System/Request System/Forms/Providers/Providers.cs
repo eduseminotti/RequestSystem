@@ -28,26 +28,45 @@ namespace Request_System
 
         private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
         {
+            TXT_Filter_Codigo.BackColor = Color.White;
             int valor;
-            if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor))
+            if(TXT_Filter_Codigo.Text !="")
             {
-                BTN_Filter1.PerformClick();
-            }
-            else
-            {
-                TXT_Filter_Codigo.BackColor = Color.OrangeRed;                                        
-                MessageBox.Show("0,1,2,3...");
+                if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor))
+                {
+                    BTN_Filter1.PerformClick();
+                }
+                else
+                {
+                    TXT_Filter_Codigo.BackColor = Color.OrangeRed;
+                    MessageBox.Show("0,1,2,3...");
+                }
             }
         }
 
         private void TXT_Filter_Nome_fantasia_TextChanged(object sender, EventArgs e)
         {
+
             BTN_Filter1.PerformClick();
         }
 
         private void TXT_Filter_CNPJ_TextChanged(object sender, EventArgs e)
         {
-            BTN_Filter1.PerformClick();
+            TXT_Filter_CNPJ.BackColor = Color.White;
+            int valor;
+            if(TXT_Filter_CNPJ.Text != "")
+            {
+                if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor) && TXT_Filter_CNPJ.Text != "")
+                {
+                    BTN_Filter1.PerformClick();
+                }
+                else
+                {
+                    TXT_Filter_CNPJ.BackColor = Color.OrangeRed;
+                    MessageBox.Show("0,1,2,3...");
+                }
+            }
+
         }
 
         private void BTN_Filter1_Click(object sender, EventArgs e)
@@ -68,8 +87,11 @@ namespace Request_System
         private void BTN_FilterLimpar_Click(object sender, EventArgs e)
         {
             TXT_Filter_CNPJ.Text = "";
+            TXT_Filter_CNPJ.BackColor = Color.White;
             TXT_Filter_Codigo.Text = "";
+            TXT_Filter_Codigo.BackColor = Color.White;
             TXT_Filter_Nome_fantasia.Text = "";
+            TXT_Filter_Nome_fantasia.BackColor = Color.White;
 
             Providers = obterProviders.GetProviders(0, null, null);
             GRID_View_Providers.DataSource = Providers;

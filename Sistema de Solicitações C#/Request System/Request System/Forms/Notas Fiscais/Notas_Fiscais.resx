@@ -136,6 +136,9 @@
   <data name="cNPJDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>CNPJ Emitente</value>
   </data>
+  <data name="&gt;&gt;LBL_Usuarios.Name" xml:space="preserve">
+    <value>LBL_Usuarios</value>
+  </data>
   <data name="&gt;&gt;serierNFeDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>serierNFeDataGridViewTextBoxColumn</value>
   </data>
@@ -174,7 +177,7 @@
     <value>1</value>
   </data>
   <data name="&gt;&gt;GB_filters.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;fantasyNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -192,7 +195,10 @@
     <value>115, 30</value>
   </data>
   <data name="&gt;&gt;BTN_Edit.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -246,14 +252,14 @@
   <data name="inStockDataGridViewCheckBoxColumn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;numberDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="cNPJEmitenteDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>CNPJ Emitente</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Notas_Fiscais</value>
   </data>
-  <data name="&gt;&gt;BTN_Filtro_Gera_PDF.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;LBL_Usuarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="numberNFeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Número</value>
@@ -264,8 +270,8 @@
   <data name="GB_datasPDF.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;inStockDataGridViewCheckBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;emissionDateDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>emissionDateDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>5</value>
@@ -309,6 +315,12 @@
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
+  <data name="LBL_Usuarios.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LBL_Usuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 10</value>
+  </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
@@ -317,6 +329,9 @@
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>CNPJ</value>
+  </data>
+  <data name="&gt;&gt;BTN_Filtro_Gera_PDF.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Filter_Serie_NFe.ZOrder" xml:space="preserve">
     <value>7</value>
@@ -353,9 +368,6 @@
   </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>GB_datasPDF</value>
-  </data>
-  <data name="cNPJEmitenteDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>CNPJ Emitente</value>
   </data>
   <data name="&gt;&gt;BTN_Filter_limpar.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
@@ -404,6 +416,9 @@
   </data>
   <data name="&gt;&gt;label5.Name" xml:space="preserve">
     <value>label5</value>
+  </data>
+  <data name="LBL_Usuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="&gt;&gt;seriesDataGridViewTextBoxColumn2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -501,6 +516,9 @@
   <data name="&gt;&gt;returnRelatorioNFeBindingSource.Name" xml:space="preserve">
     <value>returnRelatorioNFeBindingSource</value>
   </data>
+  <data name="numberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Número NFe</value>
+  </data>
   <data name="GRID_NFes_View.Size" type="System.Drawing.Size, System.Drawing">
     <value>952, 349</value>
   </data>
@@ -522,8 +540,8 @@
   <data name="&gt;&gt;numberDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="numberDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Número NFe</value>
+  <data name="&gt;&gt;numberDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="GRID_NFes_View.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -535,7 +553,7 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;GB_datasPDF.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="numberDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>120</value>
@@ -580,7 +598,7 @@
     <value>Data de Emissão inicial</value>
   </data>
   <data name="&gt;&gt;Grid_RelatorioNFe.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;BTN_New_NFe.Name" xml:space="preserve">
     <value>BTN_New_NFe</value>
@@ -604,7 +622,7 @@
     <value>fantasyNameDataGridViewTextBoxColumn2</value>
   </data>
   <data name="&gt;&gt;BTN_New_NFe.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="TXT_Filter_Serie_NFe.Size" type="System.Drawing.Size, System.Drawing">
     <value>121, 30</value>
@@ -639,6 +657,9 @@
   <data name="BTN_Filter.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
   </data>
+  <data name="&gt;&gt;LBL_Usuarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="valueNFeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
     <value>Valor da NFe</value>
   </data>
@@ -670,13 +691,13 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;BTN_Filtro_Gera_PDF.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;emissionDateDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>emissionDateDataGridViewTextBoxColumn</value>
+    <value>6</value>
   </data>
   <data name="GRID_NFes_View.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11px</value>
+  </data>
+  <data name="LBL_Usuarios.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>139, 17</value>
@@ -716,6 +737,9 @@
   </data>
   <data name="DT_DataDeEmissaoInicial.Size" type="System.Drawing.Size, System.Drawing">
     <value>227, 29</value>
+  </data>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Notas Fiscais</value>
   </data>
   <data name="BTN_Filter.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -761,6 +785,9 @@
   </data>
   <data name="&gt;&gt;valueNFeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="&gt;&gt;TXT_Filter_Numero_NFe.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -812,6 +839,9 @@
   </data>
   <data name="&gt;&gt;seriesDataGridViewTextBoxColumn2.Name" xml:space="preserve">
     <value>seriesDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;inStockDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="cNPJDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
     <value>CNPJ Emitente</value>
@@ -883,7 +913,7 @@
     <value>142, 30</value>
   </data>
   <data name="&gt;&gt;GRID_NFes_View.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;BTN_Filter.ZOrder" xml:space="preserve">
     <value>1</value>
@@ -930,6 +960,9 @@
   <data name="TXT_Filter_CNPJ.Location" type="System.Drawing.Point, System.Drawing">
     <value>269, 30</value>
   </data>
+  <data name="LBL_Usuarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.25pt</value>
+  </data>
   <data name="BTN_Gerar_PDF.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
   </data>
@@ -938,9 +971,6 @@
   </data>
   <metadata name="returnNFesBindingSource4.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>16, 10</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

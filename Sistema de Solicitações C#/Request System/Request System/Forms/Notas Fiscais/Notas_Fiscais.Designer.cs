@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notas_Fiscais_View));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GB_filters = new System.Windows.Forms.GroupBox();
             this.BTN_Filter_limpar = new MetroFramework.Controls.MetroButton();
             this.BTN_Filter = new MetroFramework.Controls.MetroButton();
@@ -63,6 +63,13 @@
             this.BTN_New_NFe = new MetroFramework.Controls.MetroButton();
             this.BTN_Edit = new MetroFramework.Controls.MetroButton();
             this.Grid_RelatorioNFe = new System.Windows.Forms.DataGridView();
+            this.numberNFeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.serierNFeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueNFeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJEmitenteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaoSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emissionDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.produtoQuantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnRelatorioNFeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.DT_DataDeEmissaoInicial = new MetroFramework.Controls.MetroDateTime();
             this.DT_DataDeEmissaoFinal = new MetroFramework.Controls.MetroDateTime();
@@ -71,13 +78,7 @@
             this.GB_datasPDF = new System.Windows.Forms.GroupBox();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
-            this.numberNFeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.serierNFeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valueNFeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNPJEmitenteDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razaoSocialDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emissionDateDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.produtoQuantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.GB_filters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_NFes_View)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnNFesBindingSource4)).BeginInit();
@@ -199,14 +200,14 @@
             this.GRID_NFes_View.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRID_NFes_View.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRID_NFes_View.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_NFes_View.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_NFes_View.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GRID_NFes_View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GRID_NFes_View.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.numberDataGridViewTextBoxColumn2,
@@ -219,26 +220,26 @@
             this.providerIDDataGridViewTextBoxColumn1,
             this.inStockDataGridViewCheckBoxColumn});
             this.GRID_NFes_View.DataSource = this.returnNFesBindingSource4;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRID_NFes_View.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRID_NFes_View.DefaultCellStyle = dataGridViewCellStyle5;
             this.GRID_NFes_View.EnableHeadersVisualStyles = false;
             this.GRID_NFes_View.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_NFes_View.Name = "GRID_NFes_View";
             this.GRID_NFes_View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_NFes_View.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_NFes_View.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.GRID_NFes_View.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_NFes_View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
@@ -336,6 +337,48 @@
             this.Grid_RelatorioNFe.DataSource = this.returnRelatorioNFeBindingSource;
             this.Grid_RelatorioNFe.Name = "Grid_RelatorioNFe";
             // 
+            // numberNFeDataGridViewTextBoxColumn
+            // 
+            this.numberNFeDataGridViewTextBoxColumn.DataPropertyName = "NumberNFe";
+            resources.ApplyResources(this.numberNFeDataGridViewTextBoxColumn, "numberNFeDataGridViewTextBoxColumn");
+            this.numberNFeDataGridViewTextBoxColumn.Name = "numberNFeDataGridViewTextBoxColumn";
+            // 
+            // serierNFeDataGridViewTextBoxColumn
+            // 
+            this.serierNFeDataGridViewTextBoxColumn.DataPropertyName = "SerierNFe";
+            resources.ApplyResources(this.serierNFeDataGridViewTextBoxColumn, "serierNFeDataGridViewTextBoxColumn");
+            this.serierNFeDataGridViewTextBoxColumn.Name = "serierNFeDataGridViewTextBoxColumn";
+            // 
+            // valueNFeDataGridViewTextBoxColumn1
+            // 
+            this.valueNFeDataGridViewTextBoxColumn1.DataPropertyName = "ValueNFe";
+            resources.ApplyResources(this.valueNFeDataGridViewTextBoxColumn1, "valueNFeDataGridViewTextBoxColumn1");
+            this.valueNFeDataGridViewTextBoxColumn1.Name = "valueNFeDataGridViewTextBoxColumn1";
+            // 
+            // cNPJEmitenteDataGridViewTextBoxColumn
+            // 
+            this.cNPJEmitenteDataGridViewTextBoxColumn.DataPropertyName = "CNPJEmitente";
+            resources.ApplyResources(this.cNPJEmitenteDataGridViewTextBoxColumn, "cNPJEmitenteDataGridViewTextBoxColumn");
+            this.cNPJEmitenteDataGridViewTextBoxColumn.Name = "cNPJEmitenteDataGridViewTextBoxColumn";
+            // 
+            // razaoSocialDataGridViewTextBoxColumn
+            // 
+            this.razaoSocialDataGridViewTextBoxColumn.DataPropertyName = "RazaoSocial";
+            resources.ApplyResources(this.razaoSocialDataGridViewTextBoxColumn, "razaoSocialDataGridViewTextBoxColumn");
+            this.razaoSocialDataGridViewTextBoxColumn.Name = "razaoSocialDataGridViewTextBoxColumn";
+            // 
+            // emissionDateDataGridViewTextBoxColumn1
+            // 
+            this.emissionDateDataGridViewTextBoxColumn1.DataPropertyName = "EmissionDate";
+            resources.ApplyResources(this.emissionDateDataGridViewTextBoxColumn1, "emissionDateDataGridViewTextBoxColumn1");
+            this.emissionDateDataGridViewTextBoxColumn1.Name = "emissionDateDataGridViewTextBoxColumn1";
+            // 
+            // produtoQuantidadeDataGridViewTextBoxColumn
+            // 
+            this.produtoQuantidadeDataGridViewTextBoxColumn.DataPropertyName = "ProdutoQuantidade";
+            resources.ApplyResources(this.produtoQuantidadeDataGridViewTextBoxColumn, "produtoQuantidadeDataGridViewTextBoxColumn");
+            this.produtoQuantidadeDataGridViewTextBoxColumn.Name = "produtoQuantidadeDataGridViewTextBoxColumn";
+            // 
             // returnRelatorioNFeBindingSource
             // 
             this.returnRelatorioNFeBindingSource.DataSource = typeof(Request_System.ReturnRelatorioNFe);
@@ -387,52 +430,16 @@
             this.BTN_Gerar_PDF.UseSelectable = true;
             this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click_1);
             // 
-            // numberNFeDataGridViewTextBoxColumn
+            // LBL_Usuarios
             // 
-            this.numberNFeDataGridViewTextBoxColumn.DataPropertyName = "NumberNFe";
-            resources.ApplyResources(this.numberNFeDataGridViewTextBoxColumn, "numberNFeDataGridViewTextBoxColumn");
-            this.numberNFeDataGridViewTextBoxColumn.Name = "numberNFeDataGridViewTextBoxColumn";
-            // 
-            // serierNFeDataGridViewTextBoxColumn
-            // 
-            this.serierNFeDataGridViewTextBoxColumn.DataPropertyName = "SerierNFe";
-            resources.ApplyResources(this.serierNFeDataGridViewTextBoxColumn, "serierNFeDataGridViewTextBoxColumn");
-            this.serierNFeDataGridViewTextBoxColumn.Name = "serierNFeDataGridViewTextBoxColumn";
-            // 
-            // valueNFeDataGridViewTextBoxColumn1
-            // 
-            this.valueNFeDataGridViewTextBoxColumn1.DataPropertyName = "ValueNFe";
-            resources.ApplyResources(this.valueNFeDataGridViewTextBoxColumn1, "valueNFeDataGridViewTextBoxColumn1");
-            this.valueNFeDataGridViewTextBoxColumn1.Name = "valueNFeDataGridViewTextBoxColumn1";
-            // 
-            // cNPJEmitenteDataGridViewTextBoxColumn
-            // 
-            this.cNPJEmitenteDataGridViewTextBoxColumn.DataPropertyName = "CNPJEmitente";
-            resources.ApplyResources(this.cNPJEmitenteDataGridViewTextBoxColumn, "cNPJEmitenteDataGridViewTextBoxColumn");
-            this.cNPJEmitenteDataGridViewTextBoxColumn.Name = "cNPJEmitenteDataGridViewTextBoxColumn";
-            // 
-            // razaoSocialDataGridViewTextBoxColumn
-            // 
-            this.razaoSocialDataGridViewTextBoxColumn.DataPropertyName = "RazaoSocial";
-            resources.ApplyResources(this.razaoSocialDataGridViewTextBoxColumn, "razaoSocialDataGridViewTextBoxColumn");
-            this.razaoSocialDataGridViewTextBoxColumn.Name = "razaoSocialDataGridViewTextBoxColumn";
-            // 
-            // emissionDateDataGridViewTextBoxColumn1
-            // 
-            this.emissionDateDataGridViewTextBoxColumn1.DataPropertyName = "EmissionDate";
-            resources.ApplyResources(this.emissionDateDataGridViewTextBoxColumn1, "emissionDateDataGridViewTextBoxColumn1");
-            this.emissionDateDataGridViewTextBoxColumn1.Name = "emissionDateDataGridViewTextBoxColumn1";
-            // 
-            // produtoQuantidadeDataGridViewTextBoxColumn
-            // 
-            this.produtoQuantidadeDataGridViewTextBoxColumn.DataPropertyName = "ProdutoQuantidade";
-            resources.ApplyResources(this.produtoQuantidadeDataGridViewTextBoxColumn, "produtoQuantidadeDataGridViewTextBoxColumn");
-            this.produtoQuantidadeDataGridViewTextBoxColumn.Name = "produtoQuantidadeDataGridViewTextBoxColumn";
+            resources.ApplyResources(this.LBL_Usuarios, "LBL_Usuarios");
+            this.LBL_Usuarios.Name = "LBL_Usuarios";
             // 
             // Notas_Fiscais_View
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.LBL_Usuarios);
             this.Controls.Add(this.GB_datasPDF);
             this.Controls.Add(this.Grid_RelatorioNFe);
             this.Controls.Add(this.BTN_New_NFe);
@@ -452,6 +459,7 @@
             this.GB_datasPDF.ResumeLayout(false);
             this.GB_datasPDF.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -502,5 +510,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn razaoSocialDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn emissionDateDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtoQuantidadeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Label LBL_Usuarios;
     }
 }

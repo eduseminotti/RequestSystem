@@ -21,15 +21,13 @@ namespace Request_System
 
         ManipulaUsuarios Manipula_Usuarios = new ManipulaUsuarios();
         List<Return_Usuarios> usuarios;
-
-
-
+    
         public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma)
         {
             InitializeComponent();
             isNew = IsNew;
 
-            //CBX_IDIOMA.DataSource = Enum.GetValues(typeof(UserIdioma));
+            CBX_IDIOMA.DataSource = Enum.GetValues(typeof(UserIdioma));
             CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
             CBX_TYPE.DataSource = Enum.GetValues(typeof(UserType));
 
@@ -76,7 +74,7 @@ namespace Request_System
         }
         private void TXT_Email_TextChanged(object sender, EventArgs e)
         {
-            TXT_Email.BackColor = Color.OrangeRed;
+            TXT_Email.BackColor = Color.White;
         }
         private void TXT_Usuario_TextChanged(object sender, EventArgs e)
         {

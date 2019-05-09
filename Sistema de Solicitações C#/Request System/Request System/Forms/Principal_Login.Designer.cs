@@ -68,8 +68,7 @@
             this.TXT_UserName_login.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TXT_UserName_login.CustomButton.UseSelectable = true;
             this.TXT_UserName_login.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
-            this.TXT_UserName_login.Lines = new string[] {
-        "user1"};
+            this.TXT_UserName_login.Lines = new string[0];
             resources.ApplyResources(this.TXT_UserName_login, "TXT_UserName_login");
             this.TXT_UserName_login.MaxLength = 32767;
             this.TXT_UserName_login.Name = "TXT_UserName_login";
@@ -98,8 +97,7 @@
             this.TXT_Pass_login.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TXT_Pass_login.CustomButton.UseSelectable = true;
             this.TXT_Pass_login.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
-            this.TXT_Pass_login.Lines = new string[] {
-        "123"};
+            this.TXT_Pass_login.Lines = new string[0];
             resources.ApplyResources(this.TXT_Pass_login, "TXT_Pass_login");
             this.TXT_Pass_login.MaxLength = 32767;
             this.TXT_Pass_login.Name = "TXT_Pass_login";
@@ -115,6 +113,7 @@
             // 
             // LoginValidate
             // 
+            this.AcceptButton = this.BTN_Entrar;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.TXT_Pass_login);
@@ -122,7 +121,9 @@
             this.Controls.Add(this.BTN_Entrar);
             this.Controls.Add(this.LBL_Pass);
             this.Controls.Add(this.LBL_User);
+            this.MaximizeBox = false;
             this.Name = "LoginValidate";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginValidate_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

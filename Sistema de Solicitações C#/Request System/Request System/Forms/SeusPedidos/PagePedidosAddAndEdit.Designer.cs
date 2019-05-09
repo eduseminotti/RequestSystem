@@ -78,7 +78,6 @@
             // 
             // Grid_Itens_solicitacoes
             // 
-            resources.ApplyResources(this.Grid_Itens_solicitacoes, "Grid_Itens_solicitacoes");
             this.Grid_Itens_solicitacoes.AllowUserToResizeRows = false;
             this.Grid_Itens_solicitacoes.AutoGenerateColumns = false;
             this.Grid_Itens_solicitacoes.BackgroundColor = System.Drawing.Color.White;
@@ -111,6 +110,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Grid_Itens_solicitacoes.DefaultCellStyle = dataGridViewCellStyle2;
             this.Grid_Itens_solicitacoes.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.Grid_Itens_solicitacoes, "Grid_Itens_solicitacoes");
             this.Grid_Itens_solicitacoes.GridColor = System.Drawing.Color.White;
             this.Grid_Itens_solicitacoes.Name = "Grid_Itens_solicitacoes";
             this.Grid_Itens_solicitacoes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -171,38 +171,21 @@
             // 
             // TXT_Find_product
             // 
-            resources.ApplyResources(this.TXT_Find_product, "TXT_Find_product");
             // 
             // 
             // 
-            this.TXT_Find_product.CustomButton.AccessibleDescription = resources.GetString("resource.AccessibleDescription");
-            this.TXT_Find_product.CustomButton.AccessibleName = resources.GetString("resource.AccessibleName");
-            this.TXT_Find_product.CustomButton.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("resource.Anchor")));
-            this.TXT_Find_product.CustomButton.AutoSize = ((bool)(resources.GetObject("resource.AutoSize")));
-            this.TXT_Find_product.CustomButton.AutoSizeMode = ((System.Windows.Forms.AutoSizeMode)(resources.GetObject("resource.AutoSizeMode")));
-            this.TXT_Find_product.CustomButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource.BackgroundImage")));
-            this.TXT_Find_product.CustomButton.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("resource.BackgroundImageLayout")));
-            this.TXT_Find_product.CustomButton.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("resource.Dock")));
-            this.TXT_Find_product.CustomButton.FlatStyle = ((System.Windows.Forms.FlatStyle)(resources.GetObject("resource.FlatStyle")));
-            this.TXT_Find_product.CustomButton.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font")));
             this.TXT_Find_product.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.TXT_Find_product.CustomButton.ImageAlign = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.ImageAlign")));
-            this.TXT_Find_product.CustomButton.ImageIndex = ((int)(resources.GetObject("resource.ImageIndex")));
-            this.TXT_Find_product.CustomButton.ImageKey = resources.GetString("resource.ImageKey");
             this.TXT_Find_product.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
             this.TXT_Find_product.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.TXT_Find_product.CustomButton.MaximumSize = ((System.Drawing.Size)(resources.GetObject("resource.MaximumSize")));
             this.TXT_Find_product.CustomButton.Name = "";
-            this.TXT_Find_product.CustomButton.RightToLeft = ((System.Windows.Forms.RightToLeft)(resources.GetObject("resource.RightToLeft")));
             this.TXT_Find_product.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
             this.TXT_Find_product.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.TXT_Find_product.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.TXT_Find_product.CustomButton.TextAlign = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.TextAlign")));
-            this.TXT_Find_product.CustomButton.TextImageRelation = ((System.Windows.Forms.TextImageRelation)(resources.GetObject("resource.TextImageRelation")));
             this.TXT_Find_product.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TXT_Find_product.CustomButton.UseSelectable = true;
             this.TXT_Find_product.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
             this.TXT_Find_product.Lines = new string[0];
+            resources.ApplyResources(this.TXT_Find_product, "TXT_Find_product");
             this.TXT_Find_product.MaxLength = 32767;
             this.TXT_Find_product.Name = "TXT_Find_product";
             this.TXT_Find_product.PasswordChar = '\0';
@@ -214,6 +197,8 @@
             this.TXT_Find_product.UseSelectable = true;
             this.TXT_Find_product.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TXT_Find_product.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TXT_Find_product.TextChanged += new System.EventHandler(this.TXT_Find_product_TextChanged);
+
             // 
             // BTN_Seleciona_produto
             // 
@@ -224,10 +209,10 @@
             // 
             // List_products
             // 
-            resources.ApplyResources(this.List_products, "List_products");
             this.List_products.DataSource = this.returnProdutosBindingSource;
             this.List_products.DisplayMember = "Product_Name";
             this.List_products.FormattingEnabled = true;
+            resources.ApplyResources(this.List_products, "List_products");
             this.List_products.Name = "List_products";
             this.List_products.ValueMember = "Product_Name";
             // 
@@ -273,38 +258,21 @@
             // 
             // txt_motivo
             // 
-            resources.ApplyResources(this.txt_motivo, "txt_motivo");
             // 
             // 
             // 
-            this.txt_motivo.CustomButton.AccessibleDescription = resources.GetString("resource.AccessibleDescription1");
-            this.txt_motivo.CustomButton.AccessibleName = resources.GetString("resource.AccessibleName1");
-            this.txt_motivo.CustomButton.Anchor = ((System.Windows.Forms.AnchorStyles)(resources.GetObject("resource.Anchor1")));
-            this.txt_motivo.CustomButton.AutoSize = ((bool)(resources.GetObject("resource.AutoSize1")));
-            this.txt_motivo.CustomButton.AutoSizeMode = ((System.Windows.Forms.AutoSizeMode)(resources.GetObject("resource.AutoSizeMode1")));
-            this.txt_motivo.CustomButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("resource.BackgroundImage1")));
-            this.txt_motivo.CustomButton.BackgroundImageLayout = ((System.Windows.Forms.ImageLayout)(resources.GetObject("resource.BackgroundImageLayout1")));
-            this.txt_motivo.CustomButton.Dock = ((System.Windows.Forms.DockStyle)(resources.GetObject("resource.Dock1")));
-            this.txt_motivo.CustomButton.FlatStyle = ((System.Windows.Forms.FlatStyle)(resources.GetObject("resource.FlatStyle1")));
-            this.txt_motivo.CustomButton.Font = ((System.Drawing.Font)(resources.GetObject("resource.Font1")));
             this.txt_motivo.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.txt_motivo.CustomButton.ImageAlign = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.ImageAlign1")));
-            this.txt_motivo.CustomButton.ImageIndex = ((int)(resources.GetObject("resource.ImageIndex1")));
-            this.txt_motivo.CustomButton.ImageKey = resources.GetString("resource.ImageKey1");
             this.txt_motivo.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode1")));
             this.txt_motivo.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
-            this.txt_motivo.CustomButton.MaximumSize = ((System.Drawing.Size)(resources.GetObject("resource.MaximumSize1")));
             this.txt_motivo.CustomButton.Name = "";
-            this.txt_motivo.CustomButton.RightToLeft = ((System.Windows.Forms.RightToLeft)(resources.GetObject("resource.RightToLeft1")));
             this.txt_motivo.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
             this.txt_motivo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txt_motivo.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
-            this.txt_motivo.CustomButton.TextAlign = ((System.Drawing.ContentAlignment)(resources.GetObject("resource.TextAlign1")));
-            this.txt_motivo.CustomButton.TextImageRelation = ((System.Windows.Forms.TextImageRelation)(resources.GetObject("resource.TextImageRelation1")));
             this.txt_motivo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.txt_motivo.CustomButton.UseSelectable = true;
             this.txt_motivo.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
             this.txt_motivo.Lines = new string[0];
+            resources.ApplyResources(this.txt_motivo, "txt_motivo");
             this.txt_motivo.MaxLength = 250;
             this.txt_motivo.Name = "txt_motivo";
             this.txt_motivo.PasswordChar = '\0';
@@ -326,9 +294,9 @@
             // 
             // GB_Seleciona_produto
             // 
-            resources.ApplyResources(this.GB_Seleciona_produto, "GB_Seleciona_produto");
             this.GB_Seleciona_produto.Controls.Add(this.List_products);
             this.GB_Seleciona_produto.Controls.Add(this.BTN_Seleciona_produto);
+            resources.ApplyResources(this.GB_Seleciona_produto, "GB_Seleciona_produto");
             this.GB_Seleciona_produto.Name = "GB_Seleciona_produto";
             this.GB_Seleciona_produto.TabStop = false;
             // 

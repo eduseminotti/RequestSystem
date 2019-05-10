@@ -21,6 +21,8 @@ namespace Request_System
         long lastId;
         Configuration configuration = new Configuration();
         ManipulaStock dadosStock = new ManipulaStock();
+        LOG log = new LOG();
+        
 
         public List<ReturnProdutos> GetProducts(long ProductID, String ProductName, ProductIsActive ProductStatus)
         {
@@ -73,10 +75,12 @@ namespace Request_System
                     return_produtos.Add(produtos);
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.WriteEntry("teste de ex");
                 throw;
             }
+
             finally
             {
                 sqlConn.Close();

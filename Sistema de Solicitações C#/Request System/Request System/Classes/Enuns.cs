@@ -3,12 +3,6 @@ using System.ComponentModel;
 
 namespace Request_System
 {
-    public class Enuns
-    {
-
-        
-
-    }
     public enum UserIsactive
     {
         [Description("")]
@@ -18,7 +12,6 @@ namespace Request_System
         [Description("Ativo")]
         Ativo = 2
     };
-
 
     public enum UserType
     {

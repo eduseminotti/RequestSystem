@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Request_System.Classes
+namespace Request_System
 {
     public class ReturnSolicitacoesUsuario
     {

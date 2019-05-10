@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.Text;
 
+
 namespace Request_System
 {
     public class ManipulaStock

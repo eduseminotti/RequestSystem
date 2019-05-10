@@ -167,7 +167,7 @@
             // 
             // returnItensSolicitacoesUsuarioBindingSource
             // 
-            this.returnItensSolicitacoesUsuarioBindingSource.DataSource = typeof(Request_System.returnItensSolicitacoes);
+            this.returnItensSolicitacoesUsuarioBindingSource.DataSource = typeof(Request_System.ManipulaSolicitacoesStockMan);
             // 
             // TXT_Find_product
             // 

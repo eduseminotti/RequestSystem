@@ -7,20 +7,27 @@ namespace Request_System
     {
         public static LoginValidate loginValidate;
 
+
+        ValidateUsers validate = new ValidateUsers();
+        LOG log = new LOG();
+
+        String loginUserName;
+        String loginPass;
+
+        User user;
+
+
         public LoginValidate()
         {
             InitializeComponent();
             this.AcceptButton = BTN_Entrar;
 
             this.MaximizeBox = false;
+
+            log._WriteEntry("Início da minha aplicação");
+
         }
-        String loginUserName;
-        String loginPass;
-
-        User user;
-        ValidateUsers validate = new ValidateUsers();
-
-
+               
         private void LoginValidate_FormClosing(object sender, FormClosingEventArgs e)
         {
             System.Diagnostics.Process.GetCurrentProcess().Close();
@@ -28,7 +35,6 @@ namespace Request_System
             Application.Exit();
             this.Close();
         }
-
 
         private void BTN_Entrar_Click(object sender, EventArgs e)
         {

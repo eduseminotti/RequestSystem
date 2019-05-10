@@ -4,7 +4,7 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Request_System.Classes
+namespace Request_System
 {
     public class ReturnRelatorioSolicitacoes
     {

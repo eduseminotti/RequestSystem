@@ -190,7 +190,7 @@
             // 
             // returnSolicitacoesBindingSource
             // 
-            this.returnSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesUsuario);
+            this.returnSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesStockMan);
             // 
             // BTN_Edit
             // 

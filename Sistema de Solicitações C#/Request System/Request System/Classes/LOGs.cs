@@ -19,12 +19,12 @@ namespace Request_System
             //grava o texto na fonte de logs com o nome que      definimos para a constante SOURCE. 
             EventLog.WriteEntry(SOURCE, input, entryType);
         }
-        public void WriteEntry(string input)
+        public void _WriteEntry(string input)
         {
             //loga um simples evento com a categoria de informação. 
             WriteEntry(input, EventLogEntryType.Information);
         }
-        public void WriteEntry(Exception ex)
+        public void _WriteEntry(Exception ex)
         {
             //loga a ocorrência de uma excessão com a categoria de erro. 
             WriteEntry(ex.ToString(), EventLogEntryType.Error);

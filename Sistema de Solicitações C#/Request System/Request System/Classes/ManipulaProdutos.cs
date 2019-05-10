@@ -77,7 +77,7 @@ namespace Request_System
             }
             catch (SqlException ex)
             {
-                log.WriteEntry("teste de ex");
+                log._WriteEntry("teste de ex");
                 throw;
             }
 

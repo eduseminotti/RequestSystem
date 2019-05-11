@@ -77,7 +77,6 @@
     <Compile Include="Classes\ManipulaStock.cs" />
     <Compile Include="Classes\ManipulaUsuarios.cs" />
     <Compile Include="Classes\Enuns.cs" />
-    <Compile Include="Classes\Configuration.cs" />
     <Compile Include="Forms\Menus_Main.cs">
       <SubType>Form</SubType>
     </Compile>

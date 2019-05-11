@@ -19,12 +19,12 @@ namespace Request_System
     }
     public class ManipulaRelatorioSolicitacoes
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
         public List<ReturnRelatorioSolicitacoes> GetRelatorioSolicitacoes(string usuarioSolicitante, SolicitationStatus? solicitationStatus, DateTime inicial, DateTime final)
         {
             List<ReturnRelatorioSolicitacoes> GetRelatorioSolicitacoes = new List<ReturnRelatorioSolicitacoes>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             try
             {

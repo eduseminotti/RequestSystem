@@ -1,34 +1,30 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Configuration;
 
 namespace Request_System
 {
     public class LOG
     {
-        const string LOG_NAME = "Log";
-        const string SOURCE = "RequestSystem";
+        String arquivoLog = ConfigurationManager.AppSettings.Get("LocalLog");
 
-        public LOG()
+        private void logador( String entryType, String log)
         {
-            if (EventLog.SourceExists(SOURCE) == false)
-                EventLog.CreateEventSource(SOURCE, LOG_NAME);
+
+            System.IO.TextWriter arquivo = System.IO.File.AppendText(arquivoLog);
+
+            arquivo.WriteLine(DateTime.Now + " -  [" + entryType + "] - Mensagem: " + log);
+            arquivo.Close();
         }
 
-        public void WriteEntry(string input, EventLogEntryType entryType)
+        public void _logador(String log)
         {
-            //grava o texto na fonte de logs com o nome que      definimos para a constante SOURCE. 
-            EventLog.WriteEntry(SOURCE, input, entryType);
+            logador("INFO" ,log );
         }
-        public void _WriteEntry(string input)
+        public void _logador(Exception ex)
         {
-            //loga um simples evento com a categoria de informação. 
-            WriteEntry(input, EventLogEntryType.Information);
+            logador("ERRO" , ex.ToString());
         }
-        public void _WriteEntry(Exception ex)
-        {
-            //loga a ocorrência de uma excessão com a categoria de erro. 
-            WriteEntry(ex.ToString(), EventLogEntryType.Error);
-        }
+
 
     }
 }

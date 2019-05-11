@@ -7,7 +7,6 @@ namespace Request_System
     {
         public static LoginValidate loginValidate;
 
-
         ValidateUsers validate = new ValidateUsers();
         LOG log = new LOG();
 
@@ -24,12 +23,12 @@ namespace Request_System
 
             this.MaximizeBox = false;
 
-            log._WriteEntry("Início da minha aplicação");
-
+            log._logador("Iniciando Sistema;");
         }
-               
+
         private void LoginValidate_FormClosing(object sender, FormClosingEventArgs e)
         {
+            log._logador("Fechando Sistema;");
             System.Diagnostics.Process.GetCurrentProcess().Close();
             Environment.Exit(0);
             Application.Exit();
@@ -38,8 +37,16 @@ namespace Request_System
 
         private void BTN_Entrar_Click(object sender, EventArgs e)
         {
-            loginUserName = TXT_UserName_login.Text;
-            loginPass = TXT_Pass_login.Text;
+            loginUserName = TXT_UserName_login.Text != "" ? TXT_UserName_login.Text : null;
+            loginPass = TXT_Pass_login.Text != "" ? TXT_Pass_login.Text : null;
+
+            if (loginUserName == null || loginPass == null)
+            {
+                log._logador("Usuario ou senha nao informado!");
+                MessageBox.Show("Usuario ou senha estao vazios!");
+
+                return;
+            }
 
             user = validate.ValidaUsuario(loginUserName, loginPass);
 
@@ -59,10 +66,13 @@ namespace Request_System
                 Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, user.Idioma);
                 this.Hide();
                 admMain.Show();
-
+                log._logador("Login Realizado com sucesso com o usuario: " + user.Name + " Com o Idioma: " + user.Idioma);
             }
             else
+            {
+                log._logador("Usuario ou senha incorretos!");
                 MessageBox.Show("Usuario ou senha incorretos!");
+            }
         }
     }
 }

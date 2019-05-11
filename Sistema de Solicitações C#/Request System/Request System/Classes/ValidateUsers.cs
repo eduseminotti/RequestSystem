@@ -23,11 +23,11 @@ namespace Request_System
 
     public class ValidateUsers
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public User ValidaUsuario(String userName, String pass)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             User user = null;
             try
@@ -70,7 +70,7 @@ namespace Request_System
         }
         public String GetUserName(int UserId)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             String userName = null;
             try

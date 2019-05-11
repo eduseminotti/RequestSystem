@@ -21,13 +21,13 @@ namespace Request_System
     }
     public class ManipulaSolicitacoesStockMan
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public List<ReturnSolicitacoesStockMan> GetSolicitacoes(int solicitationId, string usuarioSolicitante, SolicitationStatus? solicitationStatus)
         {
             List<ReturnSolicitacoesStockMan> returnSolicitacoes = new List<ReturnSolicitacoesStockMan>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString = "	SELECT s.id   ,s.User_Requester ,ur.NAME AS requesterName ,s.User_Approver , ua.NAME AS approverName  , s.datasolicitacao  " +
@@ -91,7 +91,7 @@ namespace Request_System
         }
         public void UpdateStatus(int SolicitationId, SolicitationStatus Status, bool DataAprovacaoRejeicao, bool DataRetirada, int User_Approver)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " update [dbo].[Solicitation] set status = @status , User_Approver = @User_Approver  ";
 

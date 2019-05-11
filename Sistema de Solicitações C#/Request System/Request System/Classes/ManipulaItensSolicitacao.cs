@@ -19,12 +19,12 @@ namespace Request_System
     }
     public class ManipulaItensSolicitacoes
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
         ManipulaSolicitacoesUsuario manipulaSolicitacoes = new ManipulaSolicitacoesUsuario();
 
         public void InsertItemSolicitacao(int SolicitationId, int ProductId, int QuantidadeSolicitada)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " insert into [dbo].[Solicitation_Itens] ( SolicitationID, ProductID, QuantidadeSolicitada , QuantidadeAprovada ) values ( @SolicitationID , @ProductID, @Quantidade ,  @Quantidade  )  ";
 
@@ -38,9 +38,11 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log._logador("Item de solicitação cadastrado com sucesso para o produto id: " + ProductId + " quantidade: "+ QuantidadeSolicitada + "para a solicitração" + SolicitationId);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador(ex);
                 throw;
             }
             finally
@@ -52,7 +54,7 @@ namespace Request_System
         {
             List<returnItensSolicitacoes> GetItensSolicitacao = new List<returnItensSolicitacoes>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString =
@@ -81,8 +83,10 @@ namespace Request_System
                     GetItensSolicitacao.Add(itensSolicitacoes);
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador("Erro ao recuperar itens da solicitação: " + SolicitationId);
+                log._logador(ex);
                 throw;
             }
             finally
@@ -93,7 +97,7 @@ namespace Request_System
         }
         public void AtualizaQuantidadeAprovada(int SolicitationItemId, int Quantidade)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " update [dbo].[Solicitation_Itens] set QuantidadeAprovada = @QuantidadeAprovada  where id = @Id  ";
 
@@ -106,9 +110,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log._logador("Alterado a quantidade de itens aprovada para o item id: " + SolicitationItemId + "para:" + Quantidade + "Itens");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador("Erro ao editar a quantidade de itens aprovados ID: " + SolicitationItemId);
+                log._logador(ex);
                 throw;
             }
             finally
@@ -118,7 +125,7 @@ namespace Request_System
         }
         public void DeletaTodosItensSolicitacao(int SolicitationId)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " delete from [dbo].[Solicitation_Itens] where SolicitationID = @SolicitationId ";
 
@@ -130,9 +137,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log._logador("todos os Itens da solicitação id: "+ SolicitationId  + " deletados com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador("Erro ao deletar os itens da solicitação: " + SolicitationId);
+                log._logador(ex);
                 throw;
             }
             finally
@@ -142,7 +152,7 @@ namespace Request_System
         }
         public void DeletaItemSolicitacao(int ItemID)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " delete from [dbo].[Solicitation_Itens] where id = @id ";
 

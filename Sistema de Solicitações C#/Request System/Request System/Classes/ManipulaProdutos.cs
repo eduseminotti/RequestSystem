@@ -19,7 +19,7 @@ namespace Request_System
     public class ManipulaProdutos
     {
         long lastId;
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
         ManipulaStock dadosStock = new ManipulaStock();
         LOG log = new LOG();
         
@@ -28,7 +28,7 @@ namespace Request_System
         {
             List<ReturnProdutos> return_produtos = new List<ReturnProdutos>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 // string queryString = "SELECT id, Nome_produto, Descrição_produto, Tipo_unidade,isactive FROM [Seminotti_Teste].[dbo].[Products] where id > 0  ";
@@ -77,7 +77,7 @@ namespace Request_System
             }
             catch (SqlException ex)
             {
-                log._WriteEntry("teste de ex");
+                log._logador(ex);
                 throw;
             }
 
@@ -89,7 +89,7 @@ namespace Request_System
         }
         public bool New_Product(String Nome_Produto,  String Tipo_Unidade, ProductIsActive productIsActive)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = "insert [dbo].[Products]" +
@@ -122,7 +122,7 @@ namespace Request_System
         }
         public bool Edit_Produto(long prodcutID, String Nome_Produto,  String Tipo_Unidade, ProductIsActive productIsActive)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
             string queryString = "update  Seminotti_Teste.[dbo].[Products] set Nome_produto = @Nome_produto, Tipo_unidade = @Tipo_unidade , " +
                 "IsActive  = @IsActive where id = @productID";
@@ -153,7 +153,7 @@ namespace Request_System
 
         public long LastProduct()
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString = " 	select max(id)  as ID  from dbo.Products ";

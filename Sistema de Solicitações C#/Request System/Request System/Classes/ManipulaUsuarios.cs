@@ -20,13 +20,13 @@ namespace Request_System
     }
     public class ManipulaUsuarios
     {        
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public List<Return_Usuarios> GetUsuarios(String UserName , String  Name, String Setor , UserIsactive Status )
         {
             List<Return_Usuarios> return_usuarios = new List<Return_Usuarios>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             try
             {
@@ -87,7 +87,7 @@ namespace Request_System
         }
         public bool Novo_Usuario(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive, UserIdioma idioma)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = "insert Seminotti_Teste.dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive,Idioma) " +
@@ -125,7 +125,7 @@ namespace Request_System
         }
         public bool Edit_User(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive, UserIdioma idioma)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
             string queryString = "UPDATE [Seminotti_Teste].[dbo].[users] SET NAME = @name, setor = @setor, email = @email, cpf = @cpf, username = @username, password = @Password, type = @type, isactive = @isactive, idioma = @idioma   WHERE  UserName = @username ";
 

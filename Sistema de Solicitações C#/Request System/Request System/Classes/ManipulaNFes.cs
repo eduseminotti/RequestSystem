@@ -21,13 +21,13 @@ namespace Request_System
 
     public class ManipulaNFes
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public List<ReturnNFes> GetNFes(int Series, int Number, String CNPJ)
         {
             List<ReturnNFes> return_NFes = new List<ReturnNFes>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             try
             {
@@ -90,7 +90,7 @@ namespace Request_System
         public bool Insere_NFe(int SerieNFe, long NumberNFe, DateTime EmissionDate, decimal ValueNFe, long ProviderID)
         {
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = " insert into dbo.Notas_Fiscais (SeriesNFe, NumberNFe, EmissionDate,Value, ProviderID )" +
@@ -122,7 +122,7 @@ namespace Request_System
         }
         public bool EditaNFe(int SerieNFe, long NumberNFe, DateTime EmissionDate, decimal ValueNFe, long NFeId, long ProviderId)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = " update dbo.Notas_Fiscais set " +
@@ -156,7 +156,7 @@ namespace Request_System
         }
         public void SetIncludedInStock(long nFeId)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " update dbo.Notas_Fiscais set InStock = 1 where id = @nfeID ";
 
@@ -191,13 +191,13 @@ namespace Request_System
 
     public class ManipulaItensNFe
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public List<ReturnNFeitens> GetNFeItens(long NFeID)
         {
             List<ReturnNFeitens> return_Itens = new List<ReturnNFeitens>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString = "select p.id as productID ,p.Nome_produto ,p.Tipo_unidade,i.Quantidade,i.id as itenID " +
@@ -239,7 +239,7 @@ namespace Request_System
         }
         public bool New_NFe_Item(int Quantidade, long produtcID, long NFEID)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = "insert into [dbo].[NFe_Itens] (  Quantidade, produtcID, NFEID) values (@Quantidade, @produtcID , @NFEID )  ";
@@ -268,7 +268,7 @@ namespace Request_System
         }
         public void Deleta_NFe_Item(long ItemId)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = "delete from dbo.NFe_Itens  where id = @id  ";
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);
@@ -303,13 +303,13 @@ namespace Request_System
     }
     public class RelatorioNFe
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public List<ReturnRelatorioNFe> ReturnRelatorioNFe(DateTime Inicial, DateTime Final)
         {
             List<ReturnRelatorioNFe> returnRelatorioNFes = new List<ReturnRelatorioNFe>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString = "  SELECT distinct nfe.id, nfe.SeriesNFe, nfe.NumberNFe, nfe.value , prov.CNPJ ,prov.Razao_Social ,nfe.EmissionDate,  " +

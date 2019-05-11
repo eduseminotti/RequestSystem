@@ -8,11 +8,11 @@ namespace Request_System
 {
     public class ManipulaStock
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public void Cria_Item_Stock(long ProductID)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " Insert into [dbo].[Stock_Itens] (ProductID, Quantidade) values (@produtcID ,0) ";
 
@@ -36,7 +36,7 @@ namespace Request_System
         }
         public void AdicionaItensStock(List<ReturnNFeitens> itensNFes) // apenas inclusao de itens na recepção de NFe
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             StringBuilder stringBuilder = new StringBuilder();
             
@@ -63,7 +63,7 @@ namespace Request_System
 
         public void EditaItensStock(List<returnItensSolicitacoes> itensSolicitacao)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             StringBuilder stringBuilder = new StringBuilder();
 

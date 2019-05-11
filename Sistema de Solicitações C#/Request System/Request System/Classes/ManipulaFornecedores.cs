@@ -21,13 +21,13 @@ namespace Request_System
 
     public class ManipulaFornecedores
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();        
 
         public List<ReturnProviders> GetProviders(int SelectProviderID, String Nomefantasia, String CNPJ)
         {
             List<ReturnProviders> return_Providers = new List<ReturnProviders>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             try
             {
@@ -65,10 +65,12 @@ namespace Request_System
                     providers.NameCnpj = query["namecnpj"].ToString();
 
                     return_Providers.Add(providers);
+                    log._logador("Dados de Fornecedores carregados com sucesso!");
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador(ex);
                 throw;
             }
             finally
@@ -80,7 +82,7 @@ namespace Request_System
 
         public bool New_Provider(String Razao_Social, String Nome_Fantasia, String CNPJ, String Phone)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = "insert into Seminotti_Teste.dbo.Providers ( Razao_Social, Nome_Fantasia, cnpj, phone ) values  ( @Razao_Social, @Nome_Fantasia , @cnpj , @phone) ";
@@ -96,9 +98,11 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log._logador("Fornecedor cadastrado com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador(ex);
                 throw;
             }
             finally
@@ -111,7 +115,7 @@ namespace Request_System
 
         public bool Edit_Provider(long Id, String Razao_Social, String Nome_Fantasia, String CNPJ, String Phone)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
             string queryString = "update Seminotti_Teste.dbo.Providers SET Razao_Social = " +
@@ -128,9 +132,11 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log._logador("Fornecedor Editado com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log._logador(ex);
                 throw;
             }
             finally

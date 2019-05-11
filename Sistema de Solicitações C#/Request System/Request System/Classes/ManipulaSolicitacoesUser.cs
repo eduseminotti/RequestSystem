@@ -20,13 +20,13 @@ namespace Request_System
     }
     public class ManipulaSolicitacoesUsuario
     {
-        Configuration configuration = new Configuration();
+        LOG log = new LOG();
 
         public List<ReturnSolicitacoesUsuario> GetSolicitacoesUsuario(int userId, int solicitationId, SolicitationStatus? solicitationStatus)
         {
             List<ReturnSolicitacoesUsuario> returnSolicitacoesUsuario = new List<ReturnSolicitacoesUsuario>();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString = "select id, DataSolicitacao, DataRetirada, DataAprovacaoRejeicao, status , motivo from [dbo].[Solicitation] where User_Requester =  @useridID  ";
@@ -78,7 +78,7 @@ namespace Request_System
         public int InsertSolicitacao(int UserRequester)
         {
             int requestID;
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " insert into [dbo].[Solicitation] (User_Requester) values ( @User_Requester) ";
 
@@ -104,7 +104,7 @@ namespace Request_System
         }
         public void DeletaSolicitacao(int SolicitationId)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " delete from [dbo].[Solicitation] where id = @Id ";
 
@@ -130,7 +130,7 @@ namespace Request_System
         {
             int lastId = 0;
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
                 string queryString = " 	select max(id)  as ID  from dbo.Solicitation ";
@@ -157,7 +157,7 @@ namespace Request_System
         }
         public void UpdateMotivo(int SolicitationId, String motivo)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings[configuration.connectionString].ConnectionString);
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             string queryString = " update [dbo].[Solicitation] set motivo = @motivo  where id = @Id ";
 

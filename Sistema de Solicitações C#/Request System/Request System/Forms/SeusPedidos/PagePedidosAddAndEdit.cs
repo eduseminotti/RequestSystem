@@ -61,7 +61,7 @@ namespace Request_System
         }
         private void BTN_Add_product_Click(object sender, EventArgs e)
         {
-            if (productName != null || productID != 0)
+            if (productName != null && TXT_qtd_Itens.Value != 0)
             {
 
                 foreach (var row in this.Grid_Itens_solicitacoes.Rows)
@@ -78,7 +78,6 @@ namespace Request_System
                         TXT_qtd_Itens.Value = 0;
                         return;
                     }
-
                 }
 
                 quantidade = Convert.ToInt32(TXT_qtd_Itens.Value);
@@ -182,6 +181,12 @@ namespace Request_System
         }
 
         private void TXT_Find_product_TextChanged(object sender, EventArgs e)
+        {
+            if (TXT_Find_product.Text != "")
+                BTN_busca_produto.PerformClick();
+        }
+
+        private void TXT_Find_product_TextChanged_1(object sender, EventArgs e)
         {
             if (TXT_Find_product.Text != "")
                 BTN_busca_produto.PerformClick();

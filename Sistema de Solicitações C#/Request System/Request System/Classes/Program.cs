@@ -19,8 +19,5 @@ namespace Request_System
             Application.Run(new LoginValidate());
            
         }
-
-
-
     }
 }

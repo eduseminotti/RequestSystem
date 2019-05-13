@@ -20,7 +20,7 @@ namespace Request_System
             {
                 this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
             }
-            if(e.KeyCode == Keys.Tab)
+            if (e.KeyCode == Keys.Tab)
             {
                 TXT_Phone.BackColor = Color.White;
                 TXT_CNPJ.BackColor = Color.White;
@@ -67,27 +67,29 @@ namespace Request_System
         {
             cnpj = TXT_CNPJ.Text.ToString().Replace(".", "").Replace("-", "").Replace("/", "").Replace(" ", "");
             phone = TXT_Phone.Text.ToString().Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "");
-
+            bool returns = false;
             if (TXT_Razao_social.Text == "")
             {
                 TXT_Razao_social.BackColor = Color.OrangeRed;
-                return;
+                returns = true;
             }
             if (TXT_Nome_Fantasia.Text == "")
             {
                 TXT_Nome_Fantasia.BackColor = Color.OrangeRed;
-                return;
+                returns = true;
             }
             if (cnpj == "")
             {
                 TXT_CNPJ.BackColor = Color.OrangeRed;
-                return;
+                returns = true;
             }
             if (phone == "")
             {
                 TXT_Phone.BackColor = Color.OrangeRed;
-                return;
+                returns = true;
             }
+            if (returns)
+                return;
 
             phone = TXT_Phone.Text.ToString();
             razaoSocial = TXT_Razao_social.Text.ToString();

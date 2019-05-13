@@ -8,8 +8,12 @@ namespace Request_System
 {
     public class GeradorDePDFGrid
     {
+        LOG log = new LOG();
+
         public void gerarPDF(DataGridView dataGrid, string tpRelatorio)
         {
+            log.logador("Iniciando processo de geração de PDF para relatorio de: " + tpRelatorio);
+
             PdfPTable pdfTable = new PdfPTable(dataGrid.ColumnCount);
             pdfTable.DefaultCell.Padding = 3;
             pdfTable.WidthPercentage = 100;
@@ -61,6 +65,8 @@ namespace Request_System
                 pdfDoc.Add(pdfTable);
                 pdfDoc.Close();
                 stream.Close();
+
+                log.logador("PDF de relatorio de: "+ tpRelatorio +" gerado com sucesso no diretorio: " + folderPath);
             }
         }
     }

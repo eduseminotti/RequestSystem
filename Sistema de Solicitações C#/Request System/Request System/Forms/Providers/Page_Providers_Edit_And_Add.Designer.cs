@@ -105,6 +105,7 @@
             // 
             resources.ApplyResources(this.TXT_CNPJ, "TXT_CNPJ");
             this.TXT_CNPJ.Name = "TXT_CNPJ";
+
             // 
             // TXT_Phone
             // 

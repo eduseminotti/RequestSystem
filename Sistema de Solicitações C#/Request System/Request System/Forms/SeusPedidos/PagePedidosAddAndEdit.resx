@@ -126,7 +126,7 @@
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="BTN_Add_product.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>6</value>
   </data>
   <data name="BTN_Add_product.Text" xml:space="preserve">
     <value>Adicionar Produto</value>
@@ -143,44 +143,44 @@
   <data name="&gt;&gt;BTN_Add_product.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="productIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Código</value>
+  <data name="dataGridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>Código Produto</value>
   </data>
-  <data name="productIdDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+  <data name="dataGridViewTextBoxColumn8.Width" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn11.HeaderText" xml:space="preserve">
+    <value>Nome do produto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn11.Width" type="System.Int32, mscorlib">
     <value>150</value>
   </data>
-  <data name="productNameDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Produto</value>
-  </data>
-  <data name="productNameDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+  <data name="dataGridViewTextBoxColumn12.HeaderText" xml:space="preserve">
     <value>Quantidade Solicitada</value>
   </data>
-  <data name="quantidadeSolicitadaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>115</value>
+  <data name="dataGridViewTextBoxColumn12.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
-  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+  <data name="dataGridViewTextBoxColumn13.HeaderText" xml:space="preserve">
     <value>Quantidade Aprovada</value>
   </data>
-  <data name="quantidadeAprovadaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>115</value>
+  <data name="dataGridViewTextBoxColumn13.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
-  <data name="solicitationIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+  <data name="dataGridViewTextBoxColumn9.HeaderText" xml:space="preserve">
     <value>SolicitationId</value>
   </data>
-  <data name="solicitationIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+  <data name="dataGridViewTextBoxColumn9.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="solicitationItemIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+  <data name="dataGridViewTextBoxColumn10.HeaderText" xml:space="preserve">
     <value>SolicitationItemId</value>
   </data>
-  <data name="solicitationItemIdDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+  <data name="dataGridViewTextBoxColumn10.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <metadata name="returnItensSolicitacoesUsuarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>927, 17</value>
+  <metadata name="returnItensSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
   </metadata>
   <data name="Grid_Itens_solicitacoes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11px</value>
@@ -196,7 +196,7 @@
     <value>641, 247</value>
   </data>
   <data name="Grid_Itens_solicitacoes.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Grid_Itens_solicitacoes.Name" xml:space="preserve">
     <value>Grid_Itens_solicitacoes</value>
@@ -208,54 +208,6 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Grid_Itens_solicitacoes.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <metadata name="returnItensSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>674, 17</value>
-  </metadata>
-  <metadata name="itensSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>241, 17</value>
-  </metadata>
-  <metadata name="insertSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 1</value>
-  </data>
-  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>21, 21</value>
-  </data>
-  <data name="resource.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TXT_Find_product.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 72</value>
-  </data>
-  <data name="TXT_Find_product.Size" type="System.Drawing.Size, System.Drawing">
-    <value>150, 23</value>
-  </data>
-  <data name="TXT_Find_product.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TXT_Find_product.Name" xml:space="preserve">
-    <value>TXT_Find_product</value>
-  </data>
-  <data name="&gt;&gt;TXT_Find_product.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TXT_Find_product.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TXT_Find_product.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
   <data name="BTN_Seleciona_produto.Location" type="System.Drawing.Point, System.Drawing">
@@ -265,7 +217,7 @@
     <value>70, 23</value>
   </data>
   <data name="BTN_Seleciona_produto.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>4</value>
   </data>
   <data name="BTN_Seleciona_produto.Text" xml:space="preserve">
     <value>Selecionar</value>
@@ -282,9 +234,6 @@
   <data name="&gt;&gt;BTN_Seleciona_produto.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <metadata name="returnProdutosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>461, 17</value>
-  </metadata>
   <data name="List_products.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 10</value>
   </data>
@@ -292,7 +241,7 @@
     <value>204, 82</value>
   </data>
   <data name="List_products.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;List_products.Name" xml:space="preserve">
     <value>List_products</value>
@@ -313,7 +262,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_Remove_Item.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="BTN_Remove_Item.Text" xml:space="preserve">
     <value>Remover Item</value>
@@ -328,7 +277,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Remove_Item.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="BTN_busca_produto.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 99</value>
@@ -337,7 +286,7 @@
     <value>70, 23</value>
   </data>
   <data name="BTN_busca_produto.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="BTN_busca_produto.Text" xml:space="preserve">
     <value>Buscar</value>
@@ -352,7 +301,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_busca_produto.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="BTN_Fechar.Location" type="System.Drawing.Point, System.Drawing">
     <value>420, 384</value>
@@ -361,7 +310,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_Fechar.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="BTN_Fechar.Text" xml:space="preserve">
     <value>Fechar</value>
@@ -376,7 +325,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Fechar.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="TXT_qtd_Itens.Location" type="System.Drawing.Point, System.Drawing">
     <value>173, 71</value>
@@ -385,7 +334,7 @@
     <value>130, 20</value>
   </data>
   <data name="TXT_qtd_Itens.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;TXT_qtd_Itens.Name" xml:space="preserve">
     <value>TXT_qtd_Itens</value>
@@ -397,7 +346,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_qtd_Itens.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -424,7 +373,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -451,24 +400,24 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
-  <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
+  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
     <value />
   </data>
-  <data name="resource.ImeMode1" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
+  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
     <value>610, 2</value>
   </data>
-  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
+  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
     <value>25, 25</value>
   </data>
-  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
+  <data name="resource.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="resource.Visible1" type="System.Boolean, mscorlib">
+  <data name="resource.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
   <data name="txt_motivo.Location" type="System.Drawing.Point, System.Drawing">
@@ -478,7 +427,7 @@
     <value>638, 30</value>
   </data>
   <data name="txt_motivo.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;txt_motivo.Name" xml:space="preserve">
     <value>txt_motivo</value>
@@ -490,7 +439,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;txt_motivo.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="BTN_Salvar.Location" type="System.Drawing.Point, System.Drawing">
     <value>541, 384</value>
@@ -499,7 +448,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_Salvar.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>10</value>
   </data>
   <data name="BTN_Salvar.Text" xml:space="preserve">
     <value>Salvar</value>
@@ -514,7 +463,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Salvar.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="GB_Seleciona_produto.Location" type="System.Drawing.Point, System.Drawing">
     <value>171, 56</value>
@@ -538,7 +487,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GB_Seleciona_produto.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -565,6 +514,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="TXT_Find_product.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 71</value>
+  </data>
+  <data name="TXT_Find_product.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_Find_product.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 20</value>
+  </data>
+  <data name="TXT_Find_product.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TXT_Find_product.Name" xml:space="preserve">
+    <value>TXT_Find_product</value>
+  </data>
+  <data name="&gt;&gt;TXT_Find_product.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_Find_product.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;TXT_Find_product.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -3584,70 +3557,46 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Solicitações</value>
   </data>
-  <data name="&gt;&gt;productIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>productIdDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn8.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn8</value>
   </data>
-  <data name="&gt;&gt;productIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewTextBoxColumn8.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>productNameDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn11.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn11</value>
   </data>
-  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewTextBoxColumn11.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;quantidadeSolicitadaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>quantidadeSolicitadaDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn12.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn12</value>
   </data>
-  <data name="&gt;&gt;quantidadeSolicitadaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewTextBoxColumn12.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;quantidadeAprovadaDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>quantidadeAprovadaDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn13.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn13</value>
   </data>
-  <data name="&gt;&gt;quantidadeAprovadaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewTextBoxColumn13.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>solicitationIdDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn9.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn9</value>
   </data>
-  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewTextBoxColumn9.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>solicitationItemIdDataGridViewTextBoxColumn</value>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn10.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn10</value>
   </data>
-  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataGridViewTextBoxColumn10.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;returnItensSolicitacoesUsuarioBindingSource.Name" xml:space="preserve">
-    <value>returnItensSolicitacoesUsuarioBindingSource</value>
-  </data>
-  <data name="&gt;&gt;returnItensSolicitacoesUsuarioBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;returnItensSolicitacoesBindingSource.Name" xml:space="preserve">
     <value>returnItensSolicitacoesBindingSource</value>
   </data>
   <data name="&gt;&gt;returnItensSolicitacoesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;itensSolicitacoesBindingSource.Name" xml:space="preserve">
-    <value>itensSolicitacoesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;itensSolicitacoesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;insertSolicitacoesBindingSource.Name" xml:space="preserve">
-    <value>insertSolicitacoesBindingSource</value>
-  </data>
-  <data name="&gt;&gt;insertSolicitacoesBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;returnProdutosBindingSource.Name" xml:space="preserve">
-    <value>returnProdutosBindingSource</value>
-  </data>
-  <data name="&gt;&gt;returnProdutosBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

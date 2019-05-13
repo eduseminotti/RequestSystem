@@ -21,8 +21,7 @@ namespace Request_System
         long lastId;
         LOG log = new LOG();
         ManipulaStock dadosStock = new ManipulaStock();
-        LOG log = new LOG();
-        
+      
 
         public List<ReturnProdutos> GetProducts(long ProductID, String ProductName, ProductIsActive ProductStatus)
         {
@@ -77,7 +76,7 @@ namespace Request_System
             }
             catch (SqlException ex)
             {
-                log._logador(ex);
+                log.logador(ex);
                 throw;
             }
 
@@ -108,9 +107,12 @@ namespace Request_System
                 lastId = LastProduct();
                 dadosStock.Cria_Item_Stock(lastId);
                 sucess = true;
+                log.logador("produto cadastrado com sucesso, "+ Nome_Produto);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao cadastrar produto, " + Nome_Produto);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -139,8 +141,10 @@ namespace Request_System
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao editar produto, " + Nome_Produto);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -167,9 +171,10 @@ namespace Request_System
                     lastId = long.Parse(query["ID"].ToString());
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
                 lastId = 0;
+                log.logador(ex);
                 throw;
             }
             finally

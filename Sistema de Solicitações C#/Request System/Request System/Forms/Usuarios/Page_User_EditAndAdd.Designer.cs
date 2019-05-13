@@ -57,9 +57,9 @@
             // 
             // TXT_Nome
             // 
-            resources.ApplyResources(this.TXT_Nome, "TXT_Nome");
             this.TXT_Nome.BackColor = System.Drawing.Color.White;
             this.TXT_Nome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TXT_Nome, "TXT_Nome");
             this.TXT_Nome.Name = "TXT_Nome";
             this.TXT_Nome.TextChanged += new System.EventHandler(this.TXT_Nome_TextChanged);
             // 
@@ -139,29 +139,29 @@
             // 
             // CBX_IDIOMA
             // 
-            resources.ApplyResources(this.CBX_IDIOMA, "CBX_IDIOMA");
             this.CBX_IDIOMA.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_IDIOMA, "CBX_IDIOMA");
             this.CBX_IDIOMA.Name = "CBX_IDIOMA";
             this.CBX_IDIOMA.UseSelectable = true;
             // 
             // CBX_TYPE
             // 
-            resources.ApplyResources(this.CBX_TYPE, "CBX_TYPE");
             this.CBX_TYPE.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_TYPE, "CBX_TYPE");
             this.CBX_TYPE.Name = "CBX_TYPE";
             this.CBX_TYPE.UseSelectable = true;
             // 
             // CBX_Status
             // 
-            resources.ApplyResources(this.CBX_Status, "CBX_Status");
             this.CBX_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Status, "CBX_Status");
             this.CBX_Status.Name = "CBX_Status";
             this.CBX_Status.UseSelectable = true;
             // 
             // BTN_UserCancel
             // 
-            resources.ApplyResources(this.BTN_UserCancel, "BTN_UserCancel");
             this.BTN_UserCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.BTN_UserCancel, "BTN_UserCancel");
             this.BTN_UserCancel.Name = "BTN_UserCancel";
             this.BTN_UserCancel.UseSelectable = true;
             this.BTN_UserCancel.Click += new System.EventHandler(this.BTN_UserCancel_Click);
@@ -185,9 +185,9 @@
             // PageUserEditandAdd
             // 
             this.AcceptButton = this.BTN_UserSalvar;
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.BTN_UserCancel;
+            resources.ApplyResources(this, "$this");
             this.ControlBox = false;
             this.Controls.Add(this.TXT_CPF);
             this.Controls.Add(this.BTN_UserSalvar);

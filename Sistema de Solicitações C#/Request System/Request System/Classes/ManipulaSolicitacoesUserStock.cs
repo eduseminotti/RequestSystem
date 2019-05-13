@@ -79,8 +79,10 @@ namespace Request_System
                     returnSolicitacoes.Add(solicitacoes);
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao carregar as solicitações!");
+                log.logador(ex);
                 throw;
             }
             finally
@@ -108,15 +110,17 @@ namespace Request_System
 
             cmd.CommandText += " where id = @Id ";
             cmd.Parameters.AddWithValue("@Id", SolicitationId);
-
+            log.logador("Status da solicitação: "+ SolicitationId + " editado para: " +  Status.ToString());
 
             try
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao atualziar o status da solicitação!");
+                log.logador(ex);
                 throw;
             }
             finally

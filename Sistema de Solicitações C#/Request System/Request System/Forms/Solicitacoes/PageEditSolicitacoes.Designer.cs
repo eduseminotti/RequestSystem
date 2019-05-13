@@ -29,11 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageEditSolicitacoes));
             this.Grid_view_itens_solicitação = new MetroFramework.Controls.MetroGrid();
+            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeAprovadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationItemIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnItensSolicitacoesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.CBX_Status_Solicitacao = new MetroFramework.Controls.MetroComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -74,13 +81,6 @@
             this.solicitationItemIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnItensSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeAprovadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationItemIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_view_itens_solicitação)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).BeginInit();
             this.GB_DataAprovacao.SuspendLayout();
@@ -99,14 +99,14 @@
             this.Grid_view_itens_solicitação.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Grid_view_itens_solicitação.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.Grid_view_itens_solicitação.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Grid_view_itens_solicitação.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Grid_view_itens_solicitação.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Grid_view_itens_solicitação.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_view_itens_solicitação.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductId,
@@ -117,29 +117,78 @@
             this.solicitationIdDataGridViewTextBoxColumn1,
             this.solicitationItemIdDataGridViewTextBoxColumn1});
             this.Grid_view_itens_solicitação.DataSource = this.returnItensSolicitacoesBindingSource1;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Grid_view_itens_solicitação.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Grid_view_itens_solicitação.DefaultCellStyle = dataGridViewCellStyle2;
             this.Grid_view_itens_solicitação.EnableHeadersVisualStyles = false;
             resources.ApplyResources(this.Grid_view_itens_solicitação, "Grid_view_itens_solicitação");
             this.Grid_view_itens_solicitação.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Grid_view_itens_solicitação.Name = "Grid_view_itens_solicitação";
             this.Grid_view_itens_solicitação.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Grid_view_itens_solicitação.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Grid_view_itens_solicitação.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Grid_view_itens_solicitação.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_view_itens_solicitação.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // ProductId
+            // 
+            this.ProductId.DataPropertyName = "ProductId";
+            resources.ApplyResources(this.ProductId, "ProductId");
+            this.ProductId.Name = "ProductId";
+            this.ProductId.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn1
+            // 
+            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
+            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
+            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
+            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // quantidadeSolicitadaDataGridViewTextBoxColumn
+            // 
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeSolicitada";
+            resources.ApplyResources(this.quantidadeSolicitadaDataGridViewTextBoxColumn, "quantidadeSolicitadaDataGridViewTextBoxColumn");
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.Name = "quantidadeSolicitadaDataGridViewTextBoxColumn";
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeAprovadaDataGridViewTextBoxColumn
+            // 
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeAprovada";
+            resources.ApplyResources(this.quantidadeAprovadaDataGridViewTextBoxColumn, "quantidadeAprovadaDataGridViewTextBoxColumn");
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.Name = "quantidadeAprovadaDataGridViewTextBoxColumn";
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeEstoqueDataGridViewTextBoxColumn
+            // 
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEstoque";
+            resources.ApplyResources(this.quantidadeEstoqueDataGridViewTextBoxColumn, "quantidadeEstoqueDataGridViewTextBoxColumn");
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEstoqueDataGridViewTextBoxColumn";
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // solicitationIdDataGridViewTextBoxColumn1
+            // 
+            this.solicitationIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationId";
+            resources.ApplyResources(this.solicitationIdDataGridViewTextBoxColumn1, "solicitationIdDataGridViewTextBoxColumn1");
+            this.solicitationIdDataGridViewTextBoxColumn1.Name = "solicitationIdDataGridViewTextBoxColumn1";
+            this.solicitationIdDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // solicitationItemIdDataGridViewTextBoxColumn1
+            // 
+            this.solicitationItemIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationItemId";
+            resources.ApplyResources(this.solicitationItemIdDataGridViewTextBoxColumn1, "solicitationItemIdDataGridViewTextBoxColumn1");
+            this.solicitationItemIdDataGridViewTextBoxColumn1.Name = "solicitationItemIdDataGridViewTextBoxColumn1";
+            this.solicitationItemIdDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // returnItensSolicitacoesBindingSource1
             // 
@@ -534,55 +583,6 @@
             // returnItensSolicitacoesBindingSource
             // 
             this.returnItensSolicitacoesBindingSource.DataSource = typeof(Request_System.returnItensSolicitacoes);
-            // 
-            // ProductId
-            // 
-            this.ProductId.DataPropertyName = "ProductId";
-            resources.ApplyResources(this.ProductId, "ProductId");
-            this.ProductId.Name = "ProductId";
-            this.ProductId.ReadOnly = true;
-            // 
-            // productNameDataGridViewTextBoxColumn1
-            // 
-            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
-            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
-            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
-            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // quantidadeSolicitadaDataGridViewTextBoxColumn
-            // 
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeSolicitada";
-            resources.ApplyResources(this.quantidadeSolicitadaDataGridViewTextBoxColumn, "quantidadeSolicitadaDataGridViewTextBoxColumn");
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.Name = "quantidadeSolicitadaDataGridViewTextBoxColumn";
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantidadeAprovadaDataGridViewTextBoxColumn
-            // 
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeAprovada";
-            resources.ApplyResources(this.quantidadeAprovadaDataGridViewTextBoxColumn, "quantidadeAprovadaDataGridViewTextBoxColumn");
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.Name = "quantidadeAprovadaDataGridViewTextBoxColumn";
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantidadeEstoqueDataGridViewTextBoxColumn
-            // 
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEstoque";
-            resources.ApplyResources(this.quantidadeEstoqueDataGridViewTextBoxColumn, "quantidadeEstoqueDataGridViewTextBoxColumn");
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEstoqueDataGridViewTextBoxColumn";
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // solicitationIdDataGridViewTextBoxColumn1
-            // 
-            this.solicitationIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationId";
-            resources.ApplyResources(this.solicitationIdDataGridViewTextBoxColumn1, "solicitationIdDataGridViewTextBoxColumn1");
-            this.solicitationIdDataGridViewTextBoxColumn1.Name = "solicitationIdDataGridViewTextBoxColumn1";
-            this.solicitationIdDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // solicitationItemIdDataGridViewTextBoxColumn1
-            // 
-            this.solicitationItemIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationItemId";
-            resources.ApplyResources(this.solicitationItemIdDataGridViewTextBoxColumn1, "solicitationItemIdDataGridViewTextBoxColumn1");
-            this.solicitationItemIdDataGridViewTextBoxColumn1.Name = "solicitationItemIdDataGridViewTextBoxColumn1";
-            this.solicitationItemIdDataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // PageEditSolicitacoes
             // 

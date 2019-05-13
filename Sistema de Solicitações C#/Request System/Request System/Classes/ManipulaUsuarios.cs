@@ -75,8 +75,10 @@ namespace Request_System
                     return_usuarios.Add(usuarios);
                 }
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao carregar a lista de usuarios.");
+                log.logador(ex);
                 throw;
             }
             finally
@@ -112,9 +114,12 @@ namespace Request_System
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
                 sucess = true;
+                log.logador("Usuario cadastrado com sucesso: " + UserName);
             }
-            catch (SqlException)
-            {
+            catch (SqlException ex)
+            {               
+                log.logador("Erro ao cadastrar usuario: " + UserName);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -146,9 +151,12 @@ namespace Request_System
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
                 sucess = true;
+                log.logador("Usuario editado com sucesso: " + UserName);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao editar usuario: " + UserName);
+                log.logador(ex);
                 throw;
             }
             finally

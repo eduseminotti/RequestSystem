@@ -10,7 +10,7 @@ namespace Request_System
     {
         LOG log = new LOG();
 
-        public void Cria_Item_Stock(long ProductID)
+        public void Cria_Item_Stock(long ProductID) // cadastro do item no stock ao cadastrar produto
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
@@ -24,9 +24,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("Item criado em Stock: " + ProductID);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao criar item em stock: " + ProductID);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -34,15 +37,16 @@ namespace Request_System
                 sqlConn.Close();
             }
         }
-        public void AdicionaItensStock(List<ReturnNFeitens> itensNFes) // apenas inclusao de itens na recepção de NFe
+        public void AdicionaItensStock(List<ReturnNFeitens> itensNFes) // apenas inclusao de quantidades em stock na recepção de NFe
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
             StringBuilder stringBuilder = new StringBuilder();
-            
+
             foreach (var itensNFe in itensNFes)
             {
                 stringBuilder.AppendLine($"update dbo.Stock_Itens  set Quantidade = Quantidade + {itensNFe.Quantidade} where ProductID = {itensNFe.ProductCode} ; ");
+                log.logador("Preparando para adicionar itens ao estoque, produto: " + itensNFe.ProductCode + " Quantidade: " + itensNFe.Quantidade);
             }
 
             SqlCommand cmd = new SqlCommand(stringBuilder.ToString(), sqlConn);
@@ -50,9 +54,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("Itens adicionados ao estoque com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao atuaizar a quantidade em stock!");
+                log.logador(ex);
                 throw;
             }
             finally
@@ -70,6 +77,7 @@ namespace Request_System
             foreach (var itemSolicitacao in itensSolicitacao)
             {
                 stringBuilder.AppendLine($"update dbo.Stock_Itens  set Quantidade = Quantidade - {itemSolicitacao.QuantidadeAprovada} where productid = {itemSolicitacao.ProductId} ; ");
+                log.logador("Preparando para atualizar a quantidade de itens em stock, produto: " + itemSolicitacao.ProductId + " Quantidade: " + itemSolicitacao.QuantidadeAprovada);
             }
 
             SqlCommand cmd = new SqlCommand(stringBuilder.ToString(), sqlConn);
@@ -77,9 +85,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("Quantidades em stock alterada!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao atuaizar a quantidade em stock!");
+                log.logador(ex);
                 throw;
             }
             finally

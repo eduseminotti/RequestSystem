@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Notas_Fiscais_View));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GB_filters = new System.Windows.Forms.GroupBox();
             this.BTN_Filter_limpar = new MetroFramework.Controls.MetroButton();
             this.BTN_Filter = new MetroFramework.Controls.MetroButton();
@@ -50,15 +50,16 @@
             this.valueNFeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BTN_Filtro_Gera_PDF = new MetroFramework.Controls.MetroButton();
             this.GRID_NFes_View = new MetroFramework.Controls.MetroGrid();
-            this.numberDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.seriesDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emissionDateDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.valueNFeDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fantasyNameDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cNPJDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nFeIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.providerIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.inStockDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.numberDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.seriesDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emissionDateDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.valueNFeDataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fantasyNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cNPJDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nFeIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.providerIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.returnNFesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.returnNFesBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_New_NFe = new MetroFramework.Controls.MetroButton();
             this.BTN_Edit = new MetroFramework.Controls.MetroButton();
@@ -81,6 +82,7 @@
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.GB_filters.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_NFes_View)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnNFesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnNFesBindingSource4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_RelatorioNFe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnRelatorioNFeBindingSource)).BeginInit();
@@ -89,7 +91,6 @@
             // 
             // GB_filters
             // 
-            resources.ApplyResources(this.GB_filters, "GB_filters");
             this.GB_filters.Controls.Add(this.BTN_Filter_limpar);
             this.GB_filters.Controls.Add(this.BTN_Filter);
             this.GB_filters.Controls.Add(this.TXT_Filter_CNPJ);
@@ -98,6 +99,7 @@
             this.GB_filters.Controls.Add(this.label1);
             this.GB_filters.Controls.Add(this.TXT_Filter_Numero_NFe);
             this.GB_filters.Controls.Add(this.TXT_Filter_Serie_NFe);
+            resources.ApplyResources(this.GB_filters, "GB_filters");
             this.GB_filters.Name = "GB_filters";
             this.GB_filters.TabStop = false;
             // 
@@ -193,119 +195,125 @@
             // 
             // GRID_NFes_View
             // 
-            resources.ApplyResources(this.GRID_NFes_View, "GRID_NFes_View");
             this.GRID_NFes_View.AllowUserToResizeRows = false;
             this.GRID_NFes_View.AutoGenerateColumns = false;
             this.GRID_NFes_View.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_NFes_View.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRID_NFes_View.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRID_NFes_View.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_NFes_View.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_NFes_View.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.GRID_NFes_View.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GRID_NFes_View.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numberDataGridViewTextBoxColumn2,
-            this.seriesDataGridViewTextBoxColumn2,
-            this.emissionDateDataGridViewTextBoxColumn2,
-            this.valueNFeDataGridViewTextBoxColumn2,
-            this.fantasyNameDataGridViewTextBoxColumn2,
-            this.cNPJDataGridViewTextBoxColumn2,
-            this.nFeIDDataGridViewTextBoxColumn1,
-            this.providerIDDataGridViewTextBoxColumn1,
-            this.inStockDataGridViewCheckBoxColumn});
-            this.GRID_NFes_View.DataSource = this.returnNFesBindingSource4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRID_NFes_View.DefaultCellStyle = dataGridViewCellStyle5;
+            this.numberDataGridViewTextBoxColumn1,
+            this.seriesDataGridViewTextBoxColumn1,
+            this.emissionDateDataGridViewTextBoxColumn3,
+            this.valueNFeDataGridViewTextBoxColumn3,
+            this.fantasyNameDataGridViewTextBoxColumn1,
+            this.cNPJDataGridViewTextBoxColumn1,
+            this.nFeIDDataGridViewTextBoxColumn,
+            this.providerIDDataGridViewTextBoxColumn,
+            this.dataGridViewCheckBoxColumn1});
+            this.GRID_NFes_View.DataSource = this.returnNFesBindingSource;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRID_NFes_View.DefaultCellStyle = dataGridViewCellStyle2;
             this.GRID_NFes_View.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.GRID_NFes_View, "GRID_NFes_View");
             this.GRID_NFes_View.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_NFes_View.Name = "GRID_NFes_View";
             this.GRID_NFes_View.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_NFes_View.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_NFes_View.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GRID_NFes_View.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_NFes_View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // numberDataGridViewTextBoxColumn2
+            // numberDataGridViewTextBoxColumn1
             // 
-            this.numberDataGridViewTextBoxColumn2.DataPropertyName = "Number";
-            resources.ApplyResources(this.numberDataGridViewTextBoxColumn2, "numberDataGridViewTextBoxColumn2");
-            this.numberDataGridViewTextBoxColumn2.Name = "numberDataGridViewTextBoxColumn2";
-            this.numberDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.numberDataGridViewTextBoxColumn1.DataPropertyName = "Number";
+            resources.ApplyResources(this.numberDataGridViewTextBoxColumn1, "numberDataGridViewTextBoxColumn1");
+            this.numberDataGridViewTextBoxColumn1.Name = "numberDataGridViewTextBoxColumn1";
+            this.numberDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.numberDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // seriesDataGridViewTextBoxColumn2
+            // seriesDataGridViewTextBoxColumn1
             // 
-            this.seriesDataGridViewTextBoxColumn2.DataPropertyName = "Series";
-            resources.ApplyResources(this.seriesDataGridViewTextBoxColumn2, "seriesDataGridViewTextBoxColumn2");
-            this.seriesDataGridViewTextBoxColumn2.Name = "seriesDataGridViewTextBoxColumn2";
-            this.seriesDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.seriesDataGridViewTextBoxColumn1.DataPropertyName = "Series";
+            resources.ApplyResources(this.seriesDataGridViewTextBoxColumn1, "seriesDataGridViewTextBoxColumn1");
+            this.seriesDataGridViewTextBoxColumn1.Name = "seriesDataGridViewTextBoxColumn1";
+            this.seriesDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.seriesDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // emissionDateDataGridViewTextBoxColumn2
+            // emissionDateDataGridViewTextBoxColumn3
             // 
-            this.emissionDateDataGridViewTextBoxColumn2.DataPropertyName = "EmissionDate";
-            resources.ApplyResources(this.emissionDateDataGridViewTextBoxColumn2, "emissionDateDataGridViewTextBoxColumn2");
-            this.emissionDateDataGridViewTextBoxColumn2.Name = "emissionDateDataGridViewTextBoxColumn2";
-            this.emissionDateDataGridViewTextBoxColumn2.ReadOnly = true;
-            this.emissionDateDataGridViewTextBoxColumn2.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.emissionDateDataGridViewTextBoxColumn3.DataPropertyName = "EmissionDate";
+            resources.ApplyResources(this.emissionDateDataGridViewTextBoxColumn3, "emissionDateDataGridViewTextBoxColumn3");
+            this.emissionDateDataGridViewTextBoxColumn3.Name = "emissionDateDataGridViewTextBoxColumn3";
+            this.emissionDateDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.emissionDateDataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // valueNFeDataGridViewTextBoxColumn2
+            // valueNFeDataGridViewTextBoxColumn3
             // 
-            this.valueNFeDataGridViewTextBoxColumn2.DataPropertyName = "ValueNFe";
-            resources.ApplyResources(this.valueNFeDataGridViewTextBoxColumn2, "valueNFeDataGridViewTextBoxColumn2");
-            this.valueNFeDataGridViewTextBoxColumn2.Name = "valueNFeDataGridViewTextBoxColumn2";
-            this.valueNFeDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.valueNFeDataGridViewTextBoxColumn3.DataPropertyName = "ValueNFe";
+            resources.ApplyResources(this.valueNFeDataGridViewTextBoxColumn3, "valueNFeDataGridViewTextBoxColumn3");
+            this.valueNFeDataGridViewTextBoxColumn3.Name = "valueNFeDataGridViewTextBoxColumn3";
+            this.valueNFeDataGridViewTextBoxColumn3.ReadOnly = true;
+            this.valueNFeDataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // fantasyNameDataGridViewTextBoxColumn2
+            // fantasyNameDataGridViewTextBoxColumn1
             // 
-            this.fantasyNameDataGridViewTextBoxColumn2.DataPropertyName = "Fantasy_Name";
-            resources.ApplyResources(this.fantasyNameDataGridViewTextBoxColumn2, "fantasyNameDataGridViewTextBoxColumn2");
-            this.fantasyNameDataGridViewTextBoxColumn2.Name = "fantasyNameDataGridViewTextBoxColumn2";
-            this.fantasyNameDataGridViewTextBoxColumn2.ReadOnly = true;
+            this.fantasyNameDataGridViewTextBoxColumn1.DataPropertyName = "Fantasy_Name";
+            resources.ApplyResources(this.fantasyNameDataGridViewTextBoxColumn1, "fantasyNameDataGridViewTextBoxColumn1");
+            this.fantasyNameDataGridViewTextBoxColumn1.Name = "fantasyNameDataGridViewTextBoxColumn1";
+            this.fantasyNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.fantasyNameDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // cNPJDataGridViewTextBoxColumn2
+            // cNPJDataGridViewTextBoxColumn1
             // 
-            this.cNPJDataGridViewTextBoxColumn2.DataPropertyName = "CNPJ";
-            resources.ApplyResources(this.cNPJDataGridViewTextBoxColumn2, "cNPJDataGridViewTextBoxColumn2");
-            this.cNPJDataGridViewTextBoxColumn2.Name = "cNPJDataGridViewTextBoxColumn2";
+            this.cNPJDataGridViewTextBoxColumn1.DataPropertyName = "CNPJ";
+            resources.ApplyResources(this.cNPJDataGridViewTextBoxColumn1, "cNPJDataGridViewTextBoxColumn1");
+            this.cNPJDataGridViewTextBoxColumn1.Name = "cNPJDataGridViewTextBoxColumn1";
+            this.cNPJDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.cNPJDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // nFeIDDataGridViewTextBoxColumn1
+            // nFeIDDataGridViewTextBoxColumn
             // 
-            this.nFeIDDataGridViewTextBoxColumn1.DataPropertyName = "NFeID";
-            resources.ApplyResources(this.nFeIDDataGridViewTextBoxColumn1, "nFeIDDataGridViewTextBoxColumn1");
-            this.nFeIDDataGridViewTextBoxColumn1.Name = "nFeIDDataGridViewTextBoxColumn1";
+            this.nFeIDDataGridViewTextBoxColumn.DataPropertyName = "NFeID";
+            resources.ApplyResources(this.nFeIDDataGridViewTextBoxColumn, "nFeIDDataGridViewTextBoxColumn");
+            this.nFeIDDataGridViewTextBoxColumn.Name = "nFeIDDataGridViewTextBoxColumn";
             // 
-            // providerIDDataGridViewTextBoxColumn1
+            // providerIDDataGridViewTextBoxColumn
             // 
-            this.providerIDDataGridViewTextBoxColumn1.DataPropertyName = "ProviderID";
-            resources.ApplyResources(this.providerIDDataGridViewTextBoxColumn1, "providerIDDataGridViewTextBoxColumn1");
-            this.providerIDDataGridViewTextBoxColumn1.Name = "providerIDDataGridViewTextBoxColumn1";
+            this.providerIDDataGridViewTextBoxColumn.DataPropertyName = "ProviderID";
+            resources.ApplyResources(this.providerIDDataGridViewTextBoxColumn, "providerIDDataGridViewTextBoxColumn");
+            this.providerIDDataGridViewTextBoxColumn.Name = "providerIDDataGridViewTextBoxColumn";
             // 
-            // inStockDataGridViewCheckBoxColumn
+            // dataGridViewCheckBoxColumn1
             // 
-            this.inStockDataGridViewCheckBoxColumn.DataPropertyName = "InStock";
-            resources.ApplyResources(this.inStockDataGridViewCheckBoxColumn, "inStockDataGridViewCheckBoxColumn");
-            this.inStockDataGridViewCheckBoxColumn.Name = "inStockDataGridViewCheckBoxColumn";
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "InStock";
+            resources.ApplyResources(this.dataGridViewCheckBoxColumn1, "dataGridViewCheckBoxColumn1");
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
-            // returnNFesBindingSource4
+            // returnNFesBindingSource
             // 
-            this.returnNFesBindingSource4.DataSource = typeof(Request_System.ReturnNFes);
+            this.returnNFesBindingSource.DataSource = typeof(Request_System.ReturnNFes);
             // 
             // BTN_New_NFe
             // 
@@ -323,7 +331,6 @@
             // 
             // Grid_RelatorioNFe
             // 
-            resources.ApplyResources(this.Grid_RelatorioNFe, "Grid_RelatorioNFe");
             this.Grid_RelatorioNFe.AutoGenerateColumns = false;
             this.Grid_RelatorioNFe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_RelatorioNFe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -335,6 +342,7 @@
             this.emissionDateDataGridViewTextBoxColumn1,
             this.produtoQuantidadeDataGridViewTextBoxColumn});
             this.Grid_RelatorioNFe.DataSource = this.returnRelatorioNFeBindingSource;
+            resources.ApplyResources(this.Grid_RelatorioNFe, "Grid_RelatorioNFe");
             this.Grid_RelatorioNFe.Name = "Grid_RelatorioNFe";
             // 
             // numberNFeDataGridViewTextBoxColumn
@@ -406,13 +414,13 @@
             // 
             // GB_datasPDF
             // 
-            resources.ApplyResources(this.GB_datasPDF, "GB_datasPDF");
             this.GB_datasPDF.Controls.Add(this.metroButton2);
             this.GB_datasPDF.Controls.Add(this.BTN_Gerar_PDF);
             this.GB_datasPDF.Controls.Add(this.DT_DataDeEmissaoFinal);
             this.GB_datasPDF.Controls.Add(this.label5);
             this.GB_datasPDF.Controls.Add(this.DT_DataDeEmissaoInicial);
             this.GB_datasPDF.Controls.Add(this.label4);
+            resources.ApplyResources(this.GB_datasPDF, "GB_datasPDF");
             this.GB_datasPDF.Name = "GB_datasPDF";
             this.GB_datasPDF.TabStop = false;
             // 
@@ -453,6 +461,7 @@
             this.GB_filters.ResumeLayout(false);
             this.GB_filters.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_NFes_View)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnNFesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnNFesBindingSource4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_RelatorioNFe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnRelatorioNFeBindingSource)).EndInit();
@@ -511,5 +520,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn emissionDateDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtoQuantidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label LBL_Usuarios;
+        private System.Windows.Forms.BindingSource returnNFesBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn numberDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn seriesDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emissionDateDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn valueNFeDataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fantasyNameDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cNPJDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nFeIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn providerIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }

@@ -64,9 +64,12 @@ namespace Request_System
 
                     returnSolicitacoesUsuario.Add(solicitacoesUsuario);
                 }
+                
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao carregar as solicitaçoes do usuario!");
+                log.logador(ex);
                 throw;
             }
             finally
@@ -91,9 +94,12 @@ namespace Request_System
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
                 requestID = LastSolicitationId();
+                log.logador("Solicitação de usaurio cadastrada com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao criar a solicitação do usuario!");
+                log.logador(ex);
                 throw;
             }
             finally
@@ -116,9 +122,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("Solicitação Deletado com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao deletar solicitação!");
+                log.logador(ex);
                 throw;
             }
             finally

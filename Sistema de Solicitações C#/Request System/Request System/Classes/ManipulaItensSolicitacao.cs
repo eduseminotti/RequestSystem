@@ -38,11 +38,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
-                log._logador("Item de solicitação cadastrado com sucesso para o produto id: " + ProductId + " quantidade: "+ QuantidadeSolicitada + "para a solicitração" + SolicitationId);
+                log.logador("Item de solicitação cadastrado com sucesso para o produto id: " + ProductId + " quantidade: " + QuantidadeSolicitada + "para a solicitração" + SolicitationId);
             }
             catch (SqlException ex)
             {
-                log._logador(ex);
+                log.logador("Erro ao cadastrar item de solicitação com o Id: " + SolicitationId + " e produto: " + ProductId);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -82,11 +83,12 @@ namespace Request_System
 
                     GetItensSolicitacao.Add(itensSolicitacoes);
                 }
+                log.logador("Itens da solicitação recuperados com sucesso: " + SolicitationId);
             }
             catch (SqlException ex)
             {
-                log._logador("Erro ao recuperar itens da solicitação: " + SolicitationId);
-                log._logador(ex);
+                log.logador("Erro ao recuperar itens da solicitação: " + SolicitationId);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -110,12 +112,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
-                log._logador("Alterado a quantidade de itens aprovada para o item id: " + SolicitationItemId + "para:" + Quantidade + "Itens");
+                log.logador("Alterado a quantidade de itens aprovada para o item id: " + SolicitationItemId + "para:" + Quantidade + "Itens");
             }
             catch (SqlException ex)
             {
-                log._logador("Erro ao editar a quantidade de itens aprovados ID: " + SolicitationItemId);
-                log._logador(ex);
+                log.logador("Erro ao editar a quantidade de itens aprovados ID: " + SolicitationItemId);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -137,12 +139,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
-                log._logador("todos os Itens da solicitação id: "+ SolicitationId  + " deletados com sucesso!");
+                log.logador("todos os Itens da solicitação id: " + SolicitationId + " deletados com sucesso!");
             }
             catch (SqlException ex)
             {
-                log._logador("Erro ao deletar os itens da solicitação: " + SolicitationId);
-                log._logador(ex);
+                log.logador("Erro ao deletar os itens da solicitação: " + SolicitationId);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -164,9 +166,13 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("Item de solicitação deletado com sucesso, Item: " + ItemID);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao deletar item da solicitação, Item: " + ItemID);
+                log.logador(ex);
+
                 throw;
             }
             finally

@@ -67,7 +67,9 @@
   <ItemGroup>
     <Compile Include="Classes\GeraPDF.cs" />
     <Compile Include="Classes\LOGs.cs" />
+    <Compile Include="Classes\ManipulaItensNFe.cs" />
     <Compile Include="Classes\ManipulaItensSolicitacao.cs" />
+    <Compile Include="Classes\manipulaRelatorioNFe.cs" />
     <Compile Include="Classes\ManipulaRelatorioSolicitacoes.cs" />
     <Compile Include="Classes\ManipulaSolicitacoesUser.cs" />
     <Compile Include="Classes\ManipulaSolicitacoesUserStock.cs" />
@@ -324,6 +326,7 @@
     <None Include="Properties\DataSources\Request_System.Properties.Settings.datasource" />
     <None Include="Properties\DataSources\returnItensSolicitacoes.datasource" />
     <None Include="Properties\DataSources\returnItensSolicitacoesUsuario.datasource" />
+    <None Include="Properties\DataSources\ReturnNFes.datasource" />
     <None Include="Properties\DataSources\ReturnProdutos.datasource" />
     <None Include="Properties\DataSources\ReturnProviders.datasource" />
     <None Include="Properties\DataSources\ReturnRelatorioNFe.datasource" />

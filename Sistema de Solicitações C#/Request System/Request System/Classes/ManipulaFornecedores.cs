@@ -65,12 +65,14 @@ namespace Request_System
                     providers.NameCnpj = query["namecnpj"].ToString();
 
                     return_Providers.Add(providers);
-                    log._logador("Dados de Fornecedores carregados com sucesso!");
+
                 }
+                    log.logador("Dados de Fornecedores carregados com sucesso! fornecedor: " + Nomefantasia);
             }
             catch (SqlException ex)
             {
-                log._logador(ex);
+                log.logador("Erro ao carregar dados de fornecedores para o fornecedor: " + Nomefantasia);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -98,11 +100,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
-                log._logador("Fornecedor cadastrado com sucesso!");
+                log.logador("Fornecedor cadastrado com sucesso: "+ Nome_Fantasia);
             }
             catch (SqlException ex)
             {
-                log._logador(ex);
+                log.logador("Erro ao cadastrar fornecedor: " + Nome_Fantasia);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -132,11 +135,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
-                log._logador("Fornecedor Editado com sucesso!");
+                log.logador("Fornecedor Editado com sucesso: "+ Nome_Fantasia);
             }
             catch (SqlException ex)
             {
-                log._logador(ex);
+                log.logador("Erro ao editar fornecedor: " + Nome_Fantasia);
+                log.logador(ex);
                 throw;
             }
             finally

@@ -39,14 +39,15 @@ namespace Request_System
             Grid_View_produtos.DataSource = produtos;
             Grid_Produtos_PDF.DataSource = produtos;
         }
-        private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
+        private void TXT_Filter_Codigo_TextChanged_1(object sender, EventArgs e)
         {
+            TXT_Filter_Codigo.BackColor = Color.White;
             int valor;
             if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor) || TXT_Filter_Codigo.Text == "")
             {
                 BTN_Filter.PerformClick();
             }
-            else
+            else if(TXT_Filter_Codigo.Text != "")
             {
                 TXT_Filter_Codigo.BackColor = Color.OrangeRed;
                 if (userIdioma == UserIdioma.Portugues)
@@ -59,7 +60,8 @@ namespace Request_System
         }
         private void TXT_Filter_Nome_TextChanged(object sender, EventArgs e)
         {
-            BTN_Filter.PerformClick();
+            if (TXT_Filter_Nome.Text != "")
+                BTN_Filter.PerformClick();
         }
         private void BTN_Gerar_PDF_Click(object sender, EventArgs e)
         {
@@ -114,6 +116,11 @@ namespace Request_System
             produtos = obterProdutos.GetProducts(0, null, 0);
             Grid_View_produtos.DataSource = produtos;
             Grid_Produtos_PDF.DataSource = produtos;
+        }
+
+        private void TXT_Filter_Nome_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

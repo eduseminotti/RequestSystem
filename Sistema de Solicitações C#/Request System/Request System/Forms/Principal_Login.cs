@@ -23,12 +23,12 @@ namespace Request_System
 
             this.MaximizeBox = false;
 
-            log._logador("Iniciando Sistema;");
+            log.logador("Iniciando Sistema!");
         }
 
         private void LoginValidate_FormClosing(object sender, FormClosingEventArgs e)
         {
-            log._logador("Fechando Sistema;");
+            log.logador("Fechando Sistema!");
             System.Diagnostics.Process.GetCurrentProcess().Close();
             Environment.Exit(0);
             Application.Exit();
@@ -42,7 +42,7 @@ namespace Request_System
 
             if (loginUserName == null || loginPass == null)
             {
-                log._logador("Usuario ou senha nao informado!");
+                log.logador("Usuario ou senha nao informado!");
                 MessageBox.Show("Usuario ou senha estao vazios!");
 
                 return;
@@ -66,11 +66,11 @@ namespace Request_System
                 Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, user.Idioma);
                 this.Hide();
                 admMain.Show();
-                log._logador("Login Realizado com sucesso com o usuario: " + user.Name + " Com o Idioma: " + user.Idioma);
+                log.logador("Login Realizado com sucesso com o usuario: " + user.Name + " Com o Idioma: " + user.Idioma);
             }
             else
             {
-                log._logador("Usuario ou senha incorretos!");
+                log.logador("Usuario ou senha incorretos!");
                 MessageBox.Show("Usuario ou senha incorretos!");
             }
         }

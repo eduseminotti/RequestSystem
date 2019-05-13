@@ -30,23 +30,22 @@ namespace Request_System
         {
             TXT_Filter_Codigo.BackColor = Color.White;
             int valor;
-            if(TXT_Filter_Codigo.Text !="")
+
+
+            if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor)|| TXT_Filter_Codigo.Text == "")
             {
-                if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor))
-                {
-                    BTN_Filter1.PerformClick();
-                }
-                else
-                {
-                    TXT_Filter_Codigo.BackColor = Color.OrangeRed;
-                    MessageBox.Show("0,1,2,3...");
-                }
+                BTN_Filter1.PerformClick();
             }
+            else
+            {
+                TXT_Filter_Codigo.BackColor = Color.OrangeRed;
+                MessageBox.Show("0,1,2,3...");
+            }
+
         }
 
         private void TXT_Filter_Nome_fantasia_TextChanged(object sender, EventArgs e)
         {
-
             BTN_Filter1.PerformClick();
         }
 
@@ -54,9 +53,9 @@ namespace Request_System
         {
             TXT_Filter_CNPJ.BackColor = Color.White;
             int valor;
-            if(TXT_Filter_CNPJ.Text != "")
+            if (TXT_Filter_CNPJ.Text != "")
             {
-                if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor) && TXT_Filter_CNPJ.Text != "")
+                if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor) || TXT_Filter_CNPJ.Text == "")
                 {
                     BTN_Filter1.PerformClick();
                 }
@@ -66,13 +65,12 @@ namespace Request_System
                     MessageBox.Show("0,1,2,3...");
                 }
             }
-
         }
 
         private void BTN_Filter1_Click(object sender, EventArgs e)
         {
             String nomeFantasia = null, cnpj = null;
-            int id = 0;
+            int id = 0;            
             if (TXT_Filter_CNPJ.Text.ToString() != "")
                 cnpj = TXT_Filter_CNPJ.Text.ToString();
             if (TXT_Filter_Codigo.Text.ToString() != "")

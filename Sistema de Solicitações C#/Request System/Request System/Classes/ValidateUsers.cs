@@ -59,8 +59,10 @@ namespace Request_System
                 }
                 return user;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao validar usuario!");
+                log.logador(ex);
                 throw;
             }
             finally
@@ -89,8 +91,10 @@ namespace Request_System
                 }
                 return userName;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao capturar usuario do banco!");
+                log.logador(ex);
                 throw;
             }
             finally

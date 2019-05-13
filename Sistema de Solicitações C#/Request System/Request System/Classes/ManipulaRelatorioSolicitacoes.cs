@@ -71,9 +71,12 @@ namespace Request_System
 
                     GetRelatorioSolicitacoes.Add(itensRelatorioSolicitacoes);
                 }
+                log.logador("Dados do relatorio de solicitações carregados com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao carregar dados do relatorio de solicitações!");
+                log.logador(ex);
                 throw;
             }
             finally

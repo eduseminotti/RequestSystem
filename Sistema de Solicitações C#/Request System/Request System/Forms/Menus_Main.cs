@@ -7,11 +7,13 @@ namespace Request_System
     {
         private Form _objForm;
         int userID;
-        String nameUser;
+        String userName;
         bool logOut;
         UserIdioma idioma;
 
-        public Menus_Main(int UserID, string Name, UserType userType, UserIdioma UserIdioma)
+        LOG log = new LOG();
+
+        public Menus_Main(int UserID, string UserName, UserType userType, UserIdioma UserIdioma)
         {
             InitializeComponent();
             idioma = UserIdioma;
@@ -31,9 +33,9 @@ namespace Request_System
                 BTN_Usuarios.Visible = false;
             }
 
-            LBL_Current_User.Text = Name;
+            LBL_Current_User.Text = UserName;
             userID = UserID;
-            nameUser = Name;
+            userName = UserName;
             logOut = false;
 
             _objForm = new Request_System.Form_Em_Branco
@@ -54,7 +56,7 @@ namespace Request_System
         private void Menus_Main_Load(object sender, EventArgs e)
         {
             notifyIcon1.Visible = true;
-            notifyIcon1.Text = "Teste mensagem";
+            notifyIcon1.Text = "Restaurar sistema!";
         }
         private void Menus_Main_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -84,9 +86,11 @@ namespace Request_System
                         this.ShowInTaskbar = false;
                         this.WindowState = FormWindowState.Minimized;
                         e.Cancel = true;
+                        log.logador("Minimizando sistema para a bandeja!");
                     }
                     else
                     {
+                        log.logador("Saindo do sistema!");
                         System.Diagnostics.Process.GetCurrentProcess().Close();
                         Environment.Exit(0);
                         Application.Exit();
@@ -168,12 +172,12 @@ namespace Request_System
         }
         private void BTN_Sair_Click(object sender, EventArgs e)
         {
+            log.logador("Iniciando logout do sistema para o usuario: " + userName);
             logOut = true;
             LoginValidate login = new LoginValidate();
             this.Close();
             login.Show();
         }
-
 
         private void Menus_Main_KeyDown(object sender, KeyEventArgs e)
         {

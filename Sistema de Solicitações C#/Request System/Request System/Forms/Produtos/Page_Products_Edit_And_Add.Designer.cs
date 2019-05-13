@@ -71,16 +71,16 @@
             // 
             // BTN_Product_Cancel
             // 
-            resources.ApplyResources(this.BTN_Product_Cancel, "BTN_Product_Cancel");
             this.BTN_Product_Cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.BTN_Product_Cancel, "BTN_Product_Cancel");
             this.BTN_Product_Cancel.Name = "BTN_Product_Cancel";
             this.BTN_Product_Cancel.UseSelectable = true;
             this.BTN_Product_Cancel.Click += new System.EventHandler(this.BTN_Product_Cancel_Click_1);
             // 
             // CBX_Status_Produto
             // 
-            resources.ApplyResources(this.CBX_Status_Produto, "CBX_Status_Produto");
             this.CBX_Status_Produto.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Status_Produto, "CBX_Status_Produto");
             this.CBX_Status_Produto.Name = "CBX_Status_Produto";
             this.CBX_Status_Produto.UseSelectable = true;
             this.CBX_Status_Produto.SelectedIndexChanged += new System.EventHandler(this.CBX_Status_Produto_SelectedIndexChanged);
@@ -105,8 +105,8 @@
             // 
             // txt_validacombo
             // 
-            resources.ApplyResources(this.txt_validacombo, "txt_validacombo");
             this.txt_validacombo.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.txt_validacombo, "txt_validacombo");
             this.txt_validacombo.Name = "txt_validacombo";
             this.txt_validacombo.ReadOnly = true;
             // 

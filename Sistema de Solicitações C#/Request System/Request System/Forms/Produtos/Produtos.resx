@@ -149,6 +149,33 @@
   <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="TXT_Filter_Codigo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 38</value>
+  </data>
+  <data name="TXT_Filter_Codigo.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="TXT_Filter_Codigo.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_Filter_Codigo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 29</value>
+  </data>
+  <data name="TXT_Filter_Codigo.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filter_Codigo.Name" xml:space="preserve">
+    <value>TXT_Filter_Codigo</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filter_Codigo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filter_Codigo.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;TXT_Filter_Codigo.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BTN_Filter_limpar.Location" type="System.Drawing.Point, System.Drawing">
     <value>518, 37</value>
   </data>
@@ -156,7 +183,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_Filter_limpar.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="BTN_Filter_limpar.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -171,7 +198,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;BTN_Filter_limpar.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BTN_Filter.Location" type="System.Drawing.Point, System.Drawing">
     <value>397, 37</value>
@@ -180,7 +207,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_Filter.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="BTN_Filter.Text" xml:space="preserve">
     <value>Filtrar</value>
@@ -195,7 +222,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;BTN_Filter.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="CBX_Filter_Status.ItemHeight" type="System.Int32, mscorlib">
     <value>23</value>
@@ -207,7 +234,7 @@
     <value>121, 29</value>
   </data>
   <data name="CBX_Filter_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;CBX_Filter_Status.Name" xml:space="preserve">
     <value>CBX_Filter_Status</value>
@@ -219,7 +246,7 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;CBX_Filter_Status.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
@@ -229,10 +256,10 @@
     <value>NoControl</value>
   </data>
   <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 2</value>
+    <value>93, 1</value>
   </data>
   <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
+    <value>27, 27</value>
   </data>
   <data name="resource.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -241,13 +268,13 @@
     <value>False</value>
   </data>
   <data name="TXT_Filter_Nome.Location" type="System.Drawing.Point, System.Drawing">
-    <value>142, 37</value>
+    <value>143, 38</value>
   </data>
   <data name="TXT_Filter_Nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
+    <value>121, 29</value>
   </data>
   <data name="TXT_Filter_Nome.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;TXT_Filter_Nome.Name" xml:space="preserve">
     <value>TXT_Filter_Nome</value>
@@ -259,45 +286,6 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;TXT_Filter_Nome.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="resource.Image1" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.ImeMode1" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resource.Location1" type="System.Drawing.Point, System.Drawing">
-    <value>93, 2</value>
-  </data>
-  <data name="resource.Size1" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="resource.TabIndex1" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Visible1" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="TXT_Filter_Codigo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 37</value>
-  </data>
-  <data name="TXT_Filter_Codigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 30</value>
-  </data>
-  <data name="TXT_Filter_Codigo.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filter_Codigo.Name" xml:space="preserve">
-    <value>TXT_Filter_Codigo</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filter_Codigo.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filter_Codigo.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;TXT_Filter_Codigo.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
@@ -448,7 +436,7 @@
     <value>943, 339</value>
   </data>
   <data name="Grid_View_produtos.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="&gt;&gt;Grid_View_produtos.Name" xml:space="preserve">
     <value>Grid_View_produtos</value>
@@ -493,7 +481,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_Edit.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="BTN_Edit.Text" xml:space="preserve">
     <value>Editar</value>
@@ -517,7 +505,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_New_Product.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="BTN_New_Product.Text" xml:space="preserve">
     <value>Novo Produto</value>
@@ -594,6 +582,36 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Produtos</value>
   </data>
+  <data name="&gt;&gt;productIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>productIdDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;productIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>productNameDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productUnidadeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>productUnidadeDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;productUnidadeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>quantidadeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productIsActiveDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>productIsActiveDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;productIsActiveDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;returnProdutosBindingSource.Name" xml:space="preserve">
     <value>returnProdutosBindingSource</value>
   </data>
@@ -634,36 +652,6 @@
     <value>productIsActiveDataGridViewTextBoxColumn</value>
   </data>
   <data name="&gt;&gt;productIsActiveDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;productIdDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>productIdDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;productIdDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>productNameDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;productUnidadeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>productUnidadeDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;productUnidadeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>quantidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;productIsActiveDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>productIsActiveDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;productIsActiveDataGridViewTextBoxColumn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

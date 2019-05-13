@@ -35,15 +35,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TXT_Filter_Codigo = new System.Windows.Forms.TextBox();
             this.BTN_Filter_limpar = new MetroFramework.Controls.MetroButton();
             this.BTN_Filter = new MetroFramework.Controls.MetroButton();
             this.CBX_Filter_Status = new MetroFramework.Controls.MetroComboBox();
             this.TXT_Filter_Nome = new MetroFramework.Controls.MetroTextBox();
-            this.TXT_Filter_Codigo = new MetroFramework.Controls.MetroTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Grid_View_produtos = new MetroFramework.Controls.MetroGrid();
+            this.productIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productUnidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIsActiveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnProdutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
             this.BTN_Edit = new MetroFramework.Controls.MetroButton();
@@ -55,11 +60,6 @@
             this.productUnidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIsActiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productUnidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productIsActiveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_View_produtos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).BeginInit();
@@ -74,17 +74,23 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TXT_Filter_Codigo);
             this.groupBox1.Controls.Add(this.BTN_Filter_limpar);
             this.groupBox1.Controls.Add(this.BTN_Filter);
             this.groupBox1.Controls.Add(this.CBX_Filter_Status);
             this.groupBox1.Controls.Add(this.TXT_Filter_Nome);
-            this.groupBox1.Controls.Add(this.TXT_Filter_Codigo);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // TXT_Filter_Codigo
+            // 
+            resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
+            this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
+            this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged_1);
             // 
             // BTN_Filter_limpar
             // 
@@ -125,7 +131,7 @@
             this.TXT_Filter_Nome.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
             this.TXT_Filter_Nome.Lines = new string[0];
             resources.ApplyResources(this.TXT_Filter_Nome, "TXT_Filter_Nome");
-            this.TXT_Filter_Nome.MaxLength = 32767;
+            this.TXT_Filter_Nome.MaxLength = 250;
             this.TXT_Filter_Nome.Name = "TXT_Filter_Nome";
             this.TXT_Filter_Nome.PasswordChar = '\0';
             this.TXT_Filter_Nome.ScrollBars = System.Windows.Forms.ScrollBars.None;
@@ -137,36 +143,7 @@
             this.TXT_Filter_Nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TXT_Filter_Nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TXT_Filter_Nome.TextChanged += new System.EventHandler(this.TXT_Filter_Nome_TextChanged);
-            // 
-            // TXT_Filter_Codigo
-            // 
-            // 
-            // 
-            // 
-            this.TXT_Filter_Codigo.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.TXT_Filter_Codigo.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode1")));
-            this.TXT_Filter_Codigo.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
-            this.TXT_Filter_Codigo.CustomButton.Name = "";
-            this.TXT_Filter_Codigo.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
-            this.TXT_Filter_Codigo.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_Filter_Codigo.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
-            this.TXT_Filter_Codigo.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_Filter_Codigo.CustomButton.UseSelectable = true;
-            this.TXT_Filter_Codigo.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
-            this.TXT_Filter_Codigo.Lines = new string[0];
-            resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
-            this.TXT_Filter_Codigo.MaxLength = 32767;
-            this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
-            this.TXT_Filter_Codigo.PasswordChar = '\0';
-            this.TXT_Filter_Codigo.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_Filter_Codigo.SelectedText = "";
-            this.TXT_Filter_Codigo.SelectionLength = 0;
-            this.TXT_Filter_Codigo.SelectionStart = 0;
-            this.TXT_Filter_Codigo.ShortcutsEnabled = true;
-            this.TXT_Filter_Codigo.UseSelectable = true;
-            this.TXT_Filter_Codigo.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_Filter_Codigo.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged);
+            this.TXT_Filter_Nome.Click += new System.EventHandler(this.TXT_Filter_Nome_Click);
             // 
             // label3
             // 
@@ -230,6 +207,46 @@
             this.Grid_View_produtos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Grid_View_produtos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_View_produtos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            // 
+            // productIdDataGridViewTextBoxColumn1
+            // 
+            this.productIdDataGridViewTextBoxColumn1.DataPropertyName = "Product_Id";
+            resources.ApplyResources(this.productIdDataGridViewTextBoxColumn1, "productIdDataGridViewTextBoxColumn1");
+            this.productIdDataGridViewTextBoxColumn1.Name = "productIdDataGridViewTextBoxColumn1";
+            this.productIdDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productIdDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // productNameDataGridViewTextBoxColumn1
+            // 
+            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "Product_Name";
+            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
+            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
+            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productNameDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // productUnidadeDataGridViewTextBoxColumn1
+            // 
+            this.productUnidadeDataGridViewTextBoxColumn1.DataPropertyName = "Product_Unidade";
+            resources.ApplyResources(this.productUnidadeDataGridViewTextBoxColumn1, "productUnidadeDataGridViewTextBoxColumn1");
+            this.productUnidadeDataGridViewTextBoxColumn1.Name = "productUnidadeDataGridViewTextBoxColumn1";
+            this.productUnidadeDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productUnidadeDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // quantidadeDataGridViewTextBoxColumn
+            // 
+            this.quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
+            resources.ApplyResources(this.quantidadeDataGridViewTextBoxColumn, "quantidadeDataGridViewTextBoxColumn");
+            this.quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
+            this.quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.quantidadeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // productIsActiveDataGridViewTextBoxColumn1
+            // 
+            this.productIsActiveDataGridViewTextBoxColumn1.DataPropertyName = "product_IsActive";
+            resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn1, "productIsActiveDataGridViewTextBoxColumn1");
+            this.productIsActiveDataGridViewTextBoxColumn1.Name = "productIsActiveDataGridViewTextBoxColumn1";
+            this.productIsActiveDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.productIsActiveDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // returnProdutosBindingSource
             // 
@@ -304,46 +321,6 @@
             resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn, "productIsActiveDataGridViewTextBoxColumn");
             this.productIsActiveDataGridViewTextBoxColumn.Name = "productIsActiveDataGridViewTextBoxColumn";
             // 
-            // productIdDataGridViewTextBoxColumn1
-            // 
-            this.productIdDataGridViewTextBoxColumn1.DataPropertyName = "Product_Id";
-            resources.ApplyResources(this.productIdDataGridViewTextBoxColumn1, "productIdDataGridViewTextBoxColumn1");
-            this.productIdDataGridViewTextBoxColumn1.Name = "productIdDataGridViewTextBoxColumn1";
-            this.productIdDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productIdDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // productNameDataGridViewTextBoxColumn1
-            // 
-            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "Product_Name";
-            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
-            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
-            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productNameDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // productUnidadeDataGridViewTextBoxColumn1
-            // 
-            this.productUnidadeDataGridViewTextBoxColumn1.DataPropertyName = "Product_Unidade";
-            resources.ApplyResources(this.productUnidadeDataGridViewTextBoxColumn1, "productUnidadeDataGridViewTextBoxColumn1");
-            this.productUnidadeDataGridViewTextBoxColumn1.Name = "productUnidadeDataGridViewTextBoxColumn1";
-            this.productUnidadeDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productUnidadeDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // quantidadeDataGridViewTextBoxColumn
-            // 
-            this.quantidadeDataGridViewTextBoxColumn.DataPropertyName = "Quantidade";
-            resources.ApplyResources(this.quantidadeDataGridViewTextBoxColumn, "quantidadeDataGridViewTextBoxColumn");
-            this.quantidadeDataGridViewTextBoxColumn.Name = "quantidadeDataGridViewTextBoxColumn";
-            this.quantidadeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.quantidadeDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // productIsActiveDataGridViewTextBoxColumn1
-            // 
-            this.productIsActiveDataGridViewTextBoxColumn1.DataPropertyName = "product_IsActive";
-            resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn1, "productIsActiveDataGridViewTextBoxColumn1");
-            this.productIsActiveDataGridViewTextBoxColumn1.Name = "productIsActiveDataGridViewTextBoxColumn1";
-            this.productIsActiveDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.productIsActiveDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // produtos_view
             // 
             resources.ApplyResources(this, "$this");
@@ -380,7 +357,6 @@
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroGrid Grid_View_produtos;
         private MetroFramework.Controls.MetroButton BTN_Gerar_PDF;
-        private MetroFramework.Controls.MetroTextBox TXT_Filter_Codigo;
         private MetroFramework.Controls.MetroComboBox CBX_Filter_Status;
         private MetroFramework.Controls.MetroTextBox TXT_Filter_Nome;
         private MetroFramework.Controls.MetroButton BTN_Filter_limpar;
@@ -398,5 +374,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn productUnidadeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIsActiveDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.TextBox TXT_Filter_Codigo;
     }
 }

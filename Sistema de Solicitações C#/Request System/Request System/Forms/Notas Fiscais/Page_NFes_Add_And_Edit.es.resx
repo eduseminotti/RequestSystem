@@ -117,6 +117,10 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TXT_Serie_NFe.MaxLength" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 13</value>
@@ -130,26 +134,23 @@
   <data name="label1.Text" xml:space="preserve">
     <value>CNPJ Emisor</value>
   </data>
-  <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 91</value>
+  <data name="TXT_CNPJ_Selected.MaxLength" type="System.Int32, mscorlib">
+    <value>14</value>
   </data>
   <data name="BTN_SelecionaForn.Text" xml:space="preserve">
     <value>seleccionar</value>
   </data>
-  <data name="GB_Dados_NFe.Text" xml:space="preserve">
-    <value>Datos de la NFe</value>
+  <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 91</value>
   </data>
   <data name="BTN_NewProvider.Text" xml:space="preserve">
     <value>Nuevo proveedor</value>
   </data>
-  <data name="DT_Data_Emissão.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 29</value>
-  </data>
   <data name="BTN_LimparNFe.Text" xml:space="preserve">
     <value>Limpio</value>
   </data>
-  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
-    <value>Artículos de la nota</value>
+  <data name="GB_Dados_NFe.Text" xml:space="preserve">
+    <value>Datos de la NFe</value>
   </data>
   <data name="productCodeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Código Producto</value>
@@ -166,8 +167,8 @@
   <data name="BTN_RemoveItem.Text" xml:space="preserve">
     <value>eliminar</value>
   </data>
-  <data name="GB_Add_Itens_NFe.Text" xml:space="preserve">
-    <value>Añadir producto</value>
+  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
+    <value>Artículos de la nota</value>
   </data>
   <data name="BTN_SelecionarByName.Text" xml:space="preserve">
     <value>seleccionar</value>
@@ -195,6 +196,9 @@
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Nombre Produto</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.Text" xml:space="preserve">
+    <value>Añadir producto</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>775, 558</value>

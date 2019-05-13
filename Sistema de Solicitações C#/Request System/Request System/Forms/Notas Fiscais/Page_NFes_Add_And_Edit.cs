@@ -15,6 +15,7 @@ namespace Request_System
         bool insereOK, isNew, textchange;
         UserIdioma idioma;
 
+
         Page_Products_Edit_And_Add PageProductAdd;
         ManipulaFornecedores fornecedores = new ManipulaFornecedores();
         ManipulaProdutos produtos = new ManipulaProdutos();
@@ -195,9 +196,11 @@ namespace Request_System
 
         private void BTN_SelecionaForn_Click(object sender, EventArgs e)
         {
+            GB_Busca_CNPJ_Forn.Visible = false;
             providerCNPJ = listCNPJ.Text.ToString();
 
             TXT_CNPJ_Selected.Text = providerCNPJ.Split('-')[0];
+
             GB_Busca_CNPJ_Forn.Visible = false;
             BTN_SelecionaForn.Enabled = false;
             BTN_RegNFe.Enabled = true;
@@ -234,30 +237,33 @@ namespace Request_System
         }
         private void BTN_RegNFe_Click(object sender, EventArgs e)
         {
+            bool returns = false;
             if (!Int32.TryParse(TXT_Numero_NFe.Text, out int valor))
             {
                 TXT_Numero_NFe.BackColor = Color.OrangeRed;
                 TXT_Numero_NFe.Focus();
-                return;
+                returns = true;
             }
             if (!Int32.TryParse(TXT_Serie_NFe.Text, out valor))
             {
                 TXT_Serie_NFe.BackColor = Color.OrangeRed;
                 TXT_Serie_NFe.Focus();
-                return;
+                returns = true;
             }
             if (!float.TryParse(TXT_Valor.Text, out float v2))
             {
                 TXT_Valor.BackColor = Color.OrangeRed;
                 TXT_Valor.Focus();
-                return;
+                returns = true;
             }
             if (TXT_CNPJ_Selected.Text == "")
             {
                 TXT_CNPJ_Selected.BackColor = Color.OrangeRed;
                 TXT_CNPJ_Selected.Focus();
-                return;
+                returns = true;
             }
+            if (returns)
+                return;
 
             numberNFe = Convert.ToInt32(TXT_Numero_NFe.Text.ToString());
             seriesNFe = Convert.ToInt32(TXT_Serie_NFe.Text.ToString());
@@ -361,14 +367,15 @@ namespace Request_System
 
         private void TXT_CNPJ_Selected_TextChanged(object sender, EventArgs e)
         {
+            TXT_CNPJ_Selected.BackColor = Color.White;
             providerCNPJ = TXT_CNPJ_Selected.Text;
+
             if (isNew)
             {
+
                 GB_Busca_CNPJ_Forn.Visible = true;
                 BTN_RegNFe.Enabled = false;
-
                 return_Providers = fornecedores.GetProviders(0, null, providerCNPJ);
-
                 listCNPJ.DataSource = return_Providers;
 
                 foreach (var return_Providers in return_Providers)
@@ -380,7 +387,7 @@ namespace Request_System
             }
             else if (!isNew)
             {
-                while (textchange)
+                if (textchange)
                 {
                     GB_Busca_CNPJ_Forn.Visible = true;
                     BTN_RegNFe.Enabled = false;
@@ -398,28 +405,6 @@ namespace Request_System
             }
         }
 
-        private void Sair_Da_Tela_Key_down(object sender, KeyEventArgs e)
-        {
-            if (e.KeyValue.Equals(13))
-            {
-                if (GB_Busca_CNPJ_Forn.Visible == true)
-                {
-                    BTN_SelecionaForn.PerformClick();
-                    return;
-                }
-
-                if (GB_Find_Product_By_Name.Visible == true)
-                {
-                    BTN_SelecionarByName.PerformClick();
-                    return;
-                }
-            }
-            if (e.KeyValue.Equals(9) && GB_Find_Product_By_Name.Visible == true)
-            {
-                LB_List_Products_Name.Focus();
-                return;
-            }
-        }
         private void listCNPJ_DoubleClick(object sender, EventArgs e)
         {
             BTN_SelecionaForn.PerformClick();

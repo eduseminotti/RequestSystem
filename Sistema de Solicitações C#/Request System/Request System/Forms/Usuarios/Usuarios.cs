@@ -95,5 +95,10 @@ namespace Request_System
             usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
             GRID_USERS_VIEW.DataSource = usuarios;
         }
+
+        private void CBX_Filter_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BTN_Filtrar1.PerformClick();
+        }
     }
 }

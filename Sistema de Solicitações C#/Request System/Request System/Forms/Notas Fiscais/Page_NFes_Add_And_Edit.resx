@@ -117,932 +117,617 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="&gt;&gt;LB_List_Products_Name.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>quantidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
-  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;TXT_QTD_Produto.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>Série</value>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="TXT_Serie_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 107</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="productCodeDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="&gt;&gt;listCNPJ.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn2.Name" xml:space="preserve">
-    <value>nomeProdutoDataGridViewTextBoxColumn2</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="itemIDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>ItemID</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_AddProduct.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="label10.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>nomeProdutoDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="BTN_NewProvider.Text" xml:space="preserve">
-    <value>Novo Fornecedor</value>
-  </data>
-  <data name="GRID_Itens_NFe.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 11px</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionaForn.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="BTN_RegNFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 156</value>
-  </data>
-  <data name="&gt;&gt;BTN_AddProduct.Name" xml:space="preserve">
-    <value>BTN_AddProduct</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="listCNPJ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 15</value>
-  </data>
-  <data name="label9.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="BTN_Fechar_tela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 517</value>
-  </data>
-  <data name="TXT_Serie_NFe.MaxLength" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="TXT_Nome_Produto.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;GRID_Itens_NFe.Parent" xml:space="preserve">
-    <value>GB_Grid_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;listCNPJ.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;BTN_RegNFe.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
-  </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>87, 13</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>745, 265</value>
-  </data>
-  <data name="GB_Busca_CNPJ_Forn.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="ProductCode.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="BTN_AddItensStock.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="quantidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Quantidade</value>
-  </data>
-  <data name="TXT_TP_Unidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
-  </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>14, 142</value>
-  </data>
-  <data name="&gt;&gt;label10.Name" xml:space="preserve">
-    <value>label10</value>
-  </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Name" xml:space="preserve">
-    <value>GB_Busca_CNPJ_Forn</value>
-  </data>
-  <data name="&gt;&gt;BTN_RegNFe.Name" xml:space="preserve">
-    <value>BTN_RegNFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_RemoveItem.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TXT_QTD_Produto.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Dados da Nota Fiscal</value>
-  </data>
-  <data name="BTN_RemoveItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparItensNFe.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;GRID_Itens_NFe.Name" xml:space="preserve">
-    <value>GRID_Itens_NFe</value>
-  </data>
-  <data name="quantidadeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Quantidade</value>
-  </data>
-  <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>231, 88</value>
-  </data>
-  <data name="TXT_Numero_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 57</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.Name" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="BTN_SelecionaForn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 87</value>
-  </data>
-  <data name="&gt;&gt;TXT_Nome_Produto.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;GB_Dados_NFe.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="TXT_Numero_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;LB_List_Products_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tipoUnidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Tipo Unidade</value>
-  </data>
-  <data name="&gt;&gt;GRID_Itens_NFe.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroGrid, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;TXT_Serie_NFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Dados_NFe.Name" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;itemIDDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="GB_Dados_NFe.Text" xml:space="preserve">
-    <value>Dados da NFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionaForn.Name" xml:space="preserve">
-    <value>BTN_SelecionaForn</value>
-  </data>
-  <data name="&gt;&gt;label10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="nomeProdutoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>200</value>
-  </data>
-  <data name="&gt;&gt;BTN_NewProvider.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="nomeProdutoDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
-    <value>170</value>
-  </data>
-  <data name="&gt;&gt;BTN_New_Product.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;TXT_QTD_Produto.Name" xml:space="preserve">
-    <value>TXT_QTD_Produto</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>27, 13</value>
-  </data>
-  <data name="quantidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>110</value>
-  </data>
-  <data name="&gt;&gt;LB_List_Products_Name.Parent" xml:space="preserve">
-    <value>GB_Find_Product_By_Name</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionarByName.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
-    <value>Itens da Nota</value>
-  </data>
-  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>6, 13</value>
-  </data>
-  <data name="&gt;&gt;returnNFeitensBindingSource.Name" xml:space="preserve">
-    <value>returnNFeitensBindingSource</value>
-  </data>
-  <data name="label9.TabIndex" type="System.Int32, mscorlib">
-    <value>30</value>
-  </data>
-  <data name="&gt;&gt;returnProdutosBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BTN_LimparItensNFe.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="GRID_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>712, 210</value>
-  </data>
-  <data name="BTN_LimparItensNFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="&gt;&gt;TXT_TP_Unidade.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 99</value>
-  </data>
-  <data name="GRID_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;ProductCode.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="nomeProdutoDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Produto</value>
-  </data>
-  <data name="TXT_CNPJ_Selected.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 13</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparNFe.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BTN_RegNFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="BTN_Fechar_tela.Text" xml:space="preserve">
-    <value>Fechar</value>
-  </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 99</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.Name" xml:space="preserve">
-    <value>GB_Grid_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;TXT_Numero_NFe.Name" xml:space="preserve">
-    <value>TXT_Numero_NFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_Fechar_tela.Name" xml:space="preserve">
-    <value>BTN_Fechar_tela</value>
-  </data>
-  <data name="TXT_QTD_Produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 100</value>
-  </data>
-  <data name="BTN_AddItensStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 517</value>
-  </data>
-  <data name="&gt;&gt;listCNPJ.Name" xml:space="preserve">
-    <value>listCNPJ</value>
-  </data>
-  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Tipo Unidade Produto</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="nomeProdutoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Nome Produto</value>
-  </data>
-  <data name="BTN_New_Product.Location" type="System.Drawing.Point, System.Drawing">
-    <value>131, 15</value>
-  </data>
-  <data name="BTN_SelecionaForn.Text" xml:space="preserve">
-    <value>Seleciona</value>
-  </data>
-  <data name="BTN_SelecionaForn.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionarByName.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_AddItensStock.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 13</value>
-  </data>
-  <data name="&gt;&gt;BTN_RemoveItem.Parent" xml:space="preserve">
-    <value>GB_Grid_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;label8.Name" xml:space="preserve">
-    <value>label8</value>
-  </data>
-  <data name="TXT_Valor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 157</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionarByName.Parent" xml:space="preserve">
-    <value>GB_Find_Product_By_Name</value>
-  </data>
-  <data name="GB_Dados_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>489, 228</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_New_Product.Name" xml:space="preserve">
-    <value>BTN_New_Product</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="BTN_RemoveItem.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;label9.Name" xml:space="preserve">
-    <value>label9</value>
-  </data>
-  <data name="&gt;&gt;label1.Name" xml:space="preserve">
-    <value>label1</value>
-  </data>
-  <data name="&gt;&gt;listCNPJ.Parent" xml:space="preserve">
-    <value>GB_Busca_CNPJ_Forn</value>
-  </data>
-  <data name="TXT_QTD_Produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
-  </data>
-  <data name="&gt;&gt;label7.Name" xml:space="preserve">
-    <value>label7</value>
-  </data>
-  <data name="BTN_AddItensStock.Text" xml:space="preserve">
-    <value>Adicionar Itens ao Estoque</value>
-  </data>
-  <data name="BTN_New_Product.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 228</value>
-  </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>CNPJ Emitente</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionaForn.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_New_Product.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="DT_Data_Emissão.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparItensNFe.Name" xml:space="preserve">
-    <value>BTN_LimparItensNFe</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>
-  <data name="&gt;&gt;BTN_Fechar_tela.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Valor</value>
   </data>
-  <data name="&gt;&gt;BTN_LimparNFe.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
-  <data name="BTN_New_Product.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;BTN_RegNFe.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
     <value>GB_Dados_NFe</value>
   </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>7</value>
   </data>
-  <data name="&gt;&gt;BTN_LimparNFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;itemIDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>itemIDDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;productCodeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="TXT_Valor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 157</value>
   </data>
   <data name="TXT_Valor.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 134</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 81</value>
-  </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_RemoveItem.Name" xml:space="preserve">
-    <value>BTN_RemoveItem</value>
-  </data>
-  <data name="label2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="ProductCode.HeaderText" xml:space="preserve">
-    <value>Codigo Produto</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 13</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 84</value>
-  </data>
-  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
   <data name="TXT_Valor.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 30</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
   </data>
   <data name="TXT_Valor.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="BTN_RemoveItem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>616, 13</value>
+  <data name="&gt;&gt;TXT_Valor.Name" xml:space="preserve">
+    <value>TXT_Valor</value>
   </data>
-  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="&gt;&gt;TXT_TP_Unidade.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="tipoUnidadeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
-    <value>Tipo Unidade</value>
-  </data>
-  <data name="&gt;&gt;ProductCode.Name" xml:space="preserve">
-    <value>ProductCode</value>
-  </data>
-  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparItensNFe.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>cnpj</value>
-  </data>
-  <data name="GB_Busca_CNPJ_Forn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;returnNFeitensBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="DT_Data_Emissão.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="GB_Dados_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="LB_List_Products_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="LB_List_Products_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 69</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;TXT_Serie_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TXT_Numero_NFe.MaxLength" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="BTN_LimparNFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 156</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>Número</value>
-  </data>
-  <data name="BTN_AddProduct.Text" xml:space="preserve">
-    <value>Adicionar Produto</value>
-  </data>
-  <data name="BTN_NewProvider.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 16</value>
-  </data>
-  <data name="productCodeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Código Produto</value>
-  </data>
-  <data name="BTN_AddProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="BTN_NewProvider.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="TXT_QTD_Produto.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="BTN_Fechar_tela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 138</value>
-  </data>
-  <data name="DT_Data_Emissão.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 107</value>
-  </data>
-  <data name="TXT_Serie_NFe.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TXT_QTD_Produto.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 13</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>GB_Busca_CNPJ_Forn</value>
-  </data>
-  <data name="&gt;&gt;TXT_Nome_Produto.Name" xml:space="preserve">
-    <value>TXT_Nome_Produto</value>
-  </data>
-  <data name="TXT_Nome_Produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 51</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;TXT_Numero_NFe.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="TXT_Serie_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 30</value>
-  </data>
-  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 39</value>
-  </data>
-  <data name="GRID_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 49</value>
-  </data>
-  <data name="BTN_SelecionarByName.Text" xml:space="preserve">
-    <value>Selecionar</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;BTN_NewProvider.Name" xml:space="preserve">
-    <value>BTN_NewProvider</value>
-  </data>
-  <data name="BTN_RemoveItem.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;TXT_Nome_Produto.Type" xml:space="preserve">
+  <data name="&gt;&gt;TXT_Valor.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TXT_Valor.Parent" xml:space="preserve">
     <value>GB_Dados_NFe</value>
   </data>
-  <data name="tipoUnidadeDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
-    <value>180</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Quantidade</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Nome Produto</value>
-  </data>
-  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;TXT_Valor.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>tipoUnidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Page_NFes_Add_And_Edit</value>
-  </data>
-  <data name="&gt;&gt;LB_List_Products_Name.Name" xml:space="preserve">
-    <value>LB_List_Products_Name</value>
-  </data>
-  <data name="TXT_TP_Unidade.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;returnProvidersBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="quantidadeDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
-    <value>150</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparNFe.Name" xml:space="preserve">
-    <value>BTN_LimparNFe</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="GB_Busca_CNPJ_Forn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 124</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.Name" xml:space="preserve">
-    <value>GB_Find_Product_By_Name</value>
-  </data>
-  <data name="itemIDDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;TXT_Numero_NFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BTN_RemoveItem.Text" xml:space="preserve">
-    <value>Remover</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 246</value>
-  </data>
-  <data name="&gt;&gt;BTN_Fechar_tela.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;GB_Dados_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 91</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
   </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Série</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TXT_Serie_NFe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="TXT_Serie_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 107</value>
+  </data>
+  <data name="TXT_Serie_NFe.MaxLength" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="TXT_Serie_NFe.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_Serie_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 30</value>
+  </data>
+  <data name="TXT_Serie_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;TXT_Serie_NFe.Name" xml:space="preserve">
+    <value>TXT_Serie_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_Serie_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_Serie_NFe.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_Serie_NFe.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 42</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="TXT_Numero_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 57</value>
+  </data>
+  <data name="TXT_Numero_NFe.MaxLength" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="TXT_Numero_NFe.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_Numero_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 30</value>
+  </data>
+  <data name="TXT_Numero_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TXT_Numero_NFe.Name" xml:space="preserve">
+    <value>TXT_Numero_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_Numero_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_Numero_NFe.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_Numero_NFe.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 91</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 13</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Data de Emissão</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="returnProvidersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 15</value>
+  </metadata>
+  <data name="listCNPJ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 15</value>
+  </data>
+  <data name="listCNPJ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 69</value>
+  </data>
+  <data name="listCNPJ.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;listCNPJ.Name" xml:space="preserve">
+    <value>listCNPJ</value>
+  </data>
+  <data name="&gt;&gt;listCNPJ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listCNPJ.Parent" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
+  </data>
+  <data name="&gt;&gt;listCNPJ.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 39</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>CNPJ Emitente</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="TXT_CNPJ_Selected.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="TXT_CNPJ_Selected.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 57</value>
+  </data>
+  <data name="TXT_CNPJ_Selected.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_CNPJ_Selected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 30</value>
+  </data>
+  <data name="TXT_CNPJ_Selected.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.Name" xml:space="preserve">
+    <value>TXT_CNPJ_Selected</value>
+  </data>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 99</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>cnpj</value>
+  </data>
+  <data name="label2.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_SelecionaForn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 87</value>
+  </data>
   <data name="BTN_SelecionaForn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_SelecionaForn.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BTN_SelecionaForn.Text" xml:space="preserve">
+    <value>Seleciona</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionaForn.Name" xml:space="preserve">
+    <value>BTN_SelecionaForn</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionaForn.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionaForn.Parent" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionaForn.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>233, 93</value>
+  </data>
+  <data name="GB_Busca_CNPJ_Forn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 124</value>
+  </data>
+  <data name="GB_Busca_CNPJ_Forn.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="GB_Busca_CNPJ_Forn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Name" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_NewProvider.Location" type="System.Drawing.Point, System.Drawing">
+    <value>363, 16</value>
+  </data>
+  <data name="BTN_NewProvider.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_NewProvider.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BTN_NewProvider.Text" xml:space="preserve">
+    <value>Novo Fornecedor</value>
+  </data>
+  <data name="&gt;&gt;BTN_NewProvider.Name" xml:space="preserve">
+    <value>BTN_NewProvider</value>
+  </data>
+  <data name="&gt;&gt;BTN_NewProvider.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_NewProvider.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;BTN_NewProvider.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="DT_Data_Emissão.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 107</value>
+  </data>
+  <data name="DT_Data_Emissão.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 29</value>
+  </data>
+  <data name="DT_Data_Emissão.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 29</value>
+  </data>
+  <data name="DT_Data_Emissão.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.Name" xml:space="preserve">
+    <value>DT_Data_Emissão</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="BTN_RegNFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 156</value>
+  </data>
+  <data name="BTN_RegNFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_RegNFe.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="BTN_RegNFe.Text" xml:space="preserve">
+    <value>Registrar NFe</value>
+  </data>
+  <data name="&gt;&gt;BTN_RegNFe.Name" xml:space="preserve">
+    <value>BTN_RegNFe</value>
+  </data>
+  <data name="&gt;&gt;BTN_RegNFe.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_RegNFe.Parent" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
+  </data>
+  <data name="&gt;&gt;BTN_RegNFe.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BTN_LimparNFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 156</value>
+  </data>
+  <data name="BTN_LimparNFe.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
   </data>
   <data name="BTN_LimparNFe.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="&gt;&gt;TXT_Valor.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="BTN_LimparNFe.Text" xml:space="preserve">
+    <value>Limpar</value>
   </data>
-  <data name="GB_Add_Itens_NFe.Text" xml:space="preserve">
-    <value>Adicionar Produto</value>
+  <data name="&gt;&gt;BTN_LimparNFe.Name" xml:space="preserve">
+    <value>BTN_LimparNFe</value>
   </data>
-  <data name="BTN_AddProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 189</value>
+  <data name="&gt;&gt;BTN_LimparNFe.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;BTN_SelecionarByName.Name" xml:space="preserve">
-    <value>BTN_SelecionarByName</value>
-  </data>
-  <data name="TXT_Serie_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="LB_List_Products_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 19</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>Valor</value>
-  </data>
-  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn2.Name" xml:space="preserve">
-    <value>quantidadeDataGridViewTextBoxColumn2</value>
-  </data>
-  <data name="BTN_SelecionarByName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 99</value>
-  </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_AddProduct.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="BTN_AddItensStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 30</value>
-  </data>
-  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="TXT_Numero_NFe.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;BTN_NewProvider.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="tipoUnidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>160</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BTN_SelecionaForn.Parent" xml:space="preserve">
-    <value>GB_Busca_CNPJ_Forn</value>
-  </data>
-  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 42</value>
-  </data>
-  <data name="&gt;&gt;TXT_Valor.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TXT_Nome_Produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="TXT_TP_Unidade.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;TXT_Valor.Name" xml:space="preserve">
-    <value>TXT_Valor</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Data de Emissão</value>
-  </data>
-  <data name="&gt;&gt;BTN_NewProvider.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BTN_LimparNFe.Parent" xml:space="preserve">
     <value>GB_Dados_NFe</value>
   </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>43, 13</value>
-  </data>
-  <data name="BTN_NewProvider.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="listCNPJ.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;BTN_LimparNFe.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;TXT_Numero_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="GB_Dados_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="&gt;&gt;returnProdutosBindingSource.Name" xml:space="preserve">
-    <value>returnProdutosBindingSource</value>
+  <data name="GB_Dados_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>489, 228</value>
   </data>
-  <data name="TXT_TP_Unidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 150</value>
+  <data name="GB_Dados_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
   </data>
-  <data name="&gt;&gt;TXT_TP_Unidade.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
+  <data name="GB_Dados_NFe.Text" xml:space="preserve">
+    <value>Dados da NFe</value>
   </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;GB_Dados_NFe.Name" xml:space="preserve">
+    <value>GB_Dados_NFe</value>
   </data>
-  <data name="&gt;&gt;BTN_AddItensStock.Name" xml:space="preserve">
-    <value>BTN_AddItensStock</value>
+  <data name="&gt;&gt;GB_Dados_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;GB_Dados_NFe.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="BTN_AddProduct.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;GB_Dados_NFe.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="productCodeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Código Produto</value>
+  </data>
+  <data name="productCodeDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="nomeProdutoDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Produto</value>
+  </data>
+  <data name="nomeProdutoDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>170</value>
+  </data>
+  <data name="tipoUnidadeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Tipo Unidade</value>
+  </data>
+  <data name="tipoUnidadeDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>180</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="itemIDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>ItemID</value>
+  </data>
+  <data name="itemIDDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="returnNFeitensBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>10, 15</value>
+  </metadata>
+  <data name="GRID_Itens_NFe.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11px</value>
+  </data>
+  <data name="GRID_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 49</value>
+  </data>
+  <data name="GRID_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>712, 210</value>
+  </data>
+  <data name="GRID_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;GRID_Itens_NFe.Name" xml:space="preserve">
+    <value>GRID_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GRID_Itens_NFe.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroGrid, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;GRID_Itens_NFe.Parent" xml:space="preserve">
+    <value>GB_Grid_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GRID_Itens_NFe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_RemoveItem.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BTN_RemoveItem.Location" type="System.Drawing.Point, System.Drawing">
+    <value>616, 13</value>
+  </data>
+  <data name="BTN_RemoveItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
   </data>
-  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+  <data name="BTN_RemoveItem.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>29</value>
+  <data name="BTN_RemoveItem.Text" xml:space="preserve">
+    <value>Remover</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 91</value>
+  <data name="&gt;&gt;BTN_RemoveItem.Name" xml:space="preserve">
+    <value>BTN_RemoveItem</value>
   </data>
-  <data name="&gt;&gt;DT_Data_Emissão.Name" xml:space="preserve">
-    <value>DT_Data_Emissão</value>
+  <data name="&gt;&gt;BTN_RemoveItem.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;TXT_Serie_NFe.Name" xml:space="preserve">
-    <value>TXT_Serie_NFe</value>
+  <data name="&gt;&gt;BTN_RemoveItem.Parent" xml:space="preserve">
+    <value>GB_Grid_Itens_NFe</value>
   </data>
-  <data name="TXT_QTD_Produto.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="&gt;&gt;BTN_RemoveItem.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 246</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>745, 265</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
+    <value>Itens da Nota</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.Name" xml:space="preserve">
+    <value>GB_Grid_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 99</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>produto</value>
+  </data>
+  <data name="label9.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_SelecionarByName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 99</value>
   </data>
   <data name="BTN_SelecionarByName.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -1050,169 +735,487 @@
   <data name="BTN_SelecionarByName.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
   </data>
-  <data name="&gt;&gt;label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="BTN_SelecionarByName.Text" xml:space="preserve">
+    <value>Selecionar</value>
   </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>produto</value>
+  <data name="&gt;&gt;BTN_SelecionarByName.Name" xml:space="preserve">
+    <value>BTN_SelecionarByName</value>
   </data>
-  <data name="listCNPJ.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 69</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>773, 558</value>
-  </data>
-  <data name="&gt;&gt;label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;returnProvidersBindingSource.Name" xml:space="preserve">
-    <value>returnProvidersBindingSource</value>
-  </data>
-  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn2.Name" xml:space="preserve">
-    <value>tipoUnidadeDataGridViewTextBoxColumn2</value>
-  </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.Name" xml:space="preserve">
-    <value>TXT_CNPJ_Selected</value>
-  </data>
-  <data name="TXT_CNPJ_Selected.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;GRID_Itens_NFe.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="TXT_Numero_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 30</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparItensNFe.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_RegNFe.Type" xml:space="preserve">
+  <data name="&gt;&gt;BTN_SelecionarByName.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="TXT_CNPJ_Selected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 30</value>
+  <data name="&gt;&gt;BTN_SelecionarByName.Parent" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionarByName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="returnProdutosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>435, 15</value>
+  </metadata>
+  <data name="LB_List_Products_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 19</value>
+  </data>
+  <data name="LB_List_Products_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 69</value>
+  </data>
+  <data name="LB_List_Products_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.Name" xml:space="preserve">
+    <value>LB_List_Products_Name</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.Parent" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 84</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 138</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.Name" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BTN_AddProduct.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 189</value>
+  </data>
+  <data name="BTN_AddProduct.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_AddProduct.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="BTN_AddProduct.Text" xml:space="preserve">
+    <value>Adicionar Produto</value>
+  </data>
+  <data name="&gt;&gt;BTN_AddProduct.Name" xml:space="preserve">
+    <value>BTN_AddProduct</value>
+  </data>
+  <data name="&gt;&gt;BTN_AddProduct.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_AddProduct.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;BTN_AddProduct.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 84</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="BTN_LimparItensNFe.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 189</value>
   </data>
-  <data name="BTN_RegNFe.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="BTN_LimparItensNFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;TXT_TP_Unidade.Name" xml:space="preserve">
-    <value>TXT_TP_Unidade</value>
-  </data>
-  <data name="&gt;&gt;BTN_New_Product.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="BTN_LimparItensNFe.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="BTN_LimparItensNFe.Text" xml:space="preserve">
     <value>Limpar</value>
   </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
+  <data name="&gt;&gt;BTN_LimparItensNFe.Name" xml:space="preserve">
+    <value>BTN_LimparItensNFe</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>GB_Find_Product_By_Name</value>
+  <data name="&gt;&gt;BTN_LimparItensNFe.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="TXT_Nome_Produto.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+  <data name="&gt;&gt;BTN_LimparItensNFe.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
   </data>
-  <data name="&gt;&gt;productCodeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>productCodeDataGridViewTextBoxColumn1</value>
+  <data name="&gt;&gt;BTN_LimparItensNFe.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;BTN_RemoveItem.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="BTN_New_Product.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 15</value>
+  </data>
+  <data name="BTN_New_Product.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_New_Product.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="BTN_New_Product.Text" xml:space="preserve">
     <value>Novo Produto</value>
   </data>
+  <data name="&gt;&gt;BTN_New_Product.Name" xml:space="preserve">
+    <value>BTN_New_Product</value>
+  </data>
+  <data name="&gt;&gt;BTN_New_Product.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_New_Product.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;BTN_New_Product.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="TXT_QTD_Produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 100</value>
+  </data>
+  <data name="TXT_QTD_Produto.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_QTD_Produto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 30</value>
+  </data>
+  <data name="TXT_QTD_Produto.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Produto.Name" xml:space="preserve">
+    <value>TXT_QTD_Produto</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Produto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Produto.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Produto.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 134</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Tipo Unidade Produto</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 35</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Nome Produto</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TXT_TP_Unidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 150</value>
+  </data>
+  <data name="TXT_TP_Unidade.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_TP_Unidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 30</value>
+  </data>
+  <data name="TXT_TP_Unidade.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;TXT_TP_Unidade.Name" xml:space="preserve">
+    <value>TXT_TP_Unidade</value>
+  </data>
+  <data name="&gt;&gt;TXT_TP_Unidade.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_TP_Unidade.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;TXT_TP_Unidade.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="TXT_Nome_Produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 51</value>
+  </data>
+  <data name="TXT_Nome_Produto.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TXT_Nome_Produto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 30</value>
+  </data>
+  <data name="TXT_Nome_Produto.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;TXT_Nome_Produto.Name" xml:space="preserve">
+    <value>TXT_Nome_Produto</value>
+  </data>
+  <data name="&gt;&gt;TXT_Nome_Produto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;TXT_Nome_Produto.Parent" xml:space="preserve">
     <value>GB_Add_Itens_NFe</value>
   </data>
-  <data name="DT_Data_Emissão.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 29</value>
+  <data name="&gt;&gt;TXT_Nome_Produto.ZOrder" xml:space="preserve">
+    <value>9</value>
   </data>
-  <data name="BTN_LimparNFe.Text" xml:space="preserve">
-    <value>Limpar</value>
+  <data name="GB_Add_Itens_NFe.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
-  <data name="&gt;&gt;BTN_AddItensStock.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="GB_Add_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>507, 12</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 228</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.Text" xml:space="preserve">
+    <value>Adicionar Produto</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.Name" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ProductCode.HeaderText" xml:space="preserve">
+    <value>Codigo Produto</value>
+  </data>
+  <data name="ProductCode.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="nomeProdutoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nome Produto</value>
+  </data>
+  <data name="nomeProdutoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="tipoUnidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tipo Unidade</value>
+  </data>
+  <data name="tipoUnidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>160</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="BTN_Fechar_tela.Location" type="System.Drawing.Point, System.Drawing">
+    <value>481, 517</value>
+  </data>
+  <data name="BTN_Fechar_tela.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Fechar_tela.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="BTN_Fechar_tela.Text" xml:space="preserve">
+    <value>Fechar</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.Name" xml:space="preserve">
+    <value>BTN_Fechar_tela</value>
   </data>
   <data name="&gt;&gt;BTN_Fechar_tela.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Fechar_tela.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BTN_AddItensStock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>598, 517</value>
+  </data>
+  <data name="BTN_AddItensStock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 30</value>
+  </data>
+  <data name="BTN_AddItensStock.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="BTN_AddItensStock.Text" xml:space="preserve">
+    <value>Adicionar Itens ao Estoque</value>
+  </data>
+  <data name="&gt;&gt;BTN_AddItensStock.Name" xml:space="preserve">
+    <value>BTN_AddItensStock</value>
+  </data>
+  <data name="&gt;&gt;BTN_AddItensStock.Type" xml:space="preserve">
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;BTN_AddItensStock.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BTN_AddItensStock.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="GB_Add_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 12</value>
-  </data>
-  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 91</value>
-  </data>
-  <data name="&gt;&gt;BTN_AddProduct.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BTN_Fechar_tela.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
-  </data>
-  <data name="BTN_LimparNFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="TXT_CNPJ_Selected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 57</value>
-  </data>
-  <data name="&gt;&gt;TXT_Serie_NFe.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="BTN_RegNFe.Text" xml:space="preserve">
-    <value>Registrar NFe</value>
-  </data>
-  <data name="GB_Dados_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <metadata name="returnProvidersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>221, 15</value>
-  </metadata>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>es</value>
-  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>25</value>
   </metadata>
-  <metadata name="returnNFeitensBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>10, 15</value>
-  </metadata>
-  <metadata name="returnProdutosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>435, 15</value>
-  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>773, 558</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Dados da Nota Fiscal</value>
+  </data>
+  <data name="&gt;&gt;returnProvidersBindingSource.Name" xml:space="preserve">
+    <value>returnProvidersBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnProvidersBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productCodeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>productCodeDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;productCodeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>nomeProdutoDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>tipoUnidadeDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>quantidadeDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;itemIDDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>itemIDDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;itemIDDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnNFeitensBindingSource.Name" xml:space="preserve">
+    <value>returnNFeitensBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnNFeitensBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnProdutosBindingSource.Name" xml:space="preserve">
+    <value>returnProdutosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnProdutosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProductCode.Name" xml:space="preserve">
+    <value>ProductCode</value>
+  </data>
+  <data name="&gt;&gt;ProductCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nomeProdutoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nomeProdutoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>tipoUnidadeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;tipoUnidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>quantidadeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Page_NFes_Add_And_Edit</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

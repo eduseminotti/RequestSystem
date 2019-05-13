@@ -76,9 +76,12 @@ namespace Request_System
 
                     return_NFes.Add(nFes);
                 }
+                log.logador("Dados da NFe carregados com sucesso!");
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao carregar dados da NFe, Serie: " + Series + "Numero: " + Number);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -87,7 +90,7 @@ namespace Request_System
             }
             return return_NFes;
         }
-        public bool Insere_NFe(int SerieNFe, long NumberNFe, DateTime EmissionDate, decimal ValueNFe, long ProviderID)
+        public bool Insere_NFe(int Series, long Number, DateTime EmissionDate, decimal ValueNFe, long ProviderID)
         {
 
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
@@ -98,8 +101,8 @@ namespace Request_System
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
-            cmd.Parameters.AddWithValue("@SeriesNFe", SerieNFe);
-            cmd.Parameters.AddWithValue("@NumberNFe", NumberNFe);
+            cmd.Parameters.AddWithValue("@SeriesNFe", Series);
+            cmd.Parameters.AddWithValue("@NumberNFe", Number);
             cmd.Parameters.AddWithValue("@EmissionDate", EmissionDate);
             cmd.Parameters.AddWithValue("@Value", ValueNFe);
             cmd.Parameters.AddWithValue("@ProviderID", ProviderID);
@@ -108,9 +111,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("NFe inserida com sucesso, Serie: " + Series + "Numero: " + Number);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao inserir NFe, Serie: " + Series + "Numero: " + Number);
+                log.logador(ex);
                 throw;
             }
             finally
@@ -143,14 +149,14 @@ namespace Request_System
                 cmd.ExecuteNonQuery();
                 sucess = true;
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador(ex);
                 throw;
             }
             finally
             {
                 sqlConn.Close();
-
             }
             return sucess;
         }
@@ -168,190 +174,18 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                log.logador("Itens da NFe inserido no Stock com sucesso! NFeID: " + nFeId);
             }
-            catch (SqlException)
+            catch (SqlException ex)
             {
+                log.logador("Erro ao inserir itens no Stock! NFeID: " + nFeId);
+                log.logador(ex);
                 throw;
             }
             finally
             {
                 sqlConn.Close();
             }
-        }
-    }
-
-    public class ReturnNFeitens
-    {
-        public long ProductCode { get; set; }
-        public long ItemID { get; set; }
-        public String NomeProduto { get; set; }
-        public String TipoUnidade { get; set; }
-        public int Quantidade { get; set; }
-    }
-
-    public class ManipulaItensNFe
-    {
-        LOG log = new LOG();
-
-        public List<ReturnNFeitens> GetNFeItens(long NFeID)
-        {
-            List<ReturnNFeitens> return_Itens = new List<ReturnNFeitens>();
-
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-            try
-            {
-                string queryString = "select p.id as productID ,p.Nome_produto ,p.Tipo_unidade,i.Quantidade,i.id as itenID " +
-                    "from dbo.Products as p " +
-                    "inner join " +
-                    "[dbo].[NFe_Itens] as i " +
-                    "on i.produtcID = p.ID " +
-                    "where i.NFEID = @ID ";
-
-                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                cmd.Parameters.Add("@ID", SqlDbType.VarChar).Value = NFeID;
-
-                sqlConn.Open();
-                SqlDataReader query = cmd.ExecuteReader();
-
-                while (query.Read())
-                {
-                    ReturnNFeitens return_NFe_itens = new ReturnNFeitens();
-
-                    return_NFe_itens.ProductCode = Convert.ToInt64(query["productID"].ToString());
-                    return_NFe_itens.ItemID = Convert.ToInt64(query["itenID"].ToString());
-                    return_NFe_itens.NomeProduto = query["Nome_produto"].ToString();
-                    return_NFe_itens.TipoUnidade = query["Tipo_unidade"].ToString();
-                    return_NFe_itens.Quantidade = Convert.ToInt32(query["Quantidade"].ToString());
-
-                    return_Itens.Add(return_NFe_itens);
-                }
-            }
-            catch (SqlException)
-            {
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-            return return_Itens;
-        }
-        public bool New_NFe_Item(int Quantidade, long produtcID, long NFEID)
-        {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-            bool sucess = false;
-
-            string queryString = "insert into [dbo].[NFe_Itens] (  Quantidade, produtcID, NFEID) values (@Quantidade, @produtcID , @NFEID )  ";
-
-            SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-            cmd.Parameters.AddWithValue("@Quantidade", Quantidade);
-            cmd.Parameters.AddWithValue("@produtcID", produtcID);
-            cmd.Parameters.AddWithValue("@NFEID", NFEID);
-
-            try
-            {
-                sqlConn.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (SqlException)
-            {
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-                sucess = true;
-            }
-            return sucess;
-        }
-        public void Deleta_NFe_Item(long ItemId)
-        {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-
-            string queryString = "delete from dbo.NFe_Itens  where id = @id  ";
-            SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-            cmd.Parameters.AddWithValue("@id", ItemId);
-            try
-            {
-                sqlConn.Open();
-                cmd.ExecuteNonQuery();
-            }
-            catch (SqlException)
-            {
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-        }
-
-    }
-
-    public class ReturnRelatorioNFe
-    {
-        public int NFeId { get; set; }
-        public int NumberNFe { get; set; }
-        public int SerierNFe { get; set; }
-        public decimal ValueNFe { get; set; }
-        public String CNPJEmitente { get; set; }
-        public String RazaoSocial { get; set; }
-        public DateTime EmissionDate { get; set; }
-        public String ProdutoQuantidade { get; set; }
-    }
-    public class RelatorioNFe
-    {
-        LOG log = new LOG();
-
-        public List<ReturnRelatorioNFe> ReturnRelatorioNFe(DateTime Inicial, DateTime Final)
-        {
-            List<ReturnRelatorioNFe> returnRelatorioNFes = new List<ReturnRelatorioNFe>();
-
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-            try
-            {
-                string queryString = "  SELECT distinct nfe.id, nfe.SeriesNFe, nfe.NumberNFe, nfe.value , prov.CNPJ ,prov.Razao_Social ,nfe.EmissionDate,  " +
-                    " SUBSTRING (    ( SELECT   product.Nome_produto + ' - ' + cast(subSelectItens.Quantidade  as varchar(max)  ) + '\n'  AS [text()]   " +
-                    "FROM nfe_itens subSelectItens INNER JOIN products product ON product.id = subSelectItens.produtcid " +
-                    " WHERE subSelectItens.NFEID = nfe.id ORDER BY subSelectItens.id FOR XML PATH ('') ), 1, 1000) as Produtos_Quantidade " +
-                    "FROM   notas_fiscais nfe   INNER JOIN providers prov  ON prov.id = nfe.providerid  " +
-                    "	 where  nfe.EmissionDate >= @inicial  and nfe.EmissionDate <= @final";
-
-                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                cmd.Parameters.Add("@inicial", SqlDbType.VarChar).Value = Inicial;
-                cmd.Parameters.Add("@final", SqlDbType.VarChar).Value = Final;
-                
-                sqlConn.Open();
-                SqlDataReader query = cmd.ExecuteReader();
-
-                while (query.Read())
-                {
-                    ReturnRelatorioNFe returnRelatorio = new ReturnRelatorioNFe();
-
-                    returnRelatorio.NFeId = Convert.ToInt32(query["id"].ToString());
-                    returnRelatorio.SerierNFe = Convert.ToInt32(query["SeriesNFe"]);
-                    returnRelatorio.NumberNFe = Convert.ToInt32(query["NumberNFe"]);
-                    returnRelatorio.ValueNFe = Convert.ToInt64(query["value"]);
-                    returnRelatorio.CNPJEmitente = query["CNPJ"].ToString();
-                    returnRelatorio.RazaoSocial = query["Razao_Social"].ToString();
-                    returnRelatorio.EmissionDate = Convert.ToDateTime(query["EmissionDate"]);
-                    returnRelatorio.ProdutoQuantidade = query["Produtos_Quantidade"].ToString();
-
-                    returnRelatorioNFes.Add(returnRelatorio);
-                }
-            }
-            catch (SqlException)
-            {
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-            return returnRelatorioNFes;
         }
     }
 }

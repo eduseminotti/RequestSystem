@@ -7,7 +7,7 @@ namespace Request_System
     {
         String arquivoLog = ConfigurationManager.AppSettings.Get("LocalLog");
 
-        private void logador( String entryType, String log)
+        private void _logador( String entryType, String log)
         {
 
             System.IO.TextWriter arquivo = System.IO.File.AppendText(arquivoLog);
@@ -16,15 +16,13 @@ namespace Request_System
             arquivo.Close();
         }
 
-        public void _logador(String log)
+        public void logador(String log)
         {
-            logador("INFO" ,log );
+            _logador("INFO" ,log );
         }
-        public void _logador(Exception ex)
+        public void logador(Exception ex)
         {
-            logador("ERRO" , ex.ToString());
+            _logador("ERRO" , ex.ToString());
         }
-
-
     }
 }

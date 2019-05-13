@@ -41,15 +41,14 @@
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.BTN_Excluir_Solicitacao = new MetroFramework.Controls.MetroButton();
             this.Grid_Solicitacoes = new MetroFramework.Controls.MetroGrid();
-            this.solicitatonIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataSolicitacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataAprovacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataRetiradaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_Edit = new MetroFramework.Controls.MetroButton();
             this.BTN_Nova_Solicitacao = new MetroFramework.Controls.MetroButton();
             this.BTN_Gera_PDF = new MetroFramework.Controls.MetroButton();
+            this.dataSolicitacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataAprovacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataRetiradaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationStatusDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource)).BeginInit();
@@ -57,12 +56,12 @@
             // 
             // groupBox1
             // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.CBX_Status_Pedido);
             this.groupBox1.Controls.Add(this.BTN_Limpar);
             this.groupBox1.Controls.Add(this.BTN_Filtrar);
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
@@ -73,8 +72,8 @@
             // 
             // CBX_Status_Pedido
             // 
-            resources.ApplyResources(this.CBX_Status_Pedido, "CBX_Status_Pedido");
             this.CBX_Status_Pedido.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Status_Pedido, "CBX_Status_Pedido");
             this.CBX_Status_Pedido.Name = "CBX_Status_Pedido";
             this.CBX_Status_Pedido.UseSelectable = true;
             this.CBX_Status_Pedido.SelectedIndexChanged += new System.EventHandler(this.CBX_Status_Produto_SelectedIndexChanged);
@@ -107,7 +106,6 @@
             // 
             // Grid_Solicitacoes
             // 
-            resources.ApplyResources(this.Grid_Solicitacoes, "Grid_Solicitacoes");
             this.Grid_Solicitacoes.AllowUserToResizeRows = false;
             this.Grid_Solicitacoes.AutoGenerateColumns = false;
             this.Grid_Solicitacoes.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -124,7 +122,6 @@
             this.Grid_Solicitacoes.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Grid_Solicitacoes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_Solicitacoes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.solicitatonIDDataGridViewTextBoxColumn1,
             this.dataSolicitacaoDataGridViewTextBoxColumn1,
             this.dataAprovacaoDataGridViewTextBoxColumn1,
             this.dataRetiradaDataGridViewTextBoxColumn1,
@@ -139,6 +136,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Grid_Solicitacoes.DefaultCellStyle = dataGridViewCellStyle2;
             this.Grid_Solicitacoes.EnableHeadersVisualStyles = false;
+            resources.ApplyResources(this.Grid_Solicitacoes, "Grid_Solicitacoes");
             this.Grid_Solicitacoes.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Grid_Solicitacoes.Name = "Grid_Solicitacoes";
             this.Grid_Solicitacoes.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -153,12 +151,30 @@
             this.Grid_Solicitacoes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_Solicitacoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // solicitatonIDDataGridViewTextBoxColumn1
+            // returnSolicitacoesBindingSource
             // 
-            this.solicitatonIDDataGridViewTextBoxColumn1.DataPropertyName = "SolicitatonID";
-            resources.ApplyResources(this.solicitatonIDDataGridViewTextBoxColumn1, "solicitatonIDDataGridViewTextBoxColumn1");
-            this.solicitatonIDDataGridViewTextBoxColumn1.Name = "solicitatonIDDataGridViewTextBoxColumn1";
-            this.solicitatonIDDataGridViewTextBoxColumn1.ReadOnly = true;
+            this.returnSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesStockMan);
+            // 
+            // BTN_Edit
+            // 
+            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
+            this.BTN_Edit.Name = "BTN_Edit";
+            this.BTN_Edit.UseSelectable = true;
+            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
+            // 
+            // BTN_Nova_Solicitacao
+            // 
+            resources.ApplyResources(this.BTN_Nova_Solicitacao, "BTN_Nova_Solicitacao");
+            this.BTN_Nova_Solicitacao.Name = "BTN_Nova_Solicitacao";
+            this.BTN_Nova_Solicitacao.UseSelectable = true;
+            this.BTN_Nova_Solicitacao.Click += new System.EventHandler(this.BTN_Nova_Solicitacao_Click);
+            // 
+            // BTN_Gera_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gera_PDF, "BTN_Gera_PDF");
+            this.BTN_Gera_PDF.Name = "BTN_Gera_PDF";
+            this.BTN_Gera_PDF.UseSelectable = true;
+            this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
             // 
             // dataSolicitacaoDataGridViewTextBoxColumn1
             // 
@@ -187,31 +203,6 @@
             resources.ApplyResources(this.solicitationStatusDataGridViewTextBoxColumn1, "solicitationStatusDataGridViewTextBoxColumn1");
             this.solicitationStatusDataGridViewTextBoxColumn1.Name = "solicitationStatusDataGridViewTextBoxColumn1";
             this.solicitationStatusDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // returnSolicitacoesBindingSource
-            // 
-            this.returnSolicitacoesBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesStockMan);
-            // 
-            // BTN_Edit
-            // 
-            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
-            this.BTN_Edit.Name = "BTN_Edit";
-            this.BTN_Edit.UseSelectable = true;
-            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
-            // 
-            // BTN_Nova_Solicitacao
-            // 
-            resources.ApplyResources(this.BTN_Nova_Solicitacao, "BTN_Nova_Solicitacao");
-            this.BTN_Nova_Solicitacao.Name = "BTN_Nova_Solicitacao";
-            this.BTN_Nova_Solicitacao.UseSelectable = true;
-            this.BTN_Nova_Solicitacao.Click += new System.EventHandler(this.BTN_Nova_Solicitacao_Click);
-            // 
-            // BTN_Gera_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gera_PDF, "BTN_Gera_PDF");
-            this.BTN_Gera_PDF.Name = "BTN_Gera_PDF";
-            this.BTN_Gera_PDF.UseSelectable = true;
-            this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
             // 
             // SeusPedidos
             // 
@@ -249,10 +240,10 @@
         private MetroFramework.Controls.MetroButton BTN_Edit;
         private MetroFramework.Controls.MetroButton BTN_Nova_Solicitacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitatonIDDataGridViewTextBoxColumn1;
+        private MetroFramework.Controls.MetroButton BTN_Gera_PDF;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataSolicitacaoDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataAprovacaoDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataRetiradaDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn1;
-        private MetroFramework.Controls.MetroButton BTN_Gera_PDF;
     }
 }

@@ -42,12 +42,16 @@
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.PNL_Content_Main_Adm = new System.Windows.Forms.Panel();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.Menu_de_Contexto = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.Menu_Restaurar = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Encerrar = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Sobre = new System.Windows.Forms.ToolStripMenuItem();
             this.Gb_Butons_adm.SuspendLayout();
+            this.Menu_de_Contexto.SuspendLayout();
             this.SuspendLayout();
             // 
             // Gb_Butons_adm
             // 
-            resources.ApplyResources(this.Gb_Butons_adm, "Gb_Butons_adm");
             this.Gb_Butons_adm.Controls.Add(this.BTN_Sair);
             this.Gb_Butons_adm.Controls.Add(this.BTN_Usuarios);
             this.Gb_Butons_adm.Controls.Add(this.BTN_Fornecedores);
@@ -56,6 +60,7 @@
             this.Gb_Butons_adm.Controls.Add(this.BTN_Pedidos);
             this.Gb_Butons_adm.Controls.Add(this.BTN_Seus_Pedidos);
             this.Gb_Butons_adm.Controls.Add(this.LBL_Current_User);
+            resources.ApplyResources(this.Gb_Butons_adm, "Gb_Butons_adm");
             this.Gb_Butons_adm.Name = "Gb_Butons_adm";
             this.Gb_Butons_adm.TabStop = false;
             // 
@@ -115,14 +120,42 @@
             // 
             // PNL_Content_Main_Adm
             // 
-            resources.ApplyResources(this.PNL_Content_Main_Adm, "PNL_Content_Main_Adm");
             this.PNL_Content_Main_Adm.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.PNL_Content_Main_Adm, "PNL_Content_Main_Adm");
             this.PNL_Content_Main_Adm.Name = "PNL_Content_Main_Adm";
             // 
             // notifyIcon1
             // 
+            this.notifyIcon1.ContextMenuStrip = this.Menu_de_Contexto;
             resources.ApplyResources(this.notifyIcon1, "notifyIcon1");
             this.notifyIcon1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIcon1_MouseClick);
+            // 
+            // Menu_de_Contexto
+            // 
+            this.Menu_de_Contexto.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Restaurar,
+            this.Menu_Encerrar,
+            this.Menu_Sobre});
+            this.Menu_de_Contexto.Name = "Menu_de_Contexto";
+            resources.ApplyResources(this.Menu_de_Contexto, "Menu_de_Contexto");
+            // 
+            // Menu_Restaurar
+            // 
+            resources.ApplyResources(this.Menu_Restaurar, "Menu_Restaurar");
+            this.Menu_Restaurar.Name = "Menu_Restaurar";
+            this.Menu_Restaurar.Click += new System.EventHandler(this.Menu_Restaurar_Click);
+            // 
+            // Menu_Encerrar
+            // 
+            resources.ApplyResources(this.Menu_Encerrar, "Menu_Encerrar");
+            this.Menu_Encerrar.Name = "Menu_Encerrar";
+            this.Menu_Encerrar.Click += new System.EventHandler(this.Menu_Encerrar_Click);
+            // 
+            // Menu_Sobre
+            // 
+            resources.ApplyResources(this.Menu_Sobre, "Menu_Sobre");
+            this.Menu_Sobre.Name = "Menu_Sobre";
+            this.Menu_Sobre.Click += new System.EventHandler(this.Menu_Sobre_Click);
             // 
             // Menus_Main
             // 
@@ -138,6 +171,7 @@
             this.Load += new System.EventHandler(this.Menus_Main_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menus_Main_KeyDown);
             this.Gb_Butons_adm.ResumeLayout(false);
+            this.Menu_de_Contexto.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -155,5 +189,9 @@
         private MetroFramework.Controls.MetroButton BTN_Pedidos;
         private MetroFramework.Controls.MetroButton BTN_Seus_Pedidos;
         private MetroFramework.Controls.MetroButton BTN_Sair;
+        private System.Windows.Forms.ContextMenuStrip Menu_de_Contexto;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Restaurar;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Encerrar;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Sobre;
     }
 }

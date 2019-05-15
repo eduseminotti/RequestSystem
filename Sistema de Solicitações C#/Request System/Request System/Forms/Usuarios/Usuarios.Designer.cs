@@ -46,8 +46,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TXT_Filter_User_Name = new System.Windows.Forms.TextBox();
             this.GRID_USERS_VIEW = new MetroFramework.Controls.MetroGrid();
-            this.BTN_NewUser = new MetroFramework.Controls.MetroButton();
-            this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
             this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cPFDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,6 +56,8 @@
             this.typeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idiomaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BTN_NewUser = new MetroFramework.Controls.MetroButton();
+            this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
             this.adminMainBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_USERS_VIEW)).BeginInit();
@@ -198,20 +198,6 @@
             this.GRID_USERS_VIEW.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_USERS_VIEW.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
-            // BTN_NewUser
-            // 
-            resources.ApplyResources(this.BTN_NewUser, "BTN_NewUser");
-            this.BTN_NewUser.Name = "BTN_NewUser";
-            this.BTN_NewUser.UseSelectable = true;
-            this.BTN_NewUser.Click += new System.EventHandler(this.BTN_NewUser_Click);
-            // 
-            // BTN_Edit1
-            // 
-            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
-            this.BTN_Edit1.Name = "BTN_Edit1";
-            this.BTN_Edit1.UseSelectable = true;
-            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
-            // 
             // nameDataGridViewTextBoxColumn1
             // 
             this.nameDataGridViewTextBoxColumn1.DataPropertyName = "Name";
@@ -285,6 +271,20 @@
             // returnUsuariosBindingSource
             // 
             this.returnUsuariosBindingSource.DataSource = typeof(Request_System.Return_Usuarios);
+            // 
+            // BTN_NewUser
+            // 
+            resources.ApplyResources(this.BTN_NewUser, "BTN_NewUser");
+            this.BTN_NewUser.Name = "BTN_NewUser";
+            this.BTN_NewUser.UseSelectable = true;
+            this.BTN_NewUser.Click += new System.EventHandler(this.BTN_NewUser_Click);
+            // 
+            // BTN_Edit1
+            // 
+            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
+            this.BTN_Edit1.Name = "BTN_Edit1";
+            this.BTN_Edit1.UseSelectable = true;
+            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
             // 
             // adminMainBindingSource
             // 

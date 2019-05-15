@@ -48,10 +48,10 @@ namespace Request_System
         }
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
-            this.Visible = true;
-            this.WindowState = FormWindowState.Normal;
-            this.ShowInTaskbar = true;
-            notifyIcon1.Visible = true;
+            //this.Visible = true;
+            //this.WindowState = FormWindowState.Normal;
+            //this.ShowInTaskbar = true;
+            //notifyIcon1.Visible = true;
         }
         private void Menus_Main_Load(object sender, EventArgs e)
         {
@@ -193,6 +193,24 @@ namespace Request_System
                 BTN_Fornecedores.PerformClick();
             if (e.KeyCode == Keys.F6)
                 BTN_Usuarios.PerformClick();
+        }
+
+        private void Menu_Restaurar_Click(object sender, EventArgs e)
+        {
+            this.Visible = true;
+            this.WindowState = FormWindowState.Normal;
+            this.ShowInTaskbar = true;
+            notifyIcon1.Visible = true;
+        }
+
+        private void Menu_Encerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Menu_Sobre_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Desenvolvido por:\nEduardo Seminotti.\nSistemas de Informação - UNIPLAC.\nProfessor: Luciano Coelho.\nVersão: Beta");
         }
     }
 }

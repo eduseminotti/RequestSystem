@@ -156,6 +156,9 @@
   <data name="TXT_Filter_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 30</value>
   </data>
+  <data name="TXT_Filter_Name.MaxLength" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
   <data name="TXT_Filter_Name.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -312,6 +315,9 @@
   <data name="TXT_filter_Setor.Location" type="System.Drawing.Point, System.Drawing">
     <value>286, 30</value>
   </data>
+  <data name="TXT_filter_Setor.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
   <data name="TXT_filter_Setor.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -395,6 +401,9 @@
   </data>
   <data name="TXT_Filter_User_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>149, 30</value>
+  </data>
+  <data name="TXT_Filter_User_Name.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
   </data>
   <data name="TXT_Filter_User_Name.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -566,9 +575,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1003, 514</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Usuarios</value>

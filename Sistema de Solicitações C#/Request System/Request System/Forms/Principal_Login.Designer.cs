@@ -101,7 +101,7 @@
             resources.ApplyResources(this.TXT_Pass_login, "TXT_Pass_login");
             this.TXT_Pass_login.MaxLength = 32767;
             this.TXT_Pass_login.Name = "TXT_Pass_login";
-            this.TXT_Pass_login.PasswordChar = '\0';
+            this.TXT_Pass_login.PasswordChar = '*';
             this.TXT_Pass_login.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TXT_Pass_login.SelectedText = "";
             this.TXT_Pass_login.SelectionLength = 0;

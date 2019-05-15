@@ -31,7 +31,6 @@ namespace Request_System
             TXT_Filter_Codigo.BackColor = Color.White;
             int valor;
 
-
             if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor)|| TXT_Filter_Codigo.Text == "")
             {
                 BTN_Filter1.PerformClick();

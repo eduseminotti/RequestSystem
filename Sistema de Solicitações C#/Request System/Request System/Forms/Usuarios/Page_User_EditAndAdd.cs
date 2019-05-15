@@ -13,7 +13,7 @@ namespace Request_System
         String email;
         String cPF;
         String userName;
-        String password;
+        String password, confirmPassword;
         UserType type;
         UserIsactive isActive;
         UserIdioma idioma, userLoginIdioma;
@@ -21,6 +21,7 @@ namespace Request_System
 
         ManipulaUsuarios Manipula_Usuarios = new ManipulaUsuarios();
         List<Return_Usuarios> usuarios;
+        CriptografaSenhas Cripto = new CriptografaSenhas();
     
         public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma)
         {
@@ -45,6 +46,7 @@ namespace Request_System
                     TXT_Setor.Text = return_Usuarios.Setor.ToString();
                     TXT_Usuario.Text = return_Usuarios.UserName.ToString();
                     TXT_Password.Text = return_Usuarios.Password.ToString();
+                    TXT_Confirm_Pass.Text = return_Usuarios.Password.ToString();
                     CBX_IDIOMA.Text = return_Usuarios.Idioma.ToString();
                     CBX_TYPE.Text = return_Usuarios.Type.ToString();
                     CBX_Status.Text = return_Usuarios.IsActive.ToString();
@@ -88,23 +90,28 @@ namespace Request_System
         {
             TXT_CPF.BackColor = Color.White;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void BTN_UserSalvar_Click(object sender, EventArgs e)
         {
-            // //captura textos dos campos
+            //captura textos dos campos
             name = TXT_Nome.Text.ToString();
             email = TXT_Email.Text.ToString();
             cPF = TXT_CPF.Text.ToString();
             setor = TXT_Setor.Text.ToString();
             userName = TXT_Usuario.Text.ToString();
             password = TXT_Password.Text.ToString();
+            confirmPassword = TXT_Confirm_Pass.Text.ToString();
             idioma = (UserIdioma)Enum.Parse(typeof(UserIdioma), CBX_IDIOMA.Text.ToString());
             type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
             isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
 
-
+            
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || cPF == "" || setor == "" || userName == "" || email == "" ||
+            if (name == "" || cPF == "" || setor == "" || userName == "" || email == "" || confirmPassword == "" ||
                 password == "" || isActive == 0 || type == 0 || idioma == 0)
             {
                 if (name == "")
@@ -125,6 +132,8 @@ namespace Request_System
                     CBX_IDIOMA.BackColor = Color.OrangeRed;
                 if (type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
+                if (confirmPassword == "")
+                    TXT_Confirm_Pass.BackColor = Color.OrangeRed;
 
                 if (userLoginIdioma == UserIdioma.Portugues)
                     MessageBox.Show("Informe uma opção valida!");
@@ -134,6 +143,16 @@ namespace Request_System
                     MessageBox.Show("Introduzca una opción válida!");
                 return;
             }
+
+            if(password != confirmPassword)
+            {
+                MessageBox.Show("As senhas informadas nao sao iguais!");
+                TXT_Confirm_Pass.BackColor = Color.OrangeRed;
+                TXT_Password.BackColor = Color.OrangeRed;
+                return;
+            }
+            
+            password = Cripto.CriptografaSenha(password);
 
             //novo usuario
             if (isNew)
@@ -181,6 +200,11 @@ namespace Request_System
                 if (userLoginIdioma == UserIdioma.Espanhol)
                     MessageBox.Show("Usuario Editado con Éxito!");
             }
+        }
+
+        private void TXT_Confirm_Pass_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Confirm_Pass.BackColor = Color.White;
         }
 
         private void BTN_UserCancel_Click(object sender, EventArgs e)

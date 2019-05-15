@@ -9,7 +9,11 @@ namespace Request_System
     public class GeradorDePDFGrid
     {
         LOG log = new LOG();
-
+        /// <summary>
+        /// Solicita geração de PDFs para relatorios
+        /// </summary>
+        /// <param name="dataGrid">recebe o DataGrid como parametro para gerar o PDF</param>
+        /// <param name="tpRelatorio">String do tipo de relatorio</param>
         public void gerarPDF(DataGridView dataGrid, string tpRelatorio)
         {
             log.logador("Iniciando processo de geração de PDF para relatorio de: " + tpRelatorio);

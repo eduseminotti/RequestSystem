@@ -267,6 +267,7 @@
             this.TXT_Filtro_Nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.TXT_Filtro_Nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             this.TXT_Filtro_Nome.TextChanged += new System.EventHandler(this.TXT_Filtro_Nome_TextChanged);
+
             // 
             // CBX_Filtro_Status
             // 

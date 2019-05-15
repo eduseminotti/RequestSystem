@@ -170,6 +170,9 @@
   <data name="TXT_Filter_CNPJ.Location" type="System.Drawing.Point, System.Drawing">
     <value>269, 35</value>
   </data>
+  <data name="TXT_Filter_CNPJ.MaxLength" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
   <data name="TXT_Filter_CNPJ.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -275,6 +278,9 @@
   <data name="TXT_Filter_Codigo.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 35</value>
   </data>
+  <data name="TXT_Filter_Codigo.MaxLength" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="TXT_Filter_Codigo.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -298,6 +304,9 @@
   </data>
   <data name="TXT_Filter_Nome_fantasia.Location" type="System.Drawing.Point, System.Drawing">
     <value>142, 35</value>
+  </data>
+  <data name="TXT_Filter_Nome_fantasia.MaxLength" type="System.Int32, mscorlib">
+    <value>250</value>
   </data>
   <data name="TXT_Filter_Nome_fantasia.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>

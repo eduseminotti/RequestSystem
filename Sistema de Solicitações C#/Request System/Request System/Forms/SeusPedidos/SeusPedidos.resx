@@ -296,32 +296,41 @@
   <data name="&gt;&gt;BTN_Excluir_Solicitacao.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="dataSolicitacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Data Solicitação</value>
+  <data name="solicitatonIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>SolicitatonID</value>
   </data>
-  <data name="dataSolicitacaoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>220</value>
+  <data name="solicitatonIDDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
-  <data name="dataAprovacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Data Aprovação</value>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data da Solicitacao</value>
   </data>
-  <data name="dataAprovacaoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>220</value>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
-  <data name="dataRetiradaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Data Retirada</value>
+  <data name="dataAprovacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data Aprovacao</value>
   </data>
-  <data name="dataRetiradaDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>220</value>
+  <data name="dataAprovacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
   </data>
-  <data name="solicitationStatusDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+  <data name="dataRetiradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Data da Retirada</value>
+  </data>
+  <data name="dataRetiradaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="motivoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Motivo</value>
+  </data>
+  <data name="motivoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="solicitationStatusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Status</value>
   </data>
-  <data name="solicitationStatusDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>220</value>
-  </data>
-  <metadata name="returnSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+  <metadata name="returnSolicitacoesUsuarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>244, 17</value>
   </metadata>
   <data name="Grid_Solicitacoes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11px</value>
@@ -434,34 +443,46 @@
   <data name="$this.Text" xml:space="preserve">
     <value>SeusPedidos</value>
   </data>
-  <data name="&gt;&gt;returnSolicitacoesBindingSource.Name" xml:space="preserve">
-    <value>returnSolicitacoesBindingSource</value>
+  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Name" xml:space="preserve">
+    <value>returnSolicitacoesUsuarioBindingSource</value>
   </data>
-  <data name="&gt;&gt;returnSolicitacoesBindingSource.Type" xml:space="preserve">
+  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>dataSolicitacaoDataGridViewTextBoxColumn1</value>
+  <data name="&gt;&gt;solicitatonIDDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitatonIDDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+  <data name="&gt;&gt;solicitatonIDDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>dataAprovacaoDataGridViewTextBoxColumn1</value>
+  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataSolicitacaoDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataSolicitacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>dataRetiradaDataGridViewTextBoxColumn1</value>
+  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataAprovacaoDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataAprovacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>solicitationStatusDataGridViewTextBoxColumn1</value>
+  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dataRetiradaDataGridViewTextBoxColumn</value>
   </data>
-  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+  <data name="&gt;&gt;dataRetiradaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;motivoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>motivoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;motivoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitationStatusDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

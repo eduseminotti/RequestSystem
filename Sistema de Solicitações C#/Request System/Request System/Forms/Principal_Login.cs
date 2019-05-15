@@ -9,6 +9,7 @@ namespace Request_System
 
         ValidateUsers validate = new ValidateUsers();
         LOG log = new LOG();
+        CriptografaSenhas cripto = new CriptografaSenhas();
 
         String loginUserName;
         String loginPass;
@@ -47,6 +48,8 @@ namespace Request_System
 
                 return;
             }
+
+            loginPass = cripto.CriptografaSenha(loginPass);
 
             user = validate.ValidaUsuario(loginUserName, loginPass);
 

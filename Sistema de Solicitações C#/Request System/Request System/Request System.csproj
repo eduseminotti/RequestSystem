@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\CriptografaSenha.cs" />
     <Compile Include="Classes\GeraPDF.cs" />
     <Compile Include="Classes\LOGs.cs" />
     <Compile Include="Classes\ManipulaItensNFe.cs" />
@@ -332,6 +333,7 @@
     <None Include="Properties\DataSources\ReturnRelatorioNFe.datasource" />
     <None Include="Properties\DataSources\ReturnRelatorioSolicitacoes.datasource" />
     <None Include="Properties\DataSources\ReturnSolicitacoes.datasource" />
+    <None Include="Properties\DataSources\ReturnSolicitacoesUsuario.datasource" />
     <None Include="Properties\DataSources\Return_NFes.datasource" />
     <None Include="Properties\DataSources\Return_NFe_itens.datasource" />
     <None Include="Properties\DataSources\Return_Produtos.datasource" />

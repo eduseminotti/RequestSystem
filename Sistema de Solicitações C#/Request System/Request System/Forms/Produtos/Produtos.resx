@@ -153,7 +153,7 @@
     <value>16, 38</value>
   </data>
   <data name="TXT_Filter_Codigo.MaxLength" type="System.Int32, mscorlib">
-    <value>20</value>
+    <value>7</value>
   </data>
   <data name="TXT_Filter_Codigo.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>

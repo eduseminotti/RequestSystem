@@ -51,6 +51,8 @@
             this.BTN_UserCancel = new MetroFramework.Controls.MetroButton();
             this.BTN_UserSalvar = new MetroFramework.Controls.MetroButton();
             this.TXT_CPF = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.TXT_Confirm_Pass = new System.Windows.Forms.TextBox();
             this.returnUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.returnUsuariosBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -178,6 +180,17 @@
             resources.ApplyResources(this.TXT_CPF, "TXT_CPF");
             this.TXT_CPF.Name = "TXT_CPF";
             // 
+            // label11
+            // 
+            resources.ApplyResources(this.label11, "label11");
+            this.label11.Name = "label11";
+            // 
+            // TXT_Confirm_Pass
+            // 
+            resources.ApplyResources(this.TXT_Confirm_Pass, "TXT_Confirm_Pass");
+            this.TXT_Confirm_Pass.Name = "TXT_Confirm_Pass";
+            this.TXT_Confirm_Pass.TextChanged += new System.EventHandler(this.TXT_Confirm_Pass_TextChanged);
+            // 
             // returnUsuariosBindingSource
             // 
             this.returnUsuariosBindingSource.DataSource = typeof(Request_System.Return_Usuarios);
@@ -189,6 +202,8 @@
             this.CancelButton = this.BTN_UserCancel;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.TXT_Confirm_Pass);
             this.Controls.Add(this.TXT_CPF);
             this.Controls.Add(this.BTN_UserSalvar);
             this.Controls.Add(this.BTN_UserCancel);
@@ -245,5 +260,7 @@
         private MetroFramework.Controls.MetroButton BTN_UserCancel;
         private MetroFramework.Controls.MetroButton BTN_UserSalvar;
         private System.Windows.Forms.MaskedTextBox TXT_CPF;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TXT_Confirm_Pass;
     }
 }

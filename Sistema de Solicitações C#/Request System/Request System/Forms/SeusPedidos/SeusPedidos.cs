@@ -131,5 +131,10 @@ namespace Request_System
         {
 
         }
+
+        private void Grid_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            BTN_Edit.PerformClick();
+        }
     }
 }

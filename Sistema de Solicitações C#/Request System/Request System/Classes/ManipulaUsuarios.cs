@@ -19,10 +19,10 @@ namespace Request_System
         public UserIdioma Idioma { get; set; }
     }
     public class ManipulaUsuarios
-    {        
+    {
         LOG log = new LOG();
 
-        public List<Return_Usuarios> GetUsuarios(String UserName , String  Name, String Setor , UserIsactive Status )
+        public List<Return_Usuarios> GetUsuarios(String UserName, String Name, String Setor, UserIsactive Status)
         {
             List<Return_Usuarios> return_usuarios = new List<Return_Usuarios>();
 
@@ -37,25 +37,25 @@ namespace Request_System
 
                 if (UserName != null)
                 {
-                    cmd.CommandText += " and UserName like @UserName";                   
-                    cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = "%"+UserName+"%";
+                    cmd.CommandText += " and UserName like @UserName";
+                    cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = "%" + UserName + "%";
                 }
                 if (Name != null)
                 {
                     cmd.CommandText += " and Name like @Name";
-                    cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = "%"+Name+"%";
+                    cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = "%" + Name + "%";
                 }
-                if(Setor != null)
+                if (Setor != null)
                 {
                     cmd.CommandText += " and Setor like @Setor";
                     cmd.Parameters.Add("@Setor", SqlDbType.VarChar).Value = "%" + Setor + "%";
                 }
-                if(Status != UserIsactive._)
+                if (Status != UserIsactive._)
                 {
                     cmd.CommandText += " and isactive = @Status";
                     cmd.Parameters.Add("@Status", SqlDbType.Int).Value = Status;
                 }
-                
+
                 sqlConn.Open();
                 SqlDataReader query = cmd.ExecuteReader();
                 while (query.Read())
@@ -117,7 +117,7 @@ namespace Request_System
                 log.logador("Usuario cadastrado com sucesso: " + UserName);
             }
             catch (SqlException ex)
-            {               
+            {
                 log.logador("Erro ao cadastrar usuario: " + UserName);
                 log.logador(ex);
                 throw;
@@ -132,22 +132,32 @@ namespace Request_System
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
-            string queryString = "UPDATE [Seminotti_Teste].[dbo].[users] SET NAME = @name, setor = @setor, email = @email, cpf = @cpf, username = @username, password = @Password, type = @type, isactive = @isactive, idioma = @idioma   WHERE  UserName = @username ";
-
-            SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-            cmd.Parameters.AddWithValue("@name", Name);
-            cmd.Parameters.AddWithValue("@setor", Setor);
-            cmd.Parameters.AddWithValue("@email", eMail);
-            cmd.Parameters.AddWithValue("@cpf", CPF);
-            cmd.Parameters.AddWithValue("@username", UserName);
-            cmd.Parameters.AddWithValue("@Password", Password);
-            cmd.Parameters.AddWithValue("@type", type);
-            cmd.Parameters.AddWithValue("@isactive", isActive);
-            cmd.Parameters.AddWithValue("@idioma", idioma);
-
+            string queryString = null;
             try
             {
+                queryString = "UPDATE [Seminotti_Teste].[dbo].[users] SET NAME = @name, setor = @setor, email = @email," +
+               " cpf = @cpf, username = @username, type = @type, isactive = @isactive, idioma = @idioma    ";
+
+                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
+
+                if (Password != null)
+                {
+                    cmd.CommandText += "  , password = @Password  ";
+                    cmd.Parameters.Add("@Password", SqlDbType.VarChar).Value = Password;
+                }
+
+                cmd.CommandText += "   WHERE UserName = @username  ";
+
+                cmd.Parameters.AddWithValue("@name", Name);
+                cmd.Parameters.AddWithValue("@setor", Setor);
+                cmd.Parameters.AddWithValue("@email", eMail);
+                cmd.Parameters.AddWithValue("@cpf", CPF);
+                cmd.Parameters.AddWithValue("@username", UserName);
+                cmd.Parameters.AddWithValue("@type", type);
+                cmd.Parameters.AddWithValue("@isactive", isActive);
+                cmd.Parameters.AddWithValue("@idioma", idioma);
+
+
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
                 sucess = true;
@@ -155,7 +165,7 @@ namespace Request_System
             }
             catch (SqlException ex)
             {
-                log.logador("Erro ao editar usuario: " + UserName);
+                log.logador("Erro ao editar usuario: " + UserName + " - " + queryString);
                 log.logador(ex);
                 throw;
             }

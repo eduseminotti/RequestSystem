@@ -322,7 +322,7 @@
     <value>238, 69</value>
   </data>
   <data name="listCNPJ.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="&gt;&gt;listCNPJ.Name" xml:space="preserve">
     <value>listCNPJ</value>
@@ -379,7 +379,7 @@
     <value>240, 30</value>
   </data>
   <data name="TXT_CNPJ_Selected.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;TXT_CNPJ_Selected.Name" xml:space="preserve">
     <value>TXT_CNPJ_Selected</value>
@@ -430,7 +430,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_SelecionaForn.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="BTN_SelecionaForn.Text" xml:space="preserve">
     <value>Seleciona</value>
@@ -448,13 +448,13 @@
     <value>1</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 93</value>
+    <value>233, 91</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 124</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>6</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -478,7 +478,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_NewProvider.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="BTN_NewProvider.Text" xml:space="preserve">
     <value>Novo Fornecedor</value>
@@ -505,7 +505,7 @@
     <value>240, 29</value>
   </data>
   <data name="DT_Data_Emissão.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="&gt;&gt;DT_Data_Emissão.Name" xml:space="preserve">
     <value>DT_Data_Emissão</value>
@@ -526,7 +526,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_RegNFe.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="BTN_RegNFe.Text" xml:space="preserve">
     <value>Registrar NFe</value>
@@ -550,7 +550,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_LimparNFe.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="BTN_LimparNFe.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -634,7 +634,7 @@
     <value>712, 210</value>
   </data>
   <data name="GRID_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;GRID_Itens_NFe.Name" xml:space="preserve">
     <value>GRID_Itens_NFe</value>
@@ -658,7 +658,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_RemoveItem.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>19</value>
   </data>
   <data name="BTN_RemoveItem.Text" xml:space="preserve">
     <value>Remover</value>
@@ -739,7 +739,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_SelecionarByName.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="BTN_SelecionarByName.Text" xml:space="preserve">
     <value>Selecionar</value>
@@ -766,7 +766,7 @@
     <value>238, 69</value>
   </data>
   <data name="LB_List_Products_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="&gt;&gt;LB_List_Products_Name.Name" xml:space="preserve">
     <value>LB_List_Products_Name</value>
@@ -781,13 +781,13 @@
     <value>2</value>
   </data>
   <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 84</value>
+    <value>1, 81</value>
   </data>
   <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 138</value>
   </data>
   <data name="GB_Find_Product_By_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
+    <value>13</value>
   </data>
   <data name="GB_Find_Product_By_Name.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -811,7 +811,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_AddProduct.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>17</value>
   </data>
   <data name="BTN_AddProduct.Text" xml:space="preserve">
     <value>Adicionar Produto</value>
@@ -862,7 +862,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_LimparItensNFe.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
+    <value>16</value>
   </data>
   <data name="BTN_LimparItensNFe.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -886,7 +886,7 @@
     <value>115, 30</value>
   </data>
   <data name="BTN_New_Product.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="BTN_New_Product.Text" xml:space="preserve">
     <value>Novo Produto</value>
@@ -916,7 +916,7 @@
     <value>235, 30</value>
   </data>
   <data name="TXT_QTD_Produto.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>15</value>
   </data>
   <data name="&gt;&gt;TXT_QTD_Produto.Name" xml:space="preserve">
     <value>TXT_QTD_Produto</value>
@@ -994,7 +994,7 @@
     <value>235, 30</value>
   </data>
   <data name="TXT_TP_Unidade.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>90</value>
   </data>
   <data name="&gt;&gt;TXT_TP_Unidade.Name" xml:space="preserve">
     <value>TXT_TP_Unidade</value>
@@ -1021,7 +1021,7 @@
     <value>235, 30</value>
   </data>
   <data name="TXT_Nome_Produto.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="&gt;&gt;TXT_Nome_Produto.Name" xml:space="preserve">
     <value>TXT_Nome_Produto</value>

@@ -197,6 +197,7 @@
             this.GRID_USERS_VIEW.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GRID_USERS_VIEW.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_USERS_VIEW.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRID_USERS_VIEW.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRID_USERS_VIEW_CellDoubleClick);
             // 
             // nameDataGridViewTextBoxColumn1
             // 

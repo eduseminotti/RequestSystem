@@ -212,5 +212,13 @@ namespace Request_System
         {
             MessageBox.Show("Desenvolvido por:\nEduardo Seminotti.\nSistemas de Informação - UNIPLAC.\nProfessor: Luciano Coelho.\nVersão: Beta");
         }
+
+        private void Menus_Main_MouseClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+
+            }
+        }
     }
 }

@@ -67,11 +67,11 @@ namespace Request_System
                     return_Providers.Add(providers);
 
                 }
-                    log.logador("Dados de Fornecedores carregados com sucesso! fornecedor: " + Nomefantasia);
+                    log.logador("Dados de Fornecedores carregados com sucesso! fornecedor: " );
             }
             catch (SqlException ex)
             {
-                log.logador("Erro ao carregar dados de fornecedores para o fornecedor: " + Nomefantasia);
+                log.logador("Erro ao carregar dados de fornecedores para o fornecedor: " );
                 log.logador(ex);
                 throw;
             }

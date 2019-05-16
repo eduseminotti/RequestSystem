@@ -118,5 +118,10 @@ namespace Request_System
         {
             GeradorDePDF.gerarPDF(GRID_View_Providers, "Fornecedores");
         }
+
+        private void GRID_View_Providers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            BTN_Edit1.PerformClick();
+        }
     }
 }

@@ -103,6 +103,9 @@ namespace Request_System
             GB_Gera_PDF.Visible = false;
         }
 
-
+        private void GRID_View_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            BTN_Ver_Solicitacao.PerformClick();
+        }
     }
 }

@@ -244,6 +244,7 @@
             this.GRID_NFes_View.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.GRID_NFes_View.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_NFes_View.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.GRID_NFes_View.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRID_NFes_View_CellDoubleClick);
             // 
             // numberDataGridViewTextBoxColumn1
             // 

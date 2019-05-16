@@ -160,6 +160,11 @@ namespace Request_System
             GB_filters.Visible = true;
         }
 
+        private void GRID_NFes_View_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            BTN_Edit.PerformClick();
+        }
+
         private void BTN_Filter_Click_1(object sender, EventArgs e)
         {
             serieNFe = 0;

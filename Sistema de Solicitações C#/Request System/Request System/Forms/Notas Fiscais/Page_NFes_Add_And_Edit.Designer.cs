@@ -139,6 +139,7 @@
             resources.ApplyResources(this.listCNPJ, "listCNPJ");
             this.listCNPJ.Name = "listCNPJ";
             this.listCNPJ.ValueMember = "NameCnpj";
+            this.listCNPJ.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listCNPJ_KeyDown);
             // 
             // returnProvidersBindingSource
             // 
@@ -154,6 +155,7 @@
             resources.ApplyResources(this.TXT_CNPJ_Selected, "TXT_CNPJ_Selected");
             this.TXT_CNPJ_Selected.Name = "TXT_CNPJ_Selected";
             this.TXT_CNPJ_Selected.TextChanged += new System.EventHandler(this.TXT_CNPJ_Selected_TextChanged);
+            this.TXT_CNPJ_Selected.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_CNPJ_Selected_KeyDown);
             // 
             // GB_Busca_CNPJ_Forn
             // 
@@ -372,6 +374,7 @@
             resources.ApplyResources(this.LB_List_Products_Name, "LB_List_Products_Name");
             this.LB_List_Products_Name.Name = "LB_List_Products_Name";
             this.LB_List_Products_Name.ValueMember = "ProdUnit";
+            this.LB_List_Products_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LB_List_Products_Name_KeyDown);
             // 
             // returnProdutosBindingSource
             // 
@@ -430,6 +433,7 @@
             resources.ApplyResources(this.TXT_Nome_Produto, "TXT_Nome_Produto");
             this.TXT_Nome_Produto.Name = "TXT_Nome_Produto";
             this.TXT_Nome_Produto.TextChanged += new System.EventHandler(this.TXT_Nome_Produto_TextChanged);
+            this.TXT_Nome_Produto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_Nome_Produto_KeyDown);
             // 
             // ProductCode
             // 

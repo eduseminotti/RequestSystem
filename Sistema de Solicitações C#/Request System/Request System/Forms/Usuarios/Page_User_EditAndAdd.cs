@@ -17,12 +17,12 @@ namespace Request_System
         UserType type;
         UserIsactive isActive;
         UserIdioma idioma, userLoginIdioma;
-        bool saveUserOk, isNew;
+        bool saveUserOk, isNew, passEdit = false;
 
         ManipulaUsuarios Manipula_Usuarios = new ManipulaUsuarios();
         List<Return_Usuarios> usuarios;
         CriptografaSenhas Cripto = new CriptografaSenhas();
-    
+
         public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma)
         {
             InitializeComponent();
@@ -45,8 +45,7 @@ namespace Request_System
                     TXT_CPF.Text = return_Usuarios.CPF.ToString();
                     TXT_Setor.Text = return_Usuarios.Setor.ToString();
                     TXT_Usuario.Text = return_Usuarios.UserName.ToString();
-                    TXT_Password.Text = return_Usuarios.Password.ToString();
-                    TXT_Confirm_Pass.Text = return_Usuarios.Password.ToString();
+
                     CBX_IDIOMA.Text = return_Usuarios.Idioma.ToString();
                     CBX_TYPE.Text = return_Usuarios.Type.ToString();
                     CBX_Status.Text = return_Usuarios.IsActive.ToString();
@@ -73,6 +72,7 @@ namespace Request_System
         private void TXT_Setor_TextChanged(object sender, EventArgs e)
         {
             TXT_Setor.BackColor = Color.White;
+
         }
         private void TXT_Email_TextChanged(object sender, EventArgs e)
         {
@@ -85,6 +85,7 @@ namespace Request_System
         private void TXT_Password_TextChanged(object sender, EventArgs e)
         {
             TXT_Password.BackColor = Color.White;
+            passEdit = true;
         }
         private void TXT_CPF_TextChanged(object sender, EventArgs e)
         {
@@ -109,10 +110,9 @@ namespace Request_System
             type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
             isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
 
-            
+
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || cPF == "" || setor == "" || userName == "" || email == "" || confirmPassword == "" ||
-                password == "" || isActive == 0 || type == 0 || idioma == 0)
+            if (name == "" || cPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 || idioma == 0)
             {
                 if (name == "")
                     TXT_Nome.BackColor = Color.OrangeRed;
@@ -124,17 +124,12 @@ namespace Request_System
                     TXT_Email.BackColor = Color.OrangeRed;
                 if (userName == "")
                     TXT_Usuario.BackColor = Color.OrangeRed;
-                if (password == "")
-                    TXT_Password.BackColor = Color.OrangeRed;
                 if (isActive == UserIsactive._)
                     CBX_Status.BackColor = Color.OrangeRed;
                 if (idioma == UserIdioma._)
                     CBX_IDIOMA.BackColor = Color.OrangeRed;
                 if (type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
-                if (confirmPassword == "")
-                    TXT_Confirm_Pass.BackColor = Color.OrangeRed;
-
                 if (userLoginIdioma == UserIdioma.Portugues)
                     MessageBox.Show("Informe uma opção valida!");
                 if (userLoginIdioma == UserIdioma.Ingles)
@@ -144,19 +139,29 @@ namespace Request_System
                 return;
             }
 
-            if(password != confirmPassword)
+            if (password != confirmPassword)
             {
                 MessageBox.Show("As senhas informadas nao sao iguais!");
                 TXT_Confirm_Pass.BackColor = Color.OrangeRed;
                 TXT_Password.BackColor = Color.OrangeRed;
                 return;
             }
-            
+
             password = Cripto.CriptografaSenha(password);
 
             //novo usuario
             if (isNew)
             {
+
+                if (confirmPassword == "" || password == "")
+                {
+                    if (password == "")
+                        TXT_Password.BackColor = Color.OrangeRed;
+
+                    if (confirmPassword == "")
+                        TXT_Confirm_Pass.BackColor = Color.OrangeRed;
+                    return;
+                }
                 //valida se usario ja existe
                 usuarios = Manipula_Usuarios.GetUsuarios(userName, null, null, 0);
                 if (usuarios.Any())
@@ -190,7 +195,14 @@ namespace Request_System
             //edição de usuario
             if (!isNew)
             {
+                if (!passEdit)
+                    password = null;
+
                 saveUserOk = Manipula_Usuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive, idioma);
+
+                this.Close();
+
+
                 this.Close();
 
                 if (userLoginIdioma == UserIdioma.Portugues)
@@ -205,6 +217,7 @@ namespace Request_System
         private void TXT_Confirm_Pass_TextChanged(object sender, EventArgs e)
         {
             TXT_Confirm_Pass.BackColor = Color.White;
+            passEdit = true;
         }
 
         private void BTN_UserCancel_Click(object sender, EventArgs e)

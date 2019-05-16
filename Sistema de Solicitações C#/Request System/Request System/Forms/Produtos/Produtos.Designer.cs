@@ -207,6 +207,7 @@
             this.Grid_View_produtos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Grid_View_produtos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_View_produtos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Grid_View_produtos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_View_produtos_CellDoubleClick);
             // 
             // productIdDataGridViewTextBoxColumn1
             // 

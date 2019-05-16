@@ -144,6 +144,7 @@ namespace Request_System
             TXT_Nome_Produto.Text = productName.ToString();
             TXT_TP_Unidade.Text = productTPUnidade.ToString();
             GB_Find_Product_By_Name.Visible = false;
+            TXT_Nome_Produto.Focus();
         }
 
         private void TXT_QTD_Produto_TextChanged(object sender, EventArgs e)
@@ -204,6 +205,7 @@ namespace Request_System
             GB_Busca_CNPJ_Forn.Visible = false;
             BTN_SelecionaForn.Enabled = false;
             BTN_RegNFe.Enabled = true;
+            TXT_CNPJ_Selected.Focus();
         }
 
         private void TXT_Numero_NFe_TextChanged(object sender, EventArgs e)
@@ -235,6 +237,39 @@ namespace Request_System
                 return;
             }
         }
+
+        private void listCNPJ_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BTN_SelecionaForn.PerformClick();
+
+        }
+
+        private void LB_List_Products_Name_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BTN_SelecionarByName.PerformClick();
+
+        }
+
+        private void TXT_CNPJ_Selected_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+                listCNPJ.Focus();
+
+            if (e.KeyCode == Keys.Enter)
+                BTN_SelecionaForn.PerformClick();
+        }
+
+        private void TXT_Nome_Produto_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+                LB_List_Products_Name.Focus();
+
+            if (e.KeyCode == Keys.Enter)
+                BTN_SelecionarByName.PerformClick();
+        }
+
         private void BTN_RegNFe_Click(object sender, EventArgs e)
         {
             bool returns = false;
@@ -295,6 +330,8 @@ namespace Request_System
 
         private void TXT_Nome_Produto_TextChanged(object sender, EventArgs e)
         {
+            TXT_Nome_Produto.BackColor = Color.White;
+
             GB_Find_Product_By_Name.Visible = true;
 
             if (TXT_Nome_Produto.Text.ToString() != "")

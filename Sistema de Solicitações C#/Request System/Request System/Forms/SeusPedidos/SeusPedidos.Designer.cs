@@ -41,16 +41,16 @@
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.BTN_Excluir_Solicitacao = new MetroFramework.Controls.MetroButton();
             this.Grid_Solicitacoes = new MetroFramework.Controls.MetroGrid();
-            this.BTN_Edit = new MetroFramework.Controls.MetroButton();
-            this.BTN_Nova_Solicitacao = new MetroFramework.Controls.MetroButton();
-            this.BTN_Gera_PDF = new MetroFramework.Controls.MetroButton();
-            this.returnSolicitacoesUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.solicitatonIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataSolicitacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataAprovacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataRetiradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.motivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.solicitationStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnSolicitacoesUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BTN_Edit = new MetroFramework.Controls.MetroButton();
+            this.BTN_Nova_Solicitacao = new MetroFramework.Controls.MetroButton();
+            this.BTN_Gera_PDF = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesUsuarioBindingSource)).BeginInit();
@@ -154,31 +154,7 @@
             this.Grid_Solicitacoes.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.Grid_Solicitacoes.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_Solicitacoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            // 
-            // BTN_Edit
-            // 
-            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
-            this.BTN_Edit.Name = "BTN_Edit";
-            this.BTN_Edit.UseSelectable = true;
-            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
-            // 
-            // BTN_Nova_Solicitacao
-            // 
-            resources.ApplyResources(this.BTN_Nova_Solicitacao, "BTN_Nova_Solicitacao");
-            this.BTN_Nova_Solicitacao.Name = "BTN_Nova_Solicitacao";
-            this.BTN_Nova_Solicitacao.UseSelectable = true;
-            this.BTN_Nova_Solicitacao.Click += new System.EventHandler(this.BTN_Nova_Solicitacao_Click);
-            // 
-            // BTN_Gera_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gera_PDF, "BTN_Gera_PDF");
-            this.BTN_Gera_PDF.Name = "BTN_Gera_PDF";
-            this.BTN_Gera_PDF.UseSelectable = true;
-            this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
-            // 
-            // returnSolicitacoesUsuarioBindingSource
-            // 
-            this.returnSolicitacoesUsuarioBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesUsuario);
+            this.Grid_Solicitacoes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_Solicitacoes_CellDoubleClick);
             // 
             // solicitatonIDDataGridViewTextBoxColumn
             // 
@@ -227,6 +203,31 @@
             this.solicitationStatusDataGridViewTextBoxColumn.Name = "solicitationStatusDataGridViewTextBoxColumn";
             this.solicitationStatusDataGridViewTextBoxColumn.ReadOnly = true;
             this.solicitationStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // returnSolicitacoesUsuarioBindingSource
+            // 
+            this.returnSolicitacoesUsuarioBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesUsuario);
+            // 
+            // BTN_Edit
+            // 
+            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
+            this.BTN_Edit.Name = "BTN_Edit";
+            this.BTN_Edit.UseSelectable = true;
+            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
+            // 
+            // BTN_Nova_Solicitacao
+            // 
+            resources.ApplyResources(this.BTN_Nova_Solicitacao, "BTN_Nova_Solicitacao");
+            this.BTN_Nova_Solicitacao.Name = "BTN_Nova_Solicitacao";
+            this.BTN_Nova_Solicitacao.UseSelectable = true;
+            this.BTN_Nova_Solicitacao.Click += new System.EventHandler(this.BTN_Nova_Solicitacao_Click);
+            // 
+            // BTN_Gera_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gera_PDF, "BTN_Gera_PDF");
+            this.BTN_Gera_PDF.Name = "BTN_Gera_PDF";
+            this.BTN_Gera_PDF.UseSelectable = true;
+            this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
             // 
             // SeusPedidos
             // 

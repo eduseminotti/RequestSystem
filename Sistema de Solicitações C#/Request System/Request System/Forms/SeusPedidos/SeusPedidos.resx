@@ -443,12 +443,6 @@
   <data name="$this.Text" xml:space="preserve">
     <value>SeusPedidos</value>
   </data>
-  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Name" xml:space="preserve">
-    <value>returnSolicitacoesUsuarioBindingSource</value>
-  </data>
-  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;solicitatonIDDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>solicitatonIDDataGridViewTextBoxColumn</value>
   </data>
@@ -484,6 +478,12 @@
   </data>
   <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Name" xml:space="preserve">
+    <value>returnSolicitacoesUsuarioBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SeusPedidos</value>

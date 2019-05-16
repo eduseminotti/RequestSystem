@@ -100,5 +100,10 @@ namespace Request_System
         {
             BTN_Filtrar1.PerformClick();
         }
+
+        private void GRID_USERS_VIEW_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            BTN_Edit1.PerformClick();
+        }
     }
 }

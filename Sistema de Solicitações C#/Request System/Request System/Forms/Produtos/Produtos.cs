@@ -118,14 +118,49 @@ namespace Request_System
             Grid_Produtos_PDF.DataSource = produtos;
         }
 
-        private void TXT_Filter_Nome_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Grid_View_produtos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             BTN_Edit.PerformClick();
+        }
+
+        private void TXT_Filter_Nome_TextChanged_1(object sender, EventArgs e)
+        {
+            BTN_Filter.PerformClick();
+        }
+
+        private void CBX_Filter_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            BTN_Filter.PerformClick();
+        }
+
+        private void TXT_Filter_Codigo_Enter(object sender, EventArgs e)
+        {
+            TXT_Filter_Codigo.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_Codigo_Leave(object sender, EventArgs e)
+        {
+            TXT_Filter_Codigo.BackColor = Color.White;
+        }
+
+        private void TXT_Filter_Nome_Enter(object sender, EventArgs e)
+        {
+            TXT_Filter_Nome.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_Nome_Leave(object sender, EventArgs e)
+        {
+            TXT_Filter_Nome.BackColor = Color.White;
+        }
+
+        private void CBX_Filter_Status_Enter(object sender, EventArgs e)
+        {
+            CBX_Filter_Status.BackColor = Color.Yellow;
+        }
+
+        private void CBX_Filter_Status_Leave(object sender, EventArgs e)
+        {
+            CBX_Filter_Status.BackColor = Color.White;
         }
     }
 }

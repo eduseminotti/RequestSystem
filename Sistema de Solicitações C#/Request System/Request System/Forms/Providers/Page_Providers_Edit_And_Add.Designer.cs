@@ -73,12 +73,15 @@
             resources.ApplyResources(this.TXT_Razao_social, "TXT_Razao_social");
             this.TXT_Razao_social.Name = "TXT_Razao_social";
             this.TXT_Razao_social.TextChanged += new System.EventHandler(this.TXT_Razao_social_TextChanged);
+            this.TXT_Razao_social.Enter += new System.EventHandler(this.TXT_Razao_social_Enter);
+            this.TXT_Razao_social.Leave += new System.EventHandler(this.TXT_Razao_social_Leave);
             // 
             // TXT_Nome_Fantasia
             // 
             resources.ApplyResources(this.TXT_Nome_Fantasia, "TXT_Nome_Fantasia");
             this.TXT_Nome_Fantasia.Name = "TXT_Nome_Fantasia";
-            this.TXT_Nome_Fantasia.TextChanged += new System.EventHandler(this.TXT_Nome_Fantasia_TextChanged);
+            this.TXT_Nome_Fantasia.Enter += new System.EventHandler(this.TXT_Nome_Fantasia_Enter);
+            this.TXT_Nome_Fantasia.Leave += new System.EventHandler(this.TXT_Nome_Fantasia_Leave);
             // 
             // BTN_Cancelar1
             // 
@@ -105,16 +108,18 @@
             // 
             resources.ApplyResources(this.TXT_CNPJ, "TXT_CNPJ");
             this.TXT_CNPJ.Name = "TXT_CNPJ";
-
+            this.TXT_CNPJ.Enter += new System.EventHandler(this.TXT_CNPJ_Enter);
+            this.TXT_CNPJ.Leave += new System.EventHandler(this.TXT_CNPJ_Leave);
             // 
             // TXT_Phone
             // 
             resources.ApplyResources(this.TXT_Phone, "TXT_Phone");
             this.TXT_Phone.Name = "TXT_Phone";
+            this.TXT_Phone.Enter += new System.EventHandler(this.TXT_Phone_Enter);
+            this.TXT_Phone.Leave += new System.EventHandler(this.TXT_Phone_Leave);
             // 
             // Page_Providers_Edit_And_Add
             // 
-            this.AcceptButton = this.BTN_Salvar1;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BTN_Cancelar1;

@@ -35,9 +35,8 @@ namespace Request_System
 
                 if (tipoUnidade == "")
                     TXT_Tipo_Unidade.BackColor = Color.OrangeRed;
-
                 if (productIsActive == ProductIsActive._)
-                    txt_validacombo.Visible = true;
+                    CBX_Status_Produto.BackColor = Color.OrangeRed;
 
                 return;
             }
@@ -57,11 +56,6 @@ namespace Request_System
             }
         }
 
-        private void CBX_Status_Produto_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            txt_validacombo.Visible = false;
-        }
-
         private void TXT_Tipo_Unidade_TextChanged(object sender, EventArgs e)
         {
             TXT_Tipo_Unidade.BackColor = Color.White;
@@ -70,6 +64,44 @@ namespace Request_System
         private void TXT_Nome_Produto_TextChanged(object sender, EventArgs e)
         {
             TXT_Nome_Produto.BackColor = Color.White;
+        }
+
+        private void TXT_Nome_Produto_Enter(object sender, EventArgs e)
+        {
+            TXT_Nome_Produto.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Nome_Produto_Leave(object sender, EventArgs e)
+        {
+            TXT_Nome_Produto.BackColor = Color.White;
+        }
+
+        private void TXT_Tipo_Unidade_Enter(object sender, EventArgs e)
+        {
+            TXT_Tipo_Unidade.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Tipo_Unidade_Leave(object sender, EventArgs e)
+        {
+            TXT_Tipo_Unidade.BackColor = Color.White;
+        }
+
+        private void CBX_Status_Produto_Enter(object sender, EventArgs e)
+        {
+            CBX_Status_Produto.BackColor = Color.Yellow;
+        }
+
+        private void CBX_Status_Produto_Leave(object sender, EventArgs e)
+        {
+            CBX_Status_Produto.BackColor = Color.White;
+        }
+
+        private void Page_Products_Edit_And_Add_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
+            }
         }
 
         private void BTN_Product_Cancel_Click_1(object sender, EventArgs e)
@@ -87,8 +119,6 @@ namespace Request_System
             selectProductID = SelectProductID;
 
             CBX_Status_Produto.DataSource = Enum.GetValues(typeof(ProductIsActive));
-
-            txt_validacombo.Visible = false;
 
             if (!isNew)
             {

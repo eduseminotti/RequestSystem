@@ -28,18 +28,6 @@ namespace Request_System
 
         private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
         {
-            TXT_Filter_Codigo.BackColor = Color.White;
-            int valor;
-
-            if (Int32.TryParse(TXT_Filter_Codigo.Text, out valor)|| TXT_Filter_Codigo.Text == "")
-            {
-                BTN_Filter1.PerformClick();
-            }
-            else
-            {
-                TXT_Filter_Codigo.BackColor = Color.OrangeRed;
-                MessageBox.Show("0,1,2,3...");
-            }
 
         }
 
@@ -48,30 +36,14 @@ namespace Request_System
             BTN_Filter1.PerformClick();
         }
 
-        private void TXT_Filter_CNPJ_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Filter_CNPJ.BackColor = Color.White;
-            int valor;
-            if (TXT_Filter_CNPJ.Text != "")
-            {
-                if (Int32.TryParse(TXT_Filter_CNPJ.Text, out valor) || TXT_Filter_CNPJ.Text == "")
-                {
-                    BTN_Filter1.PerformClick();
-                }
-                else
-                {
-                    TXT_Filter_CNPJ.BackColor = Color.OrangeRed;
-                    MessageBox.Show("0,1,2,3...");
-                }
-            }
-        }
-
         private void BTN_Filter1_Click(object sender, EventArgs e)
         {
-            String nomeFantasia = null, cnpj = null;
-            int id = 0;            
-            if (TXT_Filter_CNPJ.Text.ToString() != "")
-                cnpj = TXT_Filter_CNPJ.Text.ToString();
+            String nomeFantasia = null;
+              int id = 0;
+            String cnpj = TXT_Filter_CNPJ.Text.ToString().Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "");
+
+            if (cnpj == "")
+                cnpj = null;
             if (TXT_Filter_Codigo.Text.ToString() != "")
                 id = Convert.ToInt32(TXT_Filter_Codigo.Text.ToString());
             if (TXT_Filter_Nome_fantasia.Text.ToString() != "")
@@ -122,6 +94,46 @@ namespace Request_System
         private void GRID_View_Providers_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             BTN_Edit1.PerformClick();
+        }
+
+        private void TXT_Filter_CNPJ_TextChanged_1(object sender, EventArgs e)
+        {
+            BTN_Filter1.PerformClick();
+        }
+
+        private void TXT_Filter_Nome_fantasia_Enter(object sender, EventArgs e)
+        {
+            TXT_Filter_Nome_fantasia.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_Nome_fantasia_Leave(object sender, EventArgs e)
+        {
+            TXT_Filter_Nome_fantasia.BackColor = Color.White;
+        }
+
+        private void TXT_Filter_CNPJ_Enter(object sender, EventArgs e)
+        {
+            TXT_Filter_CNPJ.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_CNPJ_Leave(object sender, EventArgs e)
+        {
+            TXT_Filter_CNPJ.BackColor = Color.White;
+        }
+
+        private void TXT_Filter_Codigo_TextChanged_1(object sender, EventArgs e)
+        {
+            BTN_Filter1.PerformClick();
+        }
+
+        private void TXT_Filter_Codigo_Enter_1(object sender, EventArgs e)
+        {
+            TXT_Filter_Codigo.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_Codigo_Leave_1(object sender, EventArgs e)
+        {
+            TXT_Filter_Codigo.BackColor = Color.White;
         }
     }
 }

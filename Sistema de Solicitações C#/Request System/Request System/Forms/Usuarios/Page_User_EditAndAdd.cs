@@ -328,14 +328,6 @@ namespace Request_System
         private void CBX_Status_Leave(object sender, EventArgs e)
         {
             CBX_Status.BackColor = Color.White;
-        }
-
-
-
-
-
-
-
-
+        }       
     }
 }

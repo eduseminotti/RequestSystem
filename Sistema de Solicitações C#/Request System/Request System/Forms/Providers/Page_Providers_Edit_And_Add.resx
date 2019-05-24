@@ -177,7 +177,7 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>17, 122</value>
+    <value>17, 113</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -204,7 +204,7 @@
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 175</value>
+    <value>16, 157</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>34, 13</value>
@@ -231,7 +231,7 @@
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 213</value>
+    <value>13, 195</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>49, 13</value>
@@ -260,11 +260,8 @@
   <data name="TXT_Razao_social.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Razao_social.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Razao_social.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Razao_social.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -282,16 +279,13 @@
     <value>5</value>
   </data>
   <data name="TXT_Nome_Fantasia.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 139</value>
+    <value>16, 130</value>
   </data>
   <data name="TXT_Nome_Fantasia.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Nome_Fantasia.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Nome_Fantasia.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Nome_Fantasia.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -309,7 +303,7 @@
     <value>4</value>
   </data>
   <data name="BTN_Cancelar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 264</value>
+    <value>15, 246</value>
   </data>
   <data name="BTN_Cancelar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -333,7 +327,7 @@
     <value>3</value>
   </data>
   <data name="BTN_Salvar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 264</value>
+    <value>136, 246</value>
   </data>
   <data name="BTN_Salvar1.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -381,7 +375,7 @@
     <value>6</value>
   </data>
   <data name="TXT_CNPJ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 190</value>
+    <value>16, 172</value>
   </data>
   <data name="TXT_CNPJ.Mask" xml:space="preserve">
     <value>00,000,000/0000-00</value>
@@ -405,10 +399,10 @@
     <value>1</value>
   </data>
   <data name="TXT_Phone.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 229</value>
+    <value>16, 211</value>
   </data>
   <data name="TXT_Phone.Mask" xml:space="preserve">
-    <value>(00)00000-0000</value>
+    <value>(00) 00000-0000</value>
   </data>
   <data name="TXT_Phone.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 20</value>
@@ -435,7 +429,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>276, 321</value>
+    <value>271, 298</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

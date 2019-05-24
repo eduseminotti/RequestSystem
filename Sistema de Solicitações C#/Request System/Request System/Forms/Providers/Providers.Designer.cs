@@ -29,45 +29,45 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Providers_View));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Providers_View));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BTN_Filter1 = new MetroFramework.Controls.MetroButton();
             this.BTN_FilterLimpar = new MetroFramework.Controls.MetroButton();
-            this.TXT_Filter_CNPJ = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TXT_Filter_Codigo = new System.Windows.Forms.TextBox();
             this.TXT_Filter_Nome_fantasia = new System.Windows.Forms.TextBox();
             this.LBL_Usuarios = new System.Windows.Forms.Label();
-            this.returnProvidersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.GRID_View_Providers = new MetroFramework.Controls.MetroGrid();
+            this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
+            this.BTN_NewProvider = new MetroFramework.Controls.MetroButton();
+            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
+            this.TXT_Filter_CNPJ = new System.Windows.Forms.MaskedTextBox();
+            this.TXT_Filter_Codigo = new System.Windows.Forms.MaskedTextBox();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razaoSocialDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeFantasiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cNPJDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameCnpjDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
-            this.BTN_NewProvider = new MetroFramework.Controls.MetroButton();
-            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
+            this.returnProvidersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_View_Providers)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TXT_Filter_Codigo);
+            this.groupBox1.Controls.Add(this.TXT_Filter_CNPJ);
             this.groupBox1.Controls.Add(this.BTN_Filter1);
             this.groupBox1.Controls.Add(this.BTN_FilterLimpar);
-            this.groupBox1.Controls.Add(this.TXT_Filter_CNPJ);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.TXT_Filter_Codigo);
             this.groupBox1.Controls.Add(this.TXT_Filter_Nome_fantasia);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
@@ -87,12 +87,6 @@
             this.BTN_FilterLimpar.UseSelectable = true;
             this.BTN_FilterLimpar.Click += new System.EventHandler(this.BTN_FilterLimpar_Click);
             // 
-            // TXT_Filter_CNPJ
-            // 
-            resources.ApplyResources(this.TXT_Filter_CNPJ, "TXT_Filter_CNPJ");
-            this.TXT_Filter_CNPJ.Name = "TXT_Filter_CNPJ";
-            this.TXT_Filter_CNPJ.TextChanged += new System.EventHandler(this.TXT_Filter_CNPJ_TextChanged);
-            // 
             // label3
             // 
             resources.ApplyResources(this.label3, "label3");
@@ -108,26 +102,18 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // TXT_Filter_Codigo
-            // 
-            resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
-            this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
-            this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged);
-            // 
             // TXT_Filter_Nome_fantasia
             // 
             resources.ApplyResources(this.TXT_Filter_Nome_fantasia, "TXT_Filter_Nome_fantasia");
             this.TXT_Filter_Nome_fantasia.Name = "TXT_Filter_Nome_fantasia";
             this.TXT_Filter_Nome_fantasia.TextChanged += new System.EventHandler(this.TXT_Filter_Nome_fantasia_TextChanged);
+            this.TXT_Filter_Nome_fantasia.Enter += new System.EventHandler(this.TXT_Filter_Nome_fantasia_Enter);
+            this.TXT_Filter_Nome_fantasia.Leave += new System.EventHandler(this.TXT_Filter_Nome_fantasia_Leave);
             // 
             // LBL_Usuarios
             // 
             resources.ApplyResources(this.LBL_Usuarios, "LBL_Usuarios");
             this.LBL_Usuarios.Name = "LBL_Usuarios";
-            // 
-            // returnProvidersBindingSource
-            // 
-            this.returnProvidersBindingSource.DataSource = typeof(Request_System.ReturnProviders);
             // 
             // GRID_View_Providers
             // 
@@ -179,6 +165,43 @@
             this.GRID_View_Providers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GRID_View_Providers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRID_View_Providers_CellDoubleClick);
             // 
+            // BTN_Edit1
+            // 
+            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
+            this.BTN_Edit1.Name = "BTN_Edit1";
+            this.BTN_Edit1.UseSelectable = true;
+            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
+            // 
+            // BTN_NewProvider
+            // 
+            resources.ApplyResources(this.BTN_NewProvider, "BTN_NewProvider");
+            this.BTN_NewProvider.Name = "BTN_NewProvider";
+            this.BTN_NewProvider.UseSelectable = true;
+            this.BTN_NewProvider.Click += new System.EventHandler(this.BTN_NewProvider_Click);
+            // 
+            // BTN_Gerar_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
+            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
+            this.BTN_Gerar_PDF.UseSelectable = true;
+            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
+            // 
+            // TXT_Filter_CNPJ
+            // 
+            resources.ApplyResources(this.TXT_Filter_CNPJ, "TXT_Filter_CNPJ");
+            this.TXT_Filter_CNPJ.Name = "TXT_Filter_CNPJ";
+            this.TXT_Filter_CNPJ.TextChanged += new System.EventHandler(this.TXT_Filter_CNPJ_TextChanged_1);
+            this.TXT_Filter_CNPJ.Enter += new System.EventHandler(this.TXT_Filter_CNPJ_Enter);
+            this.TXT_Filter_CNPJ.Leave += new System.EventHandler(this.TXT_Filter_CNPJ_Leave);
+            // 
+            // TXT_Filter_Codigo
+            // 
+            resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
+            this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
+            this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged_1);
+            this.TXT_Filter_Codigo.Enter += new System.EventHandler(this.TXT_Filter_Codigo_Enter_1);
+            this.TXT_Filter_Codigo.Leave += new System.EventHandler(this.TXT_Filter_Codigo_Leave_1);
+            // 
             // idDataGridViewTextBoxColumn1
             // 
             this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
@@ -225,26 +248,9 @@
             resources.ApplyResources(this.nameCnpjDataGridViewTextBoxColumn, "nameCnpjDataGridViewTextBoxColumn");
             this.nameCnpjDataGridViewTextBoxColumn.Name = "nameCnpjDataGridViewTextBoxColumn";
             // 
-            // BTN_Edit1
+            // returnProvidersBindingSource
             // 
-            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
-            this.BTN_Edit1.Name = "BTN_Edit1";
-            this.BTN_Edit1.UseSelectable = true;
-            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
-            // 
-            // BTN_NewProvider
-            // 
-            resources.ApplyResources(this.BTN_NewProvider, "BTN_NewProvider");
-            this.BTN_NewProvider.Name = "BTN_NewProvider";
-            this.BTN_NewProvider.UseSelectable = true;
-            this.BTN_NewProvider.Click += new System.EventHandler(this.BTN_NewProvider_Click);
-            // 
-            // BTN_Gerar_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
-            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
-            this.BTN_Gerar_PDF.UseSelectable = true;
-            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
+            this.returnProvidersBindingSource.DataSource = typeof(Request_System.ReturnProviders);
             // 
             // Providers_View
             // 
@@ -261,8 +267,8 @@
             this.Load += new System.EventHandler(this.Providers_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_View_Providers)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,11 +277,9 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TXT_Filter_CNPJ;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TXT_Filter_Codigo;
         private System.Windows.Forms.TextBox TXT_Filter_Nome_fantasia;
         private System.Windows.Forms.Label LBL_Usuarios;
         private System.Windows.Forms.BindingSource returnProvidersBindingSource;
@@ -291,5 +295,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn phoneDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameCnpjDataGridViewTextBoxColumn;
         private MetroFramework.Controls.MetroButton BTN_Gerar_PDF;
+        private System.Windows.Forms.MaskedTextBox TXT_Filter_CNPJ;
+        private System.Windows.Forms.MaskedTextBox TXT_Filter_Codigo;
     }
 }

@@ -38,33 +38,33 @@
             this.TXT_Filter_Codigo = new System.Windows.Forms.TextBox();
             this.BTN_Filter_limpar = new MetroFramework.Controls.MetroButton();
             this.BTN_Filter = new MetroFramework.Controls.MetroButton();
-            this.CBX_Filter_Status = new MetroFramework.Controls.MetroComboBox();
-            this.TXT_Filter_Nome = new MetroFramework.Controls.MetroTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Grid_View_produtos = new MetroFramework.Controls.MetroGrid();
+            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
+            this.BTN_Edit = new MetroFramework.Controls.MetroButton();
+            this.BTN_New_Product = new MetroFramework.Controls.MetroButton();
+            this.Grid_Produtos_PDF = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TXT_Filter_Nome = new System.Windows.Forms.TextBox();
+            this.CBX_Filter_Status = new System.Windows.Forms.ComboBox();
+            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productUnidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productIsActiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnProdutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.productIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productUnidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productIsActiveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnProdutosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
-            this.BTN_Edit = new MetroFramework.Controls.MetroButton();
-            this.BTN_New_Product = new MetroFramework.Controls.MetroButton();
             this.returnProdutosBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.Grid_Produtos_PDF = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productUnidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productIsActiveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_View_produtos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Produtos_PDF)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Grid_Produtos_PDF)).BeginInit();
             this.SuspendLayout();
             // 
             // LBL_Usuarios
@@ -74,11 +74,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TXT_Filter_Nome);
+            this.groupBox1.Controls.Add(this.CBX_Filter_Status);
             this.groupBox1.Controls.Add(this.TXT_Filter_Codigo);
             this.groupBox1.Controls.Add(this.BTN_Filter_limpar);
             this.groupBox1.Controls.Add(this.BTN_Filter);
-            this.groupBox1.Controls.Add(this.CBX_Filter_Status);
-            this.groupBox1.Controls.Add(this.TXT_Filter_Nome);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -91,6 +91,8 @@
             resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
             this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
             this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged_1);
+            this.TXT_Filter_Codigo.Enter += new System.EventHandler(this.TXT_Filter_Codigo_Enter);
+            this.TXT_Filter_Codigo.Leave += new System.EventHandler(this.TXT_Filter_Codigo_Leave);
             // 
             // BTN_Filter_limpar
             // 
@@ -105,45 +107,6 @@
             this.BTN_Filter.Name = "BTN_Filter";
             this.BTN_Filter.UseSelectable = true;
             this.BTN_Filter.Click += new System.EventHandler(this.BTN_Filter_Click_1);
-            // 
-            // CBX_Filter_Status
-            // 
-            this.CBX_Filter_Status.FormattingEnabled = true;
-            resources.ApplyResources(this.CBX_Filter_Status, "CBX_Filter_Status");
-            this.CBX_Filter_Status.Name = "CBX_Filter_Status";
-            this.CBX_Filter_Status.UseSelectable = true;
-            this.CBX_Filter_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filter_Status_SelectedIndexChanged_1);
-            // 
-            // TXT_Filter_Nome
-            // 
-            // 
-            // 
-            // 
-            this.TXT_Filter_Nome.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.TXT_Filter_Nome.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
-            this.TXT_Filter_Nome.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.TXT_Filter_Nome.CustomButton.Name = "";
-            this.TXT_Filter_Nome.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
-            this.TXT_Filter_Nome.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_Filter_Nome.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.TXT_Filter_Nome.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_Filter_Nome.CustomButton.UseSelectable = true;
-            this.TXT_Filter_Nome.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
-            this.TXT_Filter_Nome.Lines = new string[0];
-            resources.ApplyResources(this.TXT_Filter_Nome, "TXT_Filter_Nome");
-            this.TXT_Filter_Nome.MaxLength = 250;
-            this.TXT_Filter_Nome.Name = "TXT_Filter_Nome";
-            this.TXT_Filter_Nome.PasswordChar = '\0';
-            this.TXT_Filter_Nome.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_Filter_Nome.SelectedText = "";
-            this.TXT_Filter_Nome.SelectionLength = 0;
-            this.TXT_Filter_Nome.SelectionStart = 0;
-            this.TXT_Filter_Nome.ShortcutsEnabled = true;
-            this.TXT_Filter_Nome.UseSelectable = true;
-            this.TXT_Filter_Nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_Filter_Nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.TXT_Filter_Nome.TextChanged += new System.EventHandler(this.TXT_Filter_Nome_TextChanged);
-            this.TXT_Filter_Nome.Click += new System.EventHandler(this.TXT_Filter_Nome_Click);
             // 
             // label3
             // 
@@ -209,6 +172,92 @@
             this.Grid_View_produtos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Grid_View_produtos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_View_produtos_CellDoubleClick);
             // 
+            // BTN_Gerar_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
+            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
+            this.BTN_Gerar_PDF.UseSelectable = true;
+            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
+            // 
+            // BTN_Edit
+            // 
+            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
+            this.BTN_Edit.Name = "BTN_Edit";
+            this.BTN_Edit.UseSelectable = true;
+            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
+            // 
+            // BTN_New_Product
+            // 
+            resources.ApplyResources(this.BTN_New_Product, "BTN_New_Product");
+            this.BTN_New_Product.Name = "BTN_New_Product";
+            this.BTN_New_Product.UseSelectable = true;
+            this.BTN_New_Product.Click += new System.EventHandler(this.BTN_New_Product_Click_1);
+            // 
+            // Grid_Produtos_PDF
+            // 
+            this.Grid_Produtos_PDF.AutoGenerateColumns = false;
+            this.Grid_Produtos_PDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Grid_Produtos_PDF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.productNameDataGridViewTextBoxColumn,
+            this.productUnidadeDataGridViewTextBoxColumn,
+            this.quantidadeDataGridViewTextBoxColumn1,
+            this.productIsActiveDataGridViewTextBoxColumn});
+            this.Grid_Produtos_PDF.DataSource = this.returnProdutosBindingSource;
+            resources.ApplyResources(this.Grid_Produtos_PDF, "Grid_Produtos_PDF");
+            this.Grid_Produtos_PDF.Name = "Grid_Produtos_PDF";
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "Product_Id";
+            resources.ApplyResources(this.Column1, "Column1");
+            this.Column1.Name = "Column1";
+            // 
+            // TXT_Filter_Nome
+            // 
+            resources.ApplyResources(this.TXT_Filter_Nome, "TXT_Filter_Nome");
+            this.TXT_Filter_Nome.Name = "TXT_Filter_Nome";
+            this.TXT_Filter_Nome.TextChanged += new System.EventHandler(this.TXT_Filter_Nome_TextChanged_1);
+            this.TXT_Filter_Nome.Enter += new System.EventHandler(this.TXT_Filter_Nome_Enter);
+            this.TXT_Filter_Nome.Leave += new System.EventHandler(this.TXT_Filter_Nome_Leave);
+            // 
+            // CBX_Filter_Status
+            // 
+            this.CBX_Filter_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Filter_Status, "CBX_Filter_Status");
+            this.CBX_Filter_Status.Name = "CBX_Filter_Status";
+            this.CBX_Filter_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filter_Status_SelectedIndexChanged);
+            this.CBX_Filter_Status.Enter += new System.EventHandler(this.CBX_Filter_Status_Enter);
+            this.CBX_Filter_Status.Leave += new System.EventHandler(this.CBX_Filter_Status_Leave);
+            // 
+            // productNameDataGridViewTextBoxColumn
+            // 
+            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product_Name";
+            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn, "productNameDataGridViewTextBoxColumn");
+            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
+            // 
+            // productUnidadeDataGridViewTextBoxColumn
+            // 
+            this.productUnidadeDataGridViewTextBoxColumn.DataPropertyName = "Product_Unidade";
+            resources.ApplyResources(this.productUnidadeDataGridViewTextBoxColumn, "productUnidadeDataGridViewTextBoxColumn");
+            this.productUnidadeDataGridViewTextBoxColumn.Name = "productUnidadeDataGridViewTextBoxColumn";
+            // 
+            // quantidadeDataGridViewTextBoxColumn1
+            // 
+            this.quantidadeDataGridViewTextBoxColumn1.DataPropertyName = "Quantidade";
+            resources.ApplyResources(this.quantidadeDataGridViewTextBoxColumn1, "quantidadeDataGridViewTextBoxColumn1");
+            this.quantidadeDataGridViewTextBoxColumn1.Name = "quantidadeDataGridViewTextBoxColumn1";
+            // 
+            // productIsActiveDataGridViewTextBoxColumn
+            // 
+            this.productIsActiveDataGridViewTextBoxColumn.DataPropertyName = "product_IsActive";
+            resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn, "productIsActiveDataGridViewTextBoxColumn");
+            this.productIsActiveDataGridViewTextBoxColumn.Name = "productIsActiveDataGridViewTextBoxColumn";
+            // 
+            // returnProdutosBindingSource
+            // 
+            this.returnProdutosBindingSource.DataSource = typeof(Request_System.ReturnProdutos);
+            // 
             // productIdDataGridViewTextBoxColumn1
             // 
             this.productIdDataGridViewTextBoxColumn1.DataPropertyName = "Product_Id";
@@ -249,78 +298,9 @@
             this.productIsActiveDataGridViewTextBoxColumn1.ReadOnly = true;
             this.productIsActiveDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // returnProdutosBindingSource
-            // 
-            this.returnProdutosBindingSource.DataSource = typeof(Request_System.ReturnProdutos);
-            // 
-            // BTN_Gerar_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
-            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
-            this.BTN_Gerar_PDF.UseSelectable = true;
-            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
-            // 
-            // BTN_Edit
-            // 
-            resources.ApplyResources(this.BTN_Edit, "BTN_Edit");
-            this.BTN_Edit.Name = "BTN_Edit";
-            this.BTN_Edit.UseSelectable = true;
-            this.BTN_Edit.Click += new System.EventHandler(this.BTN_Edit_Click_1);
-            // 
-            // BTN_New_Product
-            // 
-            resources.ApplyResources(this.BTN_New_Product, "BTN_New_Product");
-            this.BTN_New_Product.Name = "BTN_New_Product";
-            this.BTN_New_Product.UseSelectable = true;
-            this.BTN_New_Product.Click += new System.EventHandler(this.BTN_New_Product_Click_1);
-            // 
             // returnProdutosBindingSource1
             // 
             this.returnProdutosBindingSource1.DataSource = typeof(Request_System.ReturnProdutos);
-            // 
-            // Grid_Produtos_PDF
-            // 
-            this.Grid_Produtos_PDF.AutoGenerateColumns = false;
-            this.Grid_Produtos_PDF.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Grid_Produtos_PDF.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.productNameDataGridViewTextBoxColumn,
-            this.productUnidadeDataGridViewTextBoxColumn,
-            this.quantidadeDataGridViewTextBoxColumn1,
-            this.productIsActiveDataGridViewTextBoxColumn});
-            this.Grid_Produtos_PDF.DataSource = this.returnProdutosBindingSource;
-            resources.ApplyResources(this.Grid_Produtos_PDF, "Grid_Produtos_PDF");
-            this.Grid_Produtos_PDF.Name = "Grid_Produtos_PDF";
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "Product_Id";
-            resources.ApplyResources(this.Column1, "Column1");
-            this.Column1.Name = "Column1";
-            // 
-            // productNameDataGridViewTextBoxColumn
-            // 
-            this.productNameDataGridViewTextBoxColumn.DataPropertyName = "Product_Name";
-            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn, "productNameDataGridViewTextBoxColumn");
-            this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
-            // 
-            // productUnidadeDataGridViewTextBoxColumn
-            // 
-            this.productUnidadeDataGridViewTextBoxColumn.DataPropertyName = "Product_Unidade";
-            resources.ApplyResources(this.productUnidadeDataGridViewTextBoxColumn, "productUnidadeDataGridViewTextBoxColumn");
-            this.productUnidadeDataGridViewTextBoxColumn.Name = "productUnidadeDataGridViewTextBoxColumn";
-            // 
-            // quantidadeDataGridViewTextBoxColumn1
-            // 
-            this.quantidadeDataGridViewTextBoxColumn1.DataPropertyName = "Quantidade";
-            resources.ApplyResources(this.quantidadeDataGridViewTextBoxColumn1, "quantidadeDataGridViewTextBoxColumn1");
-            this.quantidadeDataGridViewTextBoxColumn1.Name = "quantidadeDataGridViewTextBoxColumn1";
-            // 
-            // productIsActiveDataGridViewTextBoxColumn
-            // 
-            this.productIsActiveDataGridViewTextBoxColumn.DataPropertyName = "product_IsActive";
-            resources.ApplyResources(this.productIsActiveDataGridViewTextBoxColumn, "productIsActiveDataGridViewTextBoxColumn");
-            this.productIsActiveDataGridViewTextBoxColumn.Name = "productIsActiveDataGridViewTextBoxColumn";
             // 
             // produtos_view
             // 
@@ -339,9 +319,9 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_View_produtos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Grid_Produtos_PDF)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Grid_Produtos_PDF)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -358,8 +338,6 @@
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroGrid Grid_View_produtos;
         private MetroFramework.Controls.MetroButton BTN_Gerar_PDF;
-        private MetroFramework.Controls.MetroComboBox CBX_Filter_Status;
-        private MetroFramework.Controls.MetroTextBox TXT_Filter_Nome;
         private MetroFramework.Controls.MetroButton BTN_Filter_limpar;
         private MetroFramework.Controls.MetroButton BTN_Filter;
         private MetroFramework.Controls.MetroButton BTN_Edit;
@@ -376,5 +354,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productIsActiveDataGridViewTextBoxColumn1;
         private System.Windows.Forms.TextBox TXT_Filter_Codigo;
+        private System.Windows.Forms.TextBox TXT_Filter_Nome;
+        private System.Windows.Forms.ComboBox CBX_Filter_Status;
     }
 }

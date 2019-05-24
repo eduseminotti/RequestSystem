@@ -20,11 +20,6 @@ namespace Request_System
             {
                 this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
             }
-            if (e.KeyCode == Keys.Tab)
-            {
-                TXT_Phone.BackColor = Color.White;
-                TXT_CNPJ.BackColor = Color.White;
-            }
         }
 
         private void TXT_Razao_social_TextChanged(object sender, EventArgs e)
@@ -32,9 +27,44 @@ namespace Request_System
             TXT_Razao_social.BackColor = Color.White;
         }
 
-        private void TXT_Nome_Fantasia_TextChanged(object sender, EventArgs e)
+        private void TXT_Razao_social_Enter(object sender, EventArgs e)
+        {
+            TXT_Razao_social.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Razao_social_Leave(object sender, EventArgs e)
+        {
+            TXT_Razao_social.BackColor = Color.White;
+        }
+
+        private void TXT_Nome_Fantasia_Enter(object sender, EventArgs e)
+        {
+            TXT_Nome_Fantasia.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Nome_Fantasia_Leave(object sender, EventArgs e)
         {
             TXT_Nome_Fantasia.BackColor = Color.White;
+        }
+
+        private void TXT_CNPJ_Enter(object sender, EventArgs e)
+        {
+            TXT_CNPJ.BackColor = Color.Yellow;
+        }
+
+        private void TXT_CNPJ_Leave(object sender, EventArgs e)
+        {
+            TXT_CNPJ.BackColor = Color.White;
+        }
+
+        private void TXT_Phone_Enter(object sender, EventArgs e)
+        {
+            TXT_Phone.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Phone_Leave(object sender, EventArgs e)
+        {
+            TXT_Phone.BackColor = Color.White;
         }
 
         public Page_Providers_Edit_And_Add(bool IsNew, int SelectProviderID)

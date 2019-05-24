@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
+    <value>12, 56</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 13</value>
@@ -144,13 +144,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 111</value>
+    <value>15, 97</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>71, 13</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -198,13 +198,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 165</value>
+    <value>15, 140</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -225,10 +225,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="BTN_Product_Salvar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 225</value>
+    <value>136, 189</value>
   </data>
   <data name="BTN_Product_Salvar.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -249,10 +249,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Product_Salvar.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="BTN_Product_Cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 225</value>
+    <value>15, 189</value>
   </data>
   <data name="BTN_Product_Cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -273,40 +273,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Product_Cancel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="CBX_Status_Produto.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="CBX_Status_Produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 181</value>
-  </data>
-  <data name="CBX_Status_Produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>234, 29</value>
-  </data>
-  <data name="CBX_Status_Produto.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status_Produto.Name" xml:space="preserve">
-    <value>CBX_Status_Produto</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status_Produto.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status_Produto.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status_Produto.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="TXT_Product_Codigo.Location" type="System.Drawing.Point, System.Drawing">
     <value>15, 28</value>
   </data>
-  <data name="TXT_Product_Codigo.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Product_Codigo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 30</value>
+    <value>236, 20</value>
   </data>
   <data name="TXT_Product_Codigo.TabIndex" type="System.Int32, mscorlib">
     <value>31</value>
@@ -321,19 +294,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Product_Codigo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="TXT_Nome_Produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 75</value>
+    <value>15, 71</value>
   </data>
   <data name="TXT_Nome_Produto.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Nome_Produto.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Nome_Produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 30</value>
+    <value>236, 20</value>
   </data>
   <data name="TXT_Nome_Produto.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -348,19 +318,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Nome_Produto.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="TXT_Tipo_Unidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 127</value>
+    <value>15, 113</value>
   </data>
   <data name="TXT_Tipo_Unidade.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="TXT_Tipo_Unidade.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Tipo_Unidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>236, 30</value>
+    <value>236, 20</value>
   </data>
   <data name="TXT_Tipo_Unidade.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -375,34 +342,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Tipo_Unidade.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CBX_Status_Produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 156</value>
+  </data>
+  <data name="CBX_Status_Produto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>236, 21</value>
+  </data>
+  <data name="CBX_Status_Produto.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="txt_validacombo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 178</value>
+  <data name="&gt;&gt;CBX_Status_Produto.Name" xml:space="preserve">
+    <value>CBX_Status_Produto</value>
   </data>
-  <data name="txt_validacombo.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;CBX_Status_Produto.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txt_validacombo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 35</value>
-  </data>
-  <data name="txt_validacombo.TabIndex" type="System.Int32, mscorlib">
-    <value>34</value>
-  </data>
-  <data name="txt_validacombo.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;txt_validacombo.Name" xml:space="preserve">
-    <value>txt_validacombo</value>
-  </data>
-  <data name="&gt;&gt;txt_validacombo.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txt_validacombo.Parent" xml:space="preserve">
+  <data name="&gt;&gt;CBX_Status_Produto.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;txt_validacombo.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;CBX_Status_Produto.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -411,7 +372,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>267, 274</value>
+    <value>272, 238</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

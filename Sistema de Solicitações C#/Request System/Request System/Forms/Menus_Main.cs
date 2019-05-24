@@ -48,10 +48,10 @@ namespace Request_System
         }
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
-            //this.Visible = true;
-            //this.WindowState = FormWindowState.Normal;
-            //this.ShowInTaskbar = true;
-            //notifyIcon1.Visible = true;
+            this.Visible = true;
+            this.WindowState = FormWindowState.Normal;
+            this.ShowInTaskbar = true;
+            notifyIcon1.Visible = true;
         }
         private void Menus_Main_Load(object sender, EventArgs e)
         {
@@ -213,12 +213,5 @@ namespace Request_System
             MessageBox.Show("Desenvolvido por:\nEduardo Seminotti.\nSistemas de Informação - UNIPLAC.\nProfessor: Luciano Coelho.\nVersão: Beta");
         }
 
-        private void Menus_Main_MouseClick(object sender, MouseEventArgs e)
-        {
-            if(e.Button == MouseButtons.Right)
-            {
-
-            }
-        }
     }
 }

@@ -45,14 +45,14 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.CBX_IDIOMA = new MetroFramework.Controls.MetroComboBox();
-            this.CBX_TYPE = new MetroFramework.Controls.MetroComboBox();
-            this.CBX_Status = new MetroFramework.Controls.MetroComboBox();
             this.BTN_UserCancel = new MetroFramework.Controls.MetroButton();
             this.BTN_UserSalvar = new MetroFramework.Controls.MetroButton();
             this.TXT_CPF = new System.Windows.Forms.MaskedTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.TXT_Confirm_Pass = new System.Windows.Forms.TextBox();
+            this.CBX_TYPE = new System.Windows.Forms.ComboBox();
+            this.CBX_IDIOMA = new System.Windows.Forms.ComboBox();
+            this.CBX_Status = new System.Windows.Forms.ComboBox();
             this.returnUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.returnUsuariosBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -64,24 +64,32 @@
             resources.ApplyResources(this.TXT_Nome, "TXT_Nome");
             this.TXT_Nome.Name = "TXT_Nome";
             this.TXT_Nome.TextChanged += new System.EventHandler(this.TXT_Nome_TextChanged);
+            this.TXT_Nome.Enter += new System.EventHandler(this.TXT_Nome_Enter);
+            this.TXT_Nome.Leave += new System.EventHandler(this.TXT_Nome_Leave);
             // 
             // TXT_Email
             // 
             resources.ApplyResources(this.TXT_Email, "TXT_Email");
             this.TXT_Email.Name = "TXT_Email";
             this.TXT_Email.TextChanged += new System.EventHandler(this.TXT_Email_TextChanged);
+            this.TXT_Email.Enter += new System.EventHandler(this.TXT_Email_Enter);
+            this.TXT_Email.Leave += new System.EventHandler(this.TXT_Email_Leave);
             // 
             // TXT_Usuario
             // 
             resources.ApplyResources(this.TXT_Usuario, "TXT_Usuario");
             this.TXT_Usuario.Name = "TXT_Usuario";
             this.TXT_Usuario.TextChanged += new System.EventHandler(this.TXT_Usuario_TextChanged);
+            this.TXT_Usuario.Enter += new System.EventHandler(this.TXT_Usuario_Enter);
+            this.TXT_Usuario.Leave += new System.EventHandler(this.TXT_Usuario_Leave);
             // 
             // TXT_Setor
             // 
             resources.ApplyResources(this.TXT_Setor, "TXT_Setor");
             this.TXT_Setor.Name = "TXT_Setor";
             this.TXT_Setor.TextChanged += new System.EventHandler(this.TXT_Setor_TextChanged);
+            this.TXT_Setor.Enter += new System.EventHandler(this.TXT_Setor_Enter);
+            this.TXT_Setor.Leave += new System.EventHandler(this.TXT_Setor_Leave);
             // 
             // label1
             // 
@@ -123,6 +131,8 @@
             resources.ApplyResources(this.TXT_Password, "TXT_Password");
             this.TXT_Password.Name = "TXT_Password";
             this.TXT_Password.TextChanged += new System.EventHandler(this.TXT_Password_TextChanged);
+            this.TXT_Password.Enter += new System.EventHandler(this.TXT_Password_Enter);
+            this.TXT_Password.Leave += new System.EventHandler(this.TXT_Password_Leave);
             // 
             // label8
             // 
@@ -138,27 +148,6 @@
             // 
             resources.ApplyResources(this.label10, "label10");
             this.label10.Name = "label10";
-            // 
-            // CBX_IDIOMA
-            // 
-            this.CBX_IDIOMA.FormattingEnabled = true;
-            resources.ApplyResources(this.CBX_IDIOMA, "CBX_IDIOMA");
-            this.CBX_IDIOMA.Name = "CBX_IDIOMA";
-            this.CBX_IDIOMA.UseSelectable = true;
-            // 
-            // CBX_TYPE
-            // 
-            this.CBX_TYPE.FormattingEnabled = true;
-            resources.ApplyResources(this.CBX_TYPE, "CBX_TYPE");
-            this.CBX_TYPE.Name = "CBX_TYPE";
-            this.CBX_TYPE.UseSelectable = true;
-            // 
-            // CBX_Status
-            // 
-            this.CBX_Status.FormattingEnabled = true;
-            resources.ApplyResources(this.CBX_Status, "CBX_Status");
-            this.CBX_Status.Name = "CBX_Status";
-            this.CBX_Status.UseSelectable = true;
             // 
             // BTN_UserCancel
             // 
@@ -179,6 +168,9 @@
             // 
             resources.ApplyResources(this.TXT_CPF, "TXT_CPF");
             this.TXT_CPF.Name = "TXT_CPF";
+            
+            this.TXT_CPF.Enter += new System.EventHandler(this.TXT_CPF_Enter);
+            this.TXT_CPF.Leave += new System.EventHandler(this.TXT_CPF_Leave);
             // 
             // label11
             // 
@@ -190,6 +182,32 @@
             resources.ApplyResources(this.TXT_Confirm_Pass, "TXT_Confirm_Pass");
             this.TXT_Confirm_Pass.Name = "TXT_Confirm_Pass";
             this.TXT_Confirm_Pass.TextChanged += new System.EventHandler(this.TXT_Confirm_Pass_TextChanged);
+            this.TXT_Confirm_Pass.Enter += new System.EventHandler(this.TXT_Confirm_Pass_Enter);
+            this.TXT_Confirm_Pass.Leave += new System.EventHandler(this.TXT_Confirm_Pass_Leave);
+            // 
+            // CBX_TYPE
+            // 
+            this.CBX_TYPE.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_TYPE, "CBX_TYPE");
+            this.CBX_TYPE.Name = "CBX_TYPE";
+            this.CBX_TYPE.Enter += new System.EventHandler(this.CBX_TYPE_Enter);
+            this.CBX_TYPE.Leave += new System.EventHandler(this.CBX_TYPE_Leave);
+            // 
+            // CBX_IDIOMA
+            // 
+            this.CBX_IDIOMA.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_IDIOMA, "CBX_IDIOMA");
+            this.CBX_IDIOMA.Name = "CBX_IDIOMA";
+            this.CBX_IDIOMA.Enter += new System.EventHandler(this.CBX_IDIOMA_Enter);
+            this.CBX_IDIOMA.Leave += new System.EventHandler(this.CBX_IDIOMA_Leave);
+            // 
+            // CBX_Status
+            // 
+            this.CBX_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Status, "CBX_Status");
+            this.CBX_Status.Name = "CBX_Status";
+            this.CBX_Status.Enter += new System.EventHandler(this.CBX_Status_Enter);
+            this.CBX_Status.Leave += new System.EventHandler(this.CBX_Status_Leave);
             // 
             // returnUsuariosBindingSource
             // 
@@ -197,19 +215,18 @@
             // 
             // PageUserEditandAdd
             // 
-            this.AcceptButton = this.BTN_UserSalvar;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.BTN_UserCancel;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
+            this.Controls.Add(this.CBX_Status);
+            this.Controls.Add(this.CBX_IDIOMA);
+            this.Controls.Add(this.CBX_TYPE);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.TXT_Confirm_Pass);
             this.Controls.Add(this.TXT_CPF);
             this.Controls.Add(this.BTN_UserSalvar);
             this.Controls.Add(this.BTN_UserCancel);
-            this.Controls.Add(this.CBX_Status);
-            this.Controls.Add(this.CBX_TYPE);
-            this.Controls.Add(this.CBX_IDIOMA);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -254,13 +271,13 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.BindingSource returnUsuariosBindingSource;
-        private MetroFramework.Controls.MetroComboBox CBX_IDIOMA;
-        private MetroFramework.Controls.MetroComboBox CBX_TYPE;
-        private MetroFramework.Controls.MetroComboBox CBX_Status;
         private MetroFramework.Controls.MetroButton BTN_UserCancel;
         private MetroFramework.Controls.MetroButton BTN_UserSalvar;
         private System.Windows.Forms.MaskedTextBox TXT_CPF;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox TXT_Confirm_Pass;
+        private System.Windows.Forms.ComboBox CBX_TYPE;
+        private System.Windows.Forms.ComboBox CBX_IDIOMA;
+        private System.Windows.Forms.ComboBox CBX_Status;
     }
 }

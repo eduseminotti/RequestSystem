@@ -36,9 +36,9 @@
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.TXT_Filter_Name = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CBX_Filter_Status = new System.Windows.Forms.ComboBox();
             this.BTN_FilterClean = new MetroFramework.Controls.MetroButton();
             this.BTN_Filtrar1 = new MetroFramework.Controls.MetroButton();
-            this.CBX_Filter_Status = new MetroFramework.Controls.MetroComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.TXT_filter_Setor = new System.Windows.Forms.TextBox();
@@ -75,12 +75,14 @@
             resources.ApplyResources(this.TXT_Filter_Name, "TXT_Filter_Name");
             this.TXT_Filter_Name.Name = "TXT_Filter_Name";
             this.TXT_Filter_Name.TextChanged += new System.EventHandler(this.TXT_Filter_Name_TextChanged);
+            this.TXT_Filter_Name.Enter += new System.EventHandler(this.TXT_Filter_Name_Enter);
+            this.TXT_Filter_Name.Leave += new System.EventHandler(this.TXT_Filter_Name_Leave);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.CBX_Filter_Status);
             this.groupBox1.Controls.Add(this.BTN_FilterClean);
             this.groupBox1.Controls.Add(this.BTN_Filtrar1);
-            this.groupBox1.Controls.Add(this.CBX_Filter_Status);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.TXT_filter_Setor);
@@ -91,6 +93,15 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // CBX_Filter_Status
+            // 
+            this.CBX_Filter_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Filter_Status, "CBX_Filter_Status");
+            this.CBX_Filter_Status.Name = "CBX_Filter_Status";
+            this.CBX_Filter_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filter_Status_SelectedIndexChanged_1);
+            this.CBX_Filter_Status.Enter += new System.EventHandler(this.CBX_Filter_Status_Enter);
+            this.CBX_Filter_Status.Leave += new System.EventHandler(this.CBX_Filter_Status_Leave);
             // 
             // BTN_FilterClean
             // 
@@ -105,14 +116,6 @@
             this.BTN_Filtrar1.Name = "BTN_Filtrar1";
             this.BTN_Filtrar1.UseSelectable = true;
             this.BTN_Filtrar1.Click += new System.EventHandler(this.BTN_Filtrar1_Click);
-            // 
-            // CBX_Filter_Status
-            // 
-            this.CBX_Filter_Status.FormattingEnabled = true;
-            resources.ApplyResources(this.CBX_Filter_Status, "CBX_Filter_Status");
-            this.CBX_Filter_Status.Name = "CBX_Filter_Status";
-            this.CBX_Filter_Status.UseSelectable = true;
-            this.CBX_Filter_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filter_Status_SelectedIndexChanged);
             // 
             // label5
             // 
@@ -129,6 +132,8 @@
             resources.ApplyResources(this.TXT_filter_Setor, "TXT_filter_Setor");
             this.TXT_filter_Setor.Name = "TXT_filter_Setor";
             this.TXT_filter_Setor.TextChanged += new System.EventHandler(this.TXT_filter_Setor_TextChanged);
+            this.TXT_filter_Setor.Enter += new System.EventHandler(this.TXT_filter_Setor_Enter);
+            this.TXT_filter_Setor.Leave += new System.EventHandler(this.TXT_filter_Setor_Leave);
             // 
             // label4
             // 
@@ -145,6 +150,8 @@
             resources.ApplyResources(this.TXT_Filter_User_Name, "TXT_Filter_User_Name");
             this.TXT_Filter_User_Name.Name = "TXT_Filter_User_Name";
             this.TXT_Filter_User_Name.TextChanged += new System.EventHandler(this.TXT_Filter_User_Name_TextChanged);
+            this.TXT_Filter_User_Name.Enter += new System.EventHandler(this.TXT_Filter_User_Name_Enter);
+            this.TXT_Filter_User_Name.Leave += new System.EventHandler(this.TXT_Filter_User_Name_Leave);
             // 
             // GRID_USERS_VIEW
             // 
@@ -326,7 +333,6 @@
         private System.Windows.Forms.TextBox TXT_filter_Setor;
         private System.Windows.Forms.Label label5;
         private MetroFramework.Controls.MetroGrid GRID_USERS_VIEW;
-        private MetroFramework.Controls.MetroComboBox CBX_Filter_Status;
         private MetroFramework.Controls.MetroButton BTN_FilterClean;
         private MetroFramework.Controls.MetroButton BTN_Filtrar1;
         private MetroFramework.Controls.MetroButton BTN_NewUser;
@@ -340,5 +346,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn isActiveDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idiomaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ComboBox CBX_Filter_Status;
     }
 }

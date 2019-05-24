@@ -95,9 +95,7 @@ namespace Request_System
             string queryString = "insert Seminotti_Teste.dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive,Idioma) " +
                 "values (@name, @setor, @email, @cpf, @username, @Password, @type, @isactive, @idioma)";
 
-            SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-            //SqlCommand cmd = new SqlCommand("insert Seminotti_Teste.dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive,Idioma) values (@name, @setor, @email, @cpf, @username, @Password, @type, @isactive, @idioma)", sqlConn);
+            SqlCommand cmd = new SqlCommand(queryString, sqlConn);       
 
             cmd.Parameters.AddWithValue("@name", Name);
             cmd.Parameters.AddWithValue("@setor", Setor);

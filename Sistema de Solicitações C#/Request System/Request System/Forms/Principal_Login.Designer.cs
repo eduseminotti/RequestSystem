@@ -32,8 +32,11 @@
             this.LBL_User = new System.Windows.Forms.Label();
             this.LBL_Pass = new System.Windows.Forms.Label();
             this.BTN_Entrar = new MetroFramework.Controls.MetroButton();
-            this.TXT_UserName_login = new MetroFramework.Controls.MetroTextBox();
-            this.TXT_Pass_login = new MetroFramework.Controls.MetroTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TXT_UserName_login = new System.Windows.Forms.TextBox();
+            this.TXT_Pass_login = new System.Windows.Forms.TextBox();
+            this.CBX_Idioma = new System.Windows.Forms.ComboBox();
+            this.btn_cancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LBL_User
@@ -49,78 +52,63 @@
             // BTN_Entrar
             // 
             this.BTN_Entrar.CausesValidation = false;
+            this.BTN_Entrar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             resources.ApplyResources(this.BTN_Entrar, "BTN_Entrar");
             this.BTN_Entrar.Name = "BTN_Entrar";
             this.BTN_Entrar.UseSelectable = true;
             this.BTN_Entrar.Click += new System.EventHandler(this.BTN_Entrar_Click);
             // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
             // TXT_UserName_login
             // 
-            // 
-            // 
-            // 
-            this.TXT_UserName_login.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.TXT_UserName_login.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.TXT_UserName_login.CustomButton.Name = "";
-            this.TXT_UserName_login.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
-            this.TXT_UserName_login.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_UserName_login.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.TXT_UserName_login.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_UserName_login.CustomButton.UseSelectable = true;
-            this.TXT_UserName_login.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
-            this.TXT_UserName_login.Lines = new string[0];
             resources.ApplyResources(this.TXT_UserName_login, "TXT_UserName_login");
-            this.TXT_UserName_login.MaxLength = 32767;
             this.TXT_UserName_login.Name = "TXT_UserName_login";
-            this.TXT_UserName_login.PasswordChar = '\0';
-            this.TXT_UserName_login.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_UserName_login.SelectedText = "";
-            this.TXT_UserName_login.SelectionLength = 0;
-            this.TXT_UserName_login.SelectionStart = 0;
-            this.TXT_UserName_login.ShortcutsEnabled = true;
-            this.TXT_UserName_login.UseSelectable = true;
-            this.TXT_UserName_login.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_UserName_login.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TXT_UserName_login.Enter += new System.EventHandler(this.TXT_UserName_login_Enter);
+            this.TXT_UserName_login.Leave += new System.EventHandler(this.TXT_UserName_login_Leave);
             // 
             // TXT_Pass_login
             // 
-            // 
-            // 
-            // 
-            this.TXT_Pass_login.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
-            this.TXT_Pass_login.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
-            this.TXT_Pass_login.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location1")));
-            this.TXT_Pass_login.CustomButton.Name = "";
-            this.TXT_Pass_login.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size1")));
-            this.TXT_Pass_login.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_Pass_login.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex1")));
-            this.TXT_Pass_login.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_Pass_login.CustomButton.UseSelectable = true;
-            this.TXT_Pass_login.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible1")));
-            this.TXT_Pass_login.Lines = new string[0];
             resources.ApplyResources(this.TXT_Pass_login, "TXT_Pass_login");
-            this.TXT_Pass_login.MaxLength = 32767;
             this.TXT_Pass_login.Name = "TXT_Pass_login";
-            this.TXT_Pass_login.PasswordChar = '*';
-            this.TXT_Pass_login.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_Pass_login.SelectedText = "";
-            this.TXT_Pass_login.SelectionLength = 0;
-            this.TXT_Pass_login.SelectionStart = 0;
-            this.TXT_Pass_login.ShortcutsEnabled = true;
-            this.TXT_Pass_login.UseSelectable = true;
-            this.TXT_Pass_login.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_Pass_login.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.TXT_Pass_login.Enter += new System.EventHandler(this.TXT_Pass_login_Enter);
+            this.TXT_Pass_login.Leave += new System.EventHandler(this.TXT_Pass_login_Leave);
+            // 
+            // CBX_Idioma
+            // 
+            this.CBX_Idioma.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Idioma, "CBX_Idioma");
+            this.CBX_Idioma.Name = "CBX_Idioma";
+            this.CBX_Idioma.SelectedIndexChanged += new System.EventHandler(this.CBX_Idioma_SelectedIndexChanged_1);
+            this.CBX_Idioma.Enter += new System.EventHandler(this.CBX_Idioma_Enter);
+            this.CBX_Idioma.Leave += new System.EventHandler(this.CBX_Idioma_Leave);
+            // 
+            // btn_cancel
+            // 
+            this.btn_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.btn_cancel, "btn_cancel");
+            this.btn_cancel.Name = "btn_cancel";
+            this.btn_cancel.UseVisualStyleBackColor = true;
+            this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
             // 
             // LoginValidate
             // 
             this.AcceptButton = this.BTN_Entrar;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btn_cancel;
+            this.Controls.Add(this.CBX_Idioma);
             this.Controls.Add(this.TXT_Pass_login);
             this.Controls.Add(this.TXT_UserName_login);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.BTN_Entrar);
             this.Controls.Add(this.LBL_Pass);
             this.Controls.Add(this.LBL_User);
+            this.Controls.Add(this.btn_cancel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "LoginValidate";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginValidate_FormClosing);
@@ -133,8 +121,11 @@
         private System.Windows.Forms.Label LBL_User;
         private System.Windows.Forms.Label LBL_Pass;
         private MetroFramework.Controls.MetroButton BTN_Entrar;
-        private MetroFramework.Controls.MetroTextBox TXT_UserName_login;
-        private MetroFramework.Controls.MetroTextBox TXT_Pass_login;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox TXT_UserName_login;
+        private System.Windows.Forms.TextBox TXT_Pass_login;
+        private System.Windows.Forms.ComboBox CBX_Idioma;
+        private System.Windows.Forms.Button btn_cancel;
     }
 }
 

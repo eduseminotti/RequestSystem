@@ -91,11 +91,12 @@ namespace Request_System
         {
             TXT_CPF.BackColor = Color.White;
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
+
+        private void TXT_Nome_TabIndexChanged(object sender, EventArgs e)
+        {
+            TXT_CPF.BackColor = Color.Yellow;
+        }
+
         private void BTN_UserSalvar_Click(object sender, EventArgs e)
         {
             //captura textos dos campos
@@ -109,14 +110,14 @@ namespace Request_System
             idioma = (UserIdioma)Enum.Parse(typeof(UserIdioma), CBX_IDIOMA.Text.ToString());
             type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
             isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
-
+            String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "");
 
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || cPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 || idioma == 0)
+            if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 || idioma == 0 || maskCPF.Length < 11)
             {
                 if (name == "")
                     TXT_Nome.BackColor = Color.OrangeRed;
-                if (cPF == "")
+                if (maskCPF == "" || maskCPF.Length < 11)
                     TXT_CPF.BackColor = Color.OrangeRed;
                 if (setor == "")
                     TXT_Setor.BackColor = Color.OrangeRed;
@@ -130,12 +131,14 @@ namespace Request_System
                     CBX_IDIOMA.BackColor = Color.OrangeRed;
                 if (type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
+
                 if (userLoginIdioma == UserIdioma.Portugues)
                     MessageBox.Show("Informe uma opção valida!");
                 if (userLoginIdioma == UserIdioma.Ingles)
                     MessageBox.Show("Please enter a valid option!");
                 if (userLoginIdioma == UserIdioma.Espanhol)
                     MessageBox.Show("Introduzca una opción válida!");
+
                 return;
             }
 
@@ -202,9 +205,6 @@ namespace Request_System
 
                 this.Close();
 
-
-                this.Close();
-
                 if (userLoginIdioma == UserIdioma.Portugues)
                     MessageBox.Show("Usuario Editado com Sucesso!");
                 if (userLoginIdioma == UserIdioma.Ingles)
@@ -231,5 +231,111 @@ namespace Request_System
                 this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
             }
         }
+
+        private void TXT_Nome_Enter(object sender, EventArgs e)
+        {
+            TXT_Nome.BackColor = Color.Yellow;
+        }
+        private void TXT_Nome_Leave(object sender, EventArgs e)
+        {
+            TXT_Nome.BackColor = Color.White;
+        }
+
+        private void TXT_CPF_Enter(object sender, EventArgs e)
+        {
+            TXT_CPF.BackColor = Color.Yellow;
+        }
+
+        private void TXT_CPF_Leave(object sender, EventArgs e)
+        {
+            TXT_CPF.BackColor = Color.White;
+        }
+        private void TXT_Email_Enter(object sender, EventArgs e)
+        {
+            TXT_Email.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Email_Leave(object sender, EventArgs e)
+        {
+            TXT_Email.BackColor = Color.White;
+        }
+
+        private void TXT_Setor_Enter(object sender, EventArgs e)
+        {
+            TXT_Setor.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Setor_Leave(object sender, EventArgs e)
+        {
+            TXT_Setor.BackColor = Color.White;
+        }
+
+        private void TXT_Usuario_Enter(object sender, EventArgs e)
+        {
+            TXT_Usuario.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Usuario_Leave(object sender, EventArgs e)
+        {
+            TXT_Usuario.BackColor = Color.White;
+        }
+
+        private void CBX_TYPE_Enter(object sender, EventArgs e)
+        {
+            CBX_TYPE.BackColor = Color.Yellow;
+        }
+
+        private void CBX_TYPE_Leave(object sender, EventArgs e)
+        {
+            CBX_TYPE.BackColor = Color.White;
+        }
+
+        private void TXT_Password_Enter(object sender, EventArgs e)
+        {
+            TXT_Password.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Password_Leave(object sender, EventArgs e)
+        {
+            TXT_Password.BackColor = Color.White;
+        }
+
+        private void TXT_Confirm_Pass_Enter(object sender, EventArgs e)
+        {
+            TXT_Confirm_Pass.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Confirm_Pass_Leave(object sender, EventArgs e)
+        {
+            TXT_Confirm_Pass.BackColor = Color.White;
+        }
+
+        private void CBX_IDIOMA_Enter(object sender, EventArgs e)
+        {
+            CBX_IDIOMA.BackColor = Color.Yellow;
+        }
+
+        private void CBX_IDIOMA_Leave(object sender, EventArgs e)
+        {
+            CBX_IDIOMA.BackColor = Color.White;
+        }
+
+        private void CBX_Status_Enter(object sender, EventArgs e)
+        {
+            CBX_Status.BackColor = Color.Yellow;
+        }
+
+        private void CBX_Status_Leave(object sender, EventArgs e)
+        {
+            CBX_Status.BackColor = Color.White;
+        }
+
+
+
+
+
+
+
+
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Request_System
@@ -96,14 +97,55 @@ namespace Request_System
             GRID_USERS_VIEW.DataSource = usuarios;
         }
 
-        private void CBX_Filter_Status_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            BTN_Filtrar1.PerformClick();
-        }
 
         private void GRID_USERS_VIEW_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             BTN_Edit1.PerformClick();
+        }
+
+        private void TXT_Filter_Name_Enter(object sender, EventArgs e)
+        {
+            TXT_Filter_Name.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_Name_Leave(object sender, EventArgs e)
+        {
+            TXT_Filter_Name.BackColor = Color.White;
+        }
+
+        private void TXT_Filter_User_Name_Enter(object sender, EventArgs e)
+        {
+            TXT_Filter_User_Name.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_User_Name_Leave(object sender, EventArgs e)
+        {
+            TXT_Filter_User_Name.BackColor = Color.White;
+        }
+
+        private void TXT_filter_Setor_Enter(object sender, EventArgs e)
+        {
+            TXT_filter_Setor.BackColor = Color.Yellow;
+        }
+
+        private void TXT_filter_Setor_Leave(object sender, EventArgs e)
+        {
+            TXT_filter_Setor.BackColor = Color.White;
+        }
+
+        private void CBX_Filter_Status_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            BTN_Filtrar1.PerformClick();
+        }
+
+        private void CBX_Filter_Status_Enter(object sender, EventArgs e)
+        {
+            CBX_Filter_Status.BackColor = Color.Yellow;
+        }
+
+        private void CBX_Filter_Status_Leave(object sender, EventArgs e)
+        {
+            CBX_Filter_Status.BackColor = Color.White;
         }
     }
 }

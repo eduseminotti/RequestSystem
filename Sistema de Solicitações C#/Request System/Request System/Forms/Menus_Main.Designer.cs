@@ -171,7 +171,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Menus_Main_FormClosing);
             this.Load += new System.EventHandler(this.Menus_Main_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Menus_Main_KeyDown);
-            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Menus_Main_MouseClick);
             this.Gb_Butons_adm.ResumeLayout(false);
             this.Menu_de_Contexto.ResumeLayout(false);
             this.ResumeLayout(false);

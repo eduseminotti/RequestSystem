@@ -159,14 +159,11 @@
   <data name="TXT_Filter_Name.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Filter_Name.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Filter_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 29</value>
+    <value>134, 20</value>
   </data>
   <data name="TXT_Filter_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;TXT_Filter_Name.Name" xml:space="preserve">
     <value>TXT_Filter_Name</value>
@@ -180,14 +177,35 @@
   <data name="&gt;&gt;TXT_Filter_Name.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
+  <data name="CBX_Filter_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>423, 29</value>
+  </data>
+  <data name="CBX_Filter_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 21</value>
+  </data>
+  <data name="CBX_Filter_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;CBX_Filter_Status.Name" xml:space="preserve">
+    <value>CBX_Filter_Status</value>
+  </data>
+  <data name="&gt;&gt;CBX_Filter_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBX_Filter_Status.Parent" xml:space="preserve">
+    <value>groupBox1</value>
+  </data>
+  <data name="&gt;&gt;CBX_Filter_Status.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="BTN_FilterClean.Location" type="System.Drawing.Point, System.Drawing">
-    <value>682, 30</value>
+    <value>667, 30</value>
   </data>
   <data name="BTN_FilterClean.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 29</value>
+    <value>100, 21</value>
   </data>
   <data name="BTN_FilterClean.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="BTN_FilterClean.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -202,16 +220,16 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;BTN_FilterClean.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BTN_Filtrar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>561, 30</value>
   </data>
   <data name="BTN_Filtrar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 29</value>
+    <value>100, 21</value>
   </data>
   <data name="BTN_Filtrar1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="BTN_Filtrar1.Text" xml:space="preserve">
     <value>Filtrar</value>
@@ -226,30 +244,6 @@
     <value>groupBox1</value>
   </data>
   <data name="&gt;&gt;BTN_Filtrar1.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CBX_Filter_Status.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="CBX_Filter_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 30</value>
-  </data>
-  <data name="CBX_Filter_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 29</value>
-  </data>
-  <data name="CBX_Filter_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filter_Status.Name" xml:space="preserve">
-    <value>CBX_Filter_Status</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filter_Status.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filter_Status.Parent" xml:space="preserve">
-    <value>groupBox1</value>
-  </data>
-  <data name="&gt;&gt;CBX_Filter_Status.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
@@ -318,14 +312,11 @@
   <data name="TXT_filter_Setor.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="TXT_filter_Setor.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_filter_Setor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 29</value>
+    <value>134, 20</value>
   </data>
   <data name="TXT_filter_Setor.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="&gt;&gt;TXT_filter_Setor.Name" xml:space="preserve">
     <value>TXT_filter_Setor</value>
@@ -405,14 +396,11 @@
   <data name="TXT_Filter_User_Name.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="TXT_Filter_User_Name.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Filter_User_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>134, 29</value>
+    <value>134, 20</value>
   </data>
   <data name="TXT_Filter_User_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="&gt;&gt;TXT_Filter_User_Name.Name" xml:space="preserve">
     <value>TXT_Filter_User_Name</value>
@@ -499,7 +487,7 @@
     <value>943, 380</value>
   </data>
   <data name="GRID_USERS_VIEW.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>20</value>
   </data>
   <data name="&gt;&gt;GRID_USERS_VIEW.Name" xml:space="preserve">
     <value>GRID_USERS_VIEW</value>
@@ -520,7 +508,7 @@
     <value>115, 29</value>
   </data>
   <data name="BTN_NewUser.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="BTN_NewUser.Text" xml:space="preserve">
     <value>Novo Usuário</value>
@@ -544,7 +532,7 @@
     <value>115, 29</value>
   </data>
   <data name="BTN_Edit1.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BTN_Edit1.Text" xml:space="preserve">
     <value>Editar</value>

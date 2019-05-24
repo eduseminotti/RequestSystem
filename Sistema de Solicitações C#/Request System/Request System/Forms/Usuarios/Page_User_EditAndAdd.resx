@@ -125,11 +125,8 @@
   <data name="TXT_Nome.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Nome.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Nome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Nome.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -147,16 +144,13 @@
     <value>22</value>
   </data>
   <data name="TXT_Email.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 118</value>
+    <value>12, 105</value>
   </data>
   <data name="TXT_Email.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Email.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Email.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Email.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -174,16 +168,13 @@
     <value>21</value>
   </data>
   <data name="TXT_Usuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 169</value>
+    <value>12, 150</value>
   </data>
   <data name="TXT_Usuario.MaxLength" type="System.Int32, mscorlib">
     <value>50</value>
   </data>
-  <data name="TXT_Usuario.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Usuario.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Usuario.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -201,16 +192,13 @@
     <value>20</value>
   </data>
   <data name="TXT_Setor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 118</value>
+    <value>260, 105</value>
   </data>
   <data name="TXT_Setor.MaxLength" type="System.Int32, mscorlib">
     <value>49</value>
   </data>
-  <data name="TXT_Setor.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Setor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Setor.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -328,7 +316,7 @@
     <value>NoControl</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 102</value>
+    <value>12, 89</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -358,7 +346,7 @@
     <value>NoControl</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 102</value>
+    <value>262, 89</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>32, 13</value>
@@ -388,7 +376,7 @@
     <value>NoControl</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 153</value>
+    <value>12, 134</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -418,7 +406,7 @@
     <value>NoControl</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 205</value>
+    <value>12, 180</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -442,16 +430,13 @@
     <value>11</value>
   </data>
   <data name="TXT_Password.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 221</value>
-  </data>
-  <data name="TXT_Password.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>12, 196</value>
   </data>
   <data name="TXT_Password.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="TXT_Password.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Password.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -475,7 +460,7 @@
     <value>NoControl</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 262</value>
+    <value>12, 223</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>38, 13</value>
@@ -505,7 +490,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>262, 154</value>
+    <value>260, 134</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 13</value>
@@ -535,7 +520,7 @@
     <value>NoControl</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 260</value>
+    <value>262, 223</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>37, 13</value>
@@ -558,80 +543,8 @@
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="CBX_IDIOMA.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="CBX_IDIOMA.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 277</value>
-  </data>
-  <data name="CBX_IDIOMA.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
-  </data>
-  <data name="CBX_IDIOMA.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;CBX_IDIOMA.Name" xml:space="preserve">
-    <value>CBX_IDIOMA</value>
-  </data>
-  <data name="&gt;&gt;CBX_IDIOMA.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CBX_IDIOMA.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CBX_IDIOMA.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="CBX_TYPE.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="CBX_TYPE.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 169</value>
-  </data>
-  <data name="CBX_TYPE.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
-  </data>
-  <data name="CBX_TYPE.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;CBX_TYPE.Name" xml:space="preserve">
-    <value>CBX_TYPE</value>
-  </data>
-  <data name="&gt;&gt;CBX_TYPE.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CBX_TYPE.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CBX_TYPE.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="CBX_Status.ItemHeight" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="CBX_Status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 277</value>
-  </data>
-  <data name="CBX_Status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
-  </data>
-  <data name="CBX_Status.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status.Name" xml:space="preserve">
-    <value>CBX_Status</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroComboBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CBX_Status.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
   <data name="BTN_UserCancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 324</value>
+    <value>259, 275</value>
   </data>
   <data name="BTN_UserCancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 29</value>
@@ -652,10 +565,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_UserCancel.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="BTN_UserSalvar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 324</value>
+    <value>379, 275</value>
   </data>
   <data name="BTN_UserSalvar.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 29</value>
@@ -676,7 +589,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_UserSalvar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="TXT_CPF.Location" type="System.Drawing.Point, System.Drawing">
     <value>260, 65</value>
@@ -700,7 +613,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_CPF.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <data name="label11.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -709,7 +622,7 @@
     <value>NoControl</value>
   </data>
   <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 205</value>
+    <value>260, 180</value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 13</value>
@@ -730,19 +643,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="TXT_Confirm_Pass.Location" type="System.Drawing.Point, System.Drawing">
-    <value>260, 221</value>
-  </data>
-  <data name="TXT_Confirm_Pass.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>260, 196</value>
   </data>
   <data name="TXT_Confirm_Pass.PasswordChar" type="System.Char, mscorlib" xml:space="preserve">
     <value>*</value>
   </data>
   <data name="TXT_Confirm_Pass.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 29</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Confirm_Pass.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -757,7 +667,70 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Confirm_Pass.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="CBX_TYPE.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 149</value>
+  </data>
+  <data name="CBX_TYPE.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 21</value>
+  </data>
+  <data name="CBX_TYPE.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;CBX_TYPE.Name" xml:space="preserve">
+    <value>CBX_TYPE</value>
+  </data>
+  <data name="&gt;&gt;CBX_TYPE.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBX_TYPE.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CBX_TYPE.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="CBX_IDIOMA.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 239</value>
+  </data>
+  <data name="CBX_IDIOMA.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 21</value>
+  </data>
+  <data name="CBX_IDIOMA.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;CBX_IDIOMA.Name" xml:space="preserve">
+    <value>CBX_IDIOMA</value>
+  </data>
+  <data name="&gt;&gt;CBX_IDIOMA.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBX_IDIOMA.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CBX_IDIOMA.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="CBX_Status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>260, 239</value>
+  </data>
+  <data name="CBX_Status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 21</value>
+  </data>
+  <data name="CBX_Status.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status.Name" xml:space="preserve">
+    <value>CBX_Status</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;CBX_Status.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="returnUsuariosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -766,7 +739,7 @@
     <value>True</value>
   </metadata>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>524, 372</value>
+    <value>509, 330</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>

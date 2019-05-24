@@ -22,6 +22,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -80,6 +82,12 @@
     <Compile Include="Classes\ManipulaStock.cs" />
     <Compile Include="Classes\ManipulaUsuarios.cs" />
     <Compile Include="Classes\Enuns.cs" />
+    <Compile Include="Forms\ConfigGerais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ConfigGerais.Designer.cs">
+      <DependentUpon>ConfigGerais.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Menus_Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -174,6 +182,9 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ValidateUsers.cs" />
+    <EmbeddedResource Include="Forms\ConfigGerais.resx">
+      <DependentUpon>ConfigGerais.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Menus_Main.en.resx">
       <DependentUpon>Menus_Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Notas Fiscais\Page_NFes_Add_And_Edit.resx">
       <DependentUpon>Page_NFes_Add_And_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Principal_Login.es.resx">
+      <DependentUpon>Principal_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Produtos\Page_Products_Edit_And_Add.en.resx">
       <DependentUpon>Page_Products_Edit_And_Add.cs</DependentUpon>

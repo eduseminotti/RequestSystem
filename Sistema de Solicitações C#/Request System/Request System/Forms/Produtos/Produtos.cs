@@ -47,7 +47,7 @@ namespace Request_System
             {
                 BTN_Filter.PerformClick();
             }
-            else if(TXT_Filter_Codigo.Text != "")
+            else if (TXT_Filter_Codigo.Text != "")
             {
                 TXT_Filter_Codigo.BackColor = Color.OrangeRed;
                 if (userIdioma == UserIdioma.Portugues)
@@ -133,16 +133,6 @@ namespace Request_System
             BTN_Filter.PerformClick();
         }
 
-        private void TXT_Filter_Codigo_Enter(object sender, EventArgs e)
-        {
-            TXT_Filter_Codigo.BackColor = Color.Yellow;
-        }
-
-        private void TXT_Filter_Codigo_Leave(object sender, EventArgs e)
-        {
-            TXT_Filter_Codigo.BackColor = Color.White;
-        }
-
         private void TXT_Filter_Nome_Enter(object sender, EventArgs e)
         {
             TXT_Filter_Nome.BackColor = Color.Yellow;
@@ -161,6 +151,27 @@ namespace Request_System
         private void CBX_Filter_Status_Leave(object sender, EventArgs e)
         {
             CBX_Filter_Status.BackColor = Color.White;
+        }
+
+        private void Grid_View_produtos_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BTN_Edit.PerformClick();
+        }
+
+        private void TXT_Filter_Codigo_Enter_1(object sender, EventArgs e)
+        {
+            TXT_Filter_Codigo.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filter_Codigo_Leave_1(object sender, EventArgs e)
+        {
+            TXT_Filter_Codigo.BackColor = Color.White;
+        }
+
+        private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
+        {
+            BTN_Filter.PerformClick();
         }
     }
 }

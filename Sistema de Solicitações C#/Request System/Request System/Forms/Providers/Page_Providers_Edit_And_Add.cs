@@ -10,6 +10,7 @@ namespace Request_System
         String razaoSocial, cnpj, nomeFantasia, phone;
         bool sucess, isnew;
         int selectProviderID;
+        UserIdioma userIdioma;
 
         ManipulaFornecedores Dados_Fornecedores = new ManipulaFornecedores();
         List<ReturnProviders> providers;
@@ -67,11 +68,12 @@ namespace Request_System
             TXT_Phone.BackColor = Color.White;
         }
 
-        public Page_Providers_Edit_And_Add(bool IsNew, int SelectProviderID)
+        public Page_Providers_Edit_And_Add(bool IsNew, int SelectProviderID, UserIdioma UserIdioma)
         {
             InitializeComponent();
             isnew = IsNew;
             selectProviderID = SelectProviderID;
+            userIdioma = UserIdioma;
 
             if (!IsNew)
             {
@@ -95,9 +97,24 @@ namespace Request_System
 
         private void BTN_Salvar1_Click(object sender, EventArgs e)
         {
-            cnpj = TXT_CNPJ.Text.ToString().Replace(".", "").Replace("-", "").Replace("/", "").Replace(" ", "");
+            cnpj = TXT_CNPJ.Text.ToString().Replace(".", "").Replace("-", "").Replace("/", "").Replace(",","").Replace(" ", "");
             phone = TXT_Phone.Text.ToString().Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "");
             bool returns = false;
+
+            providers = Dados_Fornecedores.GetProviders(0, null, cnpj);
+            if (providers.Count > 0)
+            {
+                if (userIdioma == UserIdioma.Portugues)
+                    MessageBox.Show("Fornecedor Ja Cadastrado!");
+                if (userIdioma == UserIdioma.Espanhol)
+                    MessageBox.Show("Proveedor ya registrado!");
+                if (userIdioma == UserIdioma.Ingles)
+                    MessageBox.Show("Provider already registered!");
+                TXT_CNPJ.Focus();
+                return;
+            }
+
+
             if (TXT_Razao_social.Text == "")
             {
                 TXT_Razao_social.BackColor = Color.OrangeRed;

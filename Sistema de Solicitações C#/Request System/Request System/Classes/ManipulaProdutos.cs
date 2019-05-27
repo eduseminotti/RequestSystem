@@ -93,7 +93,7 @@ namespace Request_System
 
             string queryString = "insert [dbo].[Products]" +
                 "        (Nome_produto, Tipo_unidade , IsActive) " +
-                "values  (@Nome_produto, @Descrição_produto, @Tipo_unidade, @IsActive)";
+                "values  (@Nome_produto,  @Tipo_unidade, @IsActive)";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 

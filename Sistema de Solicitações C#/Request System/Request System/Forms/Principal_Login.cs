@@ -13,7 +13,7 @@ namespace Request_System
         LOG log = new LOG();
         CriptografaSenhas cripto = new CriptografaSenhas();
         ConfigGerais configGerais = new ConfigGerais();
-
+        UserIdioma idioma;
         String loginUserName;
         String loginPass;
 
@@ -51,6 +51,8 @@ namespace Request_System
 
         private void BTN_Entrar_Click(object sender, EventArgs e)
         {
+            AjustaCultura();
+
             loginUserName = TXT_UserName_login.Text != "" ? TXT_UserName_login.Text : null;
             loginPass = TXT_Pass_login.Text != "" ? TXT_Pass_login.Text : null;
 
@@ -69,21 +71,10 @@ namespace Request_System
 
             if (user != null && user.IsValid(loginPass))
             {
-                if (user.IsActive == UserIsactive.Inativo)
-                    return;
-                if (user.Idioma == UserIdioma.Portugues)
-                    Idioma.AjustaCultura(this, "pt-BR");
-
-                if (user.Idioma == UserIdioma.Ingles)
-                    Idioma.AjustaCultura(this, "en-US");
-
-                if (user.Idioma == UserIdioma.Espanhol)
-                    Idioma.AjustaCultura(this, "es-ES");
-
-                Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, user.Idioma);
+                Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, idioma);
                 this.Hide();
                 admMain.Show();
-                log.logador("Login Realizado com sucesso com o usuario: " + user.Name + " Com o Idioma: " + user.Idioma);
+                log.logador("Login Realizado com sucesso com o usuario: " + user.Name);
             }
             else
             {
@@ -94,10 +85,13 @@ namespace Request_System
             }
         }
 
-
         private void CBX_Idioma_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            UserIdioma idioma = (UserIdioma)Enum.Parse(typeof(UserIdioma), CBX_Idioma.Text.ToString());
+            AjustaCultura();
+        }
+        public void AjustaCultura()
+        {
+            idioma = (UserIdioma)Enum.Parse(typeof(UserIdioma), CBX_Idioma.Text.ToString());
 
             if (idioma == UserIdioma.Portugues)
                 Idioma.AjustaCultura(this, "pt-BR");
@@ -109,7 +103,11 @@ namespace Request_System
                 Idioma.AjustaCultura(this, "es-ES");
 
             if (idioma == UserIdioma._)
+            {
                 Idioma.AjustaCultura(this, "pt-BR");
+                idioma = UserIdioma.Portugues;
+            }
+
         }
 
         private void CBX_Idioma_Enter(object sender, EventArgs e)

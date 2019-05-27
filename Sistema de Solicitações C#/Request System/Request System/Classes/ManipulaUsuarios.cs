@@ -16,7 +16,7 @@ namespace Request_System
         public String Setor { get; set; }
         public UserIsactive IsActive { get; set; }
         public UserType Type { get; set; }
-        public UserIdioma Idioma { get; set; }
+
     }
     public class ManipulaUsuarios
     {
@@ -31,7 +31,7 @@ namespace Request_System
             try
             {
                 string queryString = "SELECT cpf, NAME, email, UserName , Password , setor , " +
-                    "isactive , type , idioma FROM [Seminotti_Teste].[dbo].[users] where id > 0 ";
+                    "isactive , type  FROM [Seminotti_Teste].[dbo].[users] where id > 0 ";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
@@ -70,8 +70,7 @@ namespace Request_System
                     usuarios.Setor = query["Setor"].ToString();
                     usuarios.IsActive = (UserIsactive)int.Parse(query["isActive"].ToString());
                     usuarios.Type = (UserType)int.Parse(query["Type"].ToString());
-                    usuarios.Idioma = (UserIdioma)int.Parse(query["Idioma"].ToString());
-
+                    
                     return_usuarios.Add(usuarios);
                 }
             }
@@ -87,13 +86,13 @@ namespace Request_System
             }
             return return_usuarios;
         }
-        public bool Novo_Usuario(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive, UserIdioma idioma)
+        public bool Novo_Usuario(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive)
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
-            string queryString = "insert Seminotti_Teste.dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive,Idioma) " +
-                "values (@name, @setor, @email, @cpf, @username, @Password, @type, @isactive, @idioma)";
+            string queryString = "insert Seminotti_Teste.dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive) " +
+                "values (@name, @setor, @email, @cpf, @username, @Password, @type, @isactive)";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);       
 
@@ -105,7 +104,6 @@ namespace Request_System
             cmd.Parameters.AddWithValue("@Password", Password);
             cmd.Parameters.AddWithValue("@type", type);
             cmd.Parameters.AddWithValue("@isactive", isActive);
-            cmd.Parameters.AddWithValue("@idioma", idioma);
 
             try
             {
@@ -126,7 +124,7 @@ namespace Request_System
             }
             return sucess;
         }
-        public bool Edit_User(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive, UserIdioma idioma)
+        public bool Edit_User(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive)
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
@@ -134,7 +132,7 @@ namespace Request_System
             try
             {
                 queryString = "UPDATE [Seminotti_Teste].[dbo].[users] SET NAME = @name, setor = @setor, email = @email," +
-               " cpf = @cpf, username = @username, type = @type, isactive = @isactive, idioma = @idioma    ";
+               " cpf = @cpf, username = @username, type = @type, isactive = @isactive  ";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
@@ -153,7 +151,6 @@ namespace Request_System
                 cmd.Parameters.AddWithValue("@username", UserName);
                 cmd.Parameters.AddWithValue("@type", type);
                 cmd.Parameters.AddWithValue("@isactive", isActive);
-                cmd.Parameters.AddWithValue("@idioma", idioma);
 
 
                 sqlConn.Open();

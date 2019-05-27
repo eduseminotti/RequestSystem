@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Providers_View));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Providers_View));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TXT_Filter_Codigo = new System.Windows.Forms.MaskedTextBox();
+            this.TXT_Filter_CNPJ = new System.Windows.Forms.MaskedTextBox();
             this.BTN_Filter1 = new MetroFramework.Controls.MetroButton();
             this.BTN_FilterLimpar = new MetroFramework.Controls.MetroButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -45,8 +47,6 @@
             this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
             this.BTN_NewProvider = new MetroFramework.Controls.MetroButton();
             this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
-            this.TXT_Filter_CNPJ = new System.Windows.Forms.MaskedTextBox();
-            this.TXT_Filter_Codigo = new System.Windows.Forms.MaskedTextBox();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razaoSocialDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeFantasiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,6 +72,22 @@
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
+            // 
+            // TXT_Filter_Codigo
+            // 
+            resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
+            this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
+            this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged_1);
+            this.TXT_Filter_Codigo.Enter += new System.EventHandler(this.TXT_Filter_Codigo_Enter_1);
+            this.TXT_Filter_Codigo.Leave += new System.EventHandler(this.TXT_Filter_Codigo_Leave_1);
+            // 
+            // TXT_Filter_CNPJ
+            // 
+            resources.ApplyResources(this.TXT_Filter_CNPJ, "TXT_Filter_CNPJ");
+            this.TXT_Filter_CNPJ.Name = "TXT_Filter_CNPJ";
+            this.TXT_Filter_CNPJ.TextChanged += new System.EventHandler(this.TXT_Filter_CNPJ_TextChanged_1);
+            this.TXT_Filter_CNPJ.Enter += new System.EventHandler(this.TXT_Filter_CNPJ_Enter);
+            this.TXT_Filter_CNPJ.Leave += new System.EventHandler(this.TXT_Filter_CNPJ_Leave);
             // 
             // BTN_Filter1
             // 
@@ -164,6 +180,7 @@
             this.GRID_View_Providers.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_View_Providers.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GRID_View_Providers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRID_View_Providers_CellDoubleClick);
+            this.GRID_View_Providers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GRID_View_Providers_KeyDown);
             // 
             // BTN_Edit1
             // 
@@ -185,22 +202,6 @@
             this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
             this.BTN_Gerar_PDF.UseSelectable = true;
             this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
-            // 
-            // TXT_Filter_CNPJ
-            // 
-            resources.ApplyResources(this.TXT_Filter_CNPJ, "TXT_Filter_CNPJ");
-            this.TXT_Filter_CNPJ.Name = "TXT_Filter_CNPJ";
-            this.TXT_Filter_CNPJ.TextChanged += new System.EventHandler(this.TXT_Filter_CNPJ_TextChanged_1);
-            this.TXT_Filter_CNPJ.Enter += new System.EventHandler(this.TXT_Filter_CNPJ_Enter);
-            this.TXT_Filter_CNPJ.Leave += new System.EventHandler(this.TXT_Filter_CNPJ_Leave);
-            // 
-            // TXT_Filter_Codigo
-            // 
-            resources.ApplyResources(this.TXT_Filter_Codigo, "TXT_Filter_Codigo");
-            this.TXT_Filter_Codigo.Name = "TXT_Filter_Codigo";
-            this.TXT_Filter_Codigo.TextChanged += new System.EventHandler(this.TXT_Filter_Codigo_TextChanged_1);
-            this.TXT_Filter_Codigo.Enter += new System.EventHandler(this.TXT_Filter_Codigo_Enter_1);
-            this.TXT_Filter_Codigo.Leave += new System.EventHandler(this.TXT_Filter_Codigo_Leave_1);
             // 
             // idDataGridViewTextBoxColumn1
             // 

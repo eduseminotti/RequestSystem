@@ -147,5 +147,11 @@ namespace Request_System
         {
             CBX_Filter_Status.BackColor = Color.White;
         }
+
+        private void GRID_USERS_VIEW_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BTN_Edit1.PerformClick();
+        }
     }
 }

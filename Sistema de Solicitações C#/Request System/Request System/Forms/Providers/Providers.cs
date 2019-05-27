@@ -15,20 +15,17 @@ namespace Request_System
         GeradorDePDFGrid GeradorDePDF = new GeradorDePDFGrid();
 
         int selectProviderID;
+        UserIdioma userIdioma;
 
-        public Providers_View()
+        public Providers_View(UserIdioma UserIdioma)
         {
             InitializeComponent();
+            userIdioma = UserIdioma;
         }
         private void Providers_Load(object sender, EventArgs e)
         {
             Providers = obterProviders.GetProviders(0, null, null);
             GRID_View_Providers.DataSource = Providers;
-        }
-
-        private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void TXT_Filter_Nome_fantasia_TextChanged(object sender, EventArgs e)
@@ -70,7 +67,7 @@ namespace Request_System
         {
             selectProviderID = Convert.ToInt32(GRID_View_Providers.CurrentRow.Cells[0].Value.ToString());
 
-            Page_Providers_Edit_And_Add page_Providers_Edit_And_Add = new Page_Providers_Edit_And_Add(false, selectProviderID);
+            Page_Providers_Edit_And_Add page_Providers_Edit_And_Add = new Page_Providers_Edit_And_Add(false, selectProviderID, userIdioma);
             page_Providers_Edit_And_Add.ShowDialog();
 
             Providers = obterProviders.GetProviders(0, null, null);
@@ -79,7 +76,7 @@ namespace Request_System
 
         private void BTN_NewProvider_Click(object sender, EventArgs e)
         {
-            Page_Providers_Edit_And_Add page_Providers_Edit_And_Add = new Page_Providers_Edit_And_Add(true, 0);
+            Page_Providers_Edit_And_Add page_Providers_Edit_And_Add = new Page_Providers_Edit_And_Add(true, 0, userIdioma);
             page_Providers_Edit_And_Add.ShowDialog();
 
             Providers = obterProviders.GetProviders(0, null, null);
@@ -134,6 +131,12 @@ namespace Request_System
         private void TXT_Filter_Codigo_Leave_1(object sender, EventArgs e)
         {
             TXT_Filter_Codigo.BackColor = Color.White;
+        }
+
+        private void GRID_View_Providers_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BTN_Edit1.PerformClick();
         }
     }
 }

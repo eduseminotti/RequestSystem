@@ -28,7 +28,6 @@ namespace Request_System
             InitializeComponent();
             isNew = IsNew;
 
-            CBX_IDIOMA.DataSource = Enum.GetValues(typeof(UserIdioma));
             CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
             CBX_TYPE.DataSource = Enum.GetValues(typeof(UserType));
 
@@ -45,18 +44,12 @@ namespace Request_System
                     TXT_CPF.Text = return_Usuarios.CPF.ToString();
                     TXT_Setor.Text = return_Usuarios.Setor.ToString();
                     TXT_Usuario.Text = return_Usuarios.UserName.ToString();
-
-                    CBX_IDIOMA.Text = return_Usuarios.Idioma.ToString();
                     CBX_TYPE.Text = return_Usuarios.Type.ToString();
                     CBX_Status.Text = return_Usuarios.IsActive.ToString();
                 }
             }
         }
 
-        private void CBX_IDIOMA_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CBX_IDIOMA.BackColor = Color.White;
-        }
         private void CBX_TYPE_SelectedIndexChanged(object sender, EventArgs e)
         {
             CBX_TYPE.BackColor = Color.White;
@@ -107,13 +100,12 @@ namespace Request_System
             userName = TXT_Usuario.Text.ToString();
             password = TXT_Password.Text.ToString();
             confirmPassword = TXT_Confirm_Pass.Text.ToString();
-            idioma = (UserIdioma)Enum.Parse(typeof(UserIdioma), CBX_IDIOMA.Text.ToString());
             type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
             isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
             String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "");
 
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 || idioma == 0 || maskCPF.Length < 11)
+            if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 ||  maskCPF.Length < 11)
             {
                 if (name == "")
                     TXT_Nome.BackColor = Color.OrangeRed;
@@ -127,8 +119,6 @@ namespace Request_System
                     TXT_Usuario.BackColor = Color.OrangeRed;
                 if (isActive == UserIsactive._)
                     CBX_Status.BackColor = Color.OrangeRed;
-                if (idioma == UserIdioma._)
-                    CBX_IDIOMA.BackColor = Color.OrangeRed;
                 if (type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
 
@@ -181,7 +171,7 @@ namespace Request_System
                 }
                 else// se nao existe cadastra
                 {
-                    saveUserOk = Manipula_Usuarios.Novo_Usuario(name, setor, email, cPF, userName, password, type, isActive, idioma);
+                    saveUserOk = Manipula_Usuarios.Novo_Usuario(name, setor, email, cPF, userName, password, type, isActive);
 
                     this.Close();
                     if (saveUserOk)
@@ -201,7 +191,7 @@ namespace Request_System
                 if (!passEdit)
                     password = null;
 
-                saveUserOk = Manipula_Usuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive, idioma);
+                saveUserOk = Manipula_Usuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive);
 
                 this.Close();
 
@@ -308,16 +298,6 @@ namespace Request_System
         private void TXT_Confirm_Pass_Leave(object sender, EventArgs e)
         {
             TXT_Confirm_Pass.BackColor = Color.White;
-        }
-
-        private void CBX_IDIOMA_Enter(object sender, EventArgs e)
-        {
-            CBX_IDIOMA.BackColor = Color.Yellow;
-        }
-
-        private void CBX_IDIOMA_Leave(object sender, EventArgs e)
-        {
-            CBX_IDIOMA.BackColor = Color.White;
         }
 
         private void CBX_Status_Enter(object sender, EventArgs e)

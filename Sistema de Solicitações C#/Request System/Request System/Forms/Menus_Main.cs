@@ -150,7 +150,7 @@ namespace Request_System
         {
             _objForm.Close();
 
-            _objForm = new Request_System.Providers_View
+            _objForm = new Request_System.Providers_View(idioma)
             {
                 TopLevel = false,
                 Dock = DockStyle.Fill

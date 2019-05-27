@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Page_NFes_Add_And_Edit));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label6 = new System.Windows.Forms.Label();
             this.TXT_Valor = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -43,16 +43,14 @@
             this.listCNPJ = new System.Windows.Forms.ListBox();
             this.returnProvidersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.TXT_CNPJ_Selected = new System.Windows.Forms.TextBox();
             this.GB_Busca_CNPJ_Forn = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.BTN_SelecionaForn = new MetroFramework.Controls.MetroButton();
-            this.GB_Dados_NFe = new System.Windows.Forms.GroupBox();
+            this.TXT_CNPJ_Selected = new System.Windows.Forms.MaskedTextBox();
+            this.DT_Data_Emissão = new System.Windows.Forms.DateTimePicker();
             this.BTN_NewProvider = new MetroFramework.Controls.MetroButton();
-            this.DT_Data_Emissão = new MetroFramework.Controls.MetroDateTime();
             this.BTN_RegNFe = new MetroFramework.Controls.MetroButton();
             this.BTN_LimparNFe = new MetroFramework.Controls.MetroButton();
-            this.GB_Grid_Itens_NFe = new System.Windows.Forms.GroupBox();
             this.GRID_Itens_NFe = new MetroFramework.Controls.MetroGrid();
             this.productCodeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeProdutoDataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,7 +59,6 @@
             this.itemIDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnNFeitensBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_RemoveItem = new MetroFramework.Controls.MetroButton();
-            this.GB_Add_Itens_NFe = new System.Windows.Forms.GroupBox();
             this.GB_Find_Product_By_Name = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.BTN_SelecionarByName = new MetroFramework.Controls.MetroButton();
@@ -82,15 +79,16 @@
             this.quantidadeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BTN_Fechar_tela = new MetroFramework.Controls.MetroButton();
             this.BTN_AddItensStock = new MetroFramework.Controls.MetroButton();
+            this.GB_Grid_Itens_NFe = new System.Windows.Forms.GroupBox();
+            this.GB_Add_Itens_NFe = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).BeginInit();
             this.GB_Busca_CNPJ_Forn.SuspendLayout();
-            this.GB_Dados_NFe.SuspendLayout();
-            this.GB_Grid_Itens_NFe.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_Itens_NFe)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnNFeitensBindingSource)).BeginInit();
-            this.GB_Add_Itens_NFe.SuspendLayout();
             this.GB_Find_Product_By_Name.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).BeginInit();
+            this.GB_Grid_Itens_NFe.SuspendLayout();
+            this.GB_Add_Itens_NFe.SuspendLayout();
             this.SuspendLayout();
             // 
             // label6
@@ -103,6 +101,8 @@
             resources.ApplyResources(this.TXT_Valor, "TXT_Valor");
             this.TXT_Valor.Name = "TXT_Valor";
             this.TXT_Valor.TextChanged += new System.EventHandler(this.TXT_Valor_TextChanged);
+            this.TXT_Valor.Enter += new System.EventHandler(this.TXT_Valor_Enter);
+            this.TXT_Valor.Leave += new System.EventHandler(this.TXT_Valor_Leave);
             // 
             // label7
             // 
@@ -114,6 +114,8 @@
             resources.ApplyResources(this.TXT_Serie_NFe, "TXT_Serie_NFe");
             this.TXT_Serie_NFe.Name = "TXT_Serie_NFe";
             this.TXT_Serie_NFe.TextChanged += new System.EventHandler(this.TXT_Serie_NFe_TextChanged);
+            this.TXT_Serie_NFe.Enter += new System.EventHandler(this.TXT_Serie_NFe_Enter);
+            this.TXT_Serie_NFe.Leave += new System.EventHandler(this.TXT_Serie_NFe_Leave);
             // 
             // label8
             // 
@@ -125,6 +127,8 @@
             resources.ApplyResources(this.TXT_Numero_NFe, "TXT_Numero_NFe");
             this.TXT_Numero_NFe.Name = "TXT_Numero_NFe";
             this.TXT_Numero_NFe.TextChanged += new System.EventHandler(this.TXT_Numero_NFe_TextChanged);
+            this.TXT_Numero_NFe.Enter += new System.EventHandler(this.TXT_Numero_NFe_Enter);
+            this.TXT_Numero_NFe.Leave += new System.EventHandler(this.TXT_Numero_NFe_Leave);
             // 
             // label10
             // 
@@ -139,7 +143,9 @@
             resources.ApplyResources(this.listCNPJ, "listCNPJ");
             this.listCNPJ.Name = "listCNPJ";
             this.listCNPJ.ValueMember = "NameCnpj";
+            this.listCNPJ.Enter += new System.EventHandler(this.listCNPJ_Enter);
             this.listCNPJ.KeyDown += new System.Windows.Forms.KeyEventHandler(this.listCNPJ_KeyDown);
+            this.listCNPJ.Leave += new System.EventHandler(this.listCNPJ_Leave);
             // 
             // returnProvidersBindingSource
             // 
@@ -149,13 +155,6 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
-            // TXT_CNPJ_Selected
-            // 
-            resources.ApplyResources(this.TXT_CNPJ_Selected, "TXT_CNPJ_Selected");
-            this.TXT_CNPJ_Selected.Name = "TXT_CNPJ_Selected";
-            this.TXT_CNPJ_Selected.TextChanged += new System.EventHandler(this.TXT_CNPJ_Selected_TextChanged);
-            this.TXT_CNPJ_Selected.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_CNPJ_Selected_KeyDown);
             // 
             // GB_Busca_CNPJ_Forn
             // 
@@ -178,25 +177,21 @@
             this.BTN_SelecionaForn.UseSelectable = true;
             this.BTN_SelecionaForn.Click += new System.EventHandler(this.BTN_SelecionaForn_Click);
             // 
-            // GB_Dados_NFe
+            // TXT_CNPJ_Selected
             // 
-            this.GB_Dados_NFe.Controls.Add(this.GB_Busca_CNPJ_Forn);
-            this.GB_Dados_NFe.Controls.Add(this.BTN_NewProvider);
-            this.GB_Dados_NFe.Controls.Add(this.DT_Data_Emissão);
-            this.GB_Dados_NFe.Controls.Add(this.TXT_Valor);
-            this.GB_Dados_NFe.Controls.Add(this.BTN_RegNFe);
-            this.GB_Dados_NFe.Controls.Add(this.BTN_LimparNFe);
-            this.GB_Dados_NFe.Controls.Add(this.label7);
-            this.GB_Dados_NFe.Controls.Add(this.label6);
-            this.GB_Dados_NFe.Controls.Add(this.label1);
-            this.GB_Dados_NFe.Controls.Add(this.TXT_Serie_NFe);
-            this.GB_Dados_NFe.Controls.Add(this.TXT_CNPJ_Selected);
-            this.GB_Dados_NFe.Controls.Add(this.label8);
-            this.GB_Dados_NFe.Controls.Add(this.TXT_Numero_NFe);
-            this.GB_Dados_NFe.Controls.Add(this.label10);
-            resources.ApplyResources(this.GB_Dados_NFe, "GB_Dados_NFe");
-            this.GB_Dados_NFe.Name = "GB_Dados_NFe";
-            this.GB_Dados_NFe.TabStop = false;
+            resources.ApplyResources(this.TXT_CNPJ_Selected, "TXT_CNPJ_Selected");
+            this.TXT_CNPJ_Selected.Name = "TXT_CNPJ_Selected";
+            this.TXT_CNPJ_Selected.TextChanged += new System.EventHandler(this.TXT_CNPJ_Selected_TextChanged_1);
+            this.TXT_CNPJ_Selected.Enter += new System.EventHandler(this.TXT_CNPJ_Selected_Enter_1);
+            this.TXT_CNPJ_Selected.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_CNPJ_Selected_KeyDown_1);
+            this.TXT_CNPJ_Selected.Leave += new System.EventHandler(this.TXT_CNPJ_Selected_Leave_1);
+            // 
+            // DT_Data_Emissão
+            // 
+            resources.ApplyResources(this.DT_Data_Emissão, "DT_Data_Emissão");
+            this.DT_Data_Emissão.Name = "DT_Data_Emissão";
+            this.DT_Data_Emissão.Enter += new System.EventHandler(this.DT_Data_Emissão_Enter);
+            this.DT_Data_Emissão.Leave += new System.EventHandler(this.DT_Data_Emissão_Leave);
             // 
             // BTN_NewProvider
             // 
@@ -204,11 +199,6 @@
             this.BTN_NewProvider.Name = "BTN_NewProvider";
             this.BTN_NewProvider.UseSelectable = true;
             this.BTN_NewProvider.Click += new System.EventHandler(this.BTN_NewProvider_Click);
-            // 
-            // DT_Data_Emissão
-            // 
-            resources.ApplyResources(this.DT_Data_Emissão, "DT_Data_Emissão");
-            this.DT_Data_Emissão.Name = "DT_Data_Emissão";
             // 
             // BTN_RegNFe
             // 
@@ -224,14 +214,6 @@
             this.BTN_LimparNFe.UseSelectable = true;
             this.BTN_LimparNFe.Click += new System.EventHandler(this.BTN_LimparNFe_Click);
             // 
-            // GB_Grid_Itens_NFe
-            // 
-            this.GB_Grid_Itens_NFe.Controls.Add(this.GRID_Itens_NFe);
-            this.GB_Grid_Itens_NFe.Controls.Add(this.BTN_RemoveItem);
-            resources.ApplyResources(this.GB_Grid_Itens_NFe, "GB_Grid_Itens_NFe");
-            this.GB_Grid_Itens_NFe.Name = "GB_Grid_Itens_NFe";
-            this.GB_Grid_Itens_NFe.TabStop = false;
-            // 
             // GRID_Itens_NFe
             // 
             this.GRID_Itens_NFe.AllowUserToResizeRows = false;
@@ -240,14 +222,14 @@
             this.GRID_Itens_NFe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.GRID_Itens_NFe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.GRID_Itens_NFe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_Itens_NFe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_Itens_NFe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.GRID_Itens_NFe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GRID_Itens_NFe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productCodeDataGridViewTextBoxColumn1,
@@ -256,27 +238,27 @@
             this.quantidadeDataGridViewTextBoxColumn2,
             this.itemIDDataGridViewTextBoxColumn1});
             this.GRID_Itens_NFe.DataSource = this.returnNFeitensBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.GRID_Itens_NFe.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.GRID_Itens_NFe.DefaultCellStyle = dataGridViewCellStyle5;
             this.GRID_Itens_NFe.EnableHeadersVisualStyles = false;
             resources.ApplyResources(this.GRID_Itens_NFe, "GRID_Itens_NFe");
             this.GRID_Itens_NFe.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.GRID_Itens_NFe.Name = "GRID_Itens_NFe";
             this.GRID_Itens_NFe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.GRID_Itens_NFe.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.GRID_Itens_NFe.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.GRID_Itens_NFe.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.GRID_Itens_NFe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
@@ -329,22 +311,6 @@
             this.BTN_RemoveItem.UseSelectable = true;
             this.BTN_RemoveItem.Click += new System.EventHandler(this.BTN_RemoveItem_Click);
             // 
-            // GB_Add_Itens_NFe
-            // 
-            this.GB_Add_Itens_NFe.Controls.Add(this.GB_Find_Product_By_Name);
-            this.GB_Add_Itens_NFe.Controls.Add(this.BTN_AddProduct);
-            this.GB_Add_Itens_NFe.Controls.Add(this.label5);
-            this.GB_Add_Itens_NFe.Controls.Add(this.BTN_LimparItensNFe);
-            this.GB_Add_Itens_NFe.Controls.Add(this.BTN_New_Product);
-            this.GB_Add_Itens_NFe.Controls.Add(this.TXT_QTD_Produto);
-            this.GB_Add_Itens_NFe.Controls.Add(this.label4);
-            this.GB_Add_Itens_NFe.Controls.Add(this.label3);
-            this.GB_Add_Itens_NFe.Controls.Add(this.TXT_TP_Unidade);
-            this.GB_Add_Itens_NFe.Controls.Add(this.TXT_Nome_Produto);
-            resources.ApplyResources(this.GB_Add_Itens_NFe, "GB_Add_Itens_NFe");
-            this.GB_Add_Itens_NFe.Name = "GB_Add_Itens_NFe";
-            this.GB_Add_Itens_NFe.TabStop = false;
-            // 
             // GB_Find_Product_By_Name
             // 
             this.GB_Find_Product_By_Name.Controls.Add(this.label9);
@@ -374,7 +340,9 @@
             resources.ApplyResources(this.LB_List_Products_Name, "LB_List_Products_Name");
             this.LB_List_Products_Name.Name = "LB_List_Products_Name";
             this.LB_List_Products_Name.ValueMember = "ProdUnit";
+            this.LB_List_Products_Name.Enter += new System.EventHandler(this.LB_List_Products_Name_Enter);
             this.LB_List_Products_Name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.LB_List_Products_Name_KeyDown);
+            this.LB_List_Products_Name.Leave += new System.EventHandler(this.LB_List_Products_Name_Leave);
             // 
             // returnProdutosBindingSource
             // 
@@ -411,6 +379,8 @@
             resources.ApplyResources(this.TXT_QTD_Produto, "TXT_QTD_Produto");
             this.TXT_QTD_Produto.Name = "TXT_QTD_Produto";
             this.TXT_QTD_Produto.TextChanged += new System.EventHandler(this.TXT_QTD_Produto_TextChanged);
+            this.TXT_QTD_Produto.Enter += new System.EventHandler(this.TXT_QTD_Produto_Enter);
+            this.TXT_QTD_Produto.Leave += new System.EventHandler(this.TXT_QTD_Produto_Leave);
             // 
             // label4
             // 
@@ -433,7 +403,9 @@
             resources.ApplyResources(this.TXT_Nome_Produto, "TXT_Nome_Produto");
             this.TXT_Nome_Produto.Name = "TXT_Nome_Produto";
             this.TXT_Nome_Produto.TextChanged += new System.EventHandler(this.TXT_Nome_Produto_TextChanged);
+            this.TXT_Nome_Produto.Enter += new System.EventHandler(this.TXT_Nome_Produto_Enter);
             this.TXT_Nome_Produto.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_Nome_Produto_KeyDown);
+            this.TXT_Nome_Produto.Leave += new System.EventHandler(this.TXT_Nome_Produto_Leave);
             // 
             // ProductCode
             // 
@@ -474,33 +446,70 @@
             this.BTN_AddItensStock.UseSelectable = true;
             this.BTN_AddItensStock.Click += new System.EventHandler(this.BTN_AddItensStock_Click_1);
             // 
+            // GB_Grid_Itens_NFe
+            // 
+            this.GB_Grid_Itens_NFe.Controls.Add(this.GRID_Itens_NFe);
+            this.GB_Grid_Itens_NFe.Controls.Add(this.BTN_RemoveItem);
+            resources.ApplyResources(this.GB_Grid_Itens_NFe, "GB_Grid_Itens_NFe");
+            this.GB_Grid_Itens_NFe.Name = "GB_Grid_Itens_NFe";
+            this.GB_Grid_Itens_NFe.TabStop = false;
+            // 
+            // GB_Add_Itens_NFe
+            // 
+            this.GB_Add_Itens_NFe.Controls.Add(this.GB_Find_Product_By_Name);
+            this.GB_Add_Itens_NFe.Controls.Add(this.BTN_AddProduct);
+            this.GB_Add_Itens_NFe.Controls.Add(this.label5);
+            this.GB_Add_Itens_NFe.Controls.Add(this.BTN_LimparItensNFe);
+            this.GB_Add_Itens_NFe.Controls.Add(this.BTN_New_Product);
+            this.GB_Add_Itens_NFe.Controls.Add(this.TXT_QTD_Produto);
+            this.GB_Add_Itens_NFe.Controls.Add(this.label4);
+            this.GB_Add_Itens_NFe.Controls.Add(this.label3);
+            this.GB_Add_Itens_NFe.Controls.Add(this.TXT_TP_Unidade);
+            this.GB_Add_Itens_NFe.Controls.Add(this.TXT_Nome_Produto);
+            resources.ApplyResources(this.GB_Add_Itens_NFe, "GB_Add_Itens_NFe");
+            this.GB_Add_Itens_NFe.Name = "GB_Add_Itens_NFe";
+            this.GB_Add_Itens_NFe.TabStop = false;
+            // 
             // Page_NFes_Add_And_Edit
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.BTN_Fechar_tela;
             this.ControlBox = false;
+            this.Controls.Add(this.GB_Busca_CNPJ_Forn);
             this.Controls.Add(this.BTN_AddItensStock);
+            this.Controls.Add(this.TXT_CNPJ_Selected);
             this.Controls.Add(this.BTN_Fechar_tela);
+            this.Controls.Add(this.DT_Data_Emissão);
             this.Controls.Add(this.GB_Add_Itens_NFe);
+            this.Controls.Add(this.BTN_NewProvider);
             this.Controls.Add(this.GB_Grid_Itens_NFe);
-            this.Controls.Add(this.GB_Dados_NFe);
+            this.Controls.Add(this.TXT_Valor);
+            this.Controls.Add(this.BTN_RegNFe);
+            this.Controls.Add(this.TXT_Serie_NFe);
+            this.Controls.Add(this.BTN_LimparNFe);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.TXT_Numero_NFe);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label1);
             this.KeyPreview = true;
             this.Name = "Page_NFes_Add_And_Edit";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Page_NFes_Add_And_Edit_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).EndInit();
             this.GB_Busca_CNPJ_Forn.ResumeLayout(false);
             this.GB_Busca_CNPJ_Forn.PerformLayout();
-            this.GB_Dados_NFe.ResumeLayout(false);
-            this.GB_Dados_NFe.PerformLayout();
-            this.GB_Grid_Itens_NFe.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.GRID_Itens_NFe)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnNFeitensBindingSource)).EndInit();
-            this.GB_Add_Itens_NFe.ResumeLayout(false);
-            this.GB_Add_Itens_NFe.PerformLayout();
             this.GB_Find_Product_By_Name.ResumeLayout(false);
             this.GB_Find_Product_By_Name.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.returnProdutosBindingSource)).EndInit();
+            this.GB_Grid_Itens_NFe.ResumeLayout(false);
+            this.GB_Add_Itens_NFe.ResumeLayout(false);
+            this.GB_Add_Itens_NFe.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -515,11 +524,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ListBox listCNPJ;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TXT_CNPJ_Selected;
         private System.Windows.Forms.GroupBox GB_Busca_CNPJ_Forn;
-        private System.Windows.Forms.GroupBox GB_Dados_NFe;
-        private System.Windows.Forms.GroupBox GB_Grid_Itens_NFe;
-        private System.Windows.Forms.GroupBox GB_Add_Itens_NFe;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TXT_QTD_Produto;
         private System.Windows.Forms.Label label4;
@@ -543,7 +548,6 @@
         private MetroFramework.Controls.MetroButton BTN_LimparItensNFe;
         private MetroFramework.Controls.MetroButton BTN_LimparNFe;
         private MetroFramework.Controls.MetroButton BTN_SelecionaForn;
-        private MetroFramework.Controls.MetroDateTime DT_Data_Emissão;
         private MetroFramework.Controls.MetroButton BTN_RegNFe;
         private MetroFramework.Controls.MetroButton BTN_NewProvider;
         private System.Windows.Forms.BindingSource returnProvidersBindingSource;
@@ -555,5 +559,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tipoUnidadeDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeDataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn itemIDDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DateTimePicker DT_Data_Emissão;
+        private System.Windows.Forms.MaskedTextBox TXT_CNPJ_Selected;
+        private System.Windows.Forms.GroupBox GB_Grid_Itens_NFe;
+        private System.Windows.Forms.GroupBox GB_Add_Itens_NFe;
     }
 }

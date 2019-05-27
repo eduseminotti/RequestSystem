@@ -13,7 +13,7 @@ namespace Request_System
         int seriesNFe, qtdItens;
         DateTime emissionDateNFe = DateTime.Now;
         bool insereOK, isNew, textchange;
-        UserIdioma idioma;
+        UserIdioma userIdioma;
 
 
         Page_Products_Edit_And_Add PageProductAdd;
@@ -27,13 +27,15 @@ namespace Request_System
         List<ReturnProdutos> return_Produtos;
         ManipulaStock dadosStock = new ManipulaStock();
 
-        public Page_NFes_Add_And_Edit(UserIdioma Idioma)
+        public Page_NFes_Add_And_Edit(UserIdioma UserIdioma)
         {
             InitializeComponent();
+
+            TXT_Numero_NFe.Focus();
             BTN_SelecionaForn.Enabled = false;
             listCNPJ.MouseDoubleClick += new MouseEventHandler(listCNPJ_DoubleClick);
             LB_List_Products_Name.MouseDoubleClick += new MouseEventHandler(LB_List_Products_Name_DoubleClick);
-            idioma = Idioma;
+            userIdioma = UserIdioma;
 
             ContLinhasGrid();
         }
@@ -61,12 +63,14 @@ namespace Request_System
             GB_Add_Itens_NFe.Enabled = true;
             BTN_AddProduct.Enabled = true;
 
-            if (idioma == UserIdioma.Portugues)
+            if (userIdioma == UserIdioma.Portugues)
                 BTN_RegNFe.Text = "Salvar Alterações";
-            if (idioma == UserIdioma.Ingles)
+            if (userIdioma == UserIdioma.Ingles)
                 BTN_RegNFe.Text = "Save Changes";
-            if (idioma == UserIdioma.Espanhol)
+            if (userIdioma == UserIdioma.Espanhol)
                 BTN_RegNFe.Text = "Guardar Cambios";
+
+            TXT_Numero_NFe.Focus();
 
             if (inStock)
             {
@@ -78,12 +82,18 @@ namespace Request_System
 
                 DesabilitaCamposNFe();
             }
+
+            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("R$", "").Replace(" ", "");
+            TXT_Valor.Text = Convert.ToDouble(TXT_Valor.Text).ToString("C");
+
             ContLinhasGrid();
         }
         public void RecebeNovaNFe()
         {
             isNew = true;
             BTN_AddItensStock.Enabled = false;
+
+            TXT_Numero_NFe.Focus();
         }
 
         public void DesabilitaCamposNFe()
@@ -96,6 +106,8 @@ namespace Request_System
             BTN_LimparNFe.Enabled = false;
             BTN_RegNFe.Enabled = false;
             BTN_NewProvider.Enabled = false;
+            label1.Focus();
+            BTN_Fechar_tela.Focus();
         }
 
         private void BTN_Fechar_tela_Click(object sender, EventArgs e)
@@ -193,6 +205,7 @@ namespace Request_System
             TXT_Nome_Produto.Text = "";
             TXT_QTD_Produto.Text = "";
             TXT_TP_Unidade.Text = "";
+            GB_Find_Product_By_Name.Visible = false;
         }
 
         private void BTN_SelecionaForn_Click(object sender, EventArgs e)
@@ -228,37 +241,16 @@ namespace Request_System
             }
         }
 
-        private void TXT_Valor_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Valor.BackColor = Color.White;
-            if (!float.TryParse(TXT_Valor.Text, out float v2))
-            {
-                TXT_Valor.BackColor = Color.OrangeRed;
-                return;
-            }
-        }
-
         private void listCNPJ_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 BTN_SelecionaForn.PerformClick();
-
         }
 
         private void LB_List_Products_Name_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
                 BTN_SelecionarByName.PerformClick();
-
-        }
-
-        private void TXT_CNPJ_Selected_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.Tab)
-                listCNPJ.Focus();
-
-            if (e.KeyCode == Keys.Enter)
-                BTN_SelecionaForn.PerformClick();
         }
 
         private void TXT_Nome_Produto_KeyDown(object sender, KeyEventArgs e)
@@ -268,6 +260,167 @@ namespace Request_System
 
             if (e.KeyCode == Keys.Enter)
                 BTN_SelecionarByName.PerformClick();
+        }
+
+        private void TXT_Numero_NFe_Enter(object sender, EventArgs e)
+        {
+            TXT_Numero_NFe.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Numero_NFe_Leave(object sender, EventArgs e)
+        {
+            TXT_Numero_NFe.BackColor = Color.White;
+        }
+
+        private void TXT_Serie_NFe_Enter(object sender, EventArgs e)
+        {
+            TXT_Serie_NFe.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Serie_NFe_Leave(object sender, EventArgs e)
+        {
+            TXT_Serie_NFe.BackColor = Color.White;
+        }
+
+        private void DT_Data_Emissão_Enter(object sender, EventArgs e)
+        {
+            DT_Data_Emissão.BackColor = Color.Yellow;
+        }
+
+        private void DT_Data_Emissão_Leave(object sender, EventArgs e)
+        {
+            DT_Data_Emissão.BackColor = Color.White;
+        }
+
+        private void TXT_Valor_Enter(object sender, EventArgs e)
+        {
+            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("R$","").Replace(" ", "");
+            TXT_Valor.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Valor_Leave(object sender, EventArgs e)
+        {
+            TXT_Valor.BackColor = Color.White;
+            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("R$", "").Replace(" ","");
+            if(TXT_Valor.Text != "")
+                TXT_Valor.Text = Convert.ToDouble(TXT_Valor.Text).ToString("C");
+        }
+
+        private void TXT_Nome_Produto_Enter(object sender, EventArgs e)
+        {
+            TXT_Nome_Produto.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Nome_Produto_Leave(object sender, EventArgs e)
+        {
+            TXT_Nome_Produto.BackColor = Color.White;
+        }
+
+        private void TXT_QTD_Produto_Enter(object sender, EventArgs e)
+        {
+            TXT_QTD_Produto.BackColor = Color.Yellow;
+        }
+
+        private void TXT_QTD_Produto_Leave(object sender, EventArgs e)
+        {
+            TXT_QTD_Produto.BackColor = Color.White;
+        }
+
+        private void LB_List_Products_Name_Enter(object sender, EventArgs e)
+        {
+            LB_List_Products_Name.BackColor = Color.Yellow;
+        }
+
+        private void LB_List_Products_Name_Leave(object sender, EventArgs e)
+        {
+            LB_List_Products_Name.BackColor = Color.White;
+        }
+
+        private void listCNPJ_Enter(object sender, EventArgs e)
+        {
+            listCNPJ.BackColor = Color.Yellow;
+        }
+
+        private void listCNPJ_Leave(object sender, EventArgs e)
+        {
+            listCNPJ.BackColor = Color.White;
+        }
+
+        private void TXT_CNPJ_Selected_TextChanged_1(object sender, EventArgs e)
+        {
+            TXT_CNPJ_Selected.BackColor = Color.White;
+            providerCNPJ = TXT_CNPJ_Selected.Text.Replace(".","").Replace("/","").Replace("-","").Replace(" ","");
+
+            if (isNew)
+            {
+
+                GB_Busca_CNPJ_Forn.Visible = true;
+                BTN_RegNFe.Enabled = false;
+                return_Providers = fornecedores.GetProviders(0, null, providerCNPJ);
+                listCNPJ.DataSource = return_Providers;
+
+                foreach (var return_Providers in return_Providers)
+                {
+                    providerID = return_Providers.Id;
+                }
+
+                BTN_SelecionaForn.Enabled = true;
+            }
+            else if (!isNew)
+            {
+                if (textchange)
+                {
+                    GB_Busca_CNPJ_Forn.Visible = true;
+                    BTN_RegNFe.Enabled = false;
+                    return_Providers = fornecedores.GetProviders(0, null, providerCNPJ);
+                    listCNPJ.DataSource = return_Providers;
+
+                    foreach (var return_Providers in return_Providers)
+                    {
+                        providerID = return_Providers.Id;
+                    }
+                    BTN_SelecionaForn.Enabled = true;
+                    textchange = false;
+                }
+                textchange = true;
+            }
+        }
+
+        private void TXT_CNPJ_Selected_Enter_1(object sender, EventArgs e)
+        {
+            TXT_CNPJ_Selected.BackColor = Color.Yellow;
+        }
+
+        private void TXT_CNPJ_Selected_Leave_1(object sender, EventArgs e)
+        {
+            TXT_CNPJ_Selected.BackColor = Color.White;
+        }
+
+        private void TXT_CNPJ_Selected_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Tab)
+                listCNPJ.Focus();
+
+            if (e.KeyCode == Keys.Enter)
+                BTN_SelecionaForn.PerformClick();
+        }
+
+        private void Page_NFes_Add_And_Edit_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                this.SelectNextControl(this.ActiveControl, !e.Shift, true, true, true);
+            }
+        }
+
+        private void TXT_Valor_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Valor.BackColor = Color.White;
+            if (!decimal.TryParse(TXT_Valor.Text.Replace(",","").Replace(".","").Replace("R$","").Replace(" ",""), out decimal valor)&& TXT_Valor.Text != "" )
+            {
+                TXT_Valor.BackColor = Color.OrangeRed;
+                return;
+            }
         }
 
         private void BTN_RegNFe_Click(object sender, EventArgs e)
@@ -285,13 +438,13 @@ namespace Request_System
                 TXT_Serie_NFe.Focus();
                 returns = true;
             }
-            if (!float.TryParse(TXT_Valor.Text, out float v2))
+            if (!decimal.TryParse(TXT_Valor.Text.Replace("R$","").Replace(" ",""), out decimal v2))
             {
                 TXT_Valor.BackColor = Color.OrangeRed;
                 TXT_Valor.Focus();
                 returns = true;
             }
-            if (TXT_CNPJ_Selected.Text == "")
+            if (TXT_CNPJ_Selected.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "") == "")
             {
                 TXT_CNPJ_Selected.BackColor = Color.OrangeRed;
                 TXT_CNPJ_Selected.Focus();
@@ -303,9 +456,9 @@ namespace Request_System
             numberNFe = Convert.ToInt32(TXT_Numero_NFe.Text.ToString());
             seriesNFe = Convert.ToInt32(TXT_Serie_NFe.Text.ToString());
 
-            valueNFe = decimal.Parse(TXT_Valor.Text.ToString());
+            valueNFe = decimal.Parse(TXT_Valor.Text.ToString().Replace("R$", "").Replace(" ", ""));
             emissionDateNFe = Convert.ToDateTime(DT_Data_Emissão.Text);
-            providerCNPJ = TXT_CNPJ_Selected.Text.ToString();
+            providerCNPJ = TXT_CNPJ_Selected.Text.ToString().Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "");
 
             if (isNew)
             {
@@ -359,7 +512,7 @@ namespace Request_System
 
         private void BTN_NewProvider_Click(object sender, EventArgs e)
         {
-            Page_Providers_Edit_And_Add providers_Edit_And_Add = new Page_Providers_Edit_And_Add(true, 0);
+            Page_Providers_Edit_And_Add providers_Edit_And_Add = new Page_Providers_Edit_And_Add(true, 0, userIdioma);
             providers_Edit_And_Add.ShowDialog();
 
             return_Providers = fornecedores.GetProviders(0, null, providerCNPJ);
@@ -377,17 +530,17 @@ namespace Request_System
         private void BTN_AddItensStock_Click_1(object sender, EventArgs e)
         {
             DialogResult? confirm = null;
-            if (idioma == UserIdioma.Portugues)
+            if (userIdioma == UserIdioma.Portugues)
             {
                 confirm = MessageBox.Show("Apos gravar a NFe nao será possivel mais possivel edita-la, e os itens serão adicionados ao estoque," +
                    " Deseja Continuar?", "Registrar Nota", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
             }
-            if (idioma == UserIdioma.Ingles)
+            if (userIdioma == UserIdioma.Ingles)
             {
                 confirm = MessageBox.Show("After recording the NFe it will not be possible to edit it anymore, and the items will be added to the stock, " +
                     "Do you want to Continue?", "Register NFe", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);
             }
-            if (idioma == UserIdioma.Espanhol)
+            if (userIdioma == UserIdioma.Espanhol)
             {
                 confirm = MessageBox.Show("Después de grabar la NFe no será posible editarla más, y los ítems serán agregados al stock, " +
                     "¿Desea Continuar?", "Registrar NFe", MessageBoxButtons.YesNo, MessageBoxIcon.Exclamation, MessageBoxDefaultButton.Button2);

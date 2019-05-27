@@ -123,7 +123,7 @@
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 142</value>
+    <value>11, 101</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
@@ -141,22 +141,19 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
   <data name="TXT_Valor.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 157</value>
+    <value>10, 116</value>
   </data>
   <data name="TXT_Valor.MaxLength" type="System.Int32, mscorlib">
     <value>21</value>
   </data>
-  <data name="TXT_Valor.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Valor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>211, 30</value>
+    <value>211, 20</value>
   </data>
   <data name="TXT_Valor.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -168,16 +165,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TXT_Valor.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Valor.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>8</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 91</value>
+    <value>11, 60</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>31, 13</value>
@@ -195,26 +192,23 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label7.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>13</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="TXT_Serie_NFe.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>Off</value>
   </data>
   <data name="TXT_Serie_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 107</value>
+    <value>11, 76</value>
   </data>
   <data name="TXT_Serie_NFe.MaxLength" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="TXT_Serie_NFe.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Serie_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 30</value>
+    <value>210, 20</value>
   </data>
   <data name="TXT_Serie_NFe.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -226,16 +220,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TXT_Serie_NFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Serie_NFe.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 42</value>
+    <value>11, 20</value>
   </data>
   <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 13</value>
@@ -253,25 +247,22 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>16</value>
   </data>
   <data name="TXT_Numero_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 57</value>
+    <value>11, 35</value>
   </data>
   <data name="TXT_Numero_NFe.MaxLength" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="TXT_Numero_NFe.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Numero_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 30</value>
+    <value>210, 20</value>
   </data>
   <data name="TXT_Numero_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="&gt;&gt;TXT_Numero_NFe.Name" xml:space="preserve">
     <value>TXT_Numero_NFe</value>
@@ -280,16 +271,16 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TXT_Numero_NFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Numero_NFe.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>14</value>
   </data>
   <data name="label10.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 91</value>
+    <value>233, 60</value>
   </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>87, 13</value>
@@ -307,16 +298,16 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <metadata name="returnProvidersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>221, 15</value>
   </metadata>
   <data name="listCNPJ.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 15</value>
+    <value>4, 11</value>
   </data>
   <data name="listCNPJ.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 69</value>
@@ -336,11 +327,14 @@
   <data name="&gt;&gt;listCNPJ.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="returnProvidersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 15</value>
+  </metadata>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>232, 39</value>
+    <value>229, 17</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>78, 13</value>
@@ -358,46 +352,64 @@
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>17</value>
   </data>
-  <data name="TXT_CNPJ_Selected.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
   </data>
-  <data name="TXT_CNPJ_Selected.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 57</value>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="TXT_CNPJ_Selected.MaxLength" type="System.Int32, mscorlib">
-    <value>14</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
   </data>
-  <data name="TXT_CNPJ_Selected.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="TXT_CNPJ_Selected.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 30</value>
+  <data name="&gt;&gt;BTN_SelecionaForn.Name" xml:space="preserve">
+    <value>BTN_SelecionaForn</value>
   </data>
-  <data name="TXT_CNPJ_Selected.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="&gt;&gt;BTN_SelecionaForn.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.Name" xml:space="preserve">
-    <value>TXT_CNPJ_Selected</value>
+  <data name="&gt;&gt;BTN_SelecionaForn.Parent" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
   </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;BTN_SelecionaForn.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+  <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>230, 57</value>
   </data>
-  <data name="&gt;&gt;TXT_CNPJ_Selected.ZOrder" xml:space="preserve">
-    <value>10</value>
+  <data name="GB_Busca_CNPJ_Forn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 110</value>
+  </data>
+  <data name="GB_Busca_CNPJ_Forn.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="GB_Busca_CNPJ_Forn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Name" xml:space="preserve">
+    <value>GB_Busca_CNPJ_Forn</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 99</value>
+    <value>6, 91</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 13</value>
@@ -424,10 +436,10 @@
     <value>0</value>
   </data>
   <data name="BTN_SelecionaForn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 87</value>
+    <value>127, 84</value>
   </data>
   <data name="BTN_SelecionaForn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_SelecionaForn.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -447,35 +459,56 @@
   <data name="&gt;&gt;BTN_SelecionaForn.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 91</value>
+  <data name="TXT_CNPJ_Selected.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 35</value>
   </data>
-  <data name="GB_Busca_CNPJ_Forn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 124</value>
+  <data name="TXT_CNPJ_Selected.Mask" xml:space="preserve">
+    <value>00,000,000/0000-00</value>
   </data>
-  <data name="GB_Busca_CNPJ_Forn.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="TXT_CNPJ_Selected.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 20</value>
   </data>
-  <data name="GB_Busca_CNPJ_Forn.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="TXT_CNPJ_Selected.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Name" xml:space="preserve">
-    <value>GB_Busca_CNPJ_Forn</value>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.Name" xml:space="preserve">
+    <value>TXT_CNPJ_Selected</value>
   </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MaskedTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;GB_Busca_CNPJ_Forn.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;TXT_CNPJ_Selected.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="DT_Data_Emissão.Location" type="System.Drawing.Point, System.Drawing">
+    <value>232, 76</value>
+  </data>
+  <data name="DT_Data_Emissão.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 20</value>
+  </data>
+  <data name="DT_Data_Emissão.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.Name" xml:space="preserve">
+    <value>DT_Data_Emissão</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DT_Data_Emissão.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="BTN_NewProvider.Location" type="System.Drawing.Point, System.Drawing">
-    <value>363, 16</value>
+    <value>360, 7</value>
   </data>
   <data name="BTN_NewProvider.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_NewProvider.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -490,40 +523,16 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;BTN_NewProvider.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_NewProvider.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="DT_Data_Emissão.Location" type="System.Drawing.Point, System.Drawing">
-    <value>235, 107</value>
-  </data>
-  <data name="DT_Data_Emissão.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>4, 29</value>
-  </data>
-  <data name="DT_Data_Emissão.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 29</value>
-  </data>
-  <data name="DT_Data_Emissão.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.Name" xml:space="preserve">
-    <value>DT_Data_Emissão</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Emissão.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="BTN_RegNFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>361, 156</value>
+    <value>358, 115</value>
   </data>
   <data name="BTN_RegNFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 21</value>
   </data>
   <data name="BTN_RegNFe.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -538,16 +547,16 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;BTN_RegNFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_RegNFe.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="BTN_LimparNFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>236, 156</value>
+    <value>233, 115</value>
   </data>
   <data name="BTN_LimparNFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 21</value>
   </data>
   <data name="BTN_LimparNFe.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -562,34 +571,10 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;BTN_LimparNFe.Parent" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;BTN_LimparNFe.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="GB_Dados_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="GB_Dados_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>489, 228</value>
-  </data>
-  <data name="GB_Dados_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="GB_Dados_NFe.Text" xml:space="preserve">
-    <value>Dados da NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Dados_NFe.Name" xml:space="preserve">
-    <value>GB_Dados_NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Dados_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Dados_NFe.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;GB_Dados_NFe.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="&gt;&gt;BTN_LimparNFe.ZOrder" xml:space="preserve">
+    <value>11</value>
   </data>
   <data name="productCodeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Código Produto</value>
@@ -628,10 +613,10 @@
     <value>Segoe UI, 11px</value>
   </data>
   <data name="GRID_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 49</value>
+    <value>18, 39</value>
   </data>
   <data name="GRID_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>712, 210</value>
+    <value>712, 278</value>
   </data>
   <data name="GRID_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -655,7 +640,7 @@
     <value>616, 13</value>
   </data>
   <data name="BTN_RemoveItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_RemoveItem.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -675,30 +660,6 @@
   <data name="&gt;&gt;BTN_RemoveItem.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="GB_Grid_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 246</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>745, 265</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
-    <value>Itens da Nota</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.Name" xml:space="preserve">
-    <value>GB_Grid_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GB_Grid_Itens_NFe.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -706,7 +667,7 @@
     <value>NoControl</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 99</value>
+    <value>22, 87</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -733,10 +694,10 @@
     <value>0</value>
   </data>
   <data name="BTN_SelecionarByName.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 99</value>
+    <value>127, 83</value>
   </data>
   <data name="BTN_SelecionarByName.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_SelecionarByName.TabIndex" type="System.Int32, mscorlib">
     <value>14</value>
@@ -760,7 +721,7 @@
     <value>435, 15</value>
   </metadata>
   <data name="LB_List_Products_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 19</value>
+    <value>4, 9</value>
   </data>
   <data name="LB_List_Products_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>238, 69</value>
@@ -781,10 +742,10 @@
     <value>2</value>
   </data>
   <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 81</value>
+    <value>1, 63</value>
   </data>
   <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 138</value>
+    <value>245, 108</value>
   </data>
   <data name="GB_Find_Product_By_Name.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -804,11 +765,14 @@
   <data name="&gt;&gt;GB_Find_Product_By_Name.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="returnProdutosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>435, 15</value>
+  </metadata>
   <data name="BTN_AddProduct.Location" type="System.Drawing.Point, System.Drawing">
-    <value>127, 189</value>
+    <value>127, 153</value>
   </data>
   <data name="BTN_AddProduct.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_AddProduct.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -832,7 +796,7 @@
     <value>True</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 84</value>
+    <value>7, 65</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
@@ -856,10 +820,10 @@
     <value>2</value>
   </data>
   <data name="BTN_LimparItensNFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 189</value>
+    <value>8, 153</value>
   </data>
   <data name="BTN_LimparItensNFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_LimparItensNFe.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
@@ -883,7 +847,7 @@
     <value>131, 15</value>
   </data>
   <data name="BTN_New_Product.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_New_Product.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -904,16 +868,13 @@
     <value>4</value>
   </data>
   <data name="TXT_QTD_Produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 100</value>
+    <value>6, 81</value>
   </data>
   <data name="TXT_QTD_Produto.MaxLength" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="TXT_QTD_Produto.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_QTD_Produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_QTD_Produto.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -934,7 +895,7 @@
     <value>True</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 134</value>
+    <value>10, 107</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>111, 13</value>
@@ -961,7 +922,7 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 35</value>
+    <value>7, 26</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>75, 13</value>
@@ -985,13 +946,10 @@
     <value>7</value>
   </data>
   <data name="TXT_TP_Unidade.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 150</value>
-  </data>
-  <data name="TXT_TP_Unidade.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>6, 123</value>
   </data>
   <data name="TXT_TP_Unidade.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_TP_Unidade.TabIndex" type="System.Int32, mscorlib">
     <value>90</value>
@@ -1009,16 +967,13 @@
     <value>8</value>
   </data>
   <data name="TXT_Nome_Produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 51</value>
+    <value>6, 42</value>
   </data>
   <data name="TXT_Nome_Produto.MaxLength" type="System.Int32, mscorlib">
     <value>250</value>
   </data>
-  <data name="TXT_Nome_Produto.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="TXT_Nome_Produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>235, 30</value>
+    <value>235, 20</value>
   </data>
   <data name="TXT_Nome_Produto.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -1034,33 +989,6 @@
   </data>
   <data name="&gt;&gt;TXT_Nome_Produto.ZOrder" xml:space="preserve">
     <value>9</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>507, 12</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 228</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="GB_Add_Itens_NFe.Text" xml:space="preserve">
-    <value>Adicionar Produto</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.Name" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GB_Add_Itens_NFe.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="ProductCode.HeaderText" xml:space="preserve">
     <value>Codigo Produto</value>
@@ -1087,10 +1015,10 @@
     <value>110</value>
   </data>
   <data name="BTN_Fechar_tela.Location" type="System.Drawing.Point, System.Drawing">
-    <value>481, 517</value>
+    <value>481, 528</value>
   </data>
   <data name="BTN_Fechar_tela.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
+    <value>115, 20</value>
   </data>
   <data name="BTN_Fechar_tela.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
@@ -1108,13 +1036,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Fechar_tela.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>3</value>
   </data>
   <data name="BTN_AddItensStock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 517</value>
+    <value>598, 528</value>
   </data>
   <data name="BTN_AddItensStock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 30</value>
+    <value>155, 20</value>
   </data>
   <data name="BTN_AddItensStock.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
@@ -1132,7 +1060,55 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_AddItensStock.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 199</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>745, 323</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
+    <value>Itens da Nota</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.Name" xml:space="preserve">
+    <value>GB_Grid_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Grid_Itens_NFe.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>508, -6</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 181</value>
+  </data>
+  <data name="GB_Add_Itens_NFe.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.Name" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Add_Itens_NFe.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -1144,7 +1120,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>773, 558</value>
+    <value>780, 558</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

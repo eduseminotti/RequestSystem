@@ -11,7 +11,6 @@ namespace Request_System
         public String Password { get; set; }
         public UserType Type { get; set; }
         public UserIsactive IsActive { get; set; }
-        public UserIdioma Idioma { get; set; }
         public int UserID { get; set; }
         public String Name { get; set; }
 
@@ -32,7 +31,7 @@ namespace Request_System
             User user = null;
             try
             {
-                string queryString = "select  ID, Name, UserName , password, type , isActive, idioma from Seminotti_Teste.dbo.Users where UserName  = @UserName and password = @password";
+                string queryString = "select  ID, Name, UserName , password, type , isActive from Seminotti_Teste.dbo.Users where UserName  = @UserName and password = @password";
                 sqlConn.Open();
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
@@ -54,7 +53,6 @@ namespace Request_System
                     user.Name = query["Name"].ToString();
                     user.Password = query["password"].ToString();
                     user.Type = (UserType)int.Parse(query["Type"].ToString());
-                    user.Idioma = (UserIdioma)int.Parse(query["idioma"].ToString());
                     user.UserID = int.Parse(query["id"].ToString());
                 }
                 return user;

@@ -2,15 +2,9 @@
 
 namespace Request_System
 {
-    /// <summary>
-    /// Classe responsavel por traduzir os itens de telas da aplicação
-    /// </summary>
+
     public class Idioma
     {
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="culture"></param>
 
         private static void AlteraThreadIdioma(string culture)
         {
@@ -24,11 +18,7 @@ namespace Request_System
             foreach (Control ctrl in frm.Controls)
                 resx.ApplyResources(ctrl, ctrl.Name, System.Threading.Thread.CurrentThread.CurrentCulture);
         }
-        /// <summary>
-        /// Recebe indicação do idioma utilizado para o usuario e realiza a tradução
-        /// </summary>
-        /// <param name="frm"></param>
-        /// <param name="culture"></param>
+
         public static void AjustaCultura(LoginValidate frm, string culture)
         {
             AlteraThreadIdioma(culture);

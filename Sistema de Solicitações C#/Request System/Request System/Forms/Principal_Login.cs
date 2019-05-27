@@ -101,13 +101,6 @@ namespace Request_System
 
             if (idioma == UserIdioma.Espanhol)
                 Idioma.AjustaCultura(this, "es-ES");
-
-            if (idioma == UserIdioma._)
-            {
-                Idioma.AjustaCultura(this, "pt-BR");
-                idioma = UserIdioma.Portugues;
-            }
-
         }
 
         private void CBX_Idioma_Enter(object sender, EventArgs e)

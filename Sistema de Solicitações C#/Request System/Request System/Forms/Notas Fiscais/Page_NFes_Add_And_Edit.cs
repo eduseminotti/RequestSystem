@@ -53,7 +53,7 @@ namespace Request_System
             BTN_RegNFe.Enabled = true;
             TXT_Numero_NFe.Text = numberNFe.ToString();
             TXT_Serie_NFe.Text = seriesNFe.ToString();
-            TXT_Valor.Text = valueNFe.ToString();
+            TXT_Valor.Text = valueNFe.ToString();           
             DT_Data_Emissão.Value = emissionDateNFe;
             TXT_CNPJ_Selected.Text = providerCNPJ.ToString();
 
@@ -83,7 +83,7 @@ namespace Request_System
                 DesabilitaCamposNFe();
             }
 
-            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("R$", "").Replace(" ", "");
+            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("$", "").Replace(" ", "").Replace("R", "").Replace("€", "");
             TXT_Valor.Text = Convert.ToDouble(TXT_Valor.Text).ToString("C");
 
             ContLinhasGrid();
@@ -294,15 +294,15 @@ namespace Request_System
 
         private void TXT_Valor_Enter(object sender, EventArgs e)
         {
-            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("R$","").Replace(" ", "");
+            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("$", "").Replace(" ", "").Replace("R", "").Replace("€", "");
             TXT_Valor.BackColor = Color.Yellow;
         }
 
         private void TXT_Valor_Leave(object sender, EventArgs e)
         {
             TXT_Valor.BackColor = Color.White;
-            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("R$", "").Replace(" ","");
-            if(TXT_Valor.Text != "")
+            TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("$", "").Replace("R", "").Replace("€", "").Replace(" ", "");
+            if (TXT_Valor.Text != "")
                 TXT_Valor.Text = Convert.ToDouble(TXT_Valor.Text).ToString("C");
         }
 
@@ -349,7 +349,7 @@ namespace Request_System
         private void TXT_CNPJ_Selected_TextChanged_1(object sender, EventArgs e)
         {
             TXT_CNPJ_Selected.BackColor = Color.White;
-            providerCNPJ = TXT_CNPJ_Selected.Text.Replace(".","").Replace("/","").Replace("-","").Replace(" ","");
+            providerCNPJ = TXT_CNPJ_Selected.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "").Replace(",","");
 
             if (isNew)
             {
@@ -416,7 +416,7 @@ namespace Request_System
         private void TXT_Valor_TextChanged(object sender, EventArgs e)
         {
             TXT_Valor.BackColor = Color.White;
-            if (!decimal.TryParse(TXT_Valor.Text.Replace(",","").Replace(".","").Replace("R$","").Replace(" ",""), out decimal valor)&& TXT_Valor.Text != "" )
+            if (!decimal.TryParse(TXT_Valor.Text.Replace(",", "").Replace(".", "").Replace("$", "").Replace("R", "").Replace("€", "").Replace(" ", ""), out decimal valor) && TXT_Valor.Text != "")
             {
                 TXT_Valor.BackColor = Color.OrangeRed;
                 return;
@@ -438,7 +438,7 @@ namespace Request_System
                 TXT_Serie_NFe.Focus();
                 returns = true;
             }
-            if (!decimal.TryParse(TXT_Valor.Text.Replace("R$","").Replace(" ",""), out decimal v2))
+            if (!decimal.TryParse(TXT_Valor.Text.Replace("$", "").Replace("R", "").Replace("€", "").Replace(" ", ""), out decimal v2))
             {
                 TXT_Valor.BackColor = Color.OrangeRed;
                 TXT_Valor.Focus();
@@ -456,8 +456,9 @@ namespace Request_System
             numberNFe = Convert.ToInt32(TXT_Numero_NFe.Text.ToString());
             seriesNFe = Convert.ToInt32(TXT_Serie_NFe.Text.ToString());
 
-            valueNFe = decimal.Parse(TXT_Valor.Text.ToString().Replace("R$", "").Replace(" ", ""));
-            emissionDateNFe = Convert.ToDateTime(DT_Data_Emissão.Text);
+            valueNFe = decimal.Parse(TXT_Valor.Text.ToString().Replace("$", "").Replace("R", "").Replace("€", "").Replace(" ", ""));
+            emissionDateNFe = Convert.ToDateTime(DT_Data_Emissão.Value);
+
             providerCNPJ = TXT_CNPJ_Selected.Text.ToString().Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "");
 
             if (isNew)

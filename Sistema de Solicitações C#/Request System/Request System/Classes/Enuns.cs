@@ -25,9 +25,7 @@ namespace Request_System
         Usuario = 3
     };
     public enum UserIdioma
-    {
-        [Description("TESTE")]
-        _ = 0,
+    { 
         [Description("Portugues")]
         Portugues = 1,
         [Description("Ingles")]

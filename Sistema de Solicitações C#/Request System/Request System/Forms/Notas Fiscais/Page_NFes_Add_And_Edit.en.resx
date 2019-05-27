@@ -136,18 +136,6 @@
   <data name="label8.Text" xml:space="preserve">
     <value>Number</value>
   </data>
-  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 10</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 13</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>Search Provider</value>
-  </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>234, 91</value>
-  </data>
   <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
     <value>74, 13</value>
   </data>
@@ -161,13 +149,10 @@
     <value>Federal Registration</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>233, 91</value>
+    <value>232, 57</value>
   </data>
   <data name="BTN_SelecionaForn.Text" xml:space="preserve">
     <value>Select</value>
-  </data>
-  <data name="GB_Dados_NFe.Text" xml:space="preserve">
-    <value>Invoice Data</value>
   </data>
   <data name="BTN_NewProvider.Text" xml:space="preserve">
     <value>New Provider</value>
@@ -177,15 +162,6 @@
   </data>
   <data name="BTN_LimparNFe.Text" xml:space="preserve">
     <value>Clean</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 246</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>751, 265</value>
-  </data>
-  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
-    <value>Invoice Itens</value>
   </data>
   <data name="productCodeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Product Code</value>
@@ -200,22 +176,43 @@
     <value>Amount</value>
   </data>
   <data name="GRID_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
-    <value>712, 198</value>
+    <value>712, 240</value>
   </data>
   <data name="BTN_RemoveItem.Text" xml:space="preserve">
     <value>Remove</value>
   </data>
-  <data name="GB_Add_Itens_NFe.Text" xml:space="preserve">
-    <value>Add Product</value>
+  <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 63</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 121</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>834, 326</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Search Provider</value>
+  </data>
+  <data name="BTN_SelecionarByName.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 98</value>
+  </data>
+  <data name="BTN_SelecionarByName.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="LB_List_Products_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 10</value>
+  </data>
+  <data name="LB_List_Products_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>221, 82</value>
   </data>
   <data name="BTN_AddProduct.Text" xml:space="preserve">
     <value>Add to Cart</value>
   </data>
-  <data name="BTN_buscaProduto.Text" xml:space="preserve">
-    <value>Search</value>
-  </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 83</value>
+    <value>6, 66</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>43, 13</value>
@@ -227,7 +224,7 @@
     <value>clean</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 133</value>
+    <value>6, 107</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>93, 13</value>
@@ -236,25 +233,10 @@
     <value>Type Product Unit</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 34</value>
+    <value>5, 26</value>
   </data>
   <data name="label3.Text" xml:space="preserve">
     <value>Product Name</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 83</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 135</value>
-  </data>
-  <data name="BTN_SelecionarByName.Text" xml:space="preserve">
-    <value>Select</value>
-  </data>
-  <data name="LB_List_Products_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>8, 10</value>
-  </data>
-  <data name="LB_List_Products_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>221, 82</value>
   </data>
   <data name="BTN_Fechar_tela.Text" xml:space="preserve">
     <value>Close</value>
@@ -262,8 +244,17 @@
   <data name="BTN_AddItensStock.Text" xml:space="preserve">
     <value>Add Items to Cart</value>
   </data>
+  <data name="GB_Grid_Itens_NFe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 186</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 325</value>
+  </data>
+  <data name="GB_Grid_Itens_NFe.Text" xml:space="preserve">
+    <value>Invoice Itens</value>
+  </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>774, 553</value>
+    <value>768, 553</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Invoice Data</value>

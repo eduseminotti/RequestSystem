@@ -459,21 +459,23 @@ namespace Request_System
             valueNFe = decimal.Parse(TXT_Valor.Text.ToString().Replace("$", "").Replace("R", "").Replace("€", "").Replace(" ", ""));
             emissionDateNFe = Convert.ToDateTime(DT_Data_Emissão.Value);
 
-            providerCNPJ = TXT_CNPJ_Selected.Text.ToString().Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "");
+            providerCNPJ = TXT_CNPJ_Selected.Text.ToString().Replace(".", "").Replace(",", "").Replace("/", "").Replace("-", "").Replace(" ", "");
 
             if (isNew)
             {
-                insereOK = dadosNFes.Insere_NFe(seriesNFe, numberNFe, emissionDateNFe, valueNFe, providerID);
+                nfeId = dadosNFes.Insere_NFe(seriesNFe, numberNFe, emissionDateNFe, valueNFe, providerID);
 
-                Return_NFes = dadosNFes.GetNFes(seriesNFe, numberNFe, providerCNPJ);
+                /*
+                 * Return_NFes = dadosNFes.GetNFes(seriesNFe, numberNFe, providerCNPJ);
                 foreach (var returnNFe in Return_NFes)
                 {
                     nfeId = returnNFe.NFeID;
                 }
+                */
             }
             else if (!isNew)
             {
-                insereOK = dadosNFes.EditaNFe(seriesNFe, numberNFe, emissionDateNFe, valueNFe, nfeId, providerID);
+                dadosNFes.EditaNFe(seriesNFe, numberNFe, emissionDateNFe, valueNFe, nfeId, providerID);
             }
             BTN_RegNFe.Enabled = false;
             isNew = false;

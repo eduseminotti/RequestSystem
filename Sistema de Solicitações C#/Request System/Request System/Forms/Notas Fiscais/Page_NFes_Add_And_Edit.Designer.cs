@@ -181,7 +181,6 @@
             // 
             resources.ApplyResources(this.TXT_CNPJ_Selected, "TXT_CNPJ_Selected");
             this.TXT_CNPJ_Selected.Name = "TXT_CNPJ_Selected";
-            
             this.TXT_CNPJ_Selected.TextChanged += new System.EventHandler(this.TXT_CNPJ_Selected_TextChanged_1);
             this.TXT_CNPJ_Selected.Enter += new System.EventHandler(this.TXT_CNPJ_Selected_Enter_1);
             this.TXT_CNPJ_Selected.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_CNPJ_Selected_KeyDown_1);

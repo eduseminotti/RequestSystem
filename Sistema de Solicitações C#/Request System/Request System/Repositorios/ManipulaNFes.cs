@@ -90,9 +90,9 @@ namespace Request_System
             }
             return return_NFes;
         }
-        public bool Insere_NFe(int Series, long Number, DateTime EmissionDate, decimal ValueNFe, long ProviderID)
+        public int Insere_NFe(int Series, long Number, DateTime EmissionDate, decimal ValueNFe, long ProviderID)
         {
-
+            int lastId;
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
@@ -111,11 +111,12 @@ namespace Request_System
             {
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
+                lastId = LastSolicitationId();
                 log.logador("NFe inserida com sucesso, Serie: " + Series + "Numero: " + Number);
             }
             catch (SqlException ex)
             {
-                log.logador("Erro ao inserir NFe, Serie: " + Series + "Numero: " + Number);
+                log.logador("Erro ao inserir NFe, Serie: " + Series + "Numero: " + Number + " Query: " + queryString);
                 log.logador(ex);
                 throw;
             }
@@ -124,8 +125,39 @@ namespace Request_System
                 sqlConn.Close();
                 sucess = true;
             }
-            return sucess;
+            return lastId;
         }
+        public int LastSolicitationId()
+        {
+            int lastId = 0;
+
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
+            try
+            {
+                string queryString = " 	select max(id)  as ID  from dbo.Notas_Fiscais ";
+
+                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
+
+                sqlConn.Open();
+                SqlDataReader query = cmd.ExecuteReader();
+                while (query.Read())
+                {
+                    lastId = int.Parse(query["ID"].ToString());
+                }
+            }
+            catch (SqlException)
+            {
+                lastId = 0;
+                throw;
+            }
+            finally
+            {
+                sqlConn.Close();
+            }
+            return lastId;
+        }
+
+
         public bool EditaNFe(int SerieNFe, long NumberNFe, DateTime EmissionDate, decimal ValueNFe, long NFeId, long ProviderId)
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);

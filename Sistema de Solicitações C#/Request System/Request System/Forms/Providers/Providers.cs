@@ -37,7 +37,7 @@ namespace Request_System
         {
             String nomeFantasia = null;
               int id = 0;
-            String cnpj = TXT_Filter_CNPJ.Text.ToString().Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "");
+            String cnpj = TXT_Filter_CNPJ.Text.ToString().Replace(".", "").Replace(",", "").Replace("/", "").Replace("-", "").Replace(" ", "");
 
             if (cnpj == "")
                 cnpj = null;

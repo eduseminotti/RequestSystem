@@ -44,9 +44,6 @@
             this.TXT_Filter_Nome_fantasia = new System.Windows.Forms.TextBox();
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.GRID_View_Providers = new MetroFramework.Controls.MetroGrid();
-            this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
-            this.BTN_NewProvider = new MetroFramework.Controls.MetroButton();
-            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
             this.idDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.razaoSocialDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomeFantasiaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +51,9 @@
             this.phoneDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameCnpjDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnProvidersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
+            this.BTN_NewProvider = new MetroFramework.Controls.MetroButton();
+            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_View_Providers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnProvidersBindingSource)).BeginInit();
@@ -182,27 +182,6 @@
             this.GRID_View_Providers.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRID_View_Providers_CellDoubleClick);
             this.GRID_View_Providers.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GRID_View_Providers_KeyDown);
             // 
-            // BTN_Edit1
-            // 
-            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
-            this.BTN_Edit1.Name = "BTN_Edit1";
-            this.BTN_Edit1.UseSelectable = true;
-            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
-            // 
-            // BTN_NewProvider
-            // 
-            resources.ApplyResources(this.BTN_NewProvider, "BTN_NewProvider");
-            this.BTN_NewProvider.Name = "BTN_NewProvider";
-            this.BTN_NewProvider.UseSelectable = true;
-            this.BTN_NewProvider.Click += new System.EventHandler(this.BTN_NewProvider_Click);
-            // 
-            // BTN_Gerar_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
-            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
-            this.BTN_Gerar_PDF.UseSelectable = true;
-            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
-            // 
             // idDataGridViewTextBoxColumn1
             // 
             this.idDataGridViewTextBoxColumn1.DataPropertyName = "Id";
@@ -252,6 +231,27 @@
             // returnProvidersBindingSource
             // 
             this.returnProvidersBindingSource.DataSource = typeof(Request_System.ReturnProviders);
+            // 
+            // BTN_Edit1
+            // 
+            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
+            this.BTN_Edit1.Name = "BTN_Edit1";
+            this.BTN_Edit1.UseSelectable = true;
+            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
+            // 
+            // BTN_NewProvider
+            // 
+            resources.ApplyResources(this.BTN_NewProvider, "BTN_NewProvider");
+            this.BTN_NewProvider.Name = "BTN_NewProvider";
+            this.BTN_NewProvider.UseSelectable = true;
+            this.BTN_NewProvider.Click += new System.EventHandler(this.BTN_NewProvider_Click);
+            // 
+            // BTN_Gerar_PDF
+            // 
+            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
+            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
+            this.BTN_Gerar_PDF.UseSelectable = true;
+            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
             // 
             // Providers_View
             // 

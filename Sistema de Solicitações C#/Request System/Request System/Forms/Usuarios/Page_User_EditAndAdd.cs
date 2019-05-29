@@ -95,14 +95,14 @@ namespace Request_System
             //captura textos dos campos
             name = TXT_Nome.Text.ToString();
             email = TXT_Email.Text.ToString();
-            cPF = TXT_CPF.Text.ToString();
+            cPF = TXT_CPF.Text.ToString().Replace(",",".");
             setor = TXT_Setor.Text.ToString();
             userName = TXT_Usuario.Text.ToString();
             password = TXT_Password.Text.ToString();
             confirmPassword = TXT_Confirm_Pass.Text.ToString();
             type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
             isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
-            String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "");
+            String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "").Replace(",","");
 
             //valida campos obrigatorio e valida seleção comboboxs
             if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 ||  maskCPF.Length < 11)
@@ -288,6 +288,11 @@ namespace Request_System
         private void TXT_Password_Leave(object sender, EventArgs e)
         {
             TXT_Password.BackColor = Color.White;
+        }
+
+        private void TXT_CPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
         }
 
         private void TXT_Confirm_Pass_Enter(object sender, EventArgs e)

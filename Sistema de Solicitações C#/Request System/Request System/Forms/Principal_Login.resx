@@ -243,9 +243,6 @@
   <data name="TXT_UserName_login.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
   </data>
-  <data name="TXT_UserName_login.Text" xml:space="preserve">
-    <value>user1</value>
-  </data>
   <data name="&gt;&gt;TXT_UserName_login.Name" xml:space="preserve">
     <value>TXT_UserName_login</value>
   </data>
@@ -272,9 +269,6 @@
   </data>
   <data name="TXT_Pass_login.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="TXT_Pass_login.Text" xml:space="preserve">
-    <value>123</value>
   </data>
   <data name="&gt;&gt;TXT_Pass_login.Name" xml:space="preserve">
     <value>TXT_Pass_login</value>

@@ -168,13 +168,13 @@
     <value>1</value>
   </data>
   <data name="BTN_Filter1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>516, 34</value>
+    <value>395, 34</value>
   </data>
   <data name="BTN_Filter1.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 20</value>
   </data>
   <data name="BTN_Filter1.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="BTN_Filter1.Text" xml:space="preserve">
     <value>Filtrar</value>
@@ -192,13 +192,13 @@
     <value>2</value>
   </data>
   <data name="BTN_FilterLimpar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 34</value>
+    <value>516, 34</value>
   </data>
   <data name="BTN_FilterLimpar.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 20</value>
   </data>
   <data name="BTN_FilterLimpar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="BTN_FilterLimpar.Text" xml:space="preserve">
     <value>Limpar</value>
@@ -533,9 +533,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1003, 500</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Providers</value>

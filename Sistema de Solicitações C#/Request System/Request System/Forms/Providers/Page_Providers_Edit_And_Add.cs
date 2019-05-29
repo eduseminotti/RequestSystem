@@ -97,23 +97,25 @@ namespace Request_System
 
         private void BTN_Salvar1_Click(object sender, EventArgs e)
         {
-            cnpj = TXT_CNPJ.Text.ToString().Replace(".", "").Replace("-", "").Replace("/", "").Replace(",","").Replace(" ", "");
+            cnpj = TXT_CNPJ.Text.ToString().Replace(".", "").Replace("-", "").Replace("/", "").Replace(",", "").Replace(" ", "");
             phone = TXT_Phone.Text.ToString().Replace("(", "").Replace(")", "").Replace("-", "").Replace(" ", "");
             bool returns = false;
 
-            providers = Dados_Fornecedores.GetProviders(0, null, cnpj);
-            if (providers.Count > 0)
+            if (isnew)
             {
-                if (userIdioma == UserIdioma.Portugues)
-                    MessageBox.Show("Fornecedor Ja Cadastrado!");
-                if (userIdioma == UserIdioma.Espanhol)
-                    MessageBox.Show("Proveedor ya registrado!");
-                if (userIdioma == UserIdioma.Ingles)
-                    MessageBox.Show("Provider already registered!");
-                TXT_CNPJ.Focus();
-                return;
+                providers = Dados_Fornecedores.GetProviders(0, null, cnpj);
+                if (providers.Count > 0)
+                {
+                    if (userIdioma == UserIdioma.Portugues)
+                        MessageBox.Show("Fornecedor Ja Cadastrado!");
+                    if (userIdioma == UserIdioma.Espanhol)
+                        MessageBox.Show("Proveedor ya registrado!");
+                    if (userIdioma == UserIdioma.Ingles)
+                        MessageBox.Show("Provider already registered!");
+                    TXT_CNPJ.Focus();
+                    return;
+                }
             }
-
 
             if (TXT_Razao_social.Text == "")
             {

@@ -57,9 +57,9 @@
             // 
             // TXT_Nome
             // 
-            resources.ApplyResources(this.TXT_Nome, "TXT_Nome");
             this.TXT_Nome.BackColor = System.Drawing.Color.White;
             this.TXT_Nome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            resources.ApplyResources(this.TXT_Nome, "TXT_Nome");
             this.TXT_Nome.Name = "TXT_Nome";
             this.TXT_Nome.TextChanged += new System.EventHandler(this.TXT_Nome_TextChanged);
             this.TXT_Nome.Enter += new System.EventHandler(this.TXT_Nome_Enter);
@@ -144,8 +144,8 @@
             // 
             // BTN_UserCancel
             // 
-            resources.ApplyResources(this.BTN_UserCancel, "BTN_UserCancel");
             this.BTN_UserCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            resources.ApplyResources(this.BTN_UserCancel, "BTN_UserCancel");
             this.BTN_UserCancel.Name = "BTN_UserCancel";
             this.BTN_UserCancel.UseSelectable = true;
             this.BTN_UserCancel.Click += new System.EventHandler(this.BTN_UserCancel_Click);
@@ -161,6 +161,7 @@
             // 
             resources.ApplyResources(this.TXT_CPF, "TXT_CPF");
             this.TXT_CPF.Name = "TXT_CPF";
+            
             this.TXT_CPF.Enter += new System.EventHandler(this.TXT_CPF_Enter);
             this.TXT_CPF.Leave += new System.EventHandler(this.TXT_CPF_Leave);
             // 
@@ -179,16 +180,16 @@
             // 
             // CBX_TYPE
             // 
-            resources.ApplyResources(this.CBX_TYPE, "CBX_TYPE");
             this.CBX_TYPE.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_TYPE, "CBX_TYPE");
             this.CBX_TYPE.Name = "CBX_TYPE";
             this.CBX_TYPE.Enter += new System.EventHandler(this.CBX_TYPE_Enter);
             this.CBX_TYPE.Leave += new System.EventHandler(this.CBX_TYPE_Leave);
             // 
             // CBX_Status
             // 
-            resources.ApplyResources(this.CBX_Status, "CBX_Status");
             this.CBX_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Status, "CBX_Status");
             this.CBX_Status.Name = "CBX_Status";
             this.CBX_Status.Enter += new System.EventHandler(this.CBX_Status_Enter);
             this.CBX_Status.Leave += new System.EventHandler(this.CBX_Status_Leave);
@@ -199,9 +200,9 @@
             // 
             // PageUserEditandAdd
             // 
-            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.CancelButton = this.BTN_UserCancel;
+            resources.ApplyResources(this, "$this");
             this.ControlBox = false;
             this.Controls.Add(this.CBX_Status);
             this.Controls.Add(this.CBX_TYPE);

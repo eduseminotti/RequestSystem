@@ -14,7 +14,7 @@ namespace Request_System
     public partial class ConfigGerais : Form
     {
         String folderPath;
-        private Configuration m_Configuration;
+        private Configuration Configuration;
 
         public ConfigGerais()
         {
@@ -43,49 +43,52 @@ namespace Request_System
         private void BTN_Salvar_Click(object sender, EventArgs e)
         {
             bool returns = false;
-/*
-            if (TXT_folderPath.Text == "")
-            {
-                TXT_folderPath.BackColor = Color.OrangeRed;
-                returns = true;
-            }
-            if (TXT_Server.Text == "")
-            {
-                TXT_Server.BackColor = Color.OrangeRed;
-                returns = true;
-            }
-            if (TXT_NomeBanco.Text == "")
-            {
-                TXT_NomeBanco.BackColor = Color.OrangeRed;
-                returns = true;
-            }
-            if (TXT_User.Text == "")
-            {
-                TXT_User.BackColor = Color.OrangeRed;
-                returns = true;
-            }
-            if (TXT_Pass.Text == "")
-            {
-                TXT_Pass.BackColor = Color.OrangeRed;
-                returns = true;
-            }
-            if (returns)
-                return;
-                */
+
+            /*
+                        if (TXT_folderPath.Text == "")
+                        {
+                            TXT_folderPath.BackColor = Color.OrangeRed;
+                            returns = true;
+                        }
+                        if (TXT_Server.Text == "")
+                        {
+                            TXT_Server.BackColor = Color.OrangeRed;
+                            returns = true;
+                        }
+                        if (TXT_NomeBanco.Text == "")
+                        {
+                            TXT_NomeBanco.BackColor = Color.OrangeRed;
+                            returns = true;
+                        }
+                        if (TXT_User.Text == "")
+                        {
+                            TXT_User.BackColor = Color.OrangeRed;
+                            returns = true;
+                        }
+                        if (TXT_Pass.Text == "")
+                        {
+                            TXT_Pass.BackColor = Color.OrangeRed;
+                            returns = true;
+                        }
+                        if (returns)
+                            return;
+                            */
+
+      
 
             String conectioString = "Data Source=" + TXT_Server.Text + ";Initial Catalog=" + TXT_NomeBanco.Text +
                 ";Integrated Security=True;User ID=" + TXT_User.Text + ";Password=" + TXT_Pass.Text +
-                ";Connect Timeout=120\" providerName = \"System.Data.SqlClient";
+                ";Connect Timeout=120\"providerName=\"System.Data.SqlClient";
 
 
             Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
             //Conection String
-            config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;       
+            config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;
 
             //Configuração Inicial
-            config.AppSettings.Settings.Remove("ConfigInicial");
-            config.AppSettings.Settings.Add("ConfigInicial", "True");
+              config.AppSettings.Settings.Remove("ConfigInicial");
+              config.AppSettings.Settings.Add("ConfigInicial", "True");
 
             //LOG
             config.AppSettings.Settings.Remove("LocalLog");

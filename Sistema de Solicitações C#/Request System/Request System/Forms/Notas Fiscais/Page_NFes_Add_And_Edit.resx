@@ -150,7 +150,7 @@
     <value>10, 116</value>
   </data>
   <data name="TXT_Valor.MaxLength" type="System.Int32, mscorlib">
-    <value>21</value>
+    <value>12</value>
   </data>
   <data name="TXT_Valor.Size" type="System.Drawing.Size, System.Drawing">
     <value>211, 20</value>
@@ -715,7 +715,7 @@
     <value>2</value>
   </data>
   <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 63</value>
+    <value>1, 65</value>
   </data>
   <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 108</value>

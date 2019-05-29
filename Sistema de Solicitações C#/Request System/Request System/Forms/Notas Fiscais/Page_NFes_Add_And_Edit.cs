@@ -161,8 +161,8 @@ namespace Request_System
 
         private void TXT_QTD_Produto_TextChanged(object sender, EventArgs e)
         {
-            TXT_QTD_Produto.BackColor = Color.White;
-            if (!Int32.TryParse(TXT_QTD_Produto.Text, out int valor))
+            TXT_QTD_Produto.BackColor = Color.Yellow;
+            if (!Int32.TryParse(TXT_QTD_Produto.Text, out int valor) && TXT_QTD_Produto.Text != "")
             {
                 TXT_QTD_Produto.BackColor = Color.OrangeRed;
                 return;

@@ -41,7 +41,7 @@ namespace Request_System
         private void BTN_Salvar_Click(object sender, EventArgs e)
         {
             bool returns = false;
-            /*
+            /* fuck damm
                         if (TXT_folderPath.Text == "")
                         {
                             TXT_folderPath.BackColor = Color.OrangeRed;

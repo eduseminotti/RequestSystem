@@ -35,6 +35,7 @@
             this.BTN_ConfigFileLog = new MetroFramework.Controls.MetroButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CHB_GeraTabelas = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TXT_Pass = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,7 +50,7 @@
             // 
             // BTN_Salvar
             // 
-            this.BTN_Salvar.Location = new System.Drawing.Point(631, 284);
+            this.BTN_Salvar.Location = new System.Drawing.Point(137, 321);
             this.BTN_Salvar.Name = "BTN_Salvar";
             this.BTN_Salvar.Size = new System.Drawing.Size(115, 30);
             this.BTN_Salvar.TabIndex = 1;
@@ -59,7 +60,7 @@
             // 
             // BTN_Cancel
             // 
-            this.BTN_Cancel.Location = new System.Drawing.Point(510, 284);
+            this.BTN_Cancel.Location = new System.Drawing.Point(16, 321);
             this.BTN_Cancel.Name = "BTN_Cancel";
             this.BTN_Cancel.Size = new System.Drawing.Size(115, 30);
             this.BTN_Cancel.TabIndex = 3;
@@ -101,6 +102,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.CHB_GeraTabelas);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.TXT_Pass);
             this.groupBox2.Controls.Add(this.label4);
@@ -111,10 +113,19 @@
             this.groupBox2.Controls.Add(this.TXT_Server);
             this.groupBox2.Location = new System.Drawing.Point(12, 103);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(734, 152);
+            this.groupBox2.Size = new System.Drawing.Size(734, 200);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Conection String";
+            // 
+            // CHB_GeraTabelas
+            // 
+            this.CHB_GeraTabelas.Location = new System.Drawing.Point(9, 148);
+            this.CHB_GeraTabelas.Name = "CHB_GeraTabelas";
+            this.CHB_GeraTabelas.Size = new System.Drawing.Size(231, 35);
+            this.CHB_GeraTabelas.TabIndex = 8;
+            this.CHB_GeraTabelas.Text = "Gerar Tabelas (Ira executar os scrips e gerar as tabelas no Banco de Dados)";
+            this.CHB_GeraTabelas.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -192,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 331);
+            this.ClientSize = new System.Drawing.Size(759, 367);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -226,5 +237,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox TXT_NomeBanco;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox CHB_GeraTabelas;
     }
 }

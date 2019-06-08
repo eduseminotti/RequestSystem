@@ -36,6 +36,9 @@ namespace Request_System
         }
         private void BTN_Ver_Solicitacao_Click(object sender, EventArgs e)
         {
+            if (ContLinhasGrid() < 1)
+                return;
+
             int solicitationId = Convert.ToInt32(GRID_View_Solicitacoes.CurrentRow.Cells[0].Value.ToString());
             int userRequesterId = Convert.ToInt32(GRID_View_Solicitacoes.CurrentRow.Cells[7].Value.ToString());
 
@@ -45,7 +48,13 @@ namespace Request_System
             returnSolicitacoes = manipulaSolicitacoes.GetSolicitacoes(0, null, null);
             GRID_View_Solicitacoes.DataSource = returnSolicitacoes;
         }
+        public int ContLinhasGrid()
+        {
+            int linhasGrid;
+            linhasGrid = GRID_View_Solicitacoes.Rows.Count;
 
+            return linhasGrid;
+        }
         private void BTN_LIMPAR_FILTRO_Click(object sender, EventArgs e)
         {
             solicitationStatus = null;

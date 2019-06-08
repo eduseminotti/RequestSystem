@@ -48,6 +48,11 @@ namespace Request_System
 
         private void BTN_Edit_Click_1(object sender, EventArgs e)
         {
+
+            if (ContLinhasGrid() < 1)
+                return;
+            
+
             numeroNFe = Convert.ToInt32(GRID_NFes_View.CurrentRow.Cells[0].Value.ToString());
             serieNFe = Convert.ToInt32(GRID_NFes_View.CurrentRow.Cells[1].Value.ToString());
             emissionDateNFe = Convert.ToDateTime(GRID_NFes_View.CurrentRow.Cells[2].Value.ToString());
@@ -68,6 +73,13 @@ namespace Request_System
             GRID_NFes_View.DataSource = Return_NFes;
         }
 
+        public int ContLinhasGrid()
+        {
+            int linhasGrid;
+            linhasGrid = GRID_NFes_View.Rows.Count;
+
+            return linhasGrid;
+        }
         private void BTN_New_NFe_Click_1(object sender, EventArgs e)
         {
             pageNFesAddAndEdit = new Page_NFes_Add_And_Edit(idioma);
@@ -174,8 +186,8 @@ namespace Request_System
             providerCNPJ = null;
             numeroNFe = 0;
 
-            if (TXT_Filter_CNPJ.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "") != "")
-                providerCNPJ = TXT_Filter_CNPJ.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "");
+            if (TXT_Filter_CNPJ.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "").Replace(",","") != "")
+                providerCNPJ = TXT_Filter_CNPJ.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "").Replace(",", "");
             if (TXT_Filter_Serie_NFe.Text != "")
                 serieNFe = Convert.ToInt32(TXT_Filter_Serie_NFe.Text);
             if (TXT_Filter_Numero_NFe.Text != "")

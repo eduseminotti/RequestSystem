@@ -48,6 +48,8 @@ namespace Request_System
         }               
         private void BTN_Excluir_Solicitacao_Click(object sender, EventArgs e)
         {
+            if (ContLinhasGrid() < 1)
+                return;
             solicitationId = Convert.ToInt32(Grid_Solicitacoes.CurrentRow.Cells[0].Value.ToString());
 
             var solicitacoes = manipulaSolicitacoes.GetSolicitacoesUsuario(userId, solicitationId, null);
@@ -113,6 +115,9 @@ namespace Request_System
 
         private void BTN_Edit_Click_1(object sender, EventArgs e)
         {
+            if (ContLinhasGrid() < 1)
+                return;
+
             solicitationId = Convert.ToInt32(Grid_Solicitacoes.CurrentRow.Cells[0].Value.ToString());
 
             PageSolicitation = new PageSolicitationAddAndEdit(userId, solicitationId, false, idioma);
@@ -121,7 +126,13 @@ namespace Request_System
             Solicitacoes = manipulaSolicitacoes.GetSolicitacoesUsuario(userId, 0, null);
             Grid_Solicitacoes.DataSource = Solicitacoes;
         }
+        public int ContLinhasGrid()
+        {
+            int linhasGrid;
+            linhasGrid = Grid_Solicitacoes.Rows.Count;
 
+            return linhasGrid;
+        }
         private void BTN_Gera_PDF_Click(object sender, EventArgs e)
         {
             GeraPDF.gerarPDF(Grid_Solicitacoes, "Pedidos");

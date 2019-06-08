@@ -88,6 +88,9 @@ namespace Request_System
 
         private void BTN_Edit1_Click(object sender, EventArgs e)
         {
+            if (ContLinhasGrid() < 1)
+                return;
+
             selectedUserName = GRID_USERS_VIEW.CurrentRow.Cells[3].Value.ToString();
 
             PageUserAdd = new PageUserEditandAdd(false, selectedUserName, idioma);
@@ -96,7 +99,13 @@ namespace Request_System
             usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
             GRID_USERS_VIEW.DataSource = usuarios;
         }
+        public int ContLinhasGrid()
+        {
+            int linhasGrid;
+            linhasGrid = GRID_USERS_VIEW.Rows.Count;
 
+            return linhasGrid;
+        }
 
         private void GRID_USERS_VIEW_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -65,6 +65,9 @@ namespace Request_System
 
         private void BTN_Edit1_Click(object sender, EventArgs e)
         {
+            if (ContLinhasGrid() < 1)
+                return;
+
             selectProviderID = Convert.ToInt32(GRID_View_Providers.CurrentRow.Cells[0].Value.ToString());
 
             Page_Providers_Edit_And_Add page_Providers_Edit_And_Add = new Page_Providers_Edit_And_Add(false, selectProviderID, userIdioma);
@@ -73,7 +76,13 @@ namespace Request_System
             Providers = obterProviders.GetProviders(0, null, null);
             GRID_View_Providers.DataSource = Providers;
         }
+        public int ContLinhasGrid()
+        {
+            int linhasGrid;
+            linhasGrid = GRID_View_Providers.Rows.Count;
 
+            return linhasGrid;
+        }
         private void BTN_NewProvider_Click(object sender, EventArgs e)
         {
             Page_Providers_Edit_And_Add page_Providers_Edit_And_Add = new Page_Providers_Edit_And_Add(true, 0, userIdioma);

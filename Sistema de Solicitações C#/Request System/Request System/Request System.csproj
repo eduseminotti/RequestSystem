@@ -182,6 +182,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ValidateUsers.cs" />
+    <Compile Include="Repositorios\ValidaBanco.cs" />
     <EmbeddedResource Include="Forms\ConfigGerais.resx">
       <DependentUpon>ConfigGerais.cs</DependentUpon>
     </EmbeddedResource>

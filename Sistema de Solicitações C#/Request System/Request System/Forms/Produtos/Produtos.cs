@@ -99,6 +99,9 @@ namespace Request_System
         }
         private void BTN_Edit_Click_1(object sender, EventArgs e)
         {
+            if (ContLinhasGrid() < 1)
+                return;
+
             selectProductID = Convert.ToInt64(Grid_View_produtos.CurrentRow.Cells[0].Value.ToString());
             Page_Products_Edit_And_Add PageProductAdd = new Page_Products_Edit_And_Add(false, selectProductID);
             PageProductAdd.ShowDialog();
@@ -172,6 +175,13 @@ namespace Request_System
         private void TXT_Filter_Codigo_TextChanged(object sender, EventArgs e)
         {
             BTN_Filter.PerformClick();
+        }
+        public int ContLinhasGrid()
+        {
+            int linhasGrid;
+            linhasGrid = Grid_View_produtos.Rows.Count;
+
+            return linhasGrid;
         }
     }
 }

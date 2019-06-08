@@ -94,7 +94,6 @@ namespace Request_System
         {
             int lastId;
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-            bool sucess = false;
 
             string queryString = " insert into dbo.Notas_Fiscais (SeriesNFe, NumberNFe, EmissionDate,Value, ProviderID )" +
                 " values ( @SeriesNFe, @NumberNFe , @EmissionDate, @Value, @ProviderID )  ";
@@ -112,7 +111,7 @@ namespace Request_System
                 sqlConn.Open();
                 cmd.ExecuteNonQuery();
                 lastId = LastSolicitationId();
-                log.logador("NFe inserida com sucesso, Serie: " + Series + "Numero: " + Number);
+                log.logador("NFe inserida com sucesso, Serie: " + Series + "Numero: " + Number + " com o ID: " + lastId.ToString()) ;
             }
             catch (SqlException ex)
             {
@@ -123,7 +122,6 @@ namespace Request_System
             finally
             {
                 sqlConn.Close();
-                sucess = true;
             }
             return lastId;
         }

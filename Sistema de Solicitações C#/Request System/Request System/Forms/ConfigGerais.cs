@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
-using System.Data;
+﻿using Request_System.Repositorios;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Request_System
@@ -14,7 +8,11 @@ namespace Request_System
     public partial class ConfigGerais : Form
     {
         String folderPath;
-        private Configuration Configuration;
+        //private Configuration Configuration;
+        bool criaBanco, CriaTabelas;
+
+
+        ValidaBanco validaBanco = new ValidaBanco();
 
         public ConfigGerais()
         {
@@ -43,7 +41,6 @@ namespace Request_System
         private void BTN_Salvar_Click(object sender, EventArgs e)
         {
             bool returns = false;
-
             /*
                         if (TXT_folderPath.Text == "")
                         {
@@ -72,34 +69,58 @@ namespace Request_System
                         }
                         if (returns)
                             return;
-                            */
 
-      
+                        String conectioString = "Data Source=" + TXT_Server.Text + ";Initial Catalog=" + TXT_NomeBanco.Text +
+                            ";Integrated Security=True;User ID=" + TXT_User.Text + ";Password=" + TXT_Pass.Text +
+                            ";Connect Timeout=120";
 
-            String conectioString = "Data Source=" + TXT_Server.Text + ";Initial Catalog=" + TXT_NomeBanco.Text +
-                ";Integrated Security=True;User ID=" + TXT_User.Text + ";Password=" + TXT_Pass.Text +
-                ";Connect Timeout=120\"providerName=\"System.Data.SqlClient";
+                        String provider = "System.Data.SqlClient";
+                        Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
+
+                        //Conection String
+                        config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;
+                        config.ConnectionStrings.ConnectionStrings["CS"].ProviderName = provider;
+
+                        config.Save(ConfigurationSaveMode.Modified); 
+                        */
+            bool bancoExiste = validaBanco.ValidaSeBancoExiste(TXT_NomeBanco.Text);
+            if (!bancoExiste)
+            {
+                MessageBox.Show("banco Inexistente!");
+                return;
+            }
+
+            if (CHB_GeraTabelas.Checked)
+            {
+                validaBanco.CriaTabelas(TXT_NomeBanco.Text);
+            }
 
 
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-            //Conection String
-            config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;
 
-            //Configuração Inicial
-              config.AppSettings.Settings.Remove("ConfigInicial");
-              config.AppSettings.Settings.Add("ConfigInicial", "True");
 
-            //LOG
-            config.AppSettings.Settings.Remove("LocalLog");
-            config.AppSettings.Settings.Add("LocalLog", folderPath);
 
-            config.Save(ConfigurationSaveMode.Modified);
+            /*
+                        //Configuração Inicial
+                        config.AppSettings.Settings.Remove("ConfigInicial");
+                        config.AppSettings.Settings.Add("ConfigInicial", "True");
+
+                        //LOG
+                        config.AppSettings.Settings.Remove("LocalLog");
+                        config.AppSettings.Settings.Add("LocalLog", folderPath);
+
+                        config.Save(ConfigurationSaveMode.Modified);
+
+                        this.Close();
+                        */
         }
+
+
+
 
         private void BTN_Cancel_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void TXT_Server_TextChanged(object sender, EventArgs e)

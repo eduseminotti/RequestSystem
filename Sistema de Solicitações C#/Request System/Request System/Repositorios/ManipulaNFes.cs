@@ -33,7 +33,7 @@ namespace Request_System
             {
                 string queryString = "SELECT  nfe.ID, nfe.SeriesNFe, nfe.NumberNFe, nfe.ProviderID, nfe.Value, nfe.EmissionDate,nfe.InStock ,p.CNPJ, p.Nome_Fantasia " +
                     "FROM [dbo].[Notas_Fiscais] as nfe " +
-                    "inner join [Seminotti_Teste].[dbo].[Providers] as p " +
+                    "inner join [dbo].[Providers] as p " +
                     "on nfe.ProviderID = p.ID " +
                     "WHERE nfe.id > 0  ";
 

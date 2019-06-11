@@ -87,7 +87,7 @@ namespace Request_System
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
-            string queryString = "insert into Seminotti_Teste.dbo.Providers ( Razao_Social, Nome_Fantasia, cnpj, phone ) values  ( @Razao_Social, @Nome_Fantasia , @cnpj , @phone) ";
+            string queryString = "insert into dbo.Providers ( Razao_Social, Nome_Fantasia, cnpj, phone ) values  ( @Razao_Social, @Nome_Fantasia , @cnpj , @phone) ";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);     
             
@@ -121,7 +121,7 @@ namespace Request_System
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
-            string queryString = "update Seminotti_Teste.dbo.Providers SET Razao_Social = " +
+            string queryString = "update dbo.Providers SET Razao_Social = " +
                 "@Razao_Social, Nome_Fantasia = @Nome_Fantasia, phone = @phone where id = @id";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);

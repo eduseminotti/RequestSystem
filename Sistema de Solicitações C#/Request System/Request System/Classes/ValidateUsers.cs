@@ -31,7 +31,7 @@ namespace Request_System
             User user = null;
             try
             {
-                string queryString = "select  ID, Name, UserName , password, type , isActive from Seminotti_Teste.dbo.Users where UserName  = @UserName and password = @password";
+                string queryString = "select  ID, Name, UserName , password, type , isActive from dbo.Users where UserName  = @UserName and password = @password";
                 sqlConn.Open();
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 

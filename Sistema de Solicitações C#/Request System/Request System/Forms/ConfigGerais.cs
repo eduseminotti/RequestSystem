@@ -1,5 +1,6 @@
-﻿using Request_System.Repositorios;
+﻿
 using System;
+using System.Configuration;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -8,11 +9,12 @@ namespace Request_System
     public partial class ConfigGerais : Form
     {
         String folderPath;
-        //private Configuration Configuration;
-        bool criaBanco, CriaTabelas;
+        String conectioString;
+        String provider;
 
+        Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-        ValidaBanco validaBanco = new ValidaBanco();
+        CriaTabelas criaTabelas = new CriaTabelas();
 
         public ConfigGerais()
         {
@@ -41,82 +43,99 @@ namespace Request_System
         private void BTN_Salvar_Click(object sender, EventArgs e)
         {
             bool returns = false;
-            /* fuck damm
-                        if (TXT_folderPath.Text == "")
-                        {
-                            TXT_folderPath.BackColor = Color.OrangeRed;
-                            returns = true;
-                        }
-                        if (TXT_Server.Text == "")
-                        {
-                            TXT_Server.BackColor = Color.OrangeRed;
-                            returns = true;
-                        }
-                        if (TXT_NomeBanco.Text == "")
-                        {
-                            TXT_NomeBanco.BackColor = Color.OrangeRed;
-                            returns = true;
-                        }
-                        if (TXT_User.Text == "")
-                        {
-                            TXT_User.BackColor = Color.OrangeRed;
-                            returns = true;
-                        }
-                        if (TXT_Pass.Text == "")
-                        {
-                            TXT_Pass.BackColor = Color.OrangeRed;
-                            returns = true;
-                        }
-                        if (returns)
-                            return;
-
-                        String conectioString = "Data Source=" + TXT_Server.Text + ";Initial Catalog=" + TXT_NomeBanco.Text +
-                            ";Integrated Security=True;User ID=" + TXT_User.Text + ";Password=" + TXT_Pass.Text +
-                            ";Connect Timeout=120";
-
-                        String provider = "System.Data.SqlClient";
-                        Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
-
-                        //Conection String
-                        config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;
-                        config.ConnectionStrings.ConnectionStrings["CS"].ProviderName = provider;
-
-                        config.Save(ConfigurationSaveMode.Modified); 
-                        */
-            bool bancoExiste = validaBanco.ValidaSeBancoExiste(TXT_NomeBanco.Text);
-            if (!bancoExiste)
+            if (TXT_folderPath.Text == "")
             {
-                MessageBox.Show("banco Inexistente!");
-                return;
+                TXT_folderPath.BackColor = Color.OrangeRed;
+                returns = true;
             }
+            if (TXT_Server.Text == "")
+            {
+                TXT_Server.BackColor = Color.OrangeRed;
+                returns = true;
+            }
+            if (TXT_NomeBanco.Text == "")
+            {
+                TXT_NomeBanco.BackColor = Color.OrangeRed;
+                returns = true;
+            }
+            if (TXT_User.Text == "")
+            {
+                TXT_User.BackColor = Color.OrangeRed;
+                returns = true;
+            }
+            if (TXT_Pass.Text == "")
+            {
+                TXT_Pass.BackColor = Color.OrangeRed;
+                returns = true;
+            }
+            if (returns)
+                return;
+
+            //ajsuta CS app
+            AjustaCSAPPConfig();
+
+            ConfigurationManager.RefreshSection("connectionStrings");
+
+            //Configuração Inicial
+            AjustaConfigTrue();
+
+            //LOG
+            AjustaConfigLog();
+
+            ConfigurationManager.RefreshSection("appSettings");
 
             if (CHB_GeraTabelas.Checked)
             {
-                validaBanco.CriaTabelas(TXT_NomeBanco.Text);
+                CriaTabelas();
+                PageUserEditandAdd pageUser = new PageUserEditandAdd(true, null, UserIdioma.Portugues);
+                pageUser.ShowDialog();
             }
 
+            this.Close();
+        }
 
+        public void AjustaConfigLog()
+        {
+            config.AppSettings.Settings.Remove("LocalLog");
+            config.AppSettings.Settings.Add("LocalLog", folderPath);
 
+            config.Save(ConfigurationSaveMode.Modified);
+        }
+        public void AjustaConfigTrue()
+        {
+            config.AppSettings.Settings.Remove("ConfigInicial");
+            config.AppSettings.Settings.Add("ConfigInicial", "True");
 
+            config.Save(ConfigurationSaveMode.Modified);
+        }
 
+        public void AjustaCSAPPConfig()
+        {
+            //Conection String
 
-            /*
-                        //Configuração Inicial
-                        config.AppSettings.Settings.Remove("ConfigInicial");
-                        config.AppSettings.Settings.Add("ConfigInicial", "True");
+            conectioString = "Data Source=" + TXT_Server.Text + ";Initial Catalog=" + TXT_NomeBanco.Text + ";Integrated Security=True;User ID="
+                + TXT_User.Text + ";Password=" + TXT_Pass.Text + ";Connect Timeout=120";
 
-                        //LOG
-                        config.AppSettings.Settings.Remove("LocalLog");
-                        config.AppSettings.Settings.Add("LocalLog", folderPath);
+            provider = "System.Data.SqlClient";
 
-                        config.Save(ConfigurationSaveMode.Modified);
+            config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;
+            config.ConnectionStrings.ConnectionStrings["CS"].ProviderName = provider;
 
-                        this.Close();
-                        */
+            config.Save(ConfigurationSaveMode.Modified);
         }
 
 
-
+        public void CriaTabelas()
+        {
+            criaTabelas.CriaTabelaUsers();
+            criaTabelas.CriaTabelaProviders();
+            criaTabelas.CriaTabelaProducts();
+            criaTabelas.CriaTabelaStock();
+            criaTabelas.CriaTabelaNotasFiscais();
+            criaTabelas.CriaTabelaItensNotasFiscais();
+            criaTabelas.CriaTabelaSolicitation();
+            criaTabelas.CriaTabelaItensSolicitation();
+        }
 
         private void BTN_Cancel_Click(object sender, EventArgs e)
         {
@@ -146,6 +165,11 @@ namespace Request_System
         private void TXT_folderPath_TextChanged(object sender, EventArgs e)
         {
             TXT_folderPath.BackColor = Color.White;
+        }
+
+        private void BTN_Gerar_Tabelas_Click(object sender, EventArgs e)
+        {
+            CriaTabelas();
         }
     }
 }

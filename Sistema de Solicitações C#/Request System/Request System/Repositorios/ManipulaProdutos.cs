@@ -30,8 +30,7 @@ namespace Request_System
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             try
             {
-                // string queryString = "SELECT id, Nome_produto, Descrição_produto, Tipo_unidade,isactive FROM [Seminotti_Teste].[dbo].[Products] where id > 0  ";
-
+               
                 string queryString = " select p.id as pid, p.Nome_produto, p.Tipo_unidade, p.isactive, s.Quantidade , " +
                     "produnit = p.Nome_produto + '- ' + p.Tipo_unidade  " +
                     "FROM [dbo].[Products] as p  " +
@@ -126,7 +125,7 @@ namespace Request_System
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
-            string queryString = "update  Seminotti_Teste.[dbo].[Products] set Nome_produto = @Nome_produto, Tipo_unidade = @Tipo_unidade , " +
+            string queryString = "update  [dbo].[Products] set Nome_produto = @Nome_produto, Tipo_unidade = @Tipo_unidade , " +
                 "IsActive  = @IsActive where id = @productID";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);

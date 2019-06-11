@@ -31,7 +31,7 @@ namespace Request_System
             try
             {
                 string queryString = "SELECT cpf, NAME, email, UserName , Password , setor , " +
-                    "isactive , type  FROM [Seminotti_Teste].[dbo].[users] where id > 0 ";
+                    "isactive , type  FROM [dbo].[users] where id > 0 ";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
@@ -91,7 +91,7 @@ namespace Request_System
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
             bool sucess = false;
 
-            string queryString = "insert Seminotti_Teste.dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive) " +
+            string queryString = "insert dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive) " +
                 "values (@name, @setor, @email, @cpf, @username, @Password, @type, @isactive)";
 
             SqlCommand cmd = new SqlCommand(queryString, sqlConn);       
@@ -131,7 +131,7 @@ namespace Request_System
             string queryString = null;
             try
             {
-                queryString = "UPDATE [Seminotti_Teste].[dbo].[users] SET NAME = @name, setor = @setor, email = @email," +
+                queryString = "UPDATE [dbo].[users] SET NAME = @name, setor = @setor, email = @email," +
                " cpf = @cpf, username = @username, type = @type, isactive = @isactive  ";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);

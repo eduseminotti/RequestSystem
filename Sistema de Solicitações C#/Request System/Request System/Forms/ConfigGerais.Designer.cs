@@ -50,7 +50,7 @@
             // 
             // BTN_Salvar
             // 
-            this.BTN_Salvar.Location = new System.Drawing.Point(137, 321);
+            this.BTN_Salvar.Location = new System.Drawing.Point(137, 325);
             this.BTN_Salvar.Name = "BTN_Salvar";
             this.BTN_Salvar.Size = new System.Drawing.Size(115, 30);
             this.BTN_Salvar.TabIndex = 1;
@@ -60,7 +60,7 @@
             // 
             // BTN_Cancel
             // 
-            this.BTN_Cancel.Location = new System.Drawing.Point(16, 321);
+            this.BTN_Cancel.Location = new System.Drawing.Point(16, 325);
             this.BTN_Cancel.Name = "BTN_Cancel";
             this.BTN_Cancel.Size = new System.Drawing.Size(115, 30);
             this.BTN_Cancel.TabIndex = 3;
@@ -113,14 +113,14 @@
             this.groupBox2.Controls.Add(this.TXT_Server);
             this.groupBox2.Location = new System.Drawing.Point(12, 103);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(734, 200);
+            this.groupBox2.Size = new System.Drawing.Size(734, 202);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Conection String";
             // 
             // CHB_GeraTabelas
             // 
-            this.CHB_GeraTabelas.Location = new System.Drawing.Point(9, 148);
+            this.CHB_GeraTabelas.Location = new System.Drawing.Point(9, 146);
             this.CHB_GeraTabelas.Name = "CHB_GeraTabelas";
             this.CHB_GeraTabelas.Size = new System.Drawing.Size(231, 35);
             this.CHB_GeraTabelas.TabIndex = 8;
@@ -203,7 +203,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 367);
+            this.ClientSize = new System.Drawing.Size(759, 370);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

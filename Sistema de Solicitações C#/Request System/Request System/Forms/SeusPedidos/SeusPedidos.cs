@@ -34,7 +34,7 @@ namespace Request_System
             Solicitacoes = manipulaSolicitacoes.GetSolicitacoesUsuario(userId, 0, null);
             Grid_Solicitacoes.DataSource = Solicitacoes;
             telaCarregada = true;
-            CBX_Status_Pedido.DataSource = Enum.GetValues(typeof(SolicitationStatus));
+            CBX_Status_Pedido1.DataSource = Enum.GetValues(typeof(SolicitationStatus));
         }
         private void BTN_Nova_Solicitacao_Click(object sender, EventArgs e)
         {
@@ -45,7 +45,7 @@ namespace Request_System
 
             Solicitacoes = manipulaSolicitacoes.GetSolicitacoesUsuario(userId, 0, null);
             Grid_Solicitacoes.DataSource = Solicitacoes;
-        }               
+        }
         private void BTN_Excluir_Solicitacao_Click(object sender, EventArgs e)
         {
             if (ContLinhasGrid() < 1)
@@ -59,8 +59,8 @@ namespace Request_System
             }
             if (status != SolicitationStatus.Pendente)
             {
-                if(idioma == UserIdioma.Portugues)
-                MessageBox.Show("Somente solicitações pendentes podem ser excluidas!");
+                if (idioma == UserIdioma.Portugues)
+                    MessageBox.Show("Somente solicitações pendentes podem ser excluidas!");
 
                 if (idioma == UserIdioma.Ingles)
                     MessageBox.Show("Only pending requests can be excluded!");
@@ -94,7 +94,7 @@ namespace Request_System
         }
         private void BTN_Filtrar_Click(object sender, EventArgs e)
         {
-            var solisitationStatus = (SolicitationStatus)Enum.Parse(typeof(SolicitationStatus), CBX_Status_Pedido.Text.ToString());
+            var solisitationStatus = (SolicitationStatus)Enum.Parse(typeof(SolicitationStatus), CBX_Status_Pedido1.Text.ToString());
 
             Solicitacoes = manipulaSolicitacoes.GetSolicitacoesUsuario(userId, 0, solisitationStatus);
             Grid_Solicitacoes.DataSource = Solicitacoes;
@@ -103,14 +103,6 @@ namespace Request_System
         {
             Solicitacoes = manipulaSolicitacoes.GetSolicitacoesUsuario(userId, 0, null);
             Grid_Solicitacoes.DataSource = Solicitacoes;
-        }
-        private void CBX_Status_Produto_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (!telaCarregada)
-            {
-                BTN_Filtrar.PerformClick();
-            }
-            telaCarregada = false;
         }
 
         private void BTN_Edit_Click_1(object sender, EventArgs e)
@@ -138,14 +130,29 @@ namespace Request_System
             GeraPDF.gerarPDF(Grid_Solicitacoes, "Pedidos");
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void Grid_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             BTN_Edit.PerformClick();
+        }
+
+        private void CBX_Status_Pedido1_Enter(object sender, EventArgs e)
+        {
+            CBX_Status_Pedido1.BackColor = Color.Yellow;
+        }
+
+        private void CBX_Status_Pedido1_Leave(object sender, EventArgs e)
+        {
+            CBX_Status_Pedido1.BackColor = Color.White;
+        }
+
+
+        private void CBX_Status_Pedido1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (!telaCarregada)
+            {
+                BTN_Filtrar.PerformClick();
+            }
+            telaCarregada = false;
         }
     }
 }

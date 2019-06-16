@@ -283,7 +283,7 @@
     <value>1</value>
   </data>
   <data name="CBX_Idioma.Location" type="System.Drawing.Point, System.Drawing">
-    <value>108, 165</value>
+    <value>108, 149</value>
   </data>
   <data name="CBX_Idioma.Size" type="System.Drawing.Size, System.Drawing">
     <value>146, 21</value>
@@ -307,7 +307,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_cancel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>132, 166</value>
+    <value>135, 150</value>
   </data>
   <data name="btn_cancel.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 20</value>
@@ -337,7 +337,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>280, 196</value>
+    <value>277, 184</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

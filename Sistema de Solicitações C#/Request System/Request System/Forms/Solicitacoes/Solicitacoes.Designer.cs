@@ -46,12 +46,12 @@
             this.UserRequesterId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnSolicitacoesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.GB_filtros = new System.Windows.Forms.GroupBox();
+            this.CBX_Filtro_Status = new System.Windows.Forms.ComboBox();
+            this.TXT_Filtro_Nome = new System.Windows.Forms.TextBox();
             this.BTN_Filtrar = new MetroFramework.Controls.MetroButton();
             this.BTN_LIMPAR_FILTRO = new MetroFramework.Controls.MetroButton();
             this.Status = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.TXT_Filtro_Nome = new MetroFramework.Controls.MetroTextBox();
-            this.CBX_Filtro_Status = new MetroFramework.Controls.MetroComboBox();
             this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
             this.GB_Gera_PDF = new System.Windows.Forms.GroupBox();
             this.BTN_Cancel_PDF = new MetroFramework.Controls.MetroButton();
@@ -205,15 +205,30 @@
             // 
             // GB_filtros
             // 
+            this.GB_filtros.Controls.Add(this.CBX_Filtro_Status);
+            this.GB_filtros.Controls.Add(this.TXT_Filtro_Nome);
             this.GB_filtros.Controls.Add(this.BTN_Filtrar);
             this.GB_filtros.Controls.Add(this.BTN_LIMPAR_FILTRO);
             this.GB_filtros.Controls.Add(this.Status);
             this.GB_filtros.Controls.Add(this.label1);
-            this.GB_filtros.Controls.Add(this.TXT_Filtro_Nome);
-            this.GB_filtros.Controls.Add(this.CBX_Filtro_Status);
             resources.ApplyResources(this.GB_filtros, "GB_filtros");
             this.GB_filtros.Name = "GB_filtros";
             this.GB_filtros.TabStop = false;
+            // 
+            // CBX_Filtro_Status
+            // 
+            this.CBX_Filtro_Status.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Filtro_Status, "CBX_Filtro_Status");
+            this.CBX_Filtro_Status.Name = "CBX_Filtro_Status";
+            this.CBX_Filtro_Status.Enter += new System.EventHandler(this.CBX_Filtro_Status_Enter);
+            this.CBX_Filtro_Status.Leave += new System.EventHandler(this.CBX_Filtro_Status_Leave);
+            // 
+            // TXT_Filtro_Nome
+            // 
+            resources.ApplyResources(this.TXT_Filtro_Nome, "TXT_Filtro_Nome");
+            this.TXT_Filtro_Nome.Name = "TXT_Filtro_Nome";
+            this.TXT_Filtro_Nome.Enter += new System.EventHandler(this.TXT_Filtro_Nome_Enter);
+            this.TXT_Filtro_Nome.Leave += new System.EventHandler(this.TXT_Filtro_Nome_Leave);
             // 
             // BTN_Filtrar
             // 
@@ -238,44 +253,6 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            // 
-            // TXT_Filtro_Nome
-            // 
-            // 
-            // 
-            // 
-            this.TXT_Filtro_Nome.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image")));
-            this.TXT_Filtro_Nome.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode")));
-            this.TXT_Filtro_Nome.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location")));
-            this.TXT_Filtro_Nome.CustomButton.Name = "";
-            this.TXT_Filtro_Nome.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size")));
-            this.TXT_Filtro_Nome.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_Filtro_Nome.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex")));
-            this.TXT_Filtro_Nome.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_Filtro_Nome.CustomButton.UseSelectable = true;
-            this.TXT_Filtro_Nome.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible")));
-            this.TXT_Filtro_Nome.Lines = new string[0];
-            resources.ApplyResources(this.TXT_Filtro_Nome, "TXT_Filtro_Nome");
-            this.TXT_Filtro_Nome.MaxLength = 250;
-            this.TXT_Filtro_Nome.Name = "TXT_Filtro_Nome";
-            this.TXT_Filtro_Nome.PasswordChar = '\0';
-            this.TXT_Filtro_Nome.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_Filtro_Nome.SelectedText = "";
-            this.TXT_Filtro_Nome.SelectionLength = 0;
-            this.TXT_Filtro_Nome.SelectionStart = 0;
-            this.TXT_Filtro_Nome.ShortcutsEnabled = true;
-            this.TXT_Filtro_Nome.UseSelectable = true;
-            this.TXT_Filtro_Nome.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_Filtro_Nome.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.TXT_Filtro_Nome.TextChanged += new System.EventHandler(this.TXT_Filtro_Nome_TextChanged);
-            // 
-            // CBX_Filtro_Status
-            // 
-            this.CBX_Filtro_Status.FormattingEnabled = true;
-            resources.ApplyResources(this.CBX_Filtro_Status, "CBX_Filtro_Status");
-            this.CBX_Filtro_Status.Name = "CBX_Filtro_Status";
-            this.CBX_Filtro_Status.UseSelectable = true;
-            this.CBX_Filtro_Status.SelectedIndexChanged += new System.EventHandler(this.CBX_Filtro_Status_SelectedIndexChanged);
             // 
             // BTN_Gerar_PDF
             // 
@@ -443,8 +420,6 @@
         private MetroFramework.Controls.MetroButton BTN_LIMPAR_FILTRO;
         private System.Windows.Forms.Label Status;
         private System.Windows.Forms.Label label1;
-        private MetroFramework.Controls.MetroTextBox TXT_Filtro_Nome;
-        private MetroFramework.Controls.MetroComboBox CBX_Filtro_Status;
         private System.Windows.Forms.DataGridViewTextBoxColumn SolicitatonId;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRequesterName;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataSolicitacaoDataGridViewTextBoxColumn;
@@ -471,5 +446,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn motivoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn produtosQuantidadesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox TXT_Filtro_Nome;
+        private System.Windows.Forms.ComboBox CBX_Filtro_Status;
     }
 }

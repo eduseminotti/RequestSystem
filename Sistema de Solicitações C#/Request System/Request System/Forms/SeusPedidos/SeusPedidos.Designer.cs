@@ -34,8 +34,8 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.CBX_Status_Pedido = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.CBX_Status_Pedido = new MetroFramework.Controls.MetroComboBox();
             this.BTN_Limpar = new MetroFramework.Controls.MetroButton();
             this.BTN_Filtrar = new MetroFramework.Controls.MetroButton();
             this.LBL_Usuarios = new System.Windows.Forms.Label();
@@ -51,34 +51,40 @@
             this.BTN_Edit = new MetroFramework.Controls.MetroButton();
             this.BTN_Nova_Solicitacao = new MetroFramework.Controls.MetroButton();
             this.BTN_Gera_PDF = new MetroFramework.Controls.MetroButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CBX_Status_Pedido1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesUsuarioBindingSource)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.CBX_Status_Pedido);
+            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.BTN_Limpar);
             this.groupBox1.Controls.Add(this.BTN_Filtrar);
             resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
             // CBX_Status_Pedido
             // 
             this.CBX_Status_Pedido.FormattingEnabled = true;
             resources.ApplyResources(this.CBX_Status_Pedido, "CBX_Status_Pedido");
             this.CBX_Status_Pedido.Name = "CBX_Status_Pedido";
-            this.CBX_Status_Pedido.UseSelectable = true;
-            this.CBX_Status_Pedido.SelectedIndexChanged += new System.EventHandler(this.CBX_Status_Produto_SelectedIndexChanged);
+            this.CBX_Status_Pedido.Enter += new System.EventHandler(this.CBX_Status_Pedido1_Enter);
+            this.CBX_Status_Pedido.Leave += new System.EventHandler(this.CBX_Status_Pedido1_Leave);
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
             // 
             // BTN_Limpar
             // 
@@ -229,6 +235,45 @@
             this.BTN_Gera_PDF.UseSelectable = true;
             this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
             // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.groupBox2.Controls.Add(this.CBX_Status_Pedido1);
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.metroButton1);
+            this.groupBox2.Controls.Add(this.metroButton2);
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // CBX_Status_Pedido1
+            // 
+            this.CBX_Status_Pedido1.FormattingEnabled = true;
+            resources.ApplyResources(this.CBX_Status_Pedido1, "CBX_Status_Pedido1");
+            this.CBX_Status_Pedido1.Name = "CBX_Status_Pedido1";
+            this.CBX_Status_Pedido1.SelectedIndexChanged += new System.EventHandler(this.CBX_Status_Pedido1_SelectedIndexChanged_1);
+            this.CBX_Status_Pedido1.Enter += new System.EventHandler(this.CBX_Status_Pedido1_Enter);
+            this.CBX_Status_Pedido1.Leave += new System.EventHandler(this.CBX_Status_Pedido1_Leave);
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // metroButton1
+            // 
+            resources.ApplyResources(this.metroButton1, "metroButton1");
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.BTN_Limpar_Click);
+            // 
+            // metroButton2
+            // 
+            resources.ApplyResources(this.metroButton2, "metroButton2");
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.BTN_Filtrar_Click);
+            // 
             // SeusPedidos
             // 
             resources.ApplyResources(this, "$this");
@@ -238,6 +283,7 @@
             this.Controls.Add(this.BTN_Edit);
             this.Controls.Add(this.Grid_Solicitacoes);
             this.Controls.Add(this.BTN_Excluir_Solicitacao);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.LBL_Usuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -246,6 +292,8 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Solicitacoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesUsuarioBindingSource)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,7 +304,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label LBL_Usuarios;
         private MetroFramework.Controls.MetroButton BTN_Excluir_Solicitacao;
-        private MetroFramework.Controls.MetroComboBox CBX_Status_Pedido;
         private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroButton BTN_Limpar;
         private MetroFramework.Controls.MetroButton BTN_Filtrar;
@@ -272,5 +319,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn motivoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource returnSolicitacoesUsuarioBindingSource;
+        private System.Windows.Forms.ComboBox CBX_Status_Pedido;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox CBX_Status_Pedido1;
+        private System.Windows.Forms.Label label1;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroButton2;
     }
 }

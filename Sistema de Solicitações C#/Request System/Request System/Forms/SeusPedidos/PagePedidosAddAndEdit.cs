@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Request_System
@@ -44,7 +45,6 @@ namespace Request_System
                 TXT_Find_product.Enabled = false;
                 TXT_qtd_Itens.Enabled = false;
                 BTN_Remove_Item.Enabled = false;
-                BTN_busca_produto.Enabled = false;
                 BTN_Add_product.Enabled = false;
                 txt_motivo.Enabled = false;
                 BTN_Salvar.Enabled = false;
@@ -135,7 +135,10 @@ namespace Request_System
                 productID = produtos.Product_Id;
             }
 
-            TXT_Find_product.Text = productName;
+            TXT_Find_product.Text = productName.ToString();
+
+            GB_Seleciona_produto.Visible = false;
+            TXT_Find_product.Focus();
             GB_Seleciona_produto.Visible = false;
         }
         private void BTN_Remove_Item_Click(object sender, EventArgs e)
@@ -164,8 +167,7 @@ namespace Request_System
         }
         private void BTN_Salvar_Click(object sender, EventArgs e)
         {
-            motivo = txt_motivo.Text.ToString();
-            manipulaSolicitacoes.UpdateMotivo(solicitationId, motivo);
+            manipulaSolicitacoes.UpdateMotivo(solicitationId, txt_motivo.Text.ToString());
             this.Close();
         }
 
@@ -180,16 +182,71 @@ namespace Request_System
             this.Close();
         }
 
-        private void TXT_Find_product_TextChanged(object sender, EventArgs e)
+        private void Txt_motivo_Enter(object sender, EventArgs e)
         {
-            if (TXT_Find_product.Text != "")
-                BTN_busca_produto.PerformClick();
+            txt_motivo.BackColor = Color.Yellow;
         }
 
-        private void TXT_Find_product_TextChanged_1(object sender, EventArgs e)
+        private void Txt_motivo_Leave(object sender, EventArgs e)
         {
-            if (TXT_Find_product.Text != "")
-                BTN_busca_produto.PerformClick();
+            txt_motivo.BackColor = Color.White;
+            manipulaSolicitacoes.UpdateMotivo(solicitationId, txt_motivo.Text.ToString());
+        }
+
+        private void TXT_Find_product_Enter(object sender, EventArgs e)
+        {
+            TXT_Find_product.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Find_product_Leave(object sender, EventArgs e)
+        {
+            TXT_Find_product.BackColor = Color.White;
+        }
+
+        private void TXT_qtd_Itens_Enter(object sender, EventArgs e)
+        {
+            TXT_qtd_Itens.BackColor = Color.Yellow;
+        }
+
+        private void TXT_qtd_Itens_Leave(object sender, EventArgs e)
+        {
+            TXT_qtd_Itens.BackColor = Color.White;
+        }
+
+        private void TXT_Find_product_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                BTN_Seleciona_produto.PerformClick();
+                GB_Seleciona_produto.Visible = false;
+            }
+            if (e.KeyCode == Keys.Tab)
+                List_products.Focus();
+
+        }
+
+        private void TXT_Find_product_TextChanged(object sender, EventArgs e)
+        {
+            if (TXT_Find_product.Text == "")
+            {
+                productName = null;
+                GB_Seleciona_produto.Visible = false;
+            }
+            else
+            {
+                productName = TXT_Find_product.Text.ToString();
+                GB_Seleciona_produto.Visible = true;
+            }
+
+
+            listProdutos = manipulaProdutos.GetProducts(0, productName, ProductIsActive.Ativo);
+
+            if (listProdutos.Count == 0)
+            {
+                listProdutos = manipulaProdutos.GetProducts(0, null, ProductIsActive.Ativo);
+            }
+
+            List_products.DataSource = listProdutos;
         }
 
         public int ContLinhasGrid()

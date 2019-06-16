@@ -22,6 +22,7 @@ namespace Request_System
         ManipulaSolicitacoesStockMan solicitacoes = new ManipulaSolicitacoesStockMan();
         ValidateUsers validateUsers = new ValidateUsers();
         ManipulaStock manipulaStock = new ManipulaStock();
+        CriptografaSenhas cripto = new CriptografaSenhas();
 
         List<returnItensSolicitacoes> returnItensSolicitacoes;
         List<ReturnSolicitacoesStockMan> returnSolicitacoesStockMan;
@@ -69,12 +70,9 @@ namespace Request_System
             }
             else
             {
-
                 solicitacoes.UpdateStatus(solicitationId, SolicitationStatus.Aprovado, true, false, userId);
                 returnItensSolicitacoes = itensSolicitacoes.GetItensSolicitacao(solicitationId);
                 manipulaStock.EditaItensStock(returnItensSolicitacoes);
-
-
             }
             RecarregaTela();
         }
@@ -91,7 +89,8 @@ namespace Request_System
 
         private void BTN_Assinar_Entrega_Click(object sender, EventArgs e)
         {
-            pass = TXT_Pass.Text.ToString();
+            pass = cripto.CriptografaSenha(TXT_Pass.Text.ToString());
+
             var user = validateUsers.ValidaUsuario(userName, pass);
             if (user == null)
             {
@@ -111,6 +110,33 @@ namespace Request_System
                 TXT_Pass.Text = "";
                 RecarregaTela();
             }
+        }
+
+        private void TXT_QTD_Aprovada_Enter(object sender, EventArgs e)
+        {
+            TXT_QTD_Aprovada.BackColor = Color.Yellow;
+        }
+
+        private void TXT_QTD_Aprovada_Leave(object sender, EventArgs e)
+        {
+            TXT_QTD_Aprovada.BackColor = Color.White;
+        }
+
+        private void TXT_Pass_Enter(object sender, EventArgs e)
+        {
+            TXT_Pass.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Pass_Leave(object sender, EventArgs e)
+        {
+            TXT_Pass.BackColor = Color.White;
+        }
+
+        private void TXT_Pass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                BTN_Assinar_Entrega.PerformClick();
+
         }
 
         private void BTN_Cancelar_Login_Click(object sender, EventArgs e)
@@ -152,6 +178,7 @@ namespace Request_System
             userName = validateUsers.GetUserName(userRequesterId);
             TXT_user_name.Text = userName.ToString();
             GB_valida_usuario.Visible = true;
+            TXT_Pass.Focus();
         }
         public void RecarregaTela()
         {

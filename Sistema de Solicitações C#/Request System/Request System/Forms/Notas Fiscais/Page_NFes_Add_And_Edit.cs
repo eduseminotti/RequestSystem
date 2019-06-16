@@ -53,7 +53,7 @@ namespace Request_System
             BTN_RegNFe.Enabled = true;
             TXT_Numero_NFe.Text = numberNFe.ToString();
             TXT_Serie_NFe.Text = seriesNFe.ToString();
-            TXT_Valor.Text = valueNFe.ToString();           
+            TXT_Valor.Text = valueNFe.ToString();
             DT_Data_Emissão.Value = emissionDateNFe;
             TXT_CNPJ_Selected.Text = providerCNPJ.ToString();
 
@@ -153,6 +153,7 @@ namespace Request_System
 
             if (return_Produtos.Count == 0)
                 return;
+
             TXT_Nome_Produto.Text = productName.ToString();
             TXT_TP_Unidade.Text = productTPUnidade.ToString();
             GB_Find_Product_By_Name.Visible = false;
@@ -303,7 +304,16 @@ namespace Request_System
             TXT_Valor.BackColor = Color.White;
             TXT_Valor.Text = TXT_Valor.Text.ToString().Replace("$", "").Replace("R", "").Replace("€", "").Replace(" ", "");
             if (TXT_Valor.Text != "")
-                TXT_Valor.Text = Convert.ToDouble(TXT_Valor.Text).ToString("C");
+            {
+                try
+                {
+                    TXT_Valor.Text = Convert.ToDouble(TXT_Valor.Text).ToString("C");
+                }
+                catch
+                {
+
+                }
+            }
         }
 
         private void TXT_Nome_Produto_Enter(object sender, EventArgs e)
@@ -349,7 +359,7 @@ namespace Request_System
         private void TXT_CNPJ_Selected_TextChanged_1(object sender, EventArgs e)
         {
             TXT_CNPJ_Selected.BackColor = Color.White;
-            providerCNPJ = TXT_CNPJ_Selected.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "").Replace(",","");
+            providerCNPJ = TXT_CNPJ_Selected.Text.Replace(".", "").Replace("/", "").Replace("-", "").Replace(" ", "").Replace(",", "");
 
             if (isNew)
             {
@@ -464,14 +474,6 @@ namespace Request_System
             if (isNew)
             {
                 nfeId = dadosNFes.Insere_NFe(seriesNFe, numberNFe, emissionDateNFe, valueNFe, providerID);
-
-                /*
-                 * Return_NFes = dadosNFes.GetNFes(seriesNFe, numberNFe, providerCNPJ);
-                foreach (var returnNFe in Return_NFes)
-                {
-                    nfeId = returnNFe.NFeID;
-                }
-                */
             }
             else if (!isNew)
             {
@@ -482,6 +484,8 @@ namespace Request_System
 
             DesabilitaCamposNFe();
             GB_Add_Itens_NFe.Enabled = true;
+
+            TXT_Nome_Produto.Focus();
         }
 
         private void TXT_Nome_Produto_TextChanged(object sender, EventArgs e)

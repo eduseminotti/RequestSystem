@@ -75,7 +75,7 @@ namespace Request_System
             String userName = null;
             try
             {
-                string queryString = "select   UserName from dbo.Users where id  = @id ";
+                string queryString = "select UserName from dbo.Users where id  = @id ";
                 sqlConn.Open();
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 

@@ -119,7 +119,7 @@
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="BTN_Add_product.Location" type="System.Drawing.Point, System.Drawing">
-    <value>187, 95</value>
+    <value>308, 57</value>
   </data>
   <data name="BTN_Add_product.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Add_product.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="dataGridViewTextBoxColumn8.HeaderText" xml:space="preserve">
     <value>Código Produto</value>
@@ -180,20 +180,20 @@
     <value>False</value>
   </data>
   <metadata name="returnItensSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
+    <value>17, -221</value>
   </metadata>
   <data name="Grid_Itens_solicitacoes.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 11px</value>
   </data>
   <data name="Grid_Itens_solicitacoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 131</value>
+    <value>15, 93</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Grid_Itens_solicitacoes.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
   </data>
   <data name="Grid_Itens_solicitacoes.Size" type="System.Drawing.Size, System.Drawing">
-    <value>641, 247</value>
+    <value>641, 301</value>
   </data>
   <data name="Grid_Itens_solicitacoes.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -208,10 +208,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Grid_Itens_solicitacoes.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="BTN_Seleciona_produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>140, 95</value>
+    <value>145, 105</value>
   </data>
   <data name="BTN_Seleciona_produto.Size" type="System.Drawing.Size, System.Drawing">
     <value>70, 23</value>
@@ -235,7 +235,7 @@
     <value>1</value>
   </data>
   <data name="List_products.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 10</value>
+    <value>11, 17</value>
   </data>
   <data name="List_products.Size" type="System.Drawing.Size, System.Drawing">
     <value>204, 82</value>
@@ -256,13 +256,13 @@
     <value>0</value>
   </data>
   <data name="BTN_Remove_Item.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 92</value>
+    <value>537, 57</value>
   </data>
   <data name="BTN_Remove_Item.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
   </data>
   <data name="BTN_Remove_Item.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="BTN_Remove_Item.Text" xml:space="preserve">
     <value>Remover Item</value>
@@ -277,34 +277,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Remove_Item.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="BTN_busca_produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 99</value>
-  </data>
-  <data name="BTN_busca_produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 23</value>
-  </data>
-  <data name="BTN_busca_produto.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="BTN_busca_produto.Text" xml:space="preserve">
-    <value>Buscar</value>
-  </data>
-  <data name="&gt;&gt;BTN_busca_produto.Name" xml:space="preserve">
-    <value>BTN_busca_produto</value>
-  </data>
-  <data name="&gt;&gt;BTN_busca_produto.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_busca_produto.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_busca_produto.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="BTN_Fechar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>420, 384</value>
+    <value>420, 400</value>
   </data>
   <data name="BTN_Fechar.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -328,7 +304,7 @@
     <value>5</value>
   </data>
   <data name="TXT_qtd_Itens.Location" type="System.Drawing.Point, System.Drawing">
-    <value>173, 71</value>
+    <value>172, 67</value>
   </data>
   <data name="TXT_qtd_Itens.Size" type="System.Drawing.Size, System.Drawing">
     <value>130, 20</value>
@@ -346,13 +322,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_qtd_Itens.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 56</value>
+    <value>13, 51</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>90, 13</value>
@@ -373,13 +352,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 56</value>
+    <value>170, 52</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>62, 13</value>
@@ -400,55 +382,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="resource.Image" type="System.Resources.ResXNullRef, System.Windows.Forms">
-    <value />
-  </data>
-  <data name="resource.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="resource.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 2</value>
-  </data>
-  <data name="resource.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 25</value>
-  </data>
-  <data name="resource.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="resource.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="txt_motivo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 23</value>
-  </data>
-  <data name="txt_motivo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>638, 30</value>
-  </data>
-  <data name="txt_motivo.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;txt_motivo.Name" xml:space="preserve">
-    <value>txt_motivo</value>
-  </data>
-  <data name="&gt;&gt;txt_motivo.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;txt_motivo.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;txt_motivo.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>9</value>
   </data>
   <data name="BTN_Salvar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>541, 384</value>
+    <value>541, 400</value>
   </data>
   <data name="BTN_Salvar.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
   </data>
   <data name="BTN_Salvar.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="BTN_Salvar.Text" xml:space="preserve">
     <value>Salvar</value>
@@ -463,16 +406,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Salvar.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="GB_Seleciona_produto.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 56</value>
+    <value>172, 51</value>
   </data>
   <data name="GB_Seleciona_produto.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 125</value>
+    <value>221, 139</value>
   </data>
   <data name="GB_Seleciona_produto.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
+    <value>3</value>
   </data>
   <data name="GB_Seleciona_produto.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -487,10 +430,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GB_Seleciona_produto.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 9</value>
@@ -514,19 +460,16 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="TXT_Find_product.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 71</value>
-  </data>
-  <data name="TXT_Find_product.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
+    <value>16, 66</value>
   </data>
   <data name="TXT_Find_product.Size" type="System.Drawing.Size, System.Drawing">
     <value>150, 20</value>
   </data>
   <data name="TXT_Find_product.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;TXT_Find_product.Name" xml:space="preserve">
     <value>TXT_Find_product</value>
@@ -538,6 +481,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;TXT_Find_product.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txt_motivo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 26</value>
+  </data>
+  <data name="txt_motivo.MaxLength" type="System.Int32, mscorlib">
+    <value>250</value>
+  </data>
+  <data name="txt_motivo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>640, 20</value>
+  </data>
+  <data name="txt_motivo.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txt_motivo.Name" xml:space="preserve">
+    <value>txt_motivo</value>
+  </data>
+  <data name="&gt;&gt;txt_motivo.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txt_motivo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txt_motivo.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
@@ -550,7 +517,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>666, 422</value>
+    <value>664, 439</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -3550,6 +3517,9 @@
         +QdlzfkHZMvZBlm5lwM1bzAAAAAAAAAAAAAAAAAAAAAA8A8AAMADAACAAQAAgAEAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIABAADAAwAA8A8AAA==
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>

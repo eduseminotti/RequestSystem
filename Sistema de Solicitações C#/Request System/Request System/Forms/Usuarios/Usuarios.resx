@@ -442,19 +442,25 @@
     <value>Nome</value>
   </data>
   <data name="nameDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>140</value>
+    <value>160</value>
   </data>
   <data name="cPFDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>CPF</value>
+  </data>
+  <data name="cPFDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>120</value>
   </data>
   <data name="emailDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Email</value>
   </data>
   <data name="emailDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>140</value>
+    <value>160</value>
   </data>
   <data name="userNameDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>UserName</value>
+  </data>
+  <data name="userNameDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>110</value>
   </data>
   <data name="passwordDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Password</value>
@@ -462,17 +468,26 @@
   <data name="passwordDataGridViewTextBoxColumn1.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
+  <data name="passwordDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
   <data name="setorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Setor</value>
+  </data>
+  <data name="setorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>110</value>
   </data>
   <data name="isActiveDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Status</value>
   </data>
+  <data name="isActiveDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
   <data name="typeDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Tipo</value>
   </data>
-  <data name="idiomaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Idioma</value>
+  <data name="typeDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>110</value>
   </data>
   <metadata name="returnUsuariosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>209, 17</value>
@@ -567,6 +582,18 @@
   <data name="$this.Text" xml:space="preserve">
     <value>Usuarios</value>
   </data>
+  <data name="&gt;&gt;returnUsuariosBindingSource.Name" xml:space="preserve">
+    <value>returnUsuariosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnUsuariosBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;adminMainBindingSource.Name" xml:space="preserve">
+    <value>adminMainBindingSource</value>
+  </data>
+  <data name="&gt;&gt;adminMainBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;nameDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>nameDataGridViewTextBoxColumn1</value>
   </data>
@@ -614,24 +641,6 @@
   </data>
   <data name="&gt;&gt;typeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;idiomaDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>idiomaDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;idiomaDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;returnUsuariosBindingSource.Name" xml:space="preserve">
-    <value>returnUsuariosBindingSource</value>
-  </data>
-  <data name="&gt;&gt;returnUsuariosBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;adminMainBindingSource.Name" xml:space="preserve">
-    <value>adminMainBindingSource</value>
-  </data>
-  <data name="&gt;&gt;adminMainBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Usuarios_view</value>

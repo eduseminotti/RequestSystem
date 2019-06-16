@@ -8,8 +8,6 @@ namespace Request_System
 {
     public class CriaTabelas
     {
-
-
         public void CriaTabelaUsers()
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);

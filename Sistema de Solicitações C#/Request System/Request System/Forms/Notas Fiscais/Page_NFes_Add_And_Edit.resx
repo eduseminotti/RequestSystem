@@ -327,6 +327,9 @@
   <data name="&gt;&gt;listCNPJ.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <metadata name="returnProvidersBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>221, 15</value>
+  </metadata>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -409,7 +412,7 @@
     <value>1</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>230, 57</value>
+    <value>230, 52</value>
   </data>
   <data name="GB_Busca_CNPJ_Forn.Size" type="System.Drawing.Size, System.Drawing">
     <value>245, 110</value>
@@ -633,6 +636,66 @@
   <data name="&gt;&gt;BTN_RemoveItem.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionarByName.Name" xml:space="preserve">
+    <value>BTN_SelecionarByName</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionarByName.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionarByName.Parent" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;BTN_SelecionarByName.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.Name" xml:space="preserve">
+    <value>LB_List_Products_Name</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.Parent" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;LB_List_Products_Name.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 65</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
+    <value>245, 108</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="GB_Find_Product_By_Name.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.Name" xml:space="preserve">
+    <value>GB_Find_Product_By_Name</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.Parent" xml:space="preserve">
+    <value>GB_Add_Itens_NFe</value>
+  </data>
+  <data name="&gt;&gt;GB_Find_Product_By_Name.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="label9.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -714,30 +777,9 @@
   <data name="&gt;&gt;LB_List_Products_Name.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="GB_Find_Product_By_Name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1, 65</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 108</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="GB_Find_Product_By_Name.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.Name" xml:space="preserve">
-    <value>GB_Find_Product_By_Name</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.Parent" xml:space="preserve">
-    <value>GB_Add_Itens_NFe</value>
-  </data>
-  <data name="&gt;&gt;GB_Find_Product_By_Name.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
+  <metadata name="returnProdutosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>435, 15</value>
+  </metadata>
   <data name="BTN_AddProduct.Location" type="System.Drawing.Point, System.Drawing">
     <value>127, 153</value>
   </data>

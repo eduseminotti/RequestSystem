@@ -29,19 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageEditSolicitacoes));
             this.Grid_view_itens_solicitação = new MetroFramework.Controls.MetroGrid();
             this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeAprovadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationItemIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnItensSolicitacoesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.CBX_Status_Solicitacao = new MetroFramework.Controls.MetroComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.DT_Data_solicitacao = new MetroFramework.Controls.MetroDateTime();
@@ -62,12 +55,12 @@
             this.TXT_Motivo = new MetroFramework.Controls.MetroTextBox();
             this.BTN_Fechar_tela = new MetroFramework.Controls.MetroButton();
             this.GB_valida_usuario = new System.Windows.Forms.GroupBox();
+            this.TXT_user_name = new System.Windows.Forms.TextBox();
+            this.TXT_Pass = new System.Windows.Forms.TextBox();
             this.BTN_Assinar_Entrega = new MetroFramework.Controls.MetroButton();
             this.BTN_Cancelar_Login = new MetroFramework.Controls.MetroButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.TXT_user_name = new MetroFramework.Controls.MetroTextBox();
-            this.TXT_Pass = new MetroFramework.Controls.MetroTextBox();
             this.GB_Editar_QTD_Itens = new System.Windows.Forms.GroupBox();
             this.BTN_Cancel_QTD = new MetroFramework.Controls.MetroButton();
             this.TXT_QTD_Aprovada = new System.Windows.Forms.NumericUpDown();
@@ -80,14 +73,21 @@
             this.solicitationIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.solicitationItemIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeAprovadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationItemIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnItensSolicitacoesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.returnItensSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_view_itens_solicitação)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).BeginInit();
             this.GB_DataAprovacao.SuspendLayout();
             this.GB_DataEntrega.SuspendLayout();
             this.GB_valida_usuario.SuspendLayout();
             this.GB_Editar_QTD_Itens.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_QTD_Aprovada)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,14 +99,14 @@
             this.Grid_view_itens_solicitação.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Grid_view_itens_solicitação.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.Grid_view_itens_solicitação.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Grid_view_itens_solicitação.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Grid_view_itens_solicitação.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.Grid_view_itens_solicitação.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Grid_view_itens_solicitação.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ProductId,
@@ -117,27 +117,27 @@
             this.solicitationIdDataGridViewTextBoxColumn1,
             this.solicitationItemIdDataGridViewTextBoxColumn1});
             this.Grid_view_itens_solicitação.DataSource = this.returnItensSolicitacoesBindingSource1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Grid_view_itens_solicitação.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Grid_view_itens_solicitação.DefaultCellStyle = dataGridViewCellStyle5;
             this.Grid_view_itens_solicitação.EnableHeadersVisualStyles = false;
             resources.ApplyResources(this.Grid_view_itens_solicitação, "Grid_view_itens_solicitação");
             this.Grid_view_itens_solicitação.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Grid_view_itens_solicitação.Name = "Grid_view_itens_solicitação";
             this.Grid_view_itens_solicitação.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Grid_view_itens_solicitação.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Grid_view_itens_solicitação.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.Grid_view_itens_solicitação.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.Grid_view_itens_solicitação.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             // 
@@ -147,52 +147,6 @@
             resources.ApplyResources(this.ProductId, "ProductId");
             this.ProductId.Name = "ProductId";
             this.ProductId.ReadOnly = true;
-            // 
-            // productNameDataGridViewTextBoxColumn1
-            // 
-            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
-            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
-            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
-            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // quantidadeSolicitadaDataGridViewTextBoxColumn
-            // 
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeSolicitada";
-            resources.ApplyResources(this.quantidadeSolicitadaDataGridViewTextBoxColumn, "quantidadeSolicitadaDataGridViewTextBoxColumn");
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.Name = "quantidadeSolicitadaDataGridViewTextBoxColumn";
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantidadeAprovadaDataGridViewTextBoxColumn
-            // 
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeAprovada";
-            resources.ApplyResources(this.quantidadeAprovadaDataGridViewTextBoxColumn, "quantidadeAprovadaDataGridViewTextBoxColumn");
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.Name = "quantidadeAprovadaDataGridViewTextBoxColumn";
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantidadeEstoqueDataGridViewTextBoxColumn
-            // 
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEstoque";
-            resources.ApplyResources(this.quantidadeEstoqueDataGridViewTextBoxColumn, "quantidadeEstoqueDataGridViewTextBoxColumn");
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEstoqueDataGridViewTextBoxColumn";
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // solicitationIdDataGridViewTextBoxColumn1
-            // 
-            this.solicitationIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationId";
-            resources.ApplyResources(this.solicitationIdDataGridViewTextBoxColumn1, "solicitationIdDataGridViewTextBoxColumn1");
-            this.solicitationIdDataGridViewTextBoxColumn1.Name = "solicitationIdDataGridViewTextBoxColumn1";
-            this.solicitationIdDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // solicitationItemIdDataGridViewTextBoxColumn1
-            // 
-            this.solicitationItemIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationItemId";
-            resources.ApplyResources(this.solicitationItemIdDataGridViewTextBoxColumn1, "solicitationItemIdDataGridViewTextBoxColumn1");
-            this.solicitationItemIdDataGridViewTextBoxColumn1.Name = "solicitationItemIdDataGridViewTextBoxColumn1";
-            this.solicitationItemIdDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // returnItensSolicitacoesBindingSource1
-            // 
-            this.returnItensSolicitacoesBindingSource1.DataSource = typeof(Request_System.returnItensSolicitacoes);
             // 
             // CBX_Status_Solicitacao
             // 
@@ -361,15 +315,29 @@
             // 
             // GB_valida_usuario
             // 
+            this.GB_valida_usuario.Controls.Add(this.TXT_user_name);
+            this.GB_valida_usuario.Controls.Add(this.TXT_Pass);
             this.GB_valida_usuario.Controls.Add(this.BTN_Assinar_Entrega);
             this.GB_valida_usuario.Controls.Add(this.BTN_Cancelar_Login);
             this.GB_valida_usuario.Controls.Add(this.label7);
             this.GB_valida_usuario.Controls.Add(this.label8);
-            this.GB_valida_usuario.Controls.Add(this.TXT_user_name);
-            this.GB_valida_usuario.Controls.Add(this.TXT_Pass);
             resources.ApplyResources(this.GB_valida_usuario, "GB_valida_usuario");
             this.GB_valida_usuario.Name = "GB_valida_usuario";
             this.GB_valida_usuario.TabStop = false;
+            // 
+            // TXT_user_name
+            // 
+            resources.ApplyResources(this.TXT_user_name, "TXT_user_name");
+            this.TXT_user_name.Name = "TXT_user_name";
+            this.TXT_user_name.ReadOnly = true;
+            // 
+            // TXT_Pass
+            // 
+            resources.ApplyResources(this.TXT_Pass, "TXT_Pass");
+            this.TXT_Pass.Name = "TXT_Pass";
+            this.TXT_Pass.Enter += new System.EventHandler(this.TXT_Pass_Enter);
+            this.TXT_Pass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TXT_Pass_KeyDown);
+            this.TXT_Pass.Leave += new System.EventHandler(this.TXT_Pass_Leave);
             // 
             // BTN_Assinar_Entrega
             // 
@@ -394,64 +362,6 @@
             // 
             resources.ApplyResources(this.label8, "label8");
             this.label8.Name = "label8";
-            // 
-            // TXT_user_name
-            // 
-            // 
-            // 
-            // 
-            this.TXT_user_name.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
-            this.TXT_user_name.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode2")));
-            this.TXT_user_name.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location2")));
-            this.TXT_user_name.CustomButton.Name = "";
-            this.TXT_user_name.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size2")));
-            this.TXT_user_name.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_user_name.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex2")));
-            this.TXT_user_name.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_user_name.CustomButton.UseSelectable = true;
-            this.TXT_user_name.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible2")));
-            resources.ApplyResources(this.TXT_user_name, "TXT_user_name");
-            this.TXT_user_name.Lines = new string[0];
-            this.TXT_user_name.MaxLength = 32767;
-            this.TXT_user_name.Name = "TXT_user_name";
-            this.TXT_user_name.PasswordChar = '\0';
-            this.TXT_user_name.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_user_name.SelectedText = "";
-            this.TXT_user_name.SelectionLength = 0;
-            this.TXT_user_name.SelectionStart = 0;
-            this.TXT_user_name.ShortcutsEnabled = true;
-            this.TXT_user_name.UseSelectable = true;
-            this.TXT_user_name.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_user_name.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // TXT_Pass
-            // 
-            // 
-            // 
-            // 
-            this.TXT_Pass.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
-            this.TXT_Pass.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode3")));
-            this.TXT_Pass.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location3")));
-            this.TXT_Pass.CustomButton.Name = "";
-            this.TXT_Pass.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size3")));
-            this.TXT_Pass.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_Pass.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex3")));
-            this.TXT_Pass.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.TXT_Pass.CustomButton.UseSelectable = true;
-            this.TXT_Pass.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible3")));
-            this.TXT_Pass.Lines = new string[0];
-            resources.ApplyResources(this.TXT_Pass, "TXT_Pass");
-            this.TXT_Pass.MaxLength = 32767;
-            this.TXT_Pass.Name = "TXT_Pass";
-            this.TXT_Pass.PasswordChar = '\0';
-            this.TXT_Pass.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.TXT_Pass.SelectedText = "";
-            this.TXT_Pass.SelectionLength = 0;
-            this.TXT_Pass.SelectionStart = 0;
-            this.TXT_Pass.ShortcutsEnabled = true;
-            this.TXT_Pass.UseSelectable = true;
-            this.TXT_Pass.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.TXT_Pass.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // GB_Editar_QTD_Itens
             // 
@@ -478,6 +388,8 @@
             // 
             resources.ApplyResources(this.TXT_QTD_Aprovada, "TXT_QTD_Aprovada");
             this.TXT_QTD_Aprovada.Name = "TXT_QTD_Aprovada";
+            this.TXT_QTD_Aprovada.Enter += new System.EventHandler(this.TXT_QTD_Aprovada_Enter);
+            this.TXT_QTD_Aprovada.Leave += new System.EventHandler(this.TXT_QTD_Aprovada_Leave);
             // 
             // label9
             // 
@@ -499,21 +411,22 @@
             // 
             // 
             // 
-            this.TXT_qtd_solicitada.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image4")));
-            this.TXT_qtd_solicitada.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode4")));
-            this.TXT_qtd_solicitada.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location4")));
+            this.TXT_qtd_solicitada.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image2")));
+            this.TXT_qtd_solicitada.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode2")));
+            this.TXT_qtd_solicitada.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location2")));
             this.TXT_qtd_solicitada.CustomButton.Name = "";
-            this.TXT_qtd_solicitada.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size4")));
+            this.TXT_qtd_solicitada.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size2")));
             this.TXT_qtd_solicitada.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_qtd_solicitada.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex4")));
+            this.TXT_qtd_solicitada.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex2")));
             this.TXT_qtd_solicitada.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TXT_qtd_solicitada.CustomButton.UseSelectable = true;
-            this.TXT_qtd_solicitada.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible4")));
+            this.TXT_qtd_solicitada.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible2")));
             resources.ApplyResources(this.TXT_qtd_solicitada, "TXT_qtd_solicitada");
             this.TXT_qtd_solicitada.Lines = new string[0];
             this.TXT_qtd_solicitada.MaxLength = 32767;
             this.TXT_qtd_solicitada.Name = "TXT_qtd_solicitada";
             this.TXT_qtd_solicitada.PasswordChar = '\0';
+            this.TXT_qtd_solicitada.ReadOnly = true;
             this.TXT_qtd_solicitada.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TXT_qtd_solicitada.SelectedText = "";
             this.TXT_qtd_solicitada.SelectionLength = 0;
@@ -528,21 +441,22 @@
             // 
             // 
             // 
-            this.TXT_Produto.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
-            this.TXT_Produto.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode5")));
-            this.TXT_Produto.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location5")));
+            this.TXT_Produto.CustomButton.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image3")));
+            this.TXT_Produto.CustomButton.ImeMode = ((System.Windows.Forms.ImeMode)(resources.GetObject("resource.ImeMode3")));
+            this.TXT_Produto.CustomButton.Location = ((System.Drawing.Point)(resources.GetObject("resource.Location3")));
             this.TXT_Produto.CustomButton.Name = "";
-            this.TXT_Produto.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size5")));
+            this.TXT_Produto.CustomButton.Size = ((System.Drawing.Size)(resources.GetObject("resource.Size3")));
             this.TXT_Produto.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.TXT_Produto.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex5")));
+            this.TXT_Produto.CustomButton.TabIndex = ((int)(resources.GetObject("resource.TabIndex3")));
             this.TXT_Produto.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
             this.TXT_Produto.CustomButton.UseSelectable = true;
-            this.TXT_Produto.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible5")));
+            this.TXT_Produto.CustomButton.Visible = ((bool)(resources.GetObject("resource.Visible3")));
             resources.ApplyResources(this.TXT_Produto, "TXT_Produto");
             this.TXT_Produto.Lines = new string[0];
             this.TXT_Produto.MaxLength = 32767;
             this.TXT_Produto.Name = "TXT_Produto";
             this.TXT_Produto.PasswordChar = '\0';
+            this.TXT_Produto.ReadOnly = true;
             this.TXT_Produto.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.TXT_Produto.SelectedText = "";
             this.TXT_Produto.SelectionLength = 0;
@@ -580,6 +494,52 @@
             this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
             this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // productNameDataGridViewTextBoxColumn1
+            // 
+            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
+            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
+            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
+            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // quantidadeSolicitadaDataGridViewTextBoxColumn
+            // 
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeSolicitada";
+            resources.ApplyResources(this.quantidadeSolicitadaDataGridViewTextBoxColumn, "quantidadeSolicitadaDataGridViewTextBoxColumn");
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.Name = "quantidadeSolicitadaDataGridViewTextBoxColumn";
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeAprovadaDataGridViewTextBoxColumn
+            // 
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeAprovada";
+            resources.ApplyResources(this.quantidadeAprovadaDataGridViewTextBoxColumn, "quantidadeAprovadaDataGridViewTextBoxColumn");
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.Name = "quantidadeAprovadaDataGridViewTextBoxColumn";
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeEstoqueDataGridViewTextBoxColumn
+            // 
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEstoque";
+            resources.ApplyResources(this.quantidadeEstoqueDataGridViewTextBoxColumn, "quantidadeEstoqueDataGridViewTextBoxColumn");
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEstoqueDataGridViewTextBoxColumn";
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // solicitationIdDataGridViewTextBoxColumn1
+            // 
+            this.solicitationIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationId";
+            resources.ApplyResources(this.solicitationIdDataGridViewTextBoxColumn1, "solicitationIdDataGridViewTextBoxColumn1");
+            this.solicitationIdDataGridViewTextBoxColumn1.Name = "solicitationIdDataGridViewTextBoxColumn1";
+            this.solicitationIdDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // solicitationItemIdDataGridViewTextBoxColumn1
+            // 
+            this.solicitationItemIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationItemId";
+            resources.ApplyResources(this.solicitationItemIdDataGridViewTextBoxColumn1, "solicitationItemIdDataGridViewTextBoxColumn1");
+            this.solicitationItemIdDataGridViewTextBoxColumn1.Name = "solicitationItemIdDataGridViewTextBoxColumn1";
+            this.solicitationItemIdDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // returnItensSolicitacoesBindingSource1
+            // 
+            this.returnItensSolicitacoesBindingSource1.DataSource = typeof(Request_System.returnItensSolicitacoes);
+            // 
             // returnItensSolicitacoesBindingSource
             // 
             this.returnItensSolicitacoesBindingSource.DataSource = typeof(Request_System.returnItensSolicitacoes);
@@ -612,7 +572,6 @@
             this.Name = "PageEditSolicitacoes";
             this.Load += new System.EventHandler(this.PageEditSolicitacoes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_view_itens_solicitação)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).EndInit();
             this.GB_DataAprovacao.ResumeLayout(false);
             this.GB_DataAprovacao.PerformLayout();
             this.GB_DataEntrega.ResumeLayout(false);
@@ -622,6 +581,7 @@
             this.GB_Editar_QTD_Itens.ResumeLayout(false);
             this.GB_Editar_QTD_Itens.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_QTD_Aprovada)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -655,8 +615,6 @@
         private System.Windows.Forms.GroupBox GB_valida_usuario;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private MetroFramework.Controls.MetroTextBox TXT_user_name;
-        private MetroFramework.Controls.MetroTextBox TXT_Pass;
         private System.Windows.Forms.GroupBox GB_Editar_QTD_Itens;
         private System.Windows.Forms.NumericUpDown TXT_QTD_Aprovada;
         private System.Windows.Forms.Label label9;
@@ -678,5 +636,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn quantidadeEstoqueDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationIdDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationItemIdDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.TextBox TXT_user_name;
+        private System.Windows.Forms.TextBox TXT_Pass;
     }
 }

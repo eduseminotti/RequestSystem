@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 
@@ -115,6 +116,26 @@ namespace Request_System
         private void GRID_View_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             BTN_Ver_Solicitacao.PerformClick();
+        }
+
+        private void TXT_Filtro_Nome_Enter(object sender, EventArgs e)
+        {
+            TXT_Filtro_Nome.BackColor = Color.Yellow;
+        }
+
+        private void TXT_Filtro_Nome_Leave(object sender, EventArgs e)
+        {
+            TXT_Filtro_Nome.BackColor = Color.White;
+        }
+
+        private void CBX_Filtro_Status_Enter(object sender, EventArgs e)
+        {
+            CBX_Filtro_Status.BackColor = Color.Yellow;
+        }
+
+        private void CBX_Filtro_Status_Leave(object sender, EventArgs e)
+        {
+            CBX_Filtro_Status.BackColor = Color.White;
         }
     }
 }

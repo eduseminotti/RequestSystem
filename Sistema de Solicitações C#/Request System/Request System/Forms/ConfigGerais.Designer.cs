@@ -35,6 +35,7 @@
             this.BTN_ConfigFileLog = new MetroFramework.Controls.MetroButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.CHB_CriaBanco = new System.Windows.Forms.CheckBox();
             this.CHB_GeraTabelas = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.TXT_Pass = new System.Windows.Forms.TextBox();
@@ -102,6 +103,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.CHB_CriaBanco);
             this.groupBox2.Controls.Add(this.CHB_GeraTabelas);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.TXT_Pass);
@@ -118,9 +120,20 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Conection String";
             // 
+            // CHB_CriaBanco
+            // 
+            this.CHB_CriaBanco.AutoSize = true;
+            this.CHB_CriaBanco.Location = new System.Drawing.Point(13, 154);
+            this.CHB_CriaBanco.Name = "CHB_CriaBanco";
+            this.CHB_CriaBanco.Size = new System.Drawing.Size(129, 17);
+            this.CHB_CriaBanco.TabIndex = 9;
+            this.CHB_CriaBanco.Text = "Criar banco de Dados";
+            this.CHB_CriaBanco.UseVisualStyleBackColor = true;
+            this.CHB_CriaBanco.CheckedChanged += new System.EventHandler(this.CHB_CriaBanco_CheckedChanged);
+            // 
             // CHB_GeraTabelas
             // 
-            this.CHB_GeraTabelas.Location = new System.Drawing.Point(9, 146);
+            this.CHB_GeraTabelas.Location = new System.Drawing.Point(254, 145);
             this.CHB_GeraTabelas.Name = "CHB_GeraTabelas";
             this.CHB_GeraTabelas.Size = new System.Drawing.Size(231, 35);
             this.CHB_GeraTabelas.TabIndex = 8;
@@ -238,5 +251,6 @@
         private System.Windows.Forms.TextBox TXT_NomeBanco;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.CheckBox CHB_GeraTabelas;
+        private System.Windows.Forms.CheckBox CHB_CriaBanco;
     }
 }

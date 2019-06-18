@@ -9,12 +9,12 @@ namespace Request_System
     public partial class ConfigGerais : Form
     {
         String folderPath;
-        String conectioString;
+        String conectioString, conectioStringMaster;
         String provider;
 
         Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-        CriaTabelas criaTabelas = new CriaTabelas();
+        CriaBanco criaBanco = new CriaBanco();
 
         public ConfigGerais()
         {
@@ -72,7 +72,7 @@ namespace Request_System
                 return;
 
             //ajsuta CS app
-            AjustaCSAPPConfig();
+            AjustaCSConfig();
 
             ConfigurationManager.RefreshSection("connectionStrings");
 
@@ -84,6 +84,16 @@ namespace Request_System
 
             ConfigurationManager.RefreshSection("appSettings");
 
+
+            //criar Banco de dados
+            if(CHB_CriaBanco.Checked)
+            {
+                criaBanco.CriaBancoDeDados(TXT_NomeBanco.Text);
+                CHB_GeraTabelas.Checked = true;
+                CHB_GeraTabelas.Enabled = false;
+            }
+
+            //criar tabelas
             if (CHB_GeraTabelas.Checked)
             {
                 CriaTabelas();
@@ -91,7 +101,24 @@ namespace Request_System
                 pageUser.ShowDialog();
             }
 
+
+
             this.Close();
+        }
+
+
+        private void CHB_CriaBanco_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CHB_CriaBanco.Checked)
+            {
+                CHB_GeraTabelas.Checked = true;
+                CHB_GeraTabelas.Enabled = false;
+            }
+            else
+            {
+                CHB_GeraTabelas.Checked = false;
+                CHB_GeraTabelas.Enabled = true;
+            }
         }
 
         public void AjustaConfigLog()
@@ -109,11 +136,15 @@ namespace Request_System
             config.Save(ConfigurationSaveMode.Modified);
         }
 
-        public void AjustaCSAPPConfig()
+        public void AjustaCSConfig()
         {
             //Conection String
 
             conectioString = "Data Source=" + TXT_Server.Text + ";Initial Catalog=" + TXT_NomeBanco.Text + ";Integrated Security=True;User ID="
+                + TXT_User.Text + ";Password=" + TXT_Pass.Text + ";Connect Timeout=120";
+
+
+            conectioStringMaster = "Data Source=" + TXT_Server.Text + ";Initial Catalog=master;Integrated Security=True;User ID="
                 + TXT_User.Text + ";Password=" + TXT_Pass.Text + ";Connect Timeout=120";
 
             provider = "System.Data.SqlClient";
@@ -121,20 +152,23 @@ namespace Request_System
             config.ConnectionStrings.ConnectionStrings["CS"].ConnectionString = conectioString;
             config.ConnectionStrings.ConnectionStrings["CS"].ProviderName = provider;
 
-            config.Save(ConfigurationSaveMode.Modified);
-        }
+            config.ConnectionStrings.ConnectionStrings["CSMaster"].ConnectionString = conectioStringMaster;
+            config.ConnectionStrings.ConnectionStrings["CSMaster"].ProviderName = provider;
 
+            config.Save(ConfigurationSaveMode.Modified);
+
+        }
 
         public void CriaTabelas()
         {
-            criaTabelas.CriaTabelaUsers();
-            criaTabelas.CriaTabelaProviders();
-            criaTabelas.CriaTabelaProducts();
-            criaTabelas.CriaTabelaStock();
-            criaTabelas.CriaTabelaNotasFiscais();
-            criaTabelas.CriaTabelaItensNotasFiscais();
-            criaTabelas.CriaTabelaSolicitation();
-            criaTabelas.CriaTabelaItensSolicitation();
+            criaBanco.CriaTabelaUsers();
+            criaBanco.CriaTabelaProviders();
+            criaBanco.CriaTabelaProducts();
+            criaBanco.CriaTabelaStock();
+            criaBanco.CriaTabelaNotasFiscais();
+            criaBanco.CriaTabelaItensNotasFiscais();
+            criaBanco.CriaTabelaSolicitation();
+            criaBanco.CriaTabelaItensSolicitation();
         }
 
         private void BTN_Cancel_Click(object sender, EventArgs e)
@@ -166,6 +200,7 @@ namespace Request_System
         {
             TXT_folderPath.BackColor = Color.White;
         }
+
 
         private void BTN_Gerar_Tabelas_Click(object sender, EventArgs e)
         {

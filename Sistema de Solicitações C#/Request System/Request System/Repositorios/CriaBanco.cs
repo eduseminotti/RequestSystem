@@ -6,8 +6,32 @@ using System.Data.SqlClient;
 
 namespace Request_System
 {
-    public class CriaTabelas
+    public class CriaBanco
     {
+        public void CriaBancoDeDados(String BancoDeDados)
+        {
+            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CSmaster"].ConnectionString);
+
+            String queryString = "  CREATE  DATABASE  " + BancoDeDados ;
+
+            SqlCommand cmd = new SqlCommand(queryString, sqlConn);
+
+            try
+            {
+                sqlConn.Open();
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException)
+            {
+                throw;
+            }
+            finally
+            {
+                sqlConn.Close();
+            }
+        }
+
+
         public void CriaTabelaUsers()
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);

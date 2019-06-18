@@ -185,7 +185,7 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\ValidateUsers.cs" />
-    <Compile Include="Repositorios\CriaTabelas.cs" />
+    <Compile Include="Repositorios\CriaBanco.cs" />
     <EmbeddedResource Include="Forms\ConfigGerais.resx">
       <DependentUpon>ConfigGerais.cs</DependentUpon>
     </EmbeddedResource>

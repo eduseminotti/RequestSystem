@@ -138,10 +138,6 @@ namespace Request_System
             GeraPDF.gerarPDF(Grid_Solicitacoes, "Pedidos");
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void Grid_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

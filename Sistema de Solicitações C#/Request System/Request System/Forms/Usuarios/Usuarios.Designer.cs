@@ -46,19 +46,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.TXT_Filter_User_Name = new System.Windows.Forms.TextBox();
             this.GRID_USERS_VIEW = new MetroFramework.Controls.MetroGrid();
-            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cPFDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.setorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isActiveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idiomaDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnUsuariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_NewUser = new MetroFramework.Controls.MetroButton();
             this.BTN_Edit1 = new MetroFramework.Controls.MetroButton();
             this.adminMainBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.BTN_gera_Pdf = new MetroFramework.Controls.MetroButton();
+            this.nameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cPFDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emailDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.setorDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isActiveDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_USERS_VIEW)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnUsuariosBindingSource)).BeginInit();
@@ -175,11 +174,9 @@
             this.cPFDataGridViewTextBoxColumn1,
             this.emailDataGridViewTextBoxColumn1,
             this.userNameDataGridViewTextBoxColumn1,
-            this.passwordDataGridViewTextBoxColumn1,
             this.setorDataGridViewTextBoxColumn1,
             this.isActiveDataGridViewTextBoxColumn1,
-            this.typeDataGridViewTextBoxColumn1,
-            this.idiomaDataGridViewTextBoxColumn1});
+            this.typeDataGridViewTextBoxColumn1});
             this.GRID_USERS_VIEW.DataSource = this.returnUsuariosBindingSource;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -206,6 +203,35 @@
             this.GRID_USERS_VIEW.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.GRID_USERS_VIEW.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GRID_USERS_VIEW_CellDoubleClick);
             this.GRID_USERS_VIEW.KeyDown += new System.Windows.Forms.KeyEventHandler(this.GRID_USERS_VIEW_KeyDown);
+            // 
+            // returnUsuariosBindingSource
+            // 
+            this.returnUsuariosBindingSource.DataSource = typeof(Request_System.Return_Usuarios);
+            // 
+            // BTN_NewUser
+            // 
+            resources.ApplyResources(this.BTN_NewUser, "BTN_NewUser");
+            this.BTN_NewUser.Name = "BTN_NewUser";
+            this.BTN_NewUser.UseSelectable = true;
+            this.BTN_NewUser.Click += new System.EventHandler(this.BTN_NewUser_Click);
+            // 
+            // BTN_Edit1
+            // 
+            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
+            this.BTN_Edit1.Name = "BTN_Edit1";
+            this.BTN_Edit1.UseSelectable = true;
+            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
+            // 
+            // adminMainBindingSource
+            // 
+            this.adminMainBindingSource.DataSource = typeof(Request_System.Menus_Main);
+            // 
+            // BTN_gera_Pdf
+            // 
+            resources.ApplyResources(this.BTN_gera_Pdf, "BTN_gera_Pdf");
+            this.BTN_gera_Pdf.Name = "BTN_gera_Pdf";
+            this.BTN_gera_Pdf.UseSelectable = true;
+            this.BTN_gera_Pdf.Click += new System.EventHandler(this.BTN_gera_Pdf_Click);
             // 
             // nameDataGridViewTextBoxColumn1
             // 
@@ -239,12 +265,6 @@
             this.userNameDataGridViewTextBoxColumn1.ReadOnly = true;
             this.userNameDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // passwordDataGridViewTextBoxColumn1
-            // 
-            this.passwordDataGridViewTextBoxColumn1.DataPropertyName = "Password";
-            resources.ApplyResources(this.passwordDataGridViewTextBoxColumn1, "passwordDataGridViewTextBoxColumn1");
-            this.passwordDataGridViewTextBoxColumn1.Name = "passwordDataGridViewTextBoxColumn1";
-            // 
             // setorDataGridViewTextBoxColumn1
             // 
             this.setorDataGridViewTextBoxColumn1.DataPropertyName = "Setor";
@@ -269,40 +289,11 @@
             this.typeDataGridViewTextBoxColumn1.ReadOnly = true;
             this.typeDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // idiomaDataGridViewTextBoxColumn1
-            // 
-            this.idiomaDataGridViewTextBoxColumn1.DataPropertyName = "Idioma";
-            resources.ApplyResources(this.idiomaDataGridViewTextBoxColumn1, "idiomaDataGridViewTextBoxColumn1");
-            this.idiomaDataGridViewTextBoxColumn1.Name = "idiomaDataGridViewTextBoxColumn1";
-            this.idiomaDataGridViewTextBoxColumn1.ReadOnly = true;
-            this.idiomaDataGridViewTextBoxColumn1.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // returnUsuariosBindingSource
-            // 
-            this.returnUsuariosBindingSource.DataSource = typeof(Request_System.Return_Usuarios);
-            // 
-            // BTN_NewUser
-            // 
-            resources.ApplyResources(this.BTN_NewUser, "BTN_NewUser");
-            this.BTN_NewUser.Name = "BTN_NewUser";
-            this.BTN_NewUser.UseSelectable = true;
-            this.BTN_NewUser.Click += new System.EventHandler(this.BTN_NewUser_Click);
-            // 
-            // BTN_Edit1
-            // 
-            resources.ApplyResources(this.BTN_Edit1, "BTN_Edit1");
-            this.BTN_Edit1.Name = "BTN_Edit1";
-            this.BTN_Edit1.UseSelectable = true;
-            this.BTN_Edit1.Click += new System.EventHandler(this.BTN_Edit1_Click);
-            // 
-            // adminMainBindingSource
-            // 
-            this.adminMainBindingSource.DataSource = typeof(Request_System.Menus_Main);
-            // 
             // Usuarios_view
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.BTN_gera_Pdf);
             this.Controls.Add(this.BTN_NewUser);
             this.Controls.Add(this.BTN_Edit1);
             this.Controls.Add(this.GRID_USERS_VIEW);
@@ -338,15 +329,15 @@
         private MetroFramework.Controls.MetroButton BTN_Filtrar1;
         private MetroFramework.Controls.MetroButton BTN_NewUser;
         private MetroFramework.Controls.MetroButton BTN_Edit1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idiomaDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.ComboBox CBX_Filter_Status;
+        private MetroFramework.Controls.MetroButton BTN_gera_Pdf;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn cPFDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn emailDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn setorDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn isActiveDataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn typeDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idiomaDataGridViewTextBoxColumn1;
-        private System.Windows.Forms.ComboBox CBX_Filter_Status;
     }
 }

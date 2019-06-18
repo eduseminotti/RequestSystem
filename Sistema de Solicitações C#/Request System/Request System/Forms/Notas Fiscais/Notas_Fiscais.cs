@@ -103,7 +103,7 @@ namespace Request_System
 
             if (Grid_RelatorioNFe.Rows.Count > 0)
             {
-                geradorDePDF.gerarPDF(Grid_RelatorioNFe, "Relatorio de NFes");
+                geradorDePDF.gerarPDF(Grid_RelatorioNFe, " NFes");
             }
             else
             {

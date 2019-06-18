@@ -13,6 +13,7 @@ namespace Request_System
         ManipulaUsuarios ObterUsers = new ManipulaUsuarios();
         String selectedUserName;
         PageUserEditandAdd PageUserAdd;
+        GeradorDePDFGrid geraPDF = new GeradorDePDFGrid();
 
         public Usuarios_view(UserIdioma Idioma)
         {
@@ -161,6 +162,11 @@ namespace Request_System
         {
             if (e.KeyCode == Keys.Enter)
                 BTN_Edit1.PerformClick();
+        }
+
+        private void BTN_gera_Pdf_Click(object sender, EventArgs e)
+        {
+            geraPDF.gerarPDF(GRID_USERS_VIEW,"Usuários");
         }
     }
 }

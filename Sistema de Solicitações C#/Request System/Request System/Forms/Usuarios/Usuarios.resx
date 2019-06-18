@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="TXT_Filter_Name.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 30</value>
@@ -436,13 +436,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="nameDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Nome</value>
   </data>
   <data name="nameDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>160</value>
+    <value>180</value>
   </data>
   <data name="cPFDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>CPF</value>
@@ -454,7 +454,7 @@
     <value>Email</value>
   </data>
   <data name="emailDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
-    <value>160</value>
+    <value>180</value>
   </data>
   <data name="userNameDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>UserName</value>
@@ -514,7 +514,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GRID_USERS_VIEW.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="BTN_NewUser.Location" type="System.Drawing.Point, System.Drawing">
     <value>858, 16</value>
@@ -538,7 +538,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_NewUser.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="BTN_Edit1.Location" type="System.Drawing.Point, System.Drawing">
     <value>740, 16</value>
@@ -562,16 +562,40 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Edit1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <metadata name="adminMainBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="BTN_gera_Pdf.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 86</value>
+  </data>
+  <data name="BTN_gera_Pdf.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_gera_Pdf.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="BTN_gera_Pdf.Text" xml:space="preserve">
+    <value>Gerar PDF</value>
+  </data>
+  <data name="&gt;&gt;BTN_gera_Pdf.Name" xml:space="preserve">
+    <value>BTN_gera_Pdf</value>
+  </data>
+  <data name="&gt;&gt;BTN_gera_Pdf.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_gera_Pdf.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_gera_Pdf.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>46</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -616,12 +640,6 @@
     <value>userNameDataGridViewTextBoxColumn1</value>
   </data>
   <data name="&gt;&gt;userNameDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;passwordDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>passwordDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;passwordDataGridViewTextBoxColumn1.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;setorDataGridViewTextBoxColumn1.Name" xml:space="preserve">

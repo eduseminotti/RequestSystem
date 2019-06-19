@@ -459,30 +459,6 @@
   <data name="&gt;&gt;BTN_Gera_PDF.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="userRequesterDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Usuário Solicitante</value>
-  </data>
-  <data name="dataSolicitacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Data Solicitação</value>
-  </data>
-  <data name="userApproverDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Usuário Aprovador</value>
-  </data>
-  <data name="dataAprovacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Data Aprovação</value>
-  </data>
-  <data name="dataRetiradaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Data Retirada</value>
-  </data>
-  <data name="motivoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Motivo</value>
-  </data>
-  <data name="solicitationStatusDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Status</value>
-  </data>
-  <data name="produtosQuantidadesDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
-    <value>Produtos - Qtd solicitada - Qtd Aprovada</value>
-  </data>
   <metadata name="returnRelatorioSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>478, 17</value>
   </metadata>
@@ -510,6 +486,33 @@
   <data name="&gt;&gt;GRID_Relatorio_Solicitacoes.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="userRequesterDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Usuário Solicitante</value>
+  </data>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Data Solicitação</value>
+  </data>
+  <data name="userApproverDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Usuário Aprovador</value>
+  </data>
+  <data name="dataAprovacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Data Aprovação</value>
+  </data>
+  <data name="dataRetiradaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Data Retirada</value>
+  </data>
+  <data name="motivoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Motivo</value>
+  </data>
+  <data name="solicitationStatusDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="produtosQuantidadesDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Produtos - Qtd solicitada - Qtd Aprovada</value>
+  </data>
+  <metadata name="returnRelatorioSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>478, 17</value>
+  </metadata>
   <metadata name="returnSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

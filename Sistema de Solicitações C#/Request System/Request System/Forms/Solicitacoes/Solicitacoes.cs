@@ -73,24 +73,6 @@ namespace Request_System
             GRID_View_Solicitacoes.DataSource = returnSolicitacoes;
         }
 
-        private void CBX_Filtro_Status_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            solicitationStatus = (SolicitationStatus)Enum.Parse(typeof(SolicitationStatus), CBX_Filtro_Status.Text.ToString());
-
-            returnSolicitacoes = manipulaSolicitacoes.GetSolicitacoes(0, userName, solicitationStatus);
-            GRID_View_Solicitacoes.DataSource = returnSolicitacoes;
-        }
-
-        private void TXT_Filtro_Nome_TextChanged(object sender, EventArgs e)
-        {
-            BTN_Filtrar.PerformClick();
-        }
-
-        private void BTN_Gerar_PDF_Click(object sender, EventArgs e) //chama filtro de data PDF 
-        {
-            GB_filtros.Enabled = false;
-        }
-
         private void BTN_Gera_PDF_Click(object sender, EventArgs e) // Gera PDF
         {
             GB_filtros.Enabled = true;
@@ -99,11 +81,6 @@ namespace Request_System
             GRID_Relatorio_Solicitacoes.DataSource = returnRelatorioSolicitacoes;
 
             geraPDF.gerarPDF(GRID_Relatorio_Solicitacoes, "Solicitações");
-        }
-
-        private void BTN_Cancel_PDF_Click(object sender, EventArgs e)
-        {
-            GB_filtros.Enabled = true;
         }
 
         private void GRID_View_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -129,6 +106,22 @@ namespace Request_System
         private void CBX_Filtro_Status_Leave(object sender, EventArgs e)
         {
             CBX_Filtro_Status.BackColor = Color.White;
+        }
+
+        private void TXT_Filtro_Nome_TextChanged_1(object sender, EventArgs e)
+        {
+            if (TXT_Filtro_Nome.Text != "")
+                BTN_Filtrar.PerformClick();
+            else
+                BTN_LIMPAR_FILTRO.PerformClick();
+        }
+
+        private void CBX_Filtro_Status_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            solicitationStatus = (SolicitationStatus)Enum.Parse(typeof(SolicitationStatus), CBX_Filtro_Status.Text.ToString());
+
+            returnSolicitacoes = manipulaSolicitacoes.GetSolicitacoes(0, userName, solicitationStatus);
+            GRID_View_Solicitacoes.DataSource = returnSolicitacoes;
         }
     }
 }

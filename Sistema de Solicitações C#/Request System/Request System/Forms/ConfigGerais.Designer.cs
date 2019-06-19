@@ -126,7 +126,7 @@
             this.CHB_CriaBanco.Location = new System.Drawing.Point(13, 154);
             this.CHB_CriaBanco.Name = "CHB_CriaBanco";
             this.CHB_CriaBanco.Size = new System.Drawing.Size(129, 17);
-            this.CHB_CriaBanco.TabIndex = 9;
+            this.CHB_CriaBanco.TabIndex = 8;
             this.CHB_CriaBanco.Text = "Criar banco de Dados";
             this.CHB_CriaBanco.UseVisualStyleBackColor = true;
             this.CHB_CriaBanco.CheckedChanged += new System.EventHandler(this.CHB_CriaBanco_CheckedChanged);
@@ -136,7 +136,7 @@
             this.CHB_GeraTabelas.Location = new System.Drawing.Point(254, 145);
             this.CHB_GeraTabelas.Name = "CHB_GeraTabelas";
             this.CHB_GeraTabelas.Size = new System.Drawing.Size(231, 35);
-            this.CHB_GeraTabelas.TabIndex = 8;
+            this.CHB_GeraTabelas.TabIndex = 9;
             this.CHB_GeraTabelas.Text = "Gerar Tabelas (Ira executar os scrips e gerar as tabelas no Banco de Dados)";
             this.CHB_GeraTabelas.UseVisualStyleBackColor = true;
             // 

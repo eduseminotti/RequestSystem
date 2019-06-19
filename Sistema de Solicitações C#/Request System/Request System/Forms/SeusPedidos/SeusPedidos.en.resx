@@ -136,17 +136,17 @@
   <data name="BTN_Excluir_Solicitacao.Text" xml:space="preserve">
     <value>Delete Request</value>
   </data>
-  <data name="solicitatonIDDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Code</value>
+  <data name="dataSolicitacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Solicitation Date</value>
   </data>
-  <data name="dataSolicitacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
-    <value>Request date</value>
-  </data>
-  <data name="dataAprovacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+  <data name="dataAprovacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Date Approval</value>
   </data>
-  <data name="dataRetiradaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+  <data name="dataRetiradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Delivery Date</value>
+  </data>
+  <data name="motivoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Reason</value>
   </data>
   <data name="BTN_Edit.Text" xml:space="preserve">
     <value>Edit / View</value>

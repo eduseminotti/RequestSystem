@@ -27,9 +27,6 @@ namespace Request_System
         {
             InitializeComponent();
             idioma = Idioma;
-
-            DT_DataDeEmissaoInicial.Value = DateTime.Now;
-            DT_DataDeEmissaoFinal.Value = DateTime.Now;
         }
 
         private void Notas_Fiscais_Load(object sender, EventArgs e)
@@ -41,7 +38,7 @@ namespace Request_System
 
         private void BTN_Gerar_PDF_Click(object sender, EventArgs e)
         {
-            GB_datasPDF.Visible = true;
+
             BTN_Filter.PerformClick();
             GB_filters.Visible = false;
         }
@@ -93,12 +90,9 @@ namespace Request_System
 
         private void BTN_Gerar_PDF_Click_1(object sender, EventArgs e)
         {
-            DateTime dataInicial, dataFinal;
 
-            dataInicial = DT_DataDeEmissaoInicial.Value.Date;
-            dataFinal = DT_DataDeEmissaoFinal.Value.Date;
 
-            returnRelatorioNFe = RelatorioNFe.ReturnRelatorioNFe(dataInicial, dataFinal);
+            returnRelatorioNFe = RelatorioNFe.ReturnRelatorioNFe();
             Grid_RelatorioNFe.DataSource = returnRelatorioNFe;
 
             if (Grid_RelatorioNFe.Rows.Count > 0)
@@ -115,13 +109,13 @@ namespace Request_System
                     MessageBox.Show("Ningún resultado encontrado!");
             }
 
-            GB_datasPDF.Visible = false;
+
             GB_filters.Visible = true;
         }
 
         private void metroButton2_Click(object sender, EventArgs e)
         {
-            GB_datasPDF.Visible = false;
+
             GB_filters.Visible = true;
         }
 

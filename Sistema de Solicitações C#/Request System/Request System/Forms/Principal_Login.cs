@@ -60,7 +60,16 @@ namespace Request_System
             {
                 log.logador("Usuario ou senha nao informado!");
                 TXT_UserName_login.Focus();
-                MessageBox.Show("Usuario ou senha estao vazios!");
+
+                if (idioma == UserIdioma.Portugues)
+                    MessageBox.Show("Usuário ou senha estao vazios!");
+
+                if (idioma == UserIdioma.Ingles)
+                    MessageBox.Show("User or password is empty!");
+
+                if (idioma == UserIdioma.Espanhol)
+                    MessageBox.Show("Usuario o contraseña están vacíos!");
+
 
                 return;
             }
@@ -79,7 +88,15 @@ namespace Request_System
             else
             {
                 log.logador("Usuario ou senha incorretos!");
-                MessageBox.Show("Usuario ou senha incorretos!");
+                if (idioma == UserIdioma.Portugues)
+                    MessageBox.Show("Usuário ou senha incorretos!");
+
+                if (idioma == UserIdioma.Ingles)
+                    MessageBox.Show("Incorrect username or password!");
+
+                if (idioma == UserIdioma.Espanhol)
+                    MessageBox.Show("usuario o contraseña incorrectos!");
+
                 TXT_Pass_login.Text = "";
                 TXT_UserName_login.Focus();
             }

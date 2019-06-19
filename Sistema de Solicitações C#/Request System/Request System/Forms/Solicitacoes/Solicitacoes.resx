@@ -151,7 +151,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="BTN_Ver_Solicitacao.Location" type="System.Drawing.Point, System.Drawing">
     <value>876, 7</value>
@@ -175,7 +175,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BTN_Ver_Solicitacao.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <metadata name="SolicitatonId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -256,7 +256,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GRID_View_Solicitacoes.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="CBX_Filtro_Status.Location" type="System.Drawing.Point, System.Drawing">
     <value>177, 33</value>
@@ -433,118 +433,10 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GB_filtros.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 75</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="BTN_Gerar_PDF.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
-    <value>Gerar PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Name" xml:space="preserve">
-    <value>BTN_Gerar_PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="BTN_Cancel_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 21</value>
-  </data>
-  <data name="BTN_Cancel_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="BTN_Cancel_PDF.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="BTN_Cancel_PDF.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="&gt;&gt;BTN_Cancel_PDF.Name" xml:space="preserve">
-    <value>BTN_Cancel_PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Cancel_PDF.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_Cancel_PDF.Parent" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Cancel_PDF.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 5</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="label3.TabIndex" type="System.Int32, mscorlib">
-    <value>27</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Data Inicial</value>
-  </data>
-  <data name="&gt;&gt;label3.Name" xml:space="preserve">
-    <value>label3</value>
-  </data>
-  <data name="&gt;&gt;label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 54</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>55, 13</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Data Final</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="BTN_Gera_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>250, 66</value>
+    <value>10, 93</value>
   </data>
   <data name="BTN_Gera_PDF.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 30</value>
@@ -562,82 +454,10 @@
     <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
   </data>
   <data name="&gt;&gt;BTN_Gera_PDF.Parent" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gera_PDF.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="DT_Data_Final.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 67</value>
-  </data>
-  <data name="DT_Data_Final.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 29</value>
-  </data>
-  <data name="DT_Data_Final.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 29</value>
-  </data>
-  <data name="DT_Data_Final.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Final.Name" xml:space="preserve">
-    <value>DT_Data_Final</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Final.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Final.Parent" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_Final.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="DT_Data_inicial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="DT_Data_inicial.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 29</value>
-  </data>
-  <data name="DT_Data_inicial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>238, 29</value>
-  </data>
-  <data name="DT_Data_inicial.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_inicial.Name" xml:space="preserve">
-    <value>DT_Data_inicial</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_inicial.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroDateTime, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_inicial.Parent" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;DT_Data_inicial.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="GB_Gera_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 7</value>
-  </data>
-  <data name="GB_Gera_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>372, 111</value>
-  </data>
-  <data name="GB_Gera_PDF.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="GB_Gera_PDF.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;GB_Gera_PDF.Name" xml:space="preserve">
-    <value>GB_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;GB_Gera_PDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Gera_PDF.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;GB_Gera_PDF.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;BTN_Gera_PDF.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="userRequesterDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Usuário Solicitante</value>
@@ -688,7 +508,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GRID_Relatorio_Solicitacoes.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <metadata name="returnSolicitacoesBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

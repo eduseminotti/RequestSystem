@@ -127,6 +127,7 @@ namespace Request_System
         private void BTN_Seleciona_produto_Click(object sender, EventArgs e)
         {
             productName = List_products.Text.ToString();
+            productName = productName.Split('-')[0];
 
             listProdutos = manipulaProdutos.GetProducts(0, productName, ProductIsActive.Ativo);
 
@@ -154,6 +155,7 @@ namespace Request_System
         private void List_products_DoubleClick(object sender, EventArgs e)
         {
             productName = List_products.Text.ToString();
+            productName = productName.Split('-')[0];
 
             listProdutos = manipulaProdutos.GetProducts(0, productName, ProductIsActive.Ativo);
 

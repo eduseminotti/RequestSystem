@@ -89,19 +89,13 @@ namespace Request_System
         private void BTN_Gerar_PDF_Click(object sender, EventArgs e) //chama filtro de data PDF 
         {
             GB_filtros.Enabled = false;
-            GB_Gera_PDF.Visible = true;
         }
 
         private void BTN_Gera_PDF_Click(object sender, EventArgs e) // Gera PDF
         {
             GB_filtros.Enabled = true;
-            GB_Gera_PDF.Visible = false;
 
-            DateTime inicial, final;
-            inicial = DT_Data_inicial.Value;
-            final = DT_Data_Final.Value;
-
-            returnRelatorioSolicitacoes = RelatorioSolicitacoes.GetRelatorioSolicitacoes(userName, solicitationStatus, inicial, final);
+            returnRelatorioSolicitacoes = RelatorioSolicitacoes.GetRelatorioSolicitacoes(userName, solicitationStatus);
             GRID_Relatorio_Solicitacoes.DataSource = returnRelatorioSolicitacoes;
 
             geraPDF.gerarPDF(GRID_Relatorio_Solicitacoes, "Solicitações");
@@ -110,7 +104,6 @@ namespace Request_System
         private void BTN_Cancel_PDF_Click(object sender, EventArgs e)
         {
             GB_filtros.Enabled = true;
-            GB_Gera_PDF.Visible = false;
         }
 
         private void GRID_View_Solicitacoes_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

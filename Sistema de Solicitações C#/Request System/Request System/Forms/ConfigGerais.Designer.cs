@@ -154,6 +154,7 @@
             this.TXT_Pass.Location = new System.Drawing.Point(371, 99);
             this.TXT_Pass.Multiline = true;
             this.TXT_Pass.Name = "TXT_Pass";
+            this.TXT_Pass.PasswordChar = '*';
             this.TXT_Pass.Size = new System.Drawing.Size(350, 30);
             this.TXT_Pass.TabIndex = 6;
             this.TXT_Pass.TextChanged += new System.EventHandler(this.TXT_Pass_TextChanged);

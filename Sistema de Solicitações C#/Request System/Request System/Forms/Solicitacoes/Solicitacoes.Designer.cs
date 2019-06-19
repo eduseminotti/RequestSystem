@@ -52,14 +52,7 @@
             this.BTN_LIMPAR_FILTRO = new MetroFramework.Controls.MetroButton();
             this.Status = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.BTN_Gerar_PDF = new MetroFramework.Controls.MetroButton();
-            this.GB_Gera_PDF = new System.Windows.Forms.GroupBox();
-            this.BTN_Cancel_PDF = new MetroFramework.Controls.MetroButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.BTN_Gera_PDF = new MetroFramework.Controls.MetroButton();
-            this.DT_Data_Final = new MetroFramework.Controls.MetroDateTime();
-            this.DT_Data_inicial = new MetroFramework.Controls.MetroDateTime();
             this.GRID_Relatorio_Solicitacoes = new System.Windows.Forms.DataGridView();
             this.userRequesterDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataSolicitacaoDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.GRID_View_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource1)).BeginInit();
             this.GB_filtros.SuspendLayout();
-            this.GB_Gera_PDF.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_Relatorio_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnRelatorioSolicitacoesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource)).BeginInit();
@@ -254,58 +246,12 @@
             resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
             // 
-            // BTN_Gerar_PDF
-            // 
-            resources.ApplyResources(this.BTN_Gerar_PDF, "BTN_Gerar_PDF");
-            this.BTN_Gerar_PDF.Name = "BTN_Gerar_PDF";
-            this.BTN_Gerar_PDF.UseSelectable = true;
-            this.BTN_Gerar_PDF.Click += new System.EventHandler(this.BTN_Gerar_PDF_Click);
-            // 
-            // GB_Gera_PDF
-            // 
-            this.GB_Gera_PDF.Controls.Add(this.BTN_Cancel_PDF);
-            this.GB_Gera_PDF.Controls.Add(this.label3);
-            this.GB_Gera_PDF.Controls.Add(this.label2);
-            this.GB_Gera_PDF.Controls.Add(this.BTN_Gera_PDF);
-            this.GB_Gera_PDF.Controls.Add(this.DT_Data_Final);
-            this.GB_Gera_PDF.Controls.Add(this.DT_Data_inicial);
-            resources.ApplyResources(this.GB_Gera_PDF, "GB_Gera_PDF");
-            this.GB_Gera_PDF.Name = "GB_Gera_PDF";
-            this.GB_Gera_PDF.TabStop = false;
-            // 
-            // BTN_Cancel_PDF
-            // 
-            resources.ApplyResources(this.BTN_Cancel_PDF, "BTN_Cancel_PDF");
-            this.BTN_Cancel_PDF.Name = "BTN_Cancel_PDF";
-            this.BTN_Cancel_PDF.UseSelectable = true;
-            this.BTN_Cancel_PDF.Click += new System.EventHandler(this.BTN_Cancel_PDF_Click);
-            // 
-            // label3
-            // 
-            resources.ApplyResources(this.label3, "label3");
-            this.label3.Name = "label3";
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
             // BTN_Gera_PDF
             // 
             resources.ApplyResources(this.BTN_Gera_PDF, "BTN_Gera_PDF");
             this.BTN_Gera_PDF.Name = "BTN_Gera_PDF";
             this.BTN_Gera_PDF.UseSelectable = true;
             this.BTN_Gera_PDF.Click += new System.EventHandler(this.BTN_Gera_PDF_Click);
-            // 
-            // DT_Data_Final
-            // 
-            resources.ApplyResources(this.DT_Data_Final, "DT_Data_Final");
-            this.DT_Data_Final.Name = "DT_Data_Final";
-            // 
-            // DT_Data_inicial
-            // 
-            resources.ApplyResources(this.DT_Data_inicial, "DT_Data_inicial");
-            this.DT_Data_inicial.Name = "DT_Data_inicial";
             // 
             // GRID_Relatorio_Solicitacoes
             // 
@@ -384,9 +330,8 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.GB_Gera_PDF);
             this.Controls.Add(this.GRID_Relatorio_Solicitacoes);
-            this.Controls.Add(this.BTN_Gerar_PDF);
+            this.Controls.Add(this.BTN_Gera_PDF);
             this.Controls.Add(this.GB_filtros);
             this.Controls.Add(this.GRID_View_Solicitacoes);
             this.Controls.Add(this.BTN_Ver_Solicitacao);
@@ -397,8 +342,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource1)).EndInit();
             this.GB_filtros.ResumeLayout(false);
             this.GB_filtros.PerformLayout();
-            this.GB_Gera_PDF.ResumeLayout(false);
-            this.GB_Gera_PDF.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GRID_Relatorio_Solicitacoes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnRelatorioSolicitacoesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesBindingSource)).EndInit();
@@ -428,14 +371,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataRetiradaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserRequesterId;
-        private MetroFramework.Controls.MetroButton BTN_Gerar_PDF;
-        private System.Windows.Forms.GroupBox GB_Gera_PDF;
-        private MetroFramework.Controls.MetroButton BTN_Cancel_PDF;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private MetroFramework.Controls.MetroButton BTN_Gera_PDF;
-        private MetroFramework.Controls.MetroDateTime DT_Data_Final;
-        private MetroFramework.Controls.MetroDateTime DT_Data_inicial;
         private System.Windows.Forms.DataGridView GRID_Relatorio_Solicitacoes;
         private System.Windows.Forms.BindingSource returnRelatorioSolicitacoesBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn userRequesterDataGridViewTextBoxColumn;

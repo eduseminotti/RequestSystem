@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Request_System.Repositorios.Contexts;
+using Request_System.Repositorios.Repositories;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -22,6 +24,20 @@ namespace Request_System
 
     public class ValidateUsers
     {
+        public Entities.User ValidaUsuarioEntity(String userName, String pass)
+        {
+            var context = new MainContext();
+
+            using (context)
+            {
+                var userRepository = new UserRepository(context);
+
+                var user = userRepository.GetByUsername(userName);
+
+                return user;
+            }
+        }
+
         LOG log = new LOG();
 
         public User ValidaUsuario(String userName, String pass)

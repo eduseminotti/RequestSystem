@@ -67,14 +67,17 @@ namespace Request_System
 
             loginPass = cripto.CriptografaSenha(loginPass);
 
-            user = validate.ValidaUsuario(loginUserName, loginPass);
+            //user = validate.ValidaUsuario(loginUserName, loginPass);
 
-            if (user != null && user.IsValid(loginPass))
+            var userEntity = validate.ValidaUsuarioEntity(loginUserName, loginPass);
+
+            if (userEntity != null && userEntity.IsValid(loginPass))
             {
-                Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, idioma);
+                //Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, idioma);
+                Menus_Main admMain = new Menus_Main((int)userEntity.Id, userEntity.Name, userEntity.Type, idioma);
                 this.Hide();
                 admMain.Show();
-                log.logador("Login Realizado com sucesso com o usuario: " + user.Name);
+                log.logador("Login Realizado com sucesso com o usuario: " + userEntity.Name);
             }
             else
             {

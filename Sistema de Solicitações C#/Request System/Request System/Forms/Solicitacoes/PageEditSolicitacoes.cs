@@ -91,7 +91,7 @@ namespace Request_System
         {
             pass = cripto.CriptografaSenha(TXT_Pass.Text.ToString());
 
-            var user = validateUsers.ValidaUsuario(userName, pass);
+            var user = validateUsers.ValidaUsuarioEntity(userName, pass);
             if (user == null)
             {
                 if (userIdioma == UserIdioma.Portugues)
@@ -175,7 +175,8 @@ namespace Request_System
         }
         private void BTN_Entregar_Click(object sender, EventArgs e)
         {
-            userName = validateUsers.GetUserName(userRequesterId);
+            var userNameX = validateUsers.GetUserNameEntity(userRequesterId);
+            userName = userNameX.UserName;
             TXT_user_name.Text = userName.ToString();
             GB_valida_usuario.Visible = true;
             TXT_Pass.Focus();

@@ -18,6 +18,11 @@ namespace Request_System.Repositorios.Repositories
             return dbSet.FirstOrDefault(x=> x.UserName == username);
         }
 
+        public Entities.User GetByUserId(int id)
+        {
+            return dbSet.FirstOrDefault(x=> x.Id == id);
+        }
+
         public void Add(Entities.User newUser)
         {
             dbSet.Add(newUser);

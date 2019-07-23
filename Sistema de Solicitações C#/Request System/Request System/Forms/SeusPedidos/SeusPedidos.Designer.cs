@@ -41,12 +41,6 @@
             this.LBL_Usuarios = new System.Windows.Forms.Label();
             this.BTN_Excluir_Solicitacao = new MetroFramework.Controls.MetroButton();
             this.Grid_Solicitacoes = new MetroFramework.Controls.MetroGrid();
-            this.solicitatonIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataSolicitacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataAprovacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataRetiradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.motivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.returnSolicitacoesUsuarioBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BTN_Edit = new MetroFramework.Controls.MetroButton();
             this.BTN_Nova_Solicitacao = new MetroFramework.Controls.MetroButton();
@@ -56,6 +50,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
+            this.solicitatonIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataSolicitacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataAprovacaoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataRetiradaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.motivoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationStatusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Grid_Solicitacoes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnSolicitacoesUsuarioBindingSource)).BeginInit();
@@ -162,54 +162,6 @@
             this.Grid_Solicitacoes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Grid_Solicitacoes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Grid_Solicitacoes_CellDoubleClick);
             // 
-            // solicitatonIDDataGridViewTextBoxColumn
-            // 
-            this.solicitatonIDDataGridViewTextBoxColumn.DataPropertyName = "SolicitatonID";
-            resources.ApplyResources(this.solicitatonIDDataGridViewTextBoxColumn, "solicitatonIDDataGridViewTextBoxColumn");
-            this.solicitatonIDDataGridViewTextBoxColumn.Name = "solicitatonIDDataGridViewTextBoxColumn";
-            this.solicitatonIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.solicitatonIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataSolicitacaoDataGridViewTextBoxColumn
-            // 
-            this.dataSolicitacaoDataGridViewTextBoxColumn.DataPropertyName = "DataSolicitacao";
-            resources.ApplyResources(this.dataSolicitacaoDataGridViewTextBoxColumn, "dataSolicitacaoDataGridViewTextBoxColumn");
-            this.dataSolicitacaoDataGridViewTextBoxColumn.Name = "dataSolicitacaoDataGridViewTextBoxColumn";
-            this.dataSolicitacaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataSolicitacaoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataAprovacaoDataGridViewTextBoxColumn
-            // 
-            this.dataAprovacaoDataGridViewTextBoxColumn.DataPropertyName = "DataAprovacao";
-            resources.ApplyResources(this.dataAprovacaoDataGridViewTextBoxColumn, "dataAprovacaoDataGridViewTextBoxColumn");
-            this.dataAprovacaoDataGridViewTextBoxColumn.Name = "dataAprovacaoDataGridViewTextBoxColumn";
-            this.dataAprovacaoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataAprovacaoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataRetiradaDataGridViewTextBoxColumn
-            // 
-            this.dataRetiradaDataGridViewTextBoxColumn.DataPropertyName = "DataRetirada";
-            resources.ApplyResources(this.dataRetiradaDataGridViewTextBoxColumn, "dataRetiradaDataGridViewTextBoxColumn");
-            this.dataRetiradaDataGridViewTextBoxColumn.Name = "dataRetiradaDataGridViewTextBoxColumn";
-            this.dataRetiradaDataGridViewTextBoxColumn.ReadOnly = true;
-            this.dataRetiradaDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // motivoDataGridViewTextBoxColumn
-            // 
-            this.motivoDataGridViewTextBoxColumn.DataPropertyName = "Motivo";
-            resources.ApplyResources(this.motivoDataGridViewTextBoxColumn, "motivoDataGridViewTextBoxColumn");
-            this.motivoDataGridViewTextBoxColumn.Name = "motivoDataGridViewTextBoxColumn";
-            this.motivoDataGridViewTextBoxColumn.ReadOnly = true;
-            this.motivoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // solicitationStatusDataGridViewTextBoxColumn
-            // 
-            this.solicitationStatusDataGridViewTextBoxColumn.DataPropertyName = "SolicitationStatus";
-            resources.ApplyResources(this.solicitationStatusDataGridViewTextBoxColumn, "solicitationStatusDataGridViewTextBoxColumn");
-            this.solicitationStatusDataGridViewTextBoxColumn.Name = "solicitationStatusDataGridViewTextBoxColumn";
-            this.solicitationStatusDataGridViewTextBoxColumn.ReadOnly = true;
-            this.solicitationStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
             // returnSolicitacoesUsuarioBindingSource
             // 
             this.returnSolicitacoesUsuarioBindingSource.DataSource = typeof(Request_System.ReturnSolicitacoesUsuario);
@@ -274,6 +226,54 @@
             this.metroButton2.UseSelectable = true;
             this.metroButton2.Click += new System.EventHandler(this.BTN_Filtrar_Click);
             // 
+            // solicitatonIDDataGridViewTextBoxColumn
+            // 
+            this.solicitatonIDDataGridViewTextBoxColumn.DataPropertyName = "SolicitatonID";
+            resources.ApplyResources(this.solicitatonIDDataGridViewTextBoxColumn, "solicitatonIDDataGridViewTextBoxColumn");
+            this.solicitatonIDDataGridViewTextBoxColumn.Name = "solicitatonIDDataGridViewTextBoxColumn";
+            this.solicitatonIDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.solicitatonIDDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataSolicitacaoDataGridViewTextBoxColumn
+            // 
+            this.dataSolicitacaoDataGridViewTextBoxColumn.DataPropertyName = "DataSolicitacao";
+            resources.ApplyResources(this.dataSolicitacaoDataGridViewTextBoxColumn, "dataSolicitacaoDataGridViewTextBoxColumn");
+            this.dataSolicitacaoDataGridViewTextBoxColumn.Name = "dataSolicitacaoDataGridViewTextBoxColumn";
+            this.dataSolicitacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataSolicitacaoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataAprovacaoDataGridViewTextBoxColumn
+            // 
+            this.dataAprovacaoDataGridViewTextBoxColumn.DataPropertyName = "DataAprovacao";
+            resources.ApplyResources(this.dataAprovacaoDataGridViewTextBoxColumn, "dataAprovacaoDataGridViewTextBoxColumn");
+            this.dataAprovacaoDataGridViewTextBoxColumn.Name = "dataAprovacaoDataGridViewTextBoxColumn";
+            this.dataAprovacaoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataAprovacaoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataRetiradaDataGridViewTextBoxColumn
+            // 
+            this.dataRetiradaDataGridViewTextBoxColumn.DataPropertyName = "DataRetirada";
+            resources.ApplyResources(this.dataRetiradaDataGridViewTextBoxColumn, "dataRetiradaDataGridViewTextBoxColumn");
+            this.dataRetiradaDataGridViewTextBoxColumn.Name = "dataRetiradaDataGridViewTextBoxColumn";
+            this.dataRetiradaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dataRetiradaDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // motivoDataGridViewTextBoxColumn
+            // 
+            this.motivoDataGridViewTextBoxColumn.DataPropertyName = "Motivo";
+            resources.ApplyResources(this.motivoDataGridViewTextBoxColumn, "motivoDataGridViewTextBoxColumn");
+            this.motivoDataGridViewTextBoxColumn.Name = "motivoDataGridViewTextBoxColumn";
+            this.motivoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.motivoDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // solicitationStatusDataGridViewTextBoxColumn
+            // 
+            this.solicitationStatusDataGridViewTextBoxColumn.DataPropertyName = "SolicitationStatus";
+            resources.ApplyResources(this.solicitationStatusDataGridViewTextBoxColumn, "solicitationStatusDataGridViewTextBoxColumn");
+            this.solicitationStatusDataGridViewTextBoxColumn.Name = "solicitationStatusDataGridViewTextBoxColumn";
+            this.solicitationStatusDataGridViewTextBoxColumn.ReadOnly = true;
+            this.solicitationStatusDataGridViewTextBoxColumn.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
             // SeusPedidos
             // 
             resources.ApplyResources(this, "$this");
@@ -312,12 +312,6 @@
         private MetroFramework.Controls.MetroButton BTN_Nova_Solicitacao;
         private System.Windows.Forms.DataGridViewTextBoxColumn solicitatonIDDataGridViewTextBoxColumn1;
         private MetroFramework.Controls.MetroButton BTN_Gera_PDF;
-        private System.Windows.Forms.DataGridViewTextBoxColumn solicitatonIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataSolicitacaoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataAprovacaoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataRetiradaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn motivoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource returnSolicitacoesUsuarioBindingSource;
         private System.Windows.Forms.ComboBox CBX_Status_Pedido;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -325,5 +319,11 @@
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroButton metroButton2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solicitatonIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataSolicitacaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataAprovacaoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataRetiradaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn motivoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn solicitationStatusDataGridViewTextBoxColumn;
     }
 }

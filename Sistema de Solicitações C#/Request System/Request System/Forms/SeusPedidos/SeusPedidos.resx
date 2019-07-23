@@ -303,6 +303,9 @@
   <data name="solicitatonIDDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>SolicitatonID</value>
   </data>
+  <data name="solicitatonIDDataGridViewTextBoxColumn.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="solicitatonIDDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>150</value>
   </data>
@@ -310,19 +313,19 @@
     <value>Data da Solicitacao</value>
   </data>
   <data name="dataSolicitacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>150</value>
+    <value>180</value>
   </data>
   <data name="dataAprovacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Data Aprovacao</value>
   </data>
   <data name="dataAprovacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>150</value>
+    <value>180</value>
   </data>
   <data name="dataRetiradaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Data da Retirada</value>
   </data>
   <data name="dataRetiradaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
-    <value>150</value>
+    <value>180</value>
   </data>
   <data name="motivoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Motivo</value>
@@ -332,6 +335,9 @@
   </data>
   <data name="solicitationStatusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Status</value>
+  </data>
+  <data name="solicitationStatusDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>160</value>
   </data>
   <metadata name="returnSolicitacoesUsuarioBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>244, -11</value>
@@ -570,6 +576,12 @@
   <data name="$this.Text" xml:space="preserve">
     <value>SeusPedidos</value>
   </data>
+  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Name" xml:space="preserve">
+    <value>returnSolicitacoesUsuarioBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;solicitatonIDDataGridViewTextBoxColumn.Name" xml:space="preserve">
     <value>solicitatonIDDataGridViewTextBoxColumn</value>
   </data>
@@ -605,12 +617,6 @@
   </data>
   <data name="&gt;&gt;solicitationStatusDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Name" xml:space="preserve">
-    <value>returnSolicitacoesUsuarioBindingSource</value>
-  </data>
-  <data name="&gt;&gt;returnSolicitacoesUsuarioBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>SeusPedidos</value>

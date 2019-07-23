@@ -27,11 +27,11 @@ namespace Request_System
         CriptografaSenhas Cripto = new CriptografaSenhas();
 
 
-
-        public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma)
+        public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma, bool Install)
         {
             InitializeComponent();
             isNew = IsNew;
+            bool install = Install;
 
             CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
             CBX_TYPE.DataSource = Enum.GetValues(typeof(UserType));
@@ -51,6 +51,18 @@ namespace Request_System
                 CBX_TYPE.Text = user.Type.ToString();
                 CBX_Status.Text = user.IsActive.ToString();
 
+            }
+            if(Install)
+            {
+                UserIsactive userStatus = UserIsactive.Ativo;
+                CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
+                CBX_Status.Text = userStatus.ToString();
+                CBX_Status.Enabled = false;
+
+                UserType userType = UserType.Administrador;
+                CBX_TYPE.DataSource = Enum.GetValues(typeof(UserType));
+                CBX_TYPE.Text = userType.ToString();
+                CBX_TYPE.Enabled = false;
             }
         }
 

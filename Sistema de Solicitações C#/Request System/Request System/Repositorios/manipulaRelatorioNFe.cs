@@ -24,7 +24,7 @@ namespace Request_System
     {
         LOG log = new LOG();
 
-        public List<ReturnRelatorioNFe> ReturnRelatorioNFe(DateTime Inicial, DateTime Final)
+        public List<ReturnRelatorioNFe> ReturnRelatorioNFe()
         {
             List<ReturnRelatorioNFe> returnRelatorioNFes = new List<ReturnRelatorioNFe>();
 
@@ -35,13 +35,9 @@ namespace Request_System
                     " SUBSTRING (    ( SELECT   product.Nome_produto + ' - ' + cast(subSelectItens.Quantidade  as varchar(max)  ) + '\n'  AS [text()]   " +
                     "FROM nfe_itens subSelectItens INNER JOIN products product ON product.id = subSelectItens.produtcid " +
                     " WHERE subSelectItens.NFEID = nfe.id ORDER BY subSelectItens.id FOR XML PATH ('') ), 1, 1000) as Produtos_Quantidade " +
-                    "FROM   notas_fiscais nfe   INNER JOIN providers prov  ON prov.id = nfe.providerid  " +
-                    "	 where  nfe.EmissionDate >= @inicial  and nfe.EmissionDate <= @final";
+                    "FROM   notas_fiscais nfe   INNER JOIN providers prov  ON prov.id = nfe.providerid ";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                cmd.Parameters.Add("@inicial", SqlDbType.VarChar).Value = Inicial;
-                cmd.Parameters.Add("@final", SqlDbType.VarChar).Value = Final;
 
                 sqlConn.Open();
                 SqlDataReader query = cmd.ExecuteReader();

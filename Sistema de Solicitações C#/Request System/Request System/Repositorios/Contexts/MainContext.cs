@@ -9,7 +9,7 @@ namespace Request_System.Repositorios.Contexts
 
     public class MainContext : DbContext
     {
-        public List<User> Users { get; set; }
+        public List<Entities.User> Users { get; set; }
 
         public MainContext() : base(ConfigurationManager.ConnectionStrings["CS"].ConnectionString)
         {

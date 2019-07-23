@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Request_System.Repositorios.Contexts;
+using Request_System.Repositorios.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
@@ -6,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace Request_System
 {
-    public class Return_Usuarios
+   public class Return_Usuarios
     {
         public String CPF { get; set; }
         public String UserName { get; set; }
@@ -18,10 +20,38 @@ namespace Request_System
         public UserType Type { get; set; }
 
     }
+
     public class ManipulaUsuarios
     {
         LOG log = new LOG();
 
+        public Entities.User GetByUsername(String userName)
+        {
+            var context = new MainContext();
+
+            using (context)
+            {
+                var userRepository = new UserRepository(context);
+
+                var user = userRepository.GetByUsername(userName);
+
+                return user;
+            }
+        }
+
+        public IList<Entities.User> GetUsers()
+        {
+            var context = new MainContext();
+
+            using (context)
+            {
+                var userRepository = new UserRepository(context);
+                var usuarios = userRepository.GetUsers();
+                return usuarios;
+            }
+        }
+
+                                    
         public List<Return_Usuarios> GetUsuarios(String UserName, String Name, String Setor, UserIsactive Status)
         {
             List<Return_Usuarios> return_usuarios = new List<Return_Usuarios>();

@@ -91,7 +91,7 @@ namespace Request_System
         {
             pass = cripto.CriptografaSenha(TXT_Pass.Text.ToString());
 
-            var user = validateUsers.ValidaUsuarioEntity(userName, pass);
+            var user = validateUsers.GetByUsername(userName);
             if (user == null)
             {
                 if (userIdioma == UserIdioma.Portugues)

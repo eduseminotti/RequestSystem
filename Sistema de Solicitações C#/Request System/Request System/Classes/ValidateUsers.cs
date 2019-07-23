@@ -27,7 +27,7 @@ namespace Request_System
 
         LOG log = new LOG();
 
-        public Entities.User ValidaUsuarioEntity(String userName, String pass)
+        public Entities.User GetByUsername(String userName)
         {
             var context = new MainContext();
 
@@ -55,83 +55,85 @@ namespace Request_System
             }
         }
 
-
-
-        public User ValidaUsuario(String userName, String pass)
-        {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-
-            User user = null;
-            try
-            {
-                string queryString = "select  ID, Name, UserName , password, type , isActive from dbo.Users where UserName  = @UserName and password = @password";
-                sqlConn.Open();
-                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = userName;
-                cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = pass;
-
-                SqlDataReader query = cmd.ExecuteReader();
-
-                while (query.Read())
+        #region METODOS ANTIGOS
+        /* //
+                public User ValidaUsuario(String userName, String pass)
                 {
-                    user = new User();
+                    SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
 
-                    user.IsActive = (UserIsactive)int.Parse(query["isActive"].ToString());
+                    User user = null;
+                    try
+                    {
+                        string queryString = "select  ID, Name, UserName , password, type , isActive from dbo.Users where UserName  = @UserName and password = @password";
+                        sqlConn.Open();
+                        SqlCommand cmd = new SqlCommand(queryString, sqlConn);
 
-                    if (user.IsActive == UserIsactive.Inativo)
-                        return null;
+                        cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = userName;
+                        cmd.Parameters.Add("@password", SqlDbType.VarChar).Value = pass;
 
-                    user.Username = query["UserName"].ToString();
-                    user.Name = query["Name"].ToString();
-                    user.Password = query["password"].ToString();
-                    user.Type = (UserType)int.Parse(query["Type"].ToString());
-                    user.UserID = int.Parse(query["id"].ToString());
+                        SqlDataReader query = cmd.ExecuteReader();
+
+                        while (query.Read())
+                        {
+                            user = new User();
+
+                            user.IsActive = (UserIsactive)int.Parse(query["isActive"].ToString());
+
+                            if (user.IsActive == UserIsactive.Inativo)
+                                return null;
+
+                            user.Username = query["UserName"].ToString();
+                            user.Name = query["Name"].ToString();
+                            user.Password = query["password"].ToString();
+                            user.Type = (UserType)int.Parse(query["Type"].ToString());
+                            user.UserID = int.Parse(query["id"].ToString());
+                        }
+                        return user;
+                    }
+                    catch (SqlException ex)
+                    {
+                        log.logador("Erro ao validar usuario!");
+                        log.logador(ex);
+                        throw;
+                    }
+                    finally
+                    {
+                        sqlConn.Close();
+                    }
                 }
-                return user;
-            }
-            catch (SqlException ex)
-            {
-                log.logador("Erro ao validar usuario!");
-                log.logador(ex);
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-        }
-        public String GetUserName(int UserId)
-        {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-
-            String userName = null;
-            try
-            {
-                string queryString = "select UserName from dbo.Users where id  = @id ";
-                sqlConn.Open();
-                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                cmd.Parameters.Add("@id", SqlDbType.Int).Value = UserId;
-
-                SqlDataReader query = cmd.ExecuteReader();
-
-                while (query.Read())
+                public String GetUserName(int UserId)
                 {
-                    userName = query["UserName"].ToString();
+                    SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
+
+                    String userName = null;
+                    try
+                    {
+                        string queryString = "select UserName from dbo.Users where id  = @id ";
+                        sqlConn.Open();
+                        SqlCommand cmd = new SqlCommand(queryString, sqlConn);
+
+                        cmd.Parameters.Add("@id", SqlDbType.Int).Value = UserId;
+
+                        SqlDataReader query = cmd.ExecuteReader();
+
+                        while (query.Read())
+                        {
+                            userName = query["UserName"].ToString();
+                        }
+                        return userName;
+                    }
+                    catch (SqlException ex)
+                    {
+                        log.logador("Erro ao capturar usuario do banco!");
+                        log.logador(ex);
+                        throw;
+                    }
+                    finally
+                    {
+                        sqlConn.Close();
+                    }
                 }
-                return userName;
-            }
-            catch (SqlException ex)
-            {
-                log.logador("Erro ao capturar usuario do banco!");
-                log.logador(ex);
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-        }
+                */
+        #endregion Metodos antigos
     }
 }

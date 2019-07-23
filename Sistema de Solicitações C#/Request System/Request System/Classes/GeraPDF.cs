@@ -9,11 +9,7 @@ namespace Request_System
     public class GeradorDePDFGrid
     {
         LOG log = new LOG();
-        /// <summary>
-        /// Solicita geração de PDFs para relatorios
-        /// </summary>
-        /// <param name="dataGrid">recebe o DataGrid como parametro para gerar o PDF</param>
-        /// <param name="tpRelatorio">String do tipo de relatorio</param>
+
         public void gerarPDF(DataGridView dataGrid, string tpRelatorio)
         {
             log.logador("Iniciando processo de geração de PDF para relatorio de: " + tpRelatorio);
@@ -52,6 +48,7 @@ namespace Request_System
             saveFileDialog1.Title = "Selecione o local para salvar";
             saveFileDialog1.FileName = "Relatorio " + tpRelatorio + "-" + dataRelatorio + ".pdf";
             saveFileDialog1.ShowDialog();
+            
 
             if (saveFileDialog1.FileName != "")
             {

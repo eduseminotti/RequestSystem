@@ -97,7 +97,7 @@ namespace Request_System
             if (CHB_GeraTabelas.Checked)
             {
                 CriaTabelas();
-                PageUserEditandAdd pageUser = new PageUserEditandAdd(true, null, UserIdioma.Portugues);
+                PageUserEditandAdd pageUser = new PageUserEditandAdd(true, null, UserIdioma.Portugues, true);
                 pageUser.ShowDialog();
             }
 

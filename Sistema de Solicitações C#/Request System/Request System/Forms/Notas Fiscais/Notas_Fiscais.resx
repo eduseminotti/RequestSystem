@@ -237,7 +237,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;GB_filters.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="TXT_Filter_CNPJ.Location" type="System.Drawing.Point, System.Drawing">
     <value>269, 33</value>
@@ -486,30 +486,6 @@
   <data name="valueNFeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
     <value>120</value>
   </data>
-  <data name="BTN_Filtro_Gera_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 72</value>
-  </data>
-  <data name="BTN_Filtro_Gera_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 30</value>
-  </data>
-  <data name="BTN_Filtro_Gera_PDF.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="BTN_Filtro_Gera_PDF.Text" xml:space="preserve">
-    <value>Gerar PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtro_Gera_PDF.Name" xml:space="preserve">
-    <value>BTN_Filtro_Gera_PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtro_Gera_PDF.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtro_Gera_PDF.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BTN_Filtro_Gera_PDF.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
   <data name="numberDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
     <value>Numero</value>
   </data>
@@ -667,217 +643,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Grid_RelatorioNFe.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 56</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 13</value>
-  </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>Data de Emissão Final</value>
-  </data>
-  <data name="&gt;&gt;label4.Name" xml:space="preserve">
-    <value>label4</value>
-  </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 17</value>
-  </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>116, 13</value>
-  </data>
-  <data name="label5.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Data de Emissão inicial</value>
-  </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
-  </data>
-  <data name="&gt;&gt;label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="DT_DataDeEmissaoFinal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 73</value>
-  </data>
-  <data name="DT_DataDeEmissaoFinal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 20</value>
-  </data>
-  <data name="DT_DataDeEmissaoFinal.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoFinal.Name" xml:space="preserve">
-    <value>DT_DataDeEmissaoFinal</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoFinal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoFinal.Parent" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoFinal.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="DT_DataDeEmissaoInicial.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 33</value>
-  </data>
-  <data name="DT_DataDeEmissaoInicial.Size" type="System.Drawing.Size, System.Drawing">
-    <value>227, 20</value>
-  </data>
-  <data name="DT_DataDeEmissaoInicial.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoInicial.Name" xml:space="preserve">
-    <value>DT_DataDeEmissaoInicial</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoInicial.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoInicial.Parent" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;DT_DataDeEmissaoInicial.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="metroButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 33</value>
-  </data>
-  <data name="metroButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="metroButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="metroButton2.Text" xml:space="preserve">
-    <value>Cancelar</value>
-  </data>
-  <data name="&gt;&gt;metroButton2.Name" xml:space="preserve">
-    <value>metroButton2</value>
-  </data>
-  <data name="&gt;&gt;metroButton2.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;metroButton2.Parent" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;metroButton2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>242, 73</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 20</value>
-  </data>
-  <data name="BTN_Gerar_PDF.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
-    <value>Gerar PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Name" xml:space="preserve">
-    <value>BTN_Gerar_PDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Type" xml:space="preserve">
-    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.Parent" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;BTN_Gerar_PDF.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="GB_datasPDF.Location" type="System.Drawing.Point, System.Drawing">
-    <value>25, 40</value>
-  </data>
-  <data name="GB_datasPDF.Size" type="System.Drawing.Size, System.Drawing">
-    <value>368, 103</value>
-  </data>
-  <data name="GB_datasPDF.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="GB_datasPDF.Text" xml:space="preserve">
-    <value>Informe uma data Incial e Final</value>
-  </data>
-  <data name="GB_datasPDF.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;GB_datasPDF.Name" xml:space="preserve">
-    <value>GB_datasPDF</value>
-  </data>
-  <data name="&gt;&gt;GB_datasPDF.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_datasPDF.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GB_datasPDF.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="LBL_Usuarios.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="LBL_Usuarios.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16.25pt</value>
-  </data>
-  <data name="LBL_Usuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="LBL_Usuarios.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 10</value>
-  </data>
-  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 26</value>
-  </data>
-  <data name="LBL_Usuarios.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="LBL_Usuarios.Text" xml:space="preserve">
-    <value>Notas Fiscais</value>
-  </data>
-  <data name="&gt;&gt;LBL_Usuarios.Name" xml:space="preserve">
-    <value>LBL_Usuarios</value>
-  </data>
-  <data name="&gt;&gt;LBL_Usuarios.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;LBL_Usuarios.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="numberNFeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>Número</value>
@@ -912,6 +678,63 @@
   <metadata name="returnRelatorioNFeBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>213, 10</value>
   </metadata>
+  <data name="BTN_Gerar_PDF.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 73</value>
+  </data>
+  <data name="BTN_Gerar_PDF.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 30</value>
+  </data>
+  <data name="BTN_Gerar_PDF.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="BTN_Gerar_PDF.Text" xml:space="preserve">
+    <value>Gerar PDF</value>
+  </data>
+  <data name="&gt;&gt;BTN_Gerar_PDF.Name" xml:space="preserve">
+    <value>BTN_Gerar_PDF</value>
+  </data>
+  <data name="&gt;&gt;BTN_Gerar_PDF.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Gerar_PDF.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BTN_Gerar_PDF.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="LBL_Usuarios.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LBL_Usuarios.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.25pt</value>
+  </data>
+  <data name="LBL_Usuarios.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="LBL_Usuarios.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 10</value>
+  </data>
+  <data name="LBL_Usuarios.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 26</value>
+  </data>
+  <data name="LBL_Usuarios.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="LBL_Usuarios.Text" xml:space="preserve">
+    <value>Notas Fiscais</value>
+  </data>
+  <data name="&gt;&gt;LBL_Usuarios.Name" xml:space="preserve">
+    <value>LBL_Usuarios</value>
+  </data>
+  <data name="&gt;&gt;LBL_Usuarios.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LBL_Usuarios.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;LBL_Usuarios.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -923,9 +746,6 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>1003, 500</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Notas_Fiscais</value>
@@ -965,60 +785,6 @@
   </data>
   <data name="&gt;&gt;valueNFeDataGridViewTextBoxColumn.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;returnNFesBindingSource4.Name" xml:space="preserve">
-    <value>returnNFesBindingSource4</value>
-  </data>
-  <data name="&gt;&gt;returnNFesBindingSource4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;numberNFeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>numberNFeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;numberNFeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;serierNFeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>serierNFeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;serierNFeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;valueNFeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>valueNFeDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;valueNFeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cNPJEmitenteDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>cNPJEmitenteDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;cNPJEmitenteDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;razaoSocialDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>razaoSocialDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;razaoSocialDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;emissionDateDataGridViewTextBoxColumn1.Name" xml:space="preserve">
-    <value>emissionDateDataGridViewTextBoxColumn1</value>
-  </data>
-  <data name="&gt;&gt;emissionDateDataGridViewTextBoxColumn1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;produtoQuantidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>produtoQuantidadeDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;produtoQuantidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;returnRelatorioNFeBindingSource.Name" xml:space="preserve">
-    <value>returnRelatorioNFeBindingSource</value>
-  </data>
-  <data name="&gt;&gt;returnRelatorioNFeBindingSource.Type" xml:space="preserve">
-    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;numberDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>numberDataGridViewTextBoxColumn1</value>
@@ -1078,6 +844,60 @@
     <value>returnNFesBindingSource</value>
   </data>
   <data name="&gt;&gt;returnNFesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnNFesBindingSource4.Name" xml:space="preserve">
+    <value>returnNFesBindingSource4</value>
+  </data>
+  <data name="&gt;&gt;returnNFesBindingSource4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;numberNFeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>numberNFeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;numberNFeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;serierNFeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>serierNFeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;serierNFeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;valueNFeDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>valueNFeDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;valueNFeDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cNPJEmitenteDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cNPJEmitenteDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;cNPJEmitenteDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;razaoSocialDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>razaoSocialDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;razaoSocialDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emissionDateDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>emissionDateDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;emissionDateDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;produtoQuantidadeDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>produtoQuantidadeDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;produtoQuantidadeDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnRelatorioNFeBindingSource.Name" xml:space="preserve">
+    <value>returnRelatorioNFeBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnRelatorioNFeBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

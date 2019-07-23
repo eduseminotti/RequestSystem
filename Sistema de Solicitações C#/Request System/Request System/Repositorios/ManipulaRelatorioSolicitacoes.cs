@@ -20,7 +20,7 @@ namespace Request_System
     public class ManipulaRelatorioSolicitacoes
     {
         LOG log = new LOG();
-        public List<ReturnRelatorioSolicitacoes> GetRelatorioSolicitacoes(string usuarioSolicitante, SolicitationStatus? solicitationStatus, DateTime inicial, DateTime final)
+        public List<ReturnRelatorioSolicitacoes> GetRelatorioSolicitacoes(string usuarioSolicitante, SolicitationStatus? solicitationStatus)
         {
             List<ReturnRelatorioSolicitacoes> GetRelatorioSolicitacoes = new List<ReturnRelatorioSolicitacoes>();
 
@@ -35,12 +35,9 @@ namespace Request_System
                     "FROM       solicitation_itens subselectitens inner JOIN products product  ON product.id = subselectitens.productid WHERE subselectitens.solicitationid = s.id  " +
                     "ORDER BY   subselectitens.id FOR xml path ('')), 1, 1000) AS produtos_quantidades FROM solicitation  " +
                     "AS s INNER JOIN users ur ON ur.id = s.user_requester LEFT JOIN  users ua ON ua.id = s.user_approver INNER JOIN solicitation_itens AS itens " +
-                    "ON itens.solicitationid = s.id  	where s.DataSolicitacao >=  @inicial and s.DataSolicitacao <= @final   ";
+                    "ON itens.solicitationid = s.id   ";
 
                 SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                cmd.Parameters.Add("@inicial", SqlDbType.VarChar).Value = inicial;
-                cmd.Parameters.Add("@final", SqlDbType.VarChar).Value = final;
 
                 if (usuarioSolicitante != null)
                 {

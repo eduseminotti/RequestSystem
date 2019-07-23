@@ -186,7 +186,7 @@
     <value>Segoe UI, 11px</value>
   </data>
   <data name="Grid_Itens_solicitacoes.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 93</value>
+    <value>11, 92</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Grid_Itens_solicitacoes.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
@@ -234,6 +234,9 @@
   <data name="&gt;&gt;BTN_Seleciona_produto.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <metadata name="returnProdutosBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>270, -221</value>
+  </metadata>
   <data name="List_products.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 17</value>
   </data>
@@ -3518,9 +3521,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAEAAIABAADAAwAA8A8AAA==
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterParent</value>
   </data>
@@ -3567,6 +3567,12 @@
     <value>returnItensSolicitacoesBindingSource</value>
   </data>
   <data name="&gt;&gt;returnItensSolicitacoesBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;returnProdutosBindingSource.Name" xml:space="preserve">
+    <value>returnProdutosBindingSource</value>
+  </data>
+  <data name="&gt;&gt;returnProdutosBindingSource.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">

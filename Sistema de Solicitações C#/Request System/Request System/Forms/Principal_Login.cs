@@ -78,7 +78,7 @@ namespace Request_System
 
             //user = validate.ValidaUsuario(loginUserName, loginPass);
 
-            var userEntity = validate.ValidaUsuarioEntity(loginUserName, loginPass);
+            var userEntity = validate.GetByUsername(loginUserName);
 
             if (userEntity != null && userEntity.IsValid(loginPass))
             {

@@ -1,4 +1,5 @@
 ﻿using Request_System.Repositorios.Contexts;
+using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
 
@@ -6,7 +7,7 @@ namespace Request_System.Repositorios.Repositories
 {
     public class UserRepository
     {
-        private DbSet<Entities.User> dbSet;
+        public DbSet<Entities.User> dbSet;
 
         public UserRepository(MainContext context)
         {
@@ -15,14 +16,19 @@ namespace Request_System.Repositorios.Repositories
 
         public Entities.User GetByUsername(string username)
         {
-            return dbSet.FirstOrDefault(x=> x.UserName == username);
+            return dbSet.FirstOrDefault(x => x.UserName == username);
         }
 
         public Entities.User GetByUserId(int id)
         {
-            return dbSet.FirstOrDefault(x=> x.Id == id);
+            return dbSet.FirstOrDefault(x => x.Id == id);
         }
-
+        
+        public IList<Entities.User> GetUsers()
+        {
+            return dbSet.ToList();
+        }
+    
         public void Add(Entities.User newUser)
         {
             dbSet.Add(newUser);

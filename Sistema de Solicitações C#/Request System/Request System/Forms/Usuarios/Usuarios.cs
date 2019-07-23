@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using Request_System.Repositorios.Repositories;
+using Request_System.Repositorios.Contexts;
+
 
 namespace Request_System
 {
@@ -9,11 +12,13 @@ namespace Request_System
     {
         UserIdioma idioma;
 
-        List<Return_Usuarios> usuarios;
-        ManipulaUsuarios ObterUsers = new ManipulaUsuarios();
+        //List<Return_Usuarios> usuarios;
+        ManipulaUsuarios manipulaUsuarios = new ManipulaUsuarios();
         String selectedUserName;
         PageUserEditandAdd PageUserAdd;
         GeradorDePDFGrid geraPDF = new GeradorDePDFGrid();
+        UserRepository userRepository;
+
 
         public Usuarios_view(UserIdioma Idioma)
         {
@@ -25,9 +30,11 @@ namespace Request_System
 
         private void Usuarios_Load(object sender, EventArgs e)
         {
-            usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
-            GRID_USERS_VIEW.DataSource = usuarios;
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
         }
+
+
+
 
         private void TXT_Filter_Name_TextChanged(object sender, EventArgs e)
         {
@@ -46,15 +53,14 @@ namespace Request_System
 
         private void BTN_FilterClean_Click(object sender, EventArgs e)
         {
-            usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
-            GRID_USERS_VIEW.DataSource = usuarios;
+            //usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
+            //GRID_USERS_VIEW.DataSource = usuarios;
             TXT_Filter_User_Name.Text = "";
             TXT_Filter_Name.Text = "";
             TXT_filter_Setor.Text = "";
 
             CBX_Filter_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
-            usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
-            GRID_USERS_VIEW.DataSource = usuarios;
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
         }
 
         private void BTN_Filtrar1_Click(object sender, EventArgs e)
@@ -73,8 +79,9 @@ namespace Request_System
 
             status = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Filter_Status.Text.ToString());
 
-            usuarios = ObterUsers.GetUsuarios(userName, name, setor, status);
-            GRID_USERS_VIEW.DataSource = usuarios;
+            //usuarios = ObterUsers.GetUsuarios(userName, name, setor, status);
+            //GRID_USERS_VIEW.DataSource = usuarios;
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
         }
 
         private void BTN_NewUser_Click(object sender, EventArgs e)
@@ -83,8 +90,10 @@ namespace Request_System
 
             PageUserAdd.ShowDialog();
 
-            usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
-            GRID_USERS_VIEW.DataSource = usuarios;
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
+
+            //usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
+            //GRID_USERS_VIEW.DataSource = usuarios;
         }
 
         private void BTN_Edit1_Click(object sender, EventArgs e)
@@ -97,8 +106,9 @@ namespace Request_System
             PageUserAdd = new PageUserEditandAdd(false, selectedUserName, idioma, false);
 
             PageUserAdd.ShowDialog();
-            usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
-            GRID_USERS_VIEW.DataSource = usuarios;
+            //usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
+            //GRID_USERS_VIEW.DataSource = usuarios;
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
         }
         public int ContLinhasGrid()
         {
@@ -166,7 +176,7 @@ namespace Request_System
 
         private void BTN_gera_Pdf_Click(object sender, EventArgs e)
         {
-            geraPDF.gerarPDF(GRID_USERS_VIEW,"Usuários");
+            geraPDF.gerarPDF(GRID_USERS_VIEW, "Usuários");
         }
     }
 }

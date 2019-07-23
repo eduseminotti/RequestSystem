@@ -19,9 +19,13 @@ namespace Request_System
         UserIdioma idioma, userLoginIdioma;
         bool saveUserOk, isNew, passEdit = false;
 
-        ManipulaUsuarios Manipula_Usuarios = new ManipulaUsuarios();
+
+        ManipulaUsuarios manipulaUsuarios = new ManipulaUsuarios();
         List<Return_Usuarios> usuarios;
+
+
         CriptografaSenhas Cripto = new CriptografaSenhas();
+
 
         public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma, bool Install)
         {
@@ -37,17 +41,16 @@ namespace Request_System
             if (!isNew)//Editar usuario
             {
                 TXT_Usuario.Enabled = false;
-                usuarios = Manipula_Usuarios.GetUsuarios(SelectUserName, null, null, 0);
-                foreach (var return_Usuarios in usuarios)
-                {
-                    TXT_Nome.Text = return_Usuarios.Name.ToString();
-                    TXT_Email.Text = return_Usuarios.Email.ToString();
-                    TXT_CPF.Text = return_Usuarios.CPF.ToString();
-                    TXT_Setor.Text = return_Usuarios.Setor.ToString();
-                    TXT_Usuario.Text = return_Usuarios.UserName.ToString();
-                    CBX_TYPE.Text = return_Usuarios.Type.ToString();
-                    CBX_Status.Text = return_Usuarios.IsActive.ToString();
-                }
+                Entities.User user = manipulaUsuarios.GetByUsername(SelectUserName);
+
+                TXT_Nome.Text = user.Name.ToString();
+                TXT_Email.Text = user.Email.ToString();
+                TXT_CPF.Text = user.CPF.ToString();
+                TXT_Setor.Text = user.Setor.ToString();
+                TXT_Usuario.Text = user.UserName.ToString();
+                CBX_TYPE.Text = user.Type.ToString();
+                CBX_Status.Text = user.IsActive.ToString();
+
             }
             if(Install)
             {
@@ -108,17 +111,17 @@ namespace Request_System
             //captura textos dos campos
             name = TXT_Nome.Text.ToString();
             email = TXT_Email.Text.ToString();
-            cPF = TXT_CPF.Text.ToString().Replace(",",".");
+            cPF = TXT_CPF.Text.ToString().Replace(",", ".");
             setor = TXT_Setor.Text.ToString();
             userName = TXT_Usuario.Text.ToString();
             password = TXT_Password.Text.ToString();
             confirmPassword = TXT_Confirm_Pass.Text.ToString();
             type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
             isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
-            String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "").Replace(",","");
+            String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "").Replace(",", "");
 
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 ||  maskCPF.Length < 11)
+            if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 || maskCPF.Length < 11)
             {
                 if (name == "")
                     TXT_Nome.BackColor = Color.OrangeRed;
@@ -169,8 +172,11 @@ namespace Request_System
                     return;
                 }
                 //valida se usario ja existe
-                usuarios = Manipula_Usuarios.GetUsuarios(userName, null, null, 0);
-                if (usuarios.Any())
+                //usuarios = manipulaUsuarios.GetUsuarios(userName, null, null, 0);
+
+                Entities.User user = manipulaUsuarios.GetByUsername(userName);
+
+                if (user != null)
                 {
                     TXT_Usuario.BackColor = Color.OrangeRed;
                     TXT_Usuario.Focus();
@@ -184,7 +190,9 @@ namespace Request_System
                 }
                 else// se nao existe cadastra
                 {
-                    saveUserOk = Manipula_Usuarios.Novo_Usuario(name, setor, email, cPF, userName, password, type, isActive);
+
+
+                    //saveUserOk = Manipula_Usuarios.Novo_Usuario(name, setor, email, cPF, userName, password, type, isActive);
 
                     this.Close();
                     if (saveUserOk)
@@ -204,7 +212,7 @@ namespace Request_System
                 if (!passEdit)
                     password = null;
 
-                saveUserOk = Manipula_Usuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive);
+                saveUserOk = manipulaUsuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive);
 
                 this.Close();
 
@@ -326,6 +334,6 @@ namespace Request_System
         private void CBX_Status_Leave(object sender, EventArgs e)
         {
             CBX_Status.BackColor = Color.White;
-        }       
+        }
     }
 }

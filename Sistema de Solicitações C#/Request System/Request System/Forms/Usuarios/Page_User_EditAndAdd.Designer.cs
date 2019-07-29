@@ -85,7 +85,7 @@
             // 
             resources.ApplyResources(this.TXT_Setor, "TXT_Setor");
             this.TXT_Setor.Name = "TXT_Setor";
-            this.TXT_Setor.TextChanged += new System.EventHandler(this.TXT_Setor_TextChanged);
+
             this.TXT_Setor.Enter += new System.EventHandler(this.TXT_Setor_Enter);
             this.TXT_Setor.Leave += new System.EventHandler(this.TXT_Setor_Leave);
             // 

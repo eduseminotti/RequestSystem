@@ -89,7 +89,7 @@ namespace Request_System
 
         private void BTN_Assinar_Entrega_Click(object sender, EventArgs e)
         {
-            pass = cripto.CriptografaSenha(TXT_Pass.Text.ToString());
+            //pass = cripto.CriptografaSenha(TXT_Pass.Text.ToString());
 
             var user = validateUsers.GetByUsername(userName);
             if (user == null)

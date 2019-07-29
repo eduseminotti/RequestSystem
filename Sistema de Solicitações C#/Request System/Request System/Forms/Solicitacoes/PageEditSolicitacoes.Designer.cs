@@ -35,6 +35,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PageEditSolicitacoes));
             this.Grid_view_itens_solicitação = new MetroFramework.Controls.MetroGrid();
             this.ProductId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeAprovadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quantidadeEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.solicitationItemIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnItensSolicitacoesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.CBX_Status_Solicitacao = new MetroFramework.Controls.MetroComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.DT_Data_solicitacao = new MetroFramework.Controls.MetroDateTime();
@@ -73,21 +80,14 @@
             this.solicitationIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.solicitationItemIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.productNameDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeAprovadaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quantidadeEstoqueDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.solicitationItemIdDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.returnItensSolicitacoesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.returnItensSolicitacoesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_view_itens_solicitação)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).BeginInit();
             this.GB_DataAprovacao.SuspendLayout();
             this.GB_DataEntrega.SuspendLayout();
             this.GB_valida_usuario.SuspendLayout();
             this.GB_Editar_QTD_Itens.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_QTD_Aprovada)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -147,6 +147,52 @@
             resources.ApplyResources(this.ProductId, "ProductId");
             this.ProductId.Name = "ProductId";
             this.ProductId.ReadOnly = true;
+            // 
+            // productNameDataGridViewTextBoxColumn1
+            // 
+            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
+            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
+            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
+            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // quantidadeSolicitadaDataGridViewTextBoxColumn
+            // 
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeSolicitada";
+            resources.ApplyResources(this.quantidadeSolicitadaDataGridViewTextBoxColumn, "quantidadeSolicitadaDataGridViewTextBoxColumn");
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.Name = "quantidadeSolicitadaDataGridViewTextBoxColumn";
+            this.quantidadeSolicitadaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeAprovadaDataGridViewTextBoxColumn
+            // 
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeAprovada";
+            resources.ApplyResources(this.quantidadeAprovadaDataGridViewTextBoxColumn, "quantidadeAprovadaDataGridViewTextBoxColumn");
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.Name = "quantidadeAprovadaDataGridViewTextBoxColumn";
+            this.quantidadeAprovadaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // quantidadeEstoqueDataGridViewTextBoxColumn
+            // 
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEstoque";
+            resources.ApplyResources(this.quantidadeEstoqueDataGridViewTextBoxColumn, "quantidadeEstoqueDataGridViewTextBoxColumn");
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEstoqueDataGridViewTextBoxColumn";
+            this.quantidadeEstoqueDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // solicitationIdDataGridViewTextBoxColumn1
+            // 
+            this.solicitationIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationId";
+            resources.ApplyResources(this.solicitationIdDataGridViewTextBoxColumn1, "solicitationIdDataGridViewTextBoxColumn1");
+            this.solicitationIdDataGridViewTextBoxColumn1.Name = "solicitationIdDataGridViewTextBoxColumn1";
+            this.solicitationIdDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // solicitationItemIdDataGridViewTextBoxColumn1
+            // 
+            this.solicitationItemIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationItemId";
+            resources.ApplyResources(this.solicitationItemIdDataGridViewTextBoxColumn1, "solicitationItemIdDataGridViewTextBoxColumn1");
+            this.solicitationItemIdDataGridViewTextBoxColumn1.Name = "solicitationItemIdDataGridViewTextBoxColumn1";
+            this.solicitationItemIdDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // returnItensSolicitacoesBindingSource1
+            // 
+            this.returnItensSolicitacoesBindingSource1.DataSource = typeof(Request_System.returnItensSolicitacoes);
             // 
             // CBX_Status_Solicitacao
             // 
@@ -494,52 +540,6 @@
             this.productNameDataGridViewTextBoxColumn.Name = "productNameDataGridViewTextBoxColumn";
             this.productNameDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // productNameDataGridViewTextBoxColumn1
-            // 
-            this.productNameDataGridViewTextBoxColumn1.DataPropertyName = "ProductName";
-            resources.ApplyResources(this.productNameDataGridViewTextBoxColumn1, "productNameDataGridViewTextBoxColumn1");
-            this.productNameDataGridViewTextBoxColumn1.Name = "productNameDataGridViewTextBoxColumn1";
-            this.productNameDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // quantidadeSolicitadaDataGridViewTextBoxColumn
-            // 
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeSolicitada";
-            resources.ApplyResources(this.quantidadeSolicitadaDataGridViewTextBoxColumn, "quantidadeSolicitadaDataGridViewTextBoxColumn");
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.Name = "quantidadeSolicitadaDataGridViewTextBoxColumn";
-            this.quantidadeSolicitadaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantidadeAprovadaDataGridViewTextBoxColumn
-            // 
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeAprovada";
-            resources.ApplyResources(this.quantidadeAprovadaDataGridViewTextBoxColumn, "quantidadeAprovadaDataGridViewTextBoxColumn");
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.Name = "quantidadeAprovadaDataGridViewTextBoxColumn";
-            this.quantidadeAprovadaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // quantidadeEstoqueDataGridViewTextBoxColumn
-            // 
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.DataPropertyName = "QuantidadeEstoque";
-            resources.ApplyResources(this.quantidadeEstoqueDataGridViewTextBoxColumn, "quantidadeEstoqueDataGridViewTextBoxColumn");
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.Name = "quantidadeEstoqueDataGridViewTextBoxColumn";
-            this.quantidadeEstoqueDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // solicitationIdDataGridViewTextBoxColumn1
-            // 
-            this.solicitationIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationId";
-            resources.ApplyResources(this.solicitationIdDataGridViewTextBoxColumn1, "solicitationIdDataGridViewTextBoxColumn1");
-            this.solicitationIdDataGridViewTextBoxColumn1.Name = "solicitationIdDataGridViewTextBoxColumn1";
-            this.solicitationIdDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // solicitationItemIdDataGridViewTextBoxColumn1
-            // 
-            this.solicitationItemIdDataGridViewTextBoxColumn1.DataPropertyName = "SolicitationItemId";
-            resources.ApplyResources(this.solicitationItemIdDataGridViewTextBoxColumn1, "solicitationItemIdDataGridViewTextBoxColumn1");
-            this.solicitationItemIdDataGridViewTextBoxColumn1.Name = "solicitationItemIdDataGridViewTextBoxColumn1";
-            this.solicitationItemIdDataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // returnItensSolicitacoesBindingSource1
-            // 
-            this.returnItensSolicitacoesBindingSource1.DataSource = typeof(Request_System.returnItensSolicitacoes);
-            // 
             // returnItensSolicitacoesBindingSource
             // 
             this.returnItensSolicitacoesBindingSource.DataSource = typeof(Request_System.returnItensSolicitacoes);
@@ -572,6 +572,7 @@
             this.Name = "PageEditSolicitacoes";
             this.Load += new System.EventHandler(this.PageEditSolicitacoes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Grid_view_itens_solicitação)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).EndInit();
             this.GB_DataAprovacao.ResumeLayout(false);
             this.GB_DataAprovacao.PerformLayout();
             this.GB_DataEntrega.ResumeLayout(false);
@@ -581,7 +582,6 @@
             this.GB_Editar_QTD_Itens.ResumeLayout(false);
             this.GB_Editar_QTD_Itens.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TXT_QTD_Aprovada)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnItensSolicitacoesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

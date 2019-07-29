@@ -367,7 +367,7 @@
     <value>4, 25</value>
   </data>
   <data name="DT_Data_Entrega.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 29</value>
+    <value>4, 29</value>
   </data>
   <data name="DT_Data_Entrega.Size" type="System.Drawing.Size, System.Drawing">
     <value>237, 29</value>
@@ -883,7 +883,7 @@
     <value>5</value>
   </data>
   <data name="GB_valida_usuario.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 98</value>
+    <value>268, 98</value>
   </data>
   <data name="GB_valida_usuario.Size" type="System.Drawing.Size, System.Drawing">
     <value>294, 169</value>
@@ -908,6 +908,129 @@
   </data>
   <data name="&gt;&gt;GB_valida_usuario.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.Name" xml:space="preserve">
+    <value>BTN_Cancel_QTD</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;BTN_Cancel_QTD.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.Name" xml:space="preserve">
+    <value>TXT_QTD_Aprovada</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;TXT_QTD_Aprovada.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.Name" xml:space="preserve">
+    <value>TXT_qtd_solicitada</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;TXT_qtd_solicitada.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.Name" xml:space="preserve">
+    <value>TXT_Produto</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroTextBox, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;TXT_Produto.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.Name" xml:space="preserve">
+    <value>BTN_Salvar_QTD</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.Type" xml:space="preserve">
+    <value>MetroFramework.Controls.MetroButton, MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.Parent" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;BTN_Salvar_QTD.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 71</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 215</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Text" xml:space="preserve">
+    <value>Editar Quantidade</value>
+  </data>
+  <data name="GB_Editar_QTD_Itens.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.Name" xml:space="preserve">
+    <value>GB_Editar_QTD_Itens</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GB_Editar_QTD_Itens.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="BTN_Cancel_QTD.Location" type="System.Drawing.Point, System.Drawing">
     <value>28, 163</value>
@@ -1152,33 +1275,6 @@
   <data name="&gt;&gt;BTN_Salvar_QTD.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="GB_Editar_QTD_Itens.Location" type="System.Drawing.Point, System.Drawing">
-    <value>249, 71</value>
-  </data>
-  <data name="GB_Editar_QTD_Itens.Size" type="System.Drawing.Size, System.Drawing">
-    <value>294, 215</value>
-  </data>
-  <data name="GB_Editar_QTD_Itens.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="GB_Editar_QTD_Itens.Text" xml:space="preserve">
-    <value>Editar Quantidade</value>
-  </data>
-  <data name="GB_Editar_QTD_Itens.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;GB_Editar_QTD_Itens.Name" xml:space="preserve">
-    <value>GB_Editar_QTD_Itens</value>
-  </data>
-  <data name="&gt;&gt;GB_Editar_QTD_Itens.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GB_Editar_QTD_Itens.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GB_Editar_QTD_Itens.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="solicitationIdDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
     <value>SolicitationId</value>
   </data>
@@ -1224,24 +1320,6 @@
   <data name="&gt;&gt;ProductId.Type" xml:space="preserve">
     <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>solicitationIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>solicitationItemIdDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
-    <value>productNameDataGridViewTextBoxColumn</value>
-  </data>
-  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;productNameDataGridViewTextBoxColumn1.Name" xml:space="preserve">
     <value>productNameDataGridViewTextBoxColumn1</value>
   </data>
@@ -1283,6 +1361,24 @@
   </data>
   <data name="&gt;&gt;returnItensSolicitacoesBindingSource1.Type" xml:space="preserve">
     <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitationIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;solicitationIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>solicitationItemIdDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;solicitationItemIdDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>productNameDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;productNameDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;returnItensSolicitacoesBindingSource.Name" xml:space="preserve">
     <value>returnItensSolicitacoesBindingSource</value>

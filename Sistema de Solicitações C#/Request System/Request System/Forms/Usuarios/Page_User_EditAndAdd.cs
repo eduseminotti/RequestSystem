@@ -1,32 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Request_System.Repositorios.Contexts;
+using Request_System.Repositorios.Repositories;
+using System;
 using System.Drawing;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Request_System
 {
     public partial class PageUserEditandAdd : Form
     {
-        String name;
-        String setor;
-        String email;
-        String cPF;
-        String userName;
-        String password, confirmPassword;
-        UserType type;
-        UserIsactive isActive;
-        UserIdioma idioma, userLoginIdioma;
-        bool saveUserOk, isNew, passEdit = false;
+        String confirmPassword;
+        UserIdioma userLoginIdioma;
+        bool isNew;
 
-
+        Entities.User user = new Entities.User();
         ManipulaUsuarios manipulaUsuarios = new ManipulaUsuarios();
-        List<Return_Usuarios> usuarios;
-
-
-        CriptografaSenhas Cripto = new CriptografaSenhas();
-
-
+        UserRepository userRepository;
+        MainContext context = new MainContext();
         public PageUserEditandAdd(bool IsNew, String SelectUserName, UserIdioma UserLoginIdioma, bool Install)
         {
             InitializeComponent();
@@ -41,7 +30,14 @@ namespace Request_System
             if (!isNew)//Editar usuario
             {
                 TXT_Usuario.Enabled = false;
-                Entities.User user = manipulaUsuarios.GetByUsername(SelectUserName);
+                //user = manipulaUsuarios.GetByUsername(SelectUserName);
+
+                using (context)
+                {
+                    userRepository = new UserRepository(context);
+
+                    user = userRepository.GetByUsername(SelectUserName);
+                }
 
                 TXT_Nome.Text = user.Name.ToString();
                 TXT_Email.Text = user.Email.ToString();
@@ -50,9 +46,10 @@ namespace Request_System
                 TXT_Usuario.Text = user.UserName.ToString();
                 CBX_TYPE.Text = user.Type.ToString();
                 CBX_Status.Text = user.IsActive.ToString();
-
+                TXT_Password.Text = user.Password.ToString();
+                TXT_Confirm_Pass.Text = user.Password.ToString();
             }
-            if(Install)
+            if (Install)
             {
                 UserIsactive userStatus = UserIsactive.Ativo;
                 CBX_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
@@ -66,76 +63,39 @@ namespace Request_System
             }
         }
 
-        private void CBX_TYPE_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CBX_TYPE.BackColor = Color.White;
-        }
-        private void CBX_Status_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            CBX_Status.BackColor = Color.White;
-        }
-        private void TXT_Nome_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Nome.BackColor = Color.White;
-        }
-        private void TXT_Setor_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Setor.BackColor = Color.White;
-
-        }
-        private void TXT_Email_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Email.BackColor = Color.White;
-        }
-        private void TXT_Usuario_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Usuario.BackColor = Color.White;
-        }
-        private void TXT_Password_TextChanged(object sender, EventArgs e)
-        {
-            TXT_Password.BackColor = Color.White;
-            passEdit = true;
-        }
-        private void TXT_CPF_TextChanged(object sender, EventArgs e)
-        {
-            TXT_CPF.BackColor = Color.White;
-        }
-
-        private void TXT_Nome_TabIndexChanged(object sender, EventArgs e)
-        {
-            TXT_CPF.BackColor = Color.Yellow;
-        }
-
         private void BTN_UserSalvar_Click(object sender, EventArgs e)
         {
-            //captura textos dos campos
-            name = TXT_Nome.Text.ToString();
-            email = TXT_Email.Text.ToString();
-            cPF = TXT_CPF.Text.ToString().Replace(",", ".");
-            setor = TXT_Setor.Text.ToString();
-            userName = TXT_Usuario.Text.ToString();
-            password = TXT_Password.Text.ToString();
+            user.Name = TXT_Nome.Text.ToString();
+            user.Email = TXT_Email.Text.ToString();
+            user.CPF = TXT_CPF.Text.ToString().Replace(",", ".");
+            user.Setor = TXT_Setor.Text.ToString();
+            user.UserName = TXT_Usuario.Text.ToString();
+            user.Password = TXT_Password.Text.ToString();
+            user.Type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
+            user.IsActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
+            user.InsertDate = DateTime.Now;
+
             confirmPassword = TXT_Confirm_Pass.Text.ToString();
-            type = (UserType)Enum.Parse(typeof(UserType), CBX_TYPE.Text.ToString());
-            isActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Status.Text.ToString());
+
             String maskCPF = TXT_CPF.Text.ToString().Replace(".", "").Replace("-", "").Replace(" ", "").Replace(",", "");
 
             //valida campos obrigatorio e valida seleção comboboxs
-            if (name == "" || maskCPF == "" || setor == "" || userName == "" || email == "" || isActive == 0 || type == 0 || maskCPF.Length < 11)
+            if (user.Name == "" || maskCPF == "" || user.Setor == "" || user.UserName == "" || user.Email == "" ||
+                user.IsActive == UserIsactive._ || user.Type == UserType._ || maskCPF.Length < 11)
             {
-                if (name == "")
+                if (user.Name == "")
                     TXT_Nome.BackColor = Color.OrangeRed;
                 if (maskCPF == "" || maskCPF.Length < 11)
                     TXT_CPF.BackColor = Color.OrangeRed;
-                if (setor == "")
+                if (user.Setor == "")
                     TXT_Setor.BackColor = Color.OrangeRed;
-                if (email == "")
+                if (user.Setor == "")
                     TXT_Email.BackColor = Color.OrangeRed;
-                if (userName == "")
+                if (user.UserName == "")
                     TXT_Usuario.BackColor = Color.OrangeRed;
-                if (isActive == UserIsactive._)
+                if (user.IsActive == UserIsactive._)
                     CBX_Status.BackColor = Color.OrangeRed;
-                if (type == UserType._)
+                if (user.Type == UserType._)
                     CBX_TYPE.BackColor = Color.OrangeRed;
 
                 if (userLoginIdioma == UserIdioma.Portugues)
@@ -148,7 +108,7 @@ namespace Request_System
                 return;
             }
 
-            if (password != confirmPassword)
+            if (user.Password != confirmPassword)
             {
                 MessageBox.Show("As senhas informadas nao sao iguais!");
                 TXT_Confirm_Pass.BackColor = Color.OrangeRed;
@@ -156,27 +116,24 @@ namespace Request_System
                 return;
             }
 
-            password = Cripto.CriptografaSenha(password);
+            //user.Password = Cripto.CriptografaSenha(user.Password);
 
             //novo usuario
             if (isNew)
             {
-
-                if (confirmPassword == "" || password == "")
+                if (confirmPassword == "" || user.Password == "")
                 {
-                    if (password == "")
+                    if (user.Password == "")
                         TXT_Password.BackColor = Color.OrangeRed;
 
                     if (confirmPassword == "")
                         TXT_Confirm_Pass.BackColor = Color.OrangeRed;
                     return;
                 }
-                //valida se usario ja existe
-                //usuarios = manipulaUsuarios.GetUsuarios(userName, null, null, 0);
 
-                Entities.User user = manipulaUsuarios.GetByUsername(userName);
+                Entities.User userExists = manipulaUsuarios.GetByUsername(user.UserName);
 
-                if (user != null)
+                if (userExists != null)
                 {
                     TXT_Usuario.BackColor = Color.OrangeRed;
                     TXT_Usuario.Focus();
@@ -190,45 +147,30 @@ namespace Request_System
                 }
                 else// se nao existe cadastra
                 {
-
-
-                    //saveUserOk = Manipula_Usuarios.Novo_Usuario(name, setor, email, cPF, userName, password, type, isActive);
+                    manipulaUsuarios.AddNewUser(user);
 
                     this.Close();
-                    if (saveUserOk)
-                    {
-                        if (userLoginIdioma == UserIdioma.Portugues)
-                            MessageBox.Show("Usuario Adicionado com Sucesso!");
-                        if (userLoginIdioma == UserIdioma.Ingles)
-                            MessageBox.Show("Successfully Added User!");
-                        if (userLoginIdioma == UserIdioma.Espanhol)
-                            MessageBox.Show("Usuario agregado con éxito!");
-                    }
                 }
             }
             //edição de usuario
             if (!isNew)
             {
-                if (!passEdit)
-                    password = null;
+                using (context)
+                {
+                    userRepository = new UserRepository(context);
 
-                saveUserOk = manipulaUsuarios.Edit_User(name, setor, email, cPF, userName, password, type, isActive);
+                    context.SaveChanges();
+                }
+
+                manipulaUsuarios.EditUser(user);
 
                 this.Close();
-
-                if (userLoginIdioma == UserIdioma.Portugues)
-                    MessageBox.Show("Usuario Editado com Sucesso!");
-                if (userLoginIdioma == UserIdioma.Ingles)
-                    MessageBox.Show("User Edited Successfully!");
-                if (userLoginIdioma == UserIdioma.Espanhol)
-                    MessageBox.Show("Usuario Editado con Éxito!");
             }
         }
-
+        #region
         private void TXT_Confirm_Pass_TextChanged(object sender, EventArgs e)
         {
             TXT_Confirm_Pass.BackColor = Color.White;
-            passEdit = true;
         }
 
         private void BTN_UserCancel_Click(object sender, EventArgs e)
@@ -311,11 +253,6 @@ namespace Request_System
             TXT_Password.BackColor = Color.White;
         }
 
-        private void TXT_CPF_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
         private void TXT_Confirm_Pass_Enter(object sender, EventArgs e)
         {
             TXT_Confirm_Pass.BackColor = Color.Yellow;
@@ -335,5 +272,41 @@ namespace Request_System
         {
             CBX_Status.BackColor = Color.White;
         }
+
+        private void CBX_TYPE_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CBX_TYPE.BackColor = Color.White;
+        }
+        private void CBX_Status_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            CBX_Status.BackColor = Color.White;
+        }
+        private void TXT_Nome_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Nome.BackColor = Color.White;
+        }
+
+        private void TXT_Email_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Email.BackColor = Color.White;
+        }
+        private void TXT_Usuario_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Usuario.BackColor = Color.White;
+        }
+        private void TXT_Password_TextChanged(object sender, EventArgs e)
+        {
+            TXT_Password.BackColor = Color.White;
+        }
+        private void TXT_CPF_TextChanged(object sender, EventArgs e)
+        {
+            TXT_CPF.BackColor = Color.White;
+        }
+
+        private void TXT_Nome_TabIndexChanged(object sender, EventArgs e)
+        {
+            TXT_CPF.BackColor = Color.Yellow;
+        }
+        #endregion
     }
 }

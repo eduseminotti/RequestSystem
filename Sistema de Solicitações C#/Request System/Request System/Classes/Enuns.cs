@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace Request_System
 {
-    public enum UserIsactive
+    public enum UserIsactive : int
     {
         [Description("")]
         _ = 0,
@@ -13,7 +13,7 @@ namespace Request_System
         Ativo = 2
     };
 
-    public enum UserType
+    public enum UserType : int
     {
         [Description("")]
         _ = 0,
@@ -24,7 +24,7 @@ namespace Request_System
         [Description("Usuário")]
         Usuario = 3
     };
-    public enum UserIdioma
+    public enum UserIdioma : int
     { 
         [Description("Portugues")]
         Portugues = 1,
@@ -33,7 +33,7 @@ namespace Request_System
         [Description("Espanhol")]
         Espanhol = 3
     };
-    public enum ProductIsActive
+    public enum ProductIsActive : int
     {
         [Description("")]
         _ = 0,
@@ -42,7 +42,7 @@ namespace Request_System
         [Description("Ativo")]
         Ativo = 2
     };
-    public enum SolicitationStatus
+    public enum SolicitationStatus : int
     {
         [Description("Pendente")]
         Pendente = 1,

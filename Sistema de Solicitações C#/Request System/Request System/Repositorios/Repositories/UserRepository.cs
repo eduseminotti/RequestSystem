@@ -28,10 +28,15 @@ namespace Request_System.Repositorios.Repositories
         {
             return dbSet.ToList();
         }
-    
-        public void Add(Entities.User newUser)
+
+        public IQueryable<Entities.User> GetAll()
         {
-            dbSet.Add(newUser);
+            return dbSet;
+        }
+
+        public void AddNewUser(Entities.User User)
+        {
+            dbSet.Add(User);
         }
     }
 }

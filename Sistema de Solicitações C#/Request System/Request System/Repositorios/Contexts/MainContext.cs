@@ -13,7 +13,7 @@ namespace Request_System.Repositorios.Contexts
 
         public MainContext() : base(ConfigurationManager.ConnectionStrings["CS"].ConnectionString)
         {
-
+            this.Configuration.ProxyCreationEnabled = false;
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

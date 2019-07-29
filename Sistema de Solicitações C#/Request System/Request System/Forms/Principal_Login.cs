@@ -69,20 +69,15 @@ namespace Request_System
 
                 if (idioma == UserIdioma.Espanhol)
                     MessageBox.Show("Usuario o contraseña están vacíos!");
-
-
                 return;
             }
 
-            loginPass = cripto.CriptografaSenha(loginPass);
-
-            //user = validate.ValidaUsuario(loginUserName, loginPass);
+            //loginPass = cripto.CriptografaSenha(loginPass);
 
             var userEntity = validate.GetByUsername(loginUserName);
 
             if (userEntity != null && userEntity.IsValid(loginPass))
             {
-                //Menus_Main admMain = new Menus_Main(user.UserID, user.Name, user.Type, idioma);
                 Menus_Main admMain = new Menus_Main((int)userEntity.Id, userEntity.Name, userEntity.Type, idioma);
                 this.Hide();
                 admMain.Show();

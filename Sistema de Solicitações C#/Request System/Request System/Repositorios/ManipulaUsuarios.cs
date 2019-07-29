@@ -2,13 +2,12 @@
 using Request_System.Repositorios.Repositories;
 using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
-using System.Data.SqlClient;
+using System.Linq;
 
 namespace Request_System
 {
-   public class Return_Usuarios
+    public class Return_Usuarios
     {
         public String CPF { get; set; }
         public String UserName { get; set; }
@@ -39,121 +38,70 @@ namespace Request_System
             }
         }
 
-        public IList<Entities.User> GetUsers()
+        public void AddNewUser(Entities.User user)
         {
             var context = new MainContext();
 
             using (context)
             {
                 var userRepository = new UserRepository(context);
-                var usuarios = userRepository.GetUsers();
-                return usuarios;
+
+                userRepository.AddNewUser(user);
+
+                context.SaveChanges();
             }
         }
 
-                                    
-        public List<Return_Usuarios> GetUsuarios(String UserName, String Name, String Setor, UserIsactive Status)
+        public void EditUser(Entities.User user)
         {
-            List<Return_Usuarios> return_usuarios = new List<Return_Usuarios>();
+            var context = new MainContext();
 
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-
-            try
+            using (context)
             {
-                string queryString = "SELECT cpf, NAME, email, UserName , Password , setor , " +
-                    "isactive , type  FROM [dbo].[users] where id > 0 ";
+                var userRepository = new UserRepository(context);
 
-                SqlCommand cmd = new SqlCommand(queryString, sqlConn);
-
-                if (UserName != null)
-                {
-                    cmd.CommandText += " and UserName like @UserName";
-                    cmd.Parameters.Add("@UserName", SqlDbType.VarChar).Value = "%" + UserName + "%";
-                }
-                if (Name != null)
-                {
-                    cmd.CommandText += " and Name like @Name";
-                    cmd.Parameters.Add("@Name", SqlDbType.VarChar).Value = "%" + Name + "%";
-                }
-                if (Setor != null)
-                {
-                    cmd.CommandText += " and Setor like @Setor";
-                    cmd.Parameters.Add("@Setor", SqlDbType.VarChar).Value = "%" + Setor + "%";
-                }
-                if (Status != UserIsactive._)
-                {
-                    cmd.CommandText += " and isactive = @Status";
-                    cmd.Parameters.Add("@Status", SqlDbType.Int).Value = Status;
-                }
-
-                sqlConn.Open();
-                SqlDataReader query = cmd.ExecuteReader();
-                while (query.Read())
-                {
-                    Return_Usuarios usuarios = new Return_Usuarios();
-
-                    usuarios.CPF = query["cpf"].ToString();
-                    usuarios.Name = query["Name"].ToString();
-                    usuarios.UserName = query["UserName"].ToString();
-                    usuarios.Password = query["Password"].ToString();
-                    usuarios.Email = query["email"].ToString();
-                    usuarios.Setor = query["Setor"].ToString();
-                    usuarios.IsActive = (UserIsactive)int.Parse(query["isActive"].ToString());
-                    usuarios.Type = (UserType)int.Parse(query["Type"].ToString());
-                    
-                    return_usuarios.Add(usuarios);
-                }
+                context.SaveChanges();
             }
-            catch (SqlException ex)
-            {
-                log.logador("Erro ao carregar a lista de usuarios.");
-                log.logador(ex);
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-            return return_usuarios;
         }
-        public bool Novo_Usuario(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive)
+
+
+        public IList<Entities.User> GetUsers(Entities.User users)
         {
-            SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
-            bool sucess = false;
+            var context = new MainContext();
 
-            string queryString = "insert dbo.Users(Name,Setor,eMail,CPF,UserName,Password,Type,isActive) " +
-                "values (@name, @setor, @email, @cpf, @username, @Password, @type, @isactive)";
+            var getUsers = new List<Entities.User>();
 
-            SqlCommand cmd = new SqlCommand(queryString, sqlConn);       
-
-            cmd.Parameters.AddWithValue("@name", Name);
-            cmd.Parameters.AddWithValue("@setor", Setor);
-            cmd.Parameters.AddWithValue("@email", eMail);
-            cmd.Parameters.AddWithValue("@cpf", CPF);
-            cmd.Parameters.AddWithValue("@username", UserName);
-            cmd.Parameters.AddWithValue("@Password", Password);
-            cmd.Parameters.AddWithValue("@type", type);
-            cmd.Parameters.AddWithValue("@isactive", isActive);
-
-            try
+            using (context)
             {
-                sqlConn.Open();
-                cmd.ExecuteNonQuery();
-                sucess = true;
-                log.logador("Usuario cadastrado com sucesso: " + UserName);
+                var userRepository = new UserRepository(context);
+
+                var queryUsers = userRepository.GetAll().Where(x => x.Id > 0);
+
+                if (users != null)
+                {
+                    if (users.UserName != null)
+                        queryUsers = queryUsers.Where(x => x.UserName.Contains(users.UserName));
+
+                    if (users.Name != null)
+                        queryUsers = queryUsers.Where(x => x.Name.Contains(users.Name));
+
+                    if (users.Setor != null)
+                        queryUsers = queryUsers.Where(x => x.Setor.Contains(users.Setor));
+
+                    if (users.IsActive != UserIsactive._)
+                        queryUsers = queryUsers.Where(x => x.IsActive == users.IsActive);
+
+                }
+
+                getUsers = queryUsers.ToList();
             }
-            catch (SqlException ex)
-            {
-                log.logador("Erro ao cadastrar usuario: " + UserName);
-                log.logador(ex);
-                throw;
-            }
-            finally
-            {
-                sqlConn.Close();
-            }
-            return sucess;
+
+            return getUsers;
         }
+
+        #region metodos antigos
+     
+        /*
         public bool Edit_User(String Name, String Setor, String eMail, String CPF, String UserName, String Password, UserType type, UserIsactive isActive)
         {
             SqlConnection sqlConn = new SqlConnection(ConfigurationManager.ConnectionStrings["CS"].ConnectionString);
@@ -200,5 +148,7 @@ namespace Request_System
             }
             return sucess;
         }
+        */
+        #endregion
     }
 }

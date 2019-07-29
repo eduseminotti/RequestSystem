@@ -30,11 +30,8 @@ namespace Request_System
 
         private void Usuarios_Load(object sender, EventArgs e)
         {
-            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers(null);
         }
-
-
-
 
         private void TXT_Filter_Name_TextChanged(object sender, EventArgs e)
         {
@@ -60,28 +57,29 @@ namespace Request_System
             TXT_filter_Setor.Text = "";
 
             CBX_Filter_Status.DataSource = Enum.GetValues(typeof(UserIsactive));
-            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers(null);
         }
 
         private void BTN_Filtrar1_Click(object sender, EventArgs e)
         {
-            String name = null, userName = null, setor = null;
-            UserIsactive status = 0;
+            Entities.User user = new Entities.User();
+            
+            user.Name = null;
+            user.UserName = null;
+            user.Setor = null;
 
             if (TXT_Filter_Name.Text.ToString() != "")
-                name = TXT_Filter_Name.Text.ToString();
+                user.Name = TXT_Filter_Name.Text.ToString();
 
             if (TXT_Filter_User_Name.Text.ToString() != "")
-                userName = TXT_Filter_User_Name.Text.ToString();
+                user.UserName = TXT_Filter_User_Name.Text.ToString();
 
             if (TXT_filter_Setor.Text.ToString() != "")
-                setor = TXT_filter_Setor.Text.ToString();
+                user.Setor = TXT_filter_Setor.Text.ToString();
 
-            status = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Filter_Status.Text.ToString());
+            user.IsActive = (UserIsactive)Enum.Parse(typeof(UserIsactive), CBX_Filter_Status.Text.ToString());
 
-            //usuarios = ObterUsers.GetUsuarios(userName, name, setor, status);
-            //GRID_USERS_VIEW.DataSource = usuarios;
-            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers(user);
         }
 
         private void BTN_NewUser_Click(object sender, EventArgs e)
@@ -90,7 +88,7 @@ namespace Request_System
 
             PageUserAdd.ShowDialog();
 
-            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers(null);
 
             //usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
             //GRID_USERS_VIEW.DataSource = usuarios;
@@ -106,9 +104,8 @@ namespace Request_System
             PageUserAdd = new PageUserEditandAdd(false, selectedUserName, idioma, false);
 
             PageUserAdd.ShowDialog();
-            //usuarios = ObterUsers.GetUsuarios(null, null, null, 0);
-            //GRID_USERS_VIEW.DataSource = usuarios;
-            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers();
+
+            GRID_USERS_VIEW.DataSource = manipulaUsuarios.GetUsers(null);
         }
         public int ContLinhasGrid()
         {
